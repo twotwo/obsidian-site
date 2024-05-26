@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Hugo Book 主题配置要点">
-<title>Hugo Book 主题配置指南</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Hugo PaperMod 主题配置要点">
+<title>Hugo PaperMod 主题配置指南</title>
 
-<link rel='canonical' href='https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-book/'>
+<link rel='canonical' href='https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-PaperMod/'>
 
-<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Hugo Book 主题配置指南">
-<meta property='og:description' content="Hugo Book 主题配置要点">
-<meta property='og:url' content='https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-book/'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Hugo PaperMod 主题配置指南">
+<meta property='og:description' content="Hugo PaperMod 主题配置要点">
+<meta property='og:url' content='https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-PaperMod/'>
 <meta property='og:site_name' content='All in Obsidian'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2024-05-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-27T12:07:30&#43;08:00'/>
-<meta name="twitter:title" content="Hugo Book 主题配置指南">
-<meta name="twitter:description" content="Hugo Book 主题配置要点">
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2024-05-16T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-27T12:07:30&#43;08:00'/>
+<meta name="twitter:title" content="Hugo PaperMod 主题配置指南">
+<meta name="twitter:description" content="Hugo PaperMod 主题配置要点">
   
     
       <script async src="https://www.googletagmanager.com/gtag/js?id=397053425"></script>
@@ -258,12 +258,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/posts/2024/themes-hugo-book/">Hugo Book 主题配置指南</a>
+            <a href="/posts/2024/themes-hugo-PaperMod/">Hugo PaperMod 主题配置指南</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Hugo Book 主题配置要点
+            Hugo PaperMod 主题配置要点
         </h3>
         
     </div>
@@ -284,7 +284,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024-05-26</time>
+                <time class="article-time--published">2024-05-16</time>
             </div>
         
 
@@ -314,38 +314,21 @@
     <section class="article-content">
     
     
-    <h2 id="参考资料">参考资料
+    <p>目前官网排名第一的主题，的确很不错。</p>
+<h2 id="参考资料">参考资料
 </h2><ul>
-<li><a class="link" href="https://themes.gohugo.io/themes/hugo-book/"  target="_blank" rel="noopener"
+<li><a class="link" href="https://themes.gohugo.io/themes/hugo-papermod/"  target="_blank" rel="noopener"
     >官网文档</a></li>
-<li><a class="link" href="https://github.com/alex-shpak/hugo-book"  target="_blank" rel="noopener"
-    >https://github.com/alex-shpak/hugo-book</a></li>
-<li><a class="link" href="https://hugo-book-demo.netlify.app/"  target="_blank" rel="noopener"
+<li><a class="link" href="https://github.com/adityatelange/hugo-PaperMod"  target="_blank" rel="noopener"
+    >https://github.com/adityatelange/hugo-PaperMod</a></li>
+<li><a class="link" href="https://adityatelange.github.io/hugo-PaperMod/"  target="_blank" rel="noopener"
     >Demo site</a></li>
+<li><a class="link" href="https://github.com/adityatelange/hugo-PaperMod/wiki/"  target="_blank" rel="noopener"
+    >Document</a></li>
 </ul>
-<h2 id="显示-post-属性">显示 Post 属性
-</h2><p>提供的 <a class="link" href="https://themes.gohugo.io/themes/hugo-book/#partials"  target="_blank" rel="noopener"
-    >partials</a> 没地方加作者</p>
-<p>只能 overwrite <code>layouts/partials/docs/post-meta.html</code></p>
-<pre tabindex="0"><code>&lt;h5&gt;
-{{ with .Date }}
-  {{ partial &#34;docs/date&#34; (dict &#34;Date&#34; . &#34;Format&#34; $.Site.Params.DateFormat) }}
-{{ end }}
-· 
-{{ with .Params.author }}
-  {{ . }}
-{{ else }}
-  {{ .Site.Params.author }}
-{{ end }}
-&lt;/h5&gt;
-</code></pre><h2 id="extra-customisation">Extra Customisation
-</h2><p><code>assets/_fonts.scss</code> 替换默认字体</p>
-<pre tabindex="0"><code>@import url(&#39;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&#39;);
-
-body {
-  font-family: &#34;LXGW WenKai Screen&#34;, sans-serif;
-}
-</code></pre>
+<h2 id="hogo-配置参数说明">Hogo 配置参数说明
+</h2><p><a class="link" href="https://github.com/adityatelange/hugo-PaperMod/wiki/Variables"  target="_blank" rel="noopener"
+    >Variables | Front Matter</a></p>
 </section>
 
 
@@ -387,6 +370,19 @@ body {
             
                 
 <article class="">
+    <a href="/posts/2024/themes-hugo-book/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo Book 主题配置指南</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
     <a href="/posts/2024/themes-hugo-Stack/">
         
         
@@ -406,19 +402,6 @@ body {
 
         <div class="article-details">
             <h2 class="article-title">如何指定 Hugo 网站主题</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/2024/themes-hugo-PaperMod/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Hugo PaperMod 主题配置指南</h2>
         </div>
     </a>
 </article>

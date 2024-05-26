@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Hugo Book 主题配置要点">
-<title>Hugo Book 主题配置指南</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Obsidian, 一款强大的开源笔记编辑和知识库管理软件">
+<title>About</title>
 
-<link rel='canonical' href='https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-book/'>
+<link rel='canonical' href='https://all-in-obsidian.li3huo.com/obsidian/about/'>
 
-<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Hugo Book 主题配置指南">
-<meta property='og:description' content="Hugo Book 主题配置要点">
-<meta property='og:url' content='https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-book/'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="About">
+<meta property='og:description' content="Obsidian, 一款强大的开源笔记编辑和知识库管理软件">
+<meta property='og:url' content='https://all-in-obsidian.li3huo.com/obsidian/about/'>
 <meta property='og:site_name' content='All in Obsidian'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2024-05-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-27T12:07:30&#43;08:00'/>
-<meta name="twitter:title" content="Hugo Book 主题配置指南">
-<meta name="twitter:description" content="Hugo Book 主题配置要点">
+<meta property='og:type' content='article'><meta property='article:section' content='Obsidian' /><meta property='article:published_time' content='2024-02-28T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-27T12:07:30&#43;08:00'/>
+<meta name="twitter:title" content="About">
+<meta name="twitter:description" content="Obsidian, 一款强大的开源笔记编辑和知识库管理软件">
   
     
       <script async src="https://www.googletagmanager.com/gtag/js?id=397053425"></script>
@@ -134,7 +134,7 @@
         
         
         
-        <li >
+        <li  class='current' >
             <a href='/obsidian/about/' >
                 
                 
@@ -247,23 +247,15 @@
 
     <div class="article-details">
     
-    <header class="article-category">
-        
-            <a href="/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" >
-                个人网站
-            </a>
-        
-    </header>
-    
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/posts/2024/themes-hugo-book/">Hugo Book 主题配置指南</a>
+            <a href="/obsidian/about/">About</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Hugo Book 主题配置要点
+            Obsidian, 一款强大的开源笔记编辑和知识库管理软件
         </h3>
         
     </div>
@@ -284,7 +276,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024-05-26</time>
+                <time class="article-time--published">2024-02-28</time>
             </div>
         
 
@@ -314,49 +306,14 @@
     <section class="article-content">
     
     
-    <h2 id="参考资料">参考资料
-</h2><ul>
-<li><a class="link" href="https://themes.gohugo.io/themes/hugo-book/"  target="_blank" rel="noopener"
-    >官网文档</a></li>
-<li><a class="link" href="https://github.com/alex-shpak/hugo-book"  target="_blank" rel="noopener"
-    >https://github.com/alex-shpak/hugo-book</a></li>
-<li><a class="link" href="https://hugo-book-demo.netlify.app/"  target="_blank" rel="noopener"
-    >Demo site</a></li>
-</ul>
-<h2 id="显示-post-属性">显示 Post 属性
-</h2><p>提供的 <a class="link" href="https://themes.gohugo.io/themes/hugo-book/#partials"  target="_blank" rel="noopener"
-    >partials</a> 没地方加作者</p>
-<p>只能 overwrite <code>layouts/partials/docs/post-meta.html</code></p>
-<pre tabindex="0"><code>&lt;h5&gt;
-{{ with .Date }}
-  {{ partial &#34;docs/date&#34; (dict &#34;Date&#34; . &#34;Format&#34; $.Site.Params.DateFormat) }}
-{{ end }}
-· 
-{{ with .Params.author }}
-  {{ . }}
-{{ else }}
-  {{ .Site.Params.author }}
-{{ end }}
-&lt;/h5&gt;
-</code></pre><h2 id="extra-customisation">Extra Customisation
-</h2><p><code>assets/_fonts.scss</code> 替换默认字体</p>
-<pre tabindex="0"><code>@import url(&#39;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&#39;);
+    <p>Learn more  on <a class="link" href="https://obsidian.md/"  target="_blank" rel="noopener"
+    >https://obsidian.md/</a>.</p>
 
-body {
-  font-family: &#34;LXGW WenKai Screen&#34;, sans-serif;
-}
-</code></pre>
 </section>
 
 
     <footer class="article-footer">
     
-    <section class="article-tags">
-        
-            <a href="/tags/hugo/">Hugo</a>
-        
-    </section>
-
 
     <section class="article-lastmod">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -379,80 +336,6 @@ body {
     
 
     
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">Related content</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="">
-    <a href="/posts/2024/themes-hugo-Stack/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Hugo Stack 主题配置指南</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/switch-themes-in-hugo/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">如何指定 Hugo 网站主题</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/2024/themes-hugo-PaperMod/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Hugo PaperMod 主题配置指南</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/2024/hugo-getting-started/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Getting Started with Hugo</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/creating-a-new-theme/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Creating a New Theme in Hugo</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
 
      
     
