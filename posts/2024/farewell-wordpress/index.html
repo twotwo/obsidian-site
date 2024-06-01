@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="在官网找到 Google Analytics 4 Property Setup Assistant, 点击确认后出现 You have successfully connected your properties.\nLearn more about Google Analytics 4 properties\n">
-<title>Update Google Analytics to GA4</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="原因与方案 放弃 WordPress 的最主要原因是希望降低维护成本\n">
+<title>👋 《再见，WordPress 补记》</title>
 
-<link rel='canonical' href='https://all-in-obsidian.li3huo.com/posts/2024/hugo-add-google-analytics/'>
+<link rel='canonical' href='https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/'>
 
-<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Update Google Analytics to GA4">
-<meta property='og:description' content="在官网找到 Google Analytics 4 Property Setup Assistant, 点击确认后出现 You have successfully connected your properties.\nLearn more about Google Analytics 4 properties\n">
-<meta property='og:url' content='https://all-in-obsidian.li3huo.com/posts/2024/hugo-add-google-analytics/'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="👋 《再见，WordPress 补记》">
+<meta property='og:description' content="原因与方案 放弃 WordPress 的最主要原因是希望降低维护成本\n">
+<meta property='og:url' content='https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/'>
 <meta property='og:site_name' content='All in Obsidian'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='template' /><meta property='article:published_time' content='2024-05-23T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-26T18:09:33&#43;08:00'/>
-<meta name="twitter:title" content="Update Google Analytics to GA4">
-<meta name="twitter:description" content="在官网找到 Google Analytics 4 Property Setup Assistant, 点击确认后出现 You have successfully connected your properties.\nLearn more about Google Analytics 4 properties\n">
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='static-site-generator' /><meta property='article:published_time' content='2016-01-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-16T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="👋 《再见，WordPress 补记》">
+<meta name="twitter:description" content="原因与方案 放弃 WordPress 的最主要原因是希望降低维护成本\n">
   
     
       <script async src="https://www.googletagmanager.com/gtag/js?id=397053425"></script>
@@ -190,18 +190,10 @@
 
     <div class="article-details">
     
-    <header class="article-category">
-        
-            <a href="/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" >
-                个人网站
-            </a>
-        
-    </header>
-    
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/posts/2024/hugo-add-google-analytics/">Update Google Analytics to GA4</a>
+            <a href="/posts/2024/farewell-wordpress/">👋 《再见，WordPress 补记》</a>
         </h2>
     
         
@@ -223,7 +215,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024-05-23</time>
+                <time class="article-time--published">2016-01-01</time>
             </div>
         
 
@@ -253,16 +245,44 @@
     <section class="article-content">
     
     
-    <p>在官网找到 Google Analytics 4 Property Setup Assistant, 点击确认后出现 <code>You have successfully connected your properties.</code></p>
-<p><a class="link" href="https://support.google.com/analytics/answer/9744165?hl=en_US&amp;utm_id=ad"  target="_blank" rel="noopener"
-    >Learn more about Google Analytics 4 properties</a></p>
-<p>Hugo 后台告警</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>WARN  Google Analytics <span style="color:#ae81ff">4</span> <span style="color:#f92672">(</span>GA4<span style="color:#f92672">)</span> replaced Google Universal Analytics <span style="color:#f92672">(</span>UA<span style="color:#f92672">)</span> effective <span style="color:#ae81ff">1</span> July 2023. See https://support.google.com/analytics/answer/11583528. Create a GA4 property and data stream, <span style="color:#66d9ef">then</span> replace the Google Analytics ID in your site configuration with the new value.
-</span></span></code></pre></div><p>修改 <code>hugo.yml</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">googleAnalytics</span>: <span style="color:#ae81ff">88888888</span>
-</span></span></code></pre></div><p>生效后，页面中加入了</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.googletagmanager.com/gtag/js?id=88888888&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-</span></span></code></pre></div>
+    <h2 id="原因与方案">原因与方案
+</h2><p>放弃 WordPress 的最主要原因是希望降低维护成本</p>
+<ul>
+<li>没钱：vps 实例降级到内存 0.5GB 后跑不动 mysql + php 了</li>
+<li>没时间：定期 wp 版本升级和不定期清理被黑客开了后门的系统</li>
+</ul>
+<p>博客静态化方案的成熟是放弃的最直接原因。简单尝试了 <a class="link" href="https://getpelican.com/"  target="_blank" rel="noopener"
+    >Pelican</a>，就把博客换成静态网站了。</p>
+<h2 id="过程记录">过程记录
+</h2><h3 id="迁移-wp">迁移 WP
+</h3><p><a class="link" href="https://blog.chenghu.me/bo-ke-qian-yi-wp-pelican.html"  target="_blank" rel="noopener"
+    >https://blog.chenghu.me/bo-ke-qian-yi-wp-pelican.html</a></p>
+<p>WP 导出 Posts 工具很多，比如自带插件 <a class="link" href="https://wordpress.org/plugins/jekyll-exporter/"  target="_blank" rel="noopener"
+    >jekyll-exporter</a>，以 markdown 格式导出 posts, pages 和 comments，但需要 WP 实例运行正常；还比如 Pelican 自带的 pelican-import，但需要以 WP Export 出的XML为源，转换我这上千篇文章需要好几分钟，而且过程磕磕绊绊的(解决异常中断问题)。</p>
+<p>于是在 GitHub 上找了一些做参考，改写一个转换工具。3秒钟完成千篇文章转换。</p>
+<ul>
+<li><a class="link" href="https://github.com/mlindgren/wp2octopress/blob/master/wp2octopress.py"  target="_blank" rel="noopener"
+    >https://github.com/mlindgren/wp2octopress/blob/master/wp2octopress.py</a></li>
+<li><a class="link" href="https://github.com/jekyll/jekyll-import/blob/v0.10.0/lib/jekyll-import/importers/wordpress.rb"  target="_blank" rel="noopener"
+    >https://github.com/jekyll/jekyll-import/blob/v0.10.0/lib/jekyll-import/importers/wordpress.rb</a></li>
+</ul>
+<h3 id="构建-pelican-项目">构建 Pelican 项目
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pelican mkdir mysite <span style="color:#f92672">&amp;&amp;</span> cd mysite
+</span></span><span style="display:flex;"><span>$ mysite pelican-quickstart <span style="color:#75715e"># 按提示完成快速初始化--主要是写publishconf.py</span>
+</span></span><span style="display:flex;"><span>$ mysite pelican content <span style="color:#75715e"># 在output生成静态站点</span>
+</span></span><span style="display:flex;"><span>$ mysite cd output <span style="color:#f92672">&amp;&amp;</span> python -m SimpleHTTPServer <span style="color:#75715e"># 浏览器访问http://localhost:8000/</span>
+</span></span></code></pre></div><h3 id="rsync-同步到服务器">rsync 同步到服务器
+</h3><h2 id="参考资料">参考资料
+</h2><ul>
+<li><a class="link" href="http://docs.getpelican.com/en/3.6.3/quickstart.htm"  target="_blank" rel="noopener"
+    >http://docs.getpelican.com/en/3.6.3/quickstart.htm</a></li>
+<li><a class="link" href="https://github.com/getpelican/pelican"  target="_blank" rel="noopener"
+    >https://github.com/getpelican/pelican</a></li>
+<li><a class="link" href="http://pelican-docs-zh-cn.readthedocs.io/en/latest/"  target="_blank" rel="noopener"
+    >http://pelican-docs-zh-cn.readthedocs.io/en/latest/</a></li>
+<li><a class="link" href="http://haridas.in/wordpress-blog-migrated-to-pelican.html"  target="_blank" rel="noopener"
+    >http://haridas.in/wordpress-blog-migrated-to-pelican.html</a></li>
+</ul>
 </section>
 
 
@@ -270,7 +290,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/template/">Template</a>
+            <a href="/tags/static-site-generator/">Static-Site-Generator</a>
         
     </section>
 
@@ -285,7 +305,7 @@
 
 
         <span>
-            Last updated on 2024-05-26 18:09
+            Last updated on 2024-05-16 00:00
         </span>
     </section></footer>
 
@@ -296,80 +316,6 @@
     
 
     
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">Related content</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="">
-    <a href="/posts/2024/themes-hugo-book/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Hugo Book 主题配置指南</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/2024/themes-hugo-papermod/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Hugo PaperMod 主题配置指南</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/2024/themes-hugo-stack/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Hugo Stack 主题配置指南</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/switch-themes-in-hugo/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">如何指定 Hugo 网站主题</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/posts/2024/obsidian-blog-hugo/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">markdown 博客方案 - obsidian &#43; hugo</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
 
      
     

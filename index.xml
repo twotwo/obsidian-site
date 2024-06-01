@@ -31,6 +31,52 @@
 &lt;/ul&gt;</description>
         </item>
         <item>
+        <title>👋 《再见，WordPress 补记》</title>
+        <link>https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/</link>
+        <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/</guid>
+        <description>
+            &lt;h2 id=&#34;原因与方案&#34;&gt;原因与方案
+&lt;/h2&gt;&lt;p&gt;放弃 WordPress 的最主要原因是希望降低维护成本&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;没钱：vps 实例降级到内存 0.5GB 后跑不动 mysql + php 了&lt;/li&gt;
+&lt;li&gt;没时间：定期 wp 版本升级和不定期清理被黑客开了后门的系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;博客静态化方案的成熟是放弃的最直接原因。简单尝试了 &lt;a class=&#34;link&#34; href=&#34;https://getpelican.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pelican&lt;/a&gt;，就把博客换成静态网站了。&lt;/p&gt;
+&lt;h2 id=&#34;过程记录&#34;&gt;过程记录
+&lt;/h2&gt;&lt;h3 id=&#34;迁移-wp&#34;&gt;迁移 WP
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.chenghu.me/bo-ke-qian-yi-wp-pelican.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://blog.chenghu.me/bo-ke-qian-yi-wp-pelican.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WP 导出 Posts 工具很多，比如自带插件 &lt;a class=&#34;link&#34; href=&#34;https://wordpress.org/plugins/jekyll-exporter/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;jekyll-exporter&lt;/a&gt;，以 markdown 格式导出 posts, pages 和 comments，但需要 WP 实例运行正常；还比如 Pelican 自带的 pelican-import，但需要以 WP Export 出的XML为源，转换我这上千篇文章需要好几分钟，而且过程磕磕绊绊的(解决异常中断问题)。&lt;/p&gt;
+&lt;p&gt;于是在 GitHub 上找了一些做参考，改写一个转换工具。3秒钟完成千篇文章转换。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/mlindgren/wp2octopress/blob/master/wp2octopress.py&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/mlindgren/wp2octopress/blob/master/wp2octopress.py&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/jekyll/jekyll-import/blob/v0.10.0/lib/jekyll-import/importers/wordpress.rb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/jekyll/jekyll-import/blob/v0.10.0/lib/jekyll-import/importers/wordpress.rb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;构建-pelican-项目&#34;&gt;构建 Pelican 项目
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ pelican mkdir mysite &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; cd mysite
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ mysite pelican-quickstart &lt;span style=&#34;color:#75715e&#34;&gt;# 按提示完成快速初始化--主要是写publishconf.py&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ mysite pelican content &lt;span style=&#34;color:#75715e&#34;&gt;# 在output生成静态站点&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ mysite cd output &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; python -m SimpleHTTPServer &lt;span style=&#34;color:#75715e&#34;&gt;# 浏览器访问http://localhost:8000/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;rsync-同步到服务器&#34;&gt;rsync 同步到服务器
+&lt;/h3&gt;&lt;h2 id=&#34;参考资料&#34;&gt;参考资料
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://docs.getpelican.com/en/3.6.3/quickstart.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://docs.getpelican.com/en/3.6.3/quickstart.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/getpelican/pelican&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/getpelican/pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://pelican-docs-zh-cn.readthedocs.io/en/latest/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://pelican-docs-zh-cn.readthedocs.io/en/latest/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://haridas.in/wordpress-blog-migrated-to-pelican.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://haridas.in/wordpress-blog-migrated-to-pelican.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+        <item>
         <title>Creating a New Theme in Hugo</title>
         <link>https://all-in-obsidian.li3huo.com/posts/creating-a-new-theme/</link>
         <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
@@ -886,11 +932,37 @@ body {
 &lt;/code&gt;&lt;/pre&gt;</description>
         </item>
         <item>
-        <title>Hugo Stack 主题配置指南</title>
-        <link>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-Stack/</link>
+        <title>Hugo PaperMod 主题配置指南</title>
+        <link>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-papermod/</link>
         <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
         <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-Stack/</guid>
+        <guid>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-papermod/</guid>
+        <description>
+            &lt;h2 id=&#34;参考资料&#34;&gt;参考资料
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/hugo-papermod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PaperMod&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/adityatelange/hugo-PaperMod&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://adityatelange.github.io/hugo-PaperMod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Demo site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Document&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;hogo-配置参数说明&#34;&gt;Hogo 配置参数说明
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/Variables&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Variables | Front Matter&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;extra-customisation&#34;&gt;Extra Customisation
+&lt;/h2&gt;&lt;p&gt;替换默认字体、背景色&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Hugo Stack 主题配置指南</title>
+        <link>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-stack/</link>
+        <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-stack/</guid>
         <description>
             &lt;h2 id=&#34;参考资料&#34;&gt;参考资料
 &lt;/h2&gt;&lt;ul&gt;
@@ -900,16 +972,8 @@ body {
     &gt;https://github.com/CaiJimmy/hugo-theme-stack&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Demo site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Document&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;运行-examplesite&#34;&gt;运行 exampleSite
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/commands/hugo_server/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo server&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server --disableFastRender -D --contentDir themes/hugo-stack/exampleSite/content --config themes/hugo-stack/exampleSite/hugo.yaml
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;修复兼容性&#34;&gt;修复兼容性
+&lt;h2 id=&#34;修复兼容性&#34;&gt;修复兼容性
 &lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;hugo.yml&lt;/code&gt; 中，&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/date-format&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;dataFormat&lt;/a&gt; 变成了对象&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;params:
@@ -927,13 +991,11 @@ body {
     published: 2006-01-02
     lastUpdated: 2006-01-02 15:04
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;左侧边栏&#34;&gt;左侧边栏
-&lt;/h2&gt;&lt;p&gt;配置 &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/menu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Custom Menu&lt;/a&gt; 以及&lt;/p&gt;
-&lt;p&gt;文章 &lt;code&gt;Front Matter&lt;/code&gt; 中添加 &lt;code&gt;menu: main&lt;/code&gt;，链接自动出现在左边栏。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/menu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Custom Menu&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;右侧边栏&#34;&gt;右侧边栏
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/widgets&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Widgets&lt;/a&gt;, 没搞出来，另外&lt;/p&gt;
-&lt;p&gt;跑 exampleSite 也没有右边栏。&lt;/p&gt;</description>
+    &gt;Widgets&lt;/a&gt; 一直没搞出来；Hugo 升级到 0.126.2 后，自己就出来了。&lt;/p&gt;</description>
         </item>
         <item>
         <title>Update Google Analytics to GA4</title>
@@ -954,38 +1016,97 @@ body {
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         <item>
-        <title>Hugo PaperMod 主题配置指南</title>
-        <link>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-PaperMod/</link>
-        <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+        <title>markdown 博客方案 - obsidian &#43; hugo</title>
+        <link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link>
+        <pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate>
         <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-PaperMod/</guid>
+        <guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid>
         <description>
-            &lt;p&gt;目前官网排名第一的主题，的确很不错。&lt;/p&gt;
-&lt;h2 id=&#34;参考资料&#34;&gt;参考资料
+            &lt;p&gt;2015 年底，弃用 Wordpress，使用 Markdown 写作博客。&lt;/p&gt;
+&lt;p&gt;Hugo 默认不支持 Ob 链接&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[[farewell-wordpress|再见，WordPress 补记]]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 Hugo 上的写法&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/&#34; &gt;再见，WordPress 补记&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2024 年个人知识库升级，all in obsidian，更新博客方案。&lt;/p&gt;
+&lt;h2 id=&#34;博客方案&#34;&gt;博客方案
+&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;flowchart LR
+Obsidian --&amp;gt; File([Markdown])
+File --&amp;gt;|Hugo| Site(((HTML)))
+Site --&amp;gt;|rsync| Host
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-tpl&#34; data-lang=&#34;tpl&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+
+&lt;script src=&#34;https://all-in-obsidian.li3huo.com/mermaid.min.js&#34;&gt;&lt;/script&gt;
+
+
+
+
+&lt;p class=&#34;mermaid optional&#34;&gt;
+flowchart LR
+Obsidian --&gt; File([Markdown])
+File --&gt;|Hugo| Site(((HTML)))
+Site --&gt;|rsync| Host
+&lt;/p&gt;
+
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;wordpress-转-markdown&#34;&gt;Wordpress 转 Markdown
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/twotwo/wp2octopress&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/twotwo/wp2octopress&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;markdown-构建静态网站&#34;&gt;Markdown 构建静态网站
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/twotwo/hugo-template/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/twotwo/hugo-template/&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew install hugo &lt;span style=&#34;color:#75715e&#34;&gt;# Mac 上安装 hugo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git clone --recurse-submodules https://github.com/twotwo/hugo-template/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ hugo server &lt;span style=&#34;color:#75715e&#34;&gt;# 本地预览 http://localhost:1313/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ hugo &lt;span style=&#34;color:#75715e&#34;&gt;# 发布成静态网页：public 目录下&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Start building sites …
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo v0.125.7+extended darwin/amd64 BuildDate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;2024-05-08T14:46:24Z VendorInfo&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;brew
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                   |  EN
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-------------------+-------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Pages            | &lt;span style=&#34;color:#ae81ff&#34;&gt;1888&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Paginator pages  |   &lt;span style=&#34;color:#ae81ff&#34;&gt;87&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Non-page files   |    &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Static files     |   &lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Processed images |    &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Aliases          |    &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Cleaned          |    &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Total in &lt;span style=&#34;color:#ae81ff&#34;&gt;2370&lt;/span&gt; ms
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;上传到服务器nginx&#34;&gt;上传到服务器(Nginx)
+&lt;/h2&gt;&lt;p&gt;把构建的静态内容上传到服务器的 Nginx 对应目录下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ rsync -avP public/* &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;host&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;:/var/www/myblog.com/output/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;obsidian-编辑&#34;&gt;Obsidian 编辑
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://li3huo.com/photos/huge-create-vault.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;huge-create-vault.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://li3huo.com/photos/hugo-vault.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;hugo-vault.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/hugo-papermod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;官网文档&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/adityatelange/hugo-PaperMod&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://adityatelange.github.io/hugo-PaperMod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Demo site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Document&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;hogo-配置参数说明&#34;&gt;Hogo 配置参数说明
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/Variables&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Variables | Front Matter&lt;/a&gt;&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>About</title>
-        <link>https://all-in-obsidian.li3huo.com/obsidian/about/</link>
-        <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/obsidian/about/</guid>
-        <description>
-            &lt;p&gt;Learn more  on &lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://obsidian.md/&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://lillianwho.com/posts/obsidian-hugo-cloudflare/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;obsidian 配合 hugo 发布博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.hacperme.com/posts/notes/hugo_notes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;弃用 wordpress，拥抱 hugo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
         </item>
         <item>
         <title>Getting Started with Hugo</title>
@@ -1054,33 +1175,6 @@ are located at the same relative location as the url, in our case
 Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
 &lt;h2 id=&#34;step-4-have-fun&#34;&gt;Step 4. Have fun
 &lt;/h2&gt;&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>Archives</title>
-        <link>https://all-in-obsidian.li3huo.com/obsidian/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/obsidian/archives/</guid>
-        <description>
-            </description>
-        </item>
-        <item>
-        <title>Links</title>
-        <link>https://all-in-obsidian.li3huo.com/obsidian/links/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/obsidian/links/</guid>
-        <description>
-            </description>
-        </item>
-        <item>
-        <title>Search</title>
-        <link>https://all-in-obsidian.li3huo.com/obsidian/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/obsidian/search/</guid>
-        <description>
-            </description>
         </item>
         
     </channel>
