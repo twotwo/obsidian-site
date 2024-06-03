@@ -10,7 +10,7 @@
 <meta property='og:description' content="Hugo PaperMod 主题配置要点">
 <meta property='og:url' content='https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-papermod/'>
 <meta property='og:site_name' content='All in Obsidian'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2024-05-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-05-31T23:44:20&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2024-05-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-06-03T11:42:50&#43;08:00'/>
 <meta name="twitter:title" content="Hugo PaperMod 主题配置指南">
 <meta name="twitter:description" content="Hugo PaperMod 主题配置要点">
   
@@ -32,7 +32,24 @@
     
   
 
+<style>
+     
+    :root {
+        --article-font-family: "LXGW WenKai Screen", var(--base-font-family);
+    }
+</style>
 
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
     </head>
     <body class="
     article-page
@@ -297,7 +314,7 @@
 
 
         <span>
-            Last updated on 2024-05-31 23:44
+            Last updated on 2024-06-03 11:42
         </span>
     </section></footer>
 
@@ -398,8 +415,9 @@
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        
+            Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br/>
+        
     </section>
 </footer>
 

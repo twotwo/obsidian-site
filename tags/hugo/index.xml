@@ -927,6 +927,7 @@ body {
     &gt;https://github.com/CaiJimmy/hugo-theme-stack&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Demo site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;stack.jimmycai.com&#34; &gt;Document&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;修复兼容性&#34;&gt;修复兼容性
 &lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;hugo.yml&lt;/code&gt; 中，&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/date-format&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -942,15 +943,42 @@ body {
     &gt;avatar&lt;/a&gt;&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;params:
   ...
-  dateFormat:
-    published: 2006-01-02
-    lastUpdated: 2006-01-02 15:04
+  sidebar:
+    emoji: 🍥
+    subtitle: 笔记、作图、提案、个人网站 All in Obsidian
+    avatar:
+      enabled: true
+      local: false
+      src: https://all-in-obsidian.li3huo.com/img/Obsidian.svg
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;左侧边栏&#34;&gt;左侧边栏
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/menu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Custom Menu&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;右侧边栏&#34;&gt;右侧边栏
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/widgets&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Widgets&lt;/a&gt; 一直没搞出来；Hugo 升级到 0.126.2 后，自己就出来了。&lt;/p&gt;</description>
+    &gt;Widgets&lt;/a&gt; 一直没搞出来；Hugo 升级到 0.126.2 后，自己就出来了。&lt;/p&gt;
+&lt;h2 id=&#34;替换默认字体&#34;&gt;替换默认字体
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/header-footer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Custom Header / Footer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;layouts/partials/head/custom.html&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+    /* Overwrite CSS variable for Stack Theme */
+    :root {
+        --article-font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, var(--base-font-family);
+    }
+&amp;lt;/style&amp;gt;
+
+&amp;lt;script&amp;gt;
+    (function () {
+        const customFont = document.createElement(&amp;#39;link&amp;#39;);
+        customFont.href = &amp;#34;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&amp;#34;;
+
+        customFont.type = &amp;#34;text/css&amp;#34;;
+        customFont.rel = &amp;#34;stylesheet&amp;#34;;
+
+        document.head.appendChild(customFont);
+    }());
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</description>
         </item>
         <item>
         <title>Getting Started with Hugo</title>

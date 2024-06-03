@@ -32,7 +32,24 @@
     
   
 
+<style>
+     
+    :root {
+        --article-font-family: "LXGW WenKai Screen", var(--base-font-family);
+    }
+</style>
 
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
     </head>
     <body class="
     article-page
@@ -265,6 +282,7 @@
     >https://github.com/CaiJimmy/hugo-theme-stack</a></li>
 <li><a class="link" href="https://demo.stack.jimmycai.com/"  target="_blank" rel="noopener"
     >Demo site</a></li>
+<li><a class="link" href="stack.jimmycai.com" >Document</a></li>
 </ul>
 <h2 id="修复兼容性">修复兼容性
 </h2><p>在 <code>hugo.yml</code> 中，<a class="link" href="https://stack.jimmycai.com/config/date-format"  target="_blank" rel="noopener"
@@ -280,15 +298,42 @@
     >avatar</a></p>
 <pre tabindex="0"><code>params:
   ...
-  dateFormat:
-    published: 2006-01-02
-    lastUpdated: 2006-01-02 15:04
+  sidebar:
+    emoji: 🍥
+    subtitle: 笔记、作图、提案、个人网站 All in Obsidian
+    avatar:
+      enabled: true
+      local: false
+      src: https://all-in-obsidian.li3huo.com/img/Obsidian.svg
 </code></pre><h2 id="左侧边栏">左侧边栏
 </h2><p><a class="link" href="https://stack.jimmycai.com/config/menu"  target="_blank" rel="noopener"
     >Custom Menu</a></p>
 <h2 id="右侧边栏">右侧边栏
 </h2><p><a class="link" href="https://stack.jimmycai.com/config/widgets"  target="_blank" rel="noopener"
     >Widgets</a> 一直没搞出来；Hugo 升级到 0.126.2 后，自己就出来了。</p>
+<h2 id="替换默认字体">替换默认字体
+</h2><p><a class="link" href="https://stack.jimmycai.com/config/header-footer"  target="_blank" rel="noopener"
+    >Custom Header / Footer</a></p>
+<p><code>layouts/partials/head/custom.html</code></p>
+<pre tabindex="0"><code>&lt;style&gt;
+    /* Overwrite CSS variable for Stack Theme */
+    :root {
+        --article-font-family: &#34;LXGW WenKai Screen&#34;, var(--base-font-family);
+    }
+&lt;/style&gt;
+
+&lt;script&gt;
+    (function () {
+        const customFont = document.createElement(&#39;link&#39;);
+        customFont.href = &#34;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&#34;;
+
+        customFont.type = &#34;text/css&#34;;
+        customFont.rel = &#34;stylesheet&#34;;
+
+        document.head.appendChild(customFont);
+    }());
+&lt;/script&gt;
+</code></pre>
 </section>
 
 
@@ -400,8 +445,9 @@
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        
+            Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br/>
+        
     </section>
 </footer>
 
