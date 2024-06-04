@@ -932,37 +932,11 @@ body {
 &lt;/code&gt;&lt;/pre&gt;</description>
         </item>
         <item>
-        <title>Hugo PaperMod 主题配置指南</title>
-        <link>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-papermod/</link>
-        <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-papermod/</guid>
-        <description>
-            &lt;h2 id=&#34;参考资料&#34;&gt;参考资料
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/hugo-papermod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;PaperMod&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/adityatelange/hugo-PaperMod&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://adityatelange.github.io/hugo-PaperMod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Demo site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Document&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;安装&#34;&gt;安装
-&lt;/h2&gt;&lt;p&gt;&lt;code&gt;git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;hogo-配置参数说明&#34;&gt;Hogo 配置参数说明
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/Variables&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Variables | Front Matter&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;extra-customisation&#34;&gt;Extra Customisation
-&lt;/h2&gt;&lt;p&gt;替换默认字体、背景色&lt;/p&gt;</description>
-        </item>
-        <item>
         <title>Hugo Stack 主题配置指南</title>
-        <link>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-stack/</link>
+        <link>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-Stack/</link>
         <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
         <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-stack/</guid>
+        <guid>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-Stack/</guid>
         <description>
             &lt;h2 id=&#34;参考资料&#34;&gt;参考资料
 &lt;/h2&gt;&lt;ul&gt;
@@ -971,10 +945,35 @@ body {
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/CaiJimmy/hugo-theme-stack&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Demo site&lt;/a&gt;&lt;/li&gt;
+    &gt;Demo site&lt;/a&gt;
+&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Document&lt;/a&gt;
+=======&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;stack.jimmycai.com&#34; &gt;Document&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;修复兼容性&#34;&gt;修复兼容性
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;refs/remotes/origin/main&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;运行-examplesite&#34;&gt;运行 exampleSite
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/commands/hugo_server/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo server&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server --disableFastRender -D --contentDir themes/hugo-stack/exampleSite/content --config themes/hugo-stack/exampleSite/hugo.yaml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;修复兼容性&#34;&gt;修复兼容性
 &lt;/h2&gt;&lt;p&gt;在 &lt;code&gt;hugo.yml&lt;/code&gt; 中，&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/date-format&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;dataFormat&lt;/a&gt; 变成了对象&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;params:
@@ -996,10 +995,15 @@ body {
       local: false
       src: https://all-in-obsidian.li3huo.com/img/Obsidian.svg
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;左侧边栏&#34;&gt;左侧边栏
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/menu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Custom Menu&lt;/a&gt;&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;配置 &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/menu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Custom Menu&lt;/a&gt; 以及&lt;/p&gt;
+&lt;p&gt;文章 &lt;code&gt;Front Matter&lt;/code&gt; 中添加 &lt;code&gt;menu: main&lt;/code&gt;，链接自动出现在左边栏。&lt;/p&gt;
 &lt;h2 id=&#34;右侧边栏&#34;&gt;右侧边栏
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/widgets&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h2&gt;&lt;p&gt;&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD
+&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/widgets&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Widgets&lt;/a&gt;, 没搞出来，另外&lt;/p&gt;
+&lt;h1 id=&#34;跑-examplesite-也没有右边栏&#34;&gt;跑 exampleSite 也没有右边栏。
+&lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/widgets&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Widgets&lt;/a&gt; 一直没搞出来；Hugo 升级到 0.126.2 后，自己就出来了。&lt;/p&gt;
 &lt;h2 id=&#34;替换默认字体&#34;&gt;替换默认字体
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/config/header-footer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1023,7 +1027,21 @@ body {
         document.head.appendChild(customFont);
     }());
 &amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;refs/remotes/origin/main&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;</description>
         </item>
         <item>
         <title>Update Google Analytics to GA4</title>
@@ -1042,6 +1060,29 @@ body {
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;生效后，页面中加入了&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.googletagmanager.com/gtag/js?id=88888888&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Hugo PaperMod 主题配置指南</title>
+        <link>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-PaperMod/</link>
+        <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-PaperMod/</guid>
+        <description>
+            &lt;p&gt;目前官网排名第一的主题，的确很不错。&lt;/p&gt;
+&lt;h2 id=&#34;参考资料&#34;&gt;参考资料
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/hugo-papermod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/adityatelange/hugo-PaperMod&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://adityatelange.github.io/hugo-PaperMod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Demo site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Document&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hogo-配置参数说明&#34;&gt;Hogo 配置参数说明
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/Variables&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Variables | Front Matter&lt;/a&gt;&lt;/p&gt;</description>
         </item>
         <item>
         <title>markdown 博客方案 - obsidian &#43; hugo</title>
@@ -1086,6 +1127,13 @@ Site --&gt;|rsync| Host
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/twotwo/hugo-template/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/twotwo/hugo-template/&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew install hugo &lt;span style=&#34;color:#75715e&#34;&gt;# Mac 上安装 hugo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ hugo env
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo v0.125.7+extended darwin/amd64 BuildDate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;2024-05-08T14:46:24Z VendorInfo&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;brew
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GOOS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;darwin&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GOARCH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;amd64&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GOVERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;go1.22.3&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;github.com/sass/libsass&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;3.6.5&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;github.com/webmproject/libwebp&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;v1.3.2&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git clone --recurse-submodules https://github.com/twotwo/hugo-template/
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ hugo server &lt;span style=&#34;color:#75715e&#34;&gt;# 本地预览 http://localhost:1313/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ hugo &lt;span style=&#34;color:#75715e&#34;&gt;# 发布成静态网页：public 目录下&lt;/span&gt;

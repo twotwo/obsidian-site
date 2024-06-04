@@ -32,7 +32,24 @@
     
   
 
+<style>
+     
+    :root {
+        --article-font-family: "LXGW WenKai Screen", var(--base-font-family);
+    }
+</style>
 
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
     </head>
     <body class="
     article-page
@@ -210,6 +227,26 @@
             </a>
         </li>
         
+        
+        <li >
+            <a href='/posts/2024/obsidian-blog-hugo/' >
+                
+                
+                
+                <span>markdown 博客方案 - obsidian &#43; hugo</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='' >
+                
+                
+                
+                <span>个人网站</span>
+            </a>
+        </li>
+        
         <li class="menu-bottom-section">
             <ol class="menu">
 
@@ -333,8 +370,9 @@
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        
+            Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br/>
+        
     </section>
 </footer>
 

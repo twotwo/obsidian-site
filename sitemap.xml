@@ -20,11 +20,8 @@
     <loc>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-book/</loc>
     <lastmod>2024-06-03T11:42:50+08:00</lastmod>
   </url><url>
-    <loc>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-papermod/</loc>
+    <loc>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-Stack/</loc>
     <lastmod>2024-06-03T11:42:50+08:00</lastmod>
-  </url><url>
-    <loc>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-stack/</loc>
-    <lastmod>2024-05-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://all-in-obsidian.li3huo.com/tags/</loc>
     <lastmod>2024-06-03T11:42:50+08:00</lastmod>
@@ -38,11 +35,17 @@
     <loc>https://all-in-obsidian.li3huo.com/posts/2024/hugo-add-google-analytics/</loc>
     <lastmod>2024-05-26T18:09:33+08:00</lastmod>
   </url><url>
+    <loc>https://all-in-obsidian.li3huo.com/posts/2024/themes-hugo-PaperMod/</loc>
+    <lastmod>2024-05-27T12:07:30+08:00</lastmod>
+  </url><url>
     <loc>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</loc>
     <lastmod>2024-06-03T11:42:50+08:00</lastmod>
   </url><url>
-    <loc>https://all-in-obsidian.li3huo.com/tags/static-site-generator/</loc>
-    <lastmod>2024-06-03T11:42:50+08:00</lastmod>
+    <loc>https://all-in-obsidian.li3huo.com/obsidian/about/</loc>
+    <lastmod>2024-05-27T12:07:30+08:00</lastmod>
+  </url><url>
+    <loc>https://all-in-obsidian.li3huo.com/obsidian/</loc>
+    <lastmod>2024-05-27T12:07:30+08:00</lastmod>
   </url><url>
     <loc>https://all-in-obsidian.li3huo.com/posts/2024/hugo-getting-started/</loc>
     <lastmod>2024-06-03T11:42:50+08:00</lastmod>
@@ -50,10 +53,22 @@
     <loc>https://all-in-obsidian.li3huo.com/categories/Obsidian/</loc>
     <lastmod>2024-06-03T11:42:50+08:00</lastmod>
   </url><url>
+    <loc>https://all-in-obsidian.li3huo.com/obsidian/archives/</loc>
+    <lastmod>2024-05-27T12:07:30+08:00</lastmod>
+  </url><url>
+    <loc>https://all-in-obsidian.li3huo.com/tags/static-site-generator/</loc>
+    <lastmod>2024-06-03T11:42:50+08:00</lastmod>
+  </url><url>
     <loc>https://all-in-obsidian.li3huo.com/posts/</loc>
     <lastmod>2024-05-25T18:33:40+08:00</lastmod>
   </url><url>
     <loc>https://all-in-obsidian.li3huo.com/</loc>
     <lastmod>2024-05-25T18:33:40+08:00</lastmod>
+  </url><url>
+    <loc>https://all-in-obsidian.li3huo.com/obsidian/links/</loc>
+    <lastmod>2024-05-27T12:07:30+08:00</lastmod>
+  </url><url>
+    <loc>https://all-in-obsidian.li3huo.com/obsidian/search/</loc>
+    <lastmod>2024-05-27T12:07:30+08:00</lastmod>
   </url>
 </urlset>

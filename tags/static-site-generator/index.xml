@@ -8,7 +8,7 @@
         <language>en-us</language>
         <managingEditor>li3huo (li3huo)</managingEditor>
         <webMaster>li3huo (li3huo)</webMaster>
-        <lastBuildDate>Mon, 13 May 2024 20:25:25 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/static-site-generator/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/static-site-generator/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>👋 《再见，WordPress 补记》</title>
         <link>https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/</link>
         <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -52,99 +52,6 @@
     &gt;http://pelican-docs-zh-cn.readthedocs.io/en/latest/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://haridas.in/wordpress-blog-migrated-to-pelican.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://haridas.in/wordpress-blog-migrated-to-pelican.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-        </item>
-        <item>
-        <title>markdown 博客方案 - obsidian &#43; hugo</title>
-        <link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link>
-        <pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid>
-        <description>
-            &lt;p&gt;2015 年底，弃用 Wordpress，使用 Markdown 写作博客。&lt;/p&gt;
-&lt;p&gt;Hugo 默认不支持 Ob 链接&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[[farewell-wordpress|再见，WordPress 补记]]&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在 Hugo 上的写法&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/&#34; &gt;再见，WordPress 补记&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;2024 年个人知识库升级，all in obsidian，更新博客方案。&lt;/p&gt;
-&lt;h2 id=&#34;博客方案&#34;&gt;博客方案
-&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;flowchart LR
-Obsidian --&amp;gt; File([Markdown])
-File --&amp;gt;|Hugo| Site(((HTML)))
-Site --&amp;gt;|rsync| Host
-&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-tpl&#34; data-lang=&#34;tpl&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-
-&lt;script src=&#34;https://all-in-obsidian.li3huo.com/mermaid.min.js&#34;&gt;&lt;/script&gt;
-
-
-
-
-&lt;p class=&#34;mermaid optional&#34;&gt;
-flowchart LR
-Obsidian --&gt; File([Markdown])
-File --&gt;|Hugo| Site(((HTML)))
-Site --&gt;|rsync| Host
-&lt;/p&gt;
-
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;wordpress-转-markdown&#34;&gt;Wordpress 转 Markdown
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/twotwo/wp2octopress&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/twotwo/wp2octopress&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;markdown-构建静态网站&#34;&gt;Markdown 构建静态网站
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/twotwo/hugo-template/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/twotwo/hugo-template/&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew install hugo &lt;span style=&#34;color:#75715e&#34;&gt;# Mac 上安装 hugo&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git clone --recurse-submodules https://github.com/twotwo/hugo-template/
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ hugo server &lt;span style=&#34;color:#75715e&#34;&gt;# 本地预览 http://localhost:1313/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ hugo &lt;span style=&#34;color:#75715e&#34;&gt;# 发布成静态网页：public 目录下&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Start building sites …
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo v0.125.7+extended darwin/amd64 BuildDate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;2024-05-08T14:46:24Z VendorInfo&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;brew
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                   |  EN
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-------------------+-------
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Pages            | &lt;span style=&#34;color:#ae81ff&#34;&gt;1888&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Paginator pages  |   &lt;span style=&#34;color:#ae81ff&#34;&gt;87&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Non-page files   |    &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Static files     |   &lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Processed images |    &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Aliases          |    &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Cleaned          |    &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Total in &lt;span style=&#34;color:#ae81ff&#34;&gt;2370&lt;/span&gt; ms
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;上传到服务器nginx&#34;&gt;上传到服务器(Nginx)
-&lt;/h2&gt;&lt;p&gt;把构建的静态内容上传到服务器的 Nginx 对应目录下&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ rsync -avP public/* &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;host&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;:/var/www/myblog.com/output/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;obsidian-编辑&#34;&gt;Obsidian 编辑
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://li3huo.com/photos/huge-create-vault.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;huge-create-vault.png&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://li3huo.com/photos/hugo-vault.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;hugo-vault.png&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;参考&#34;&gt;参考
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://lillianwho.com/posts/obsidian-hugo-cloudflare/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;obsidian 配合 hugo 发布博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.hacperme.com/posts/notes/hugo_notes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;弃用 wordpress，拥抱 hugo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
         </item>
         
