@@ -1,81 +1,118 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Obsidian on All in Obsidian</title>
-        <link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link>
-        <description>Recent content in Obsidian on All in Obsidian</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <managingEditor>li3huo (li3huo)</managingEditor>
-        <webMaster>li3huo (li3huo)</webMaster>
-        <lastBuildDate>Fri, 02 Feb 2024 04:14:54 -0800</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Getting Started with Hugo</title>
-        <link>https://all-in-obsidian.li3huo.com/posts/2024/hugo-getting-started/</link>
-        <pubDate>Fri, 02 Feb 2024 04:14:54 -0800</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>https://all-in-obsidian.li3huo.com/posts/2024/hugo-getting-started/</guid>
-        <description>
-            &lt;p&gt;Hugo &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/front-matter/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Front matter&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo
-&lt;/h2&gt;&lt;p&gt;Go to &lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo releases&lt;/a&gt; and download the
-appropriate version for your OS and architecture.&lt;/p&gt;
-&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
-&lt;p&gt;More complete instructions are available at &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/installing/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Install Hugo&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;step-2-build-the-docs&#34;&gt;Step 2. Build the Docs
-&lt;/h2&gt;&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
-you are reading right now.&lt;/p&gt;
-&lt;p&gt;Follow the following steps:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Clone the &lt;a class=&#34;link&#34; href=&#34;http://github.com/spf13/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Go into the repo&lt;/li&gt;
-&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
-&lt;li&gt;Open your browser to http://localhost:1313&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&amp;gt; 29 pages created
-&amp;gt; 0 tags index created
-&amp;gt; in 27 ms
-&amp;gt; Web Server is available at http://localhost:1313
-&amp;gt; Press ctrl+c to stop
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
-&lt;h2 id=&#34;step-3-change-the-docs-site&#34;&gt;Step 3. Change the docs site
-&lt;/h2&gt;&lt;p&gt;Stop the Hugo process by hitting Ctrl+C.&lt;/p&gt;
-&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&amp;gt; 29 pages created
-&amp;gt; 0 tags index created
-&amp;gt; in 27 ms
-&amp;gt; Web Server is available at http://localhost:1313
-&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&amp;gt; Press ctrl+c to stop
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Open your &lt;a class=&#34;link&#34; href=&#34;http://vim.spf13.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;favorite editor&lt;/a&gt; and change one of the source
-content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
-
-&amp;gt; 29 pages created
-&amp;gt; 0 tags index created
-&amp;gt; in 26 ms
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
-&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
-&lt;h2 id=&#34;step-4-have-fun&#34;&gt;Step 4. Have fun
-&lt;/h2&gt;&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Mon, 13 May 2024 20:25:25 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>markdown 博客方案 - obsidian + hugo</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link><pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid><description>
+&lt;p>2015 年底，弃用 Wordpress，使用 Markdown 写作博客。&lt;/p>
+&lt;p>Hugo 默认不支持 Ob 链接&lt;/p>
+&lt;blockquote>
+&lt;p>[[farewell-wordpress|再见，WordPress 补记]]&lt;/p>
+&lt;/blockquote>
+&lt;p>在 Hugo 上的写法&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/" >再见，WordPress 补记&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>2024 年个人知识库升级，all in obsidian，更新博客方案。&lt;/p>
+&lt;h2 id="博客方案">博客方案
+&lt;/h2>&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">flowchart LR
+Obsidian --&amp;gt; File([Markdown])
+File --&amp;gt;|Hugo| Site(((HTML)))
+Site --&amp;gt;|rsync| Host
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-tpl" data-lang="tpl">&lt;span style="display:flex;">&lt;span>
+&lt;script src="https://all-in-obsidian.li3huo.com/mermaid.min.js">&lt;/script>
+&lt;p class="mermaid optional">
+flowchart LR
+Obsidian --> File([Markdown])
+File -->|Hugo| Site(((HTML)))
+Site -->|rsync| Host
+&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="wordpress-转-markdown">Wordpress 转 Markdown
+&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/wp2octopress" target="_blank" rel="noopener"
+>https://github.com/twotwo/wp2octopress&lt;/a>&lt;/p>
+&lt;h2 id="markdown-构建静态网站">Markdown 构建静态网站
+&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/hugo-template/" target="_blank" rel="noopener"
+>https://github.com/twotwo/hugo-template/&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ brew install hugo &lt;span style="color:#75715e"># Mac 上安装 hugo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ hugo env
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo v0.125.7+extended darwin/amd64 BuildDate&lt;span style="color:#f92672">=&lt;/span>2024-05-08T14:46:24Z VendorInfo&lt;span style="color:#f92672">=&lt;/span>brew
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>GOOS&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;darwin&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>GOARCH&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;amd64&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>GOVERSION&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;go1.22.3&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>github.com/sass/libsass&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;3.6.5&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>github.com/webmproject/libwebp&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;v1.3.2&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ git clone --recurse-submodules https://github.com/twotwo/hugo-template/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ hugo server &lt;span style="color:#75715e"># 本地预览 http://localhost:1313/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ hugo &lt;span style="color:#75715e"># 发布成静态网页：public 目录下&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Start building sites …
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo v0.125.7+extended darwin/amd64 BuildDate&lt;span style="color:#f92672">=&lt;/span>2024-05-08T14:46:24Z VendorInfo&lt;span style="color:#f92672">=&lt;/span>brew
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> | EN
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-------------------+-------
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Pages | &lt;span style="color:#ae81ff">1888&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Paginator pages | &lt;span style="color:#ae81ff">87&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Non-page files | &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Static files | &lt;span style="color:#ae81ff">26&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Processed images | &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Aliases | &lt;span style="color:#ae81ff">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Cleaned | &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Total in &lt;span style="color:#ae81ff">2370&lt;/span> ms
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="上传到服务器nginx">上传到服务器(Nginx)
+&lt;/h2>&lt;p>把构建的静态内容上传到服务器的 Nginx 对应目录下&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ rsync -avP public/* &lt;span style="color:#e6db74">${&lt;/span>host&lt;span style="color:#e6db74">}&lt;/span>:/var/www/myblog.com/output/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="obsidian-编辑">Obsidian 编辑
+&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/huge-create-vault.png"
+loading="lazy"
+alt="huge-create-vault.png"
+>&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/hugo-vault.png"
+loading="lazy"
+alt="hugo-vault.png"
+>&lt;/p>
+&lt;h2 id="参考">参考
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://lillianwho.com/posts/obsidian-hugo-cloudflare/" target="_blank" rel="noopener"
+>obsidian 配合 hugo 发布博客&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://blog.hacperme.com/posts/notes/hugo_notes/" target="_blank" rel="noopener"
+>弃用 wordpress，拥抱 hugo&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>5 分钟向你推荐 Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</guid><description>
+&lt;p>Obsidian 是一款基于 markdown 格式的笔记软件，它的所有文件都保存在本地，确保了数据的安全性和隐私性。用户可以通过文件夹式管理来组织笔记，并且可以同时打开多个库（文件夹）来管理不同类型的内容。Obsidian 支持双向链接，可以生成关系图谱，帮助用户构建知识体系。此外，Obsidian 提供了丰富的插件，如日记插件、PPT 插件、思维导图插件等，用户可以根据自己的需求进行个性化配置。&lt;/p>
+&lt;p>如何向小伙伴们安利 Obsidian 呢，这里列出了以下几个问题。&lt;/p>
+&lt;h2 id="418-和-chatgpt-整理的问题">4.18 和 ChatGPT 整理的问题
+&lt;/h2>&lt;ol>
+&lt;li>What is Obsidian? &lt;a class="link" href="#/1/0" >&lt;!-- raw HTML omitted -->&lt;/a>
+&lt;ul>
+&lt;li>它与其他笔记应用相比有哪些独特之处？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>How to Get Started? &lt;a class="link" href="#/2" >&lt;!-- raw HTML omitted -->&lt;/a>
+&lt;ul>
+&lt;li> 对于新用户来说，设置和使用流程是怎样的？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Which Platforms are Supported? &lt;a class="link" href="#/3" >&lt;!-- raw HTML omitted -->&lt;/a>
+&lt;ul>
+&lt;li>是否可以在不同的操作系统或设备上使用？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Where is the Data Stored? &lt;a class="link" href="#/4" >&lt;!-- raw HTML omitted -->&lt;/a>
+&lt;ul>
+&lt;li>是否支持分享与协作编辑？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Is Obsidian Free?
+&lt;ul>
+&lt;li>个人用户使用是否需要付费？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="update-64-with-llama3-70b-8192">Update 6.4, with LLaMA3 70b-8192
+&lt;/h2>&lt;pre tabindex="0">&lt;code>我要向第一次接触 Obsidian 的朋友介绍这个软件。希望他们从现有的笔记软件转移到 ob 上；
+假设你使用过 Evernote 和 Notion，但刚刚接触 obsidian，你会提出哪些问题呢？给出最有可能的前 5 个问题并回答
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Q1: Obsidian 和其他笔记应用程序（如 Evernote 或 OneNote）有什么不同之处？&lt;/strong>&lt;/p>
+&lt;p>A1: Obsidian 的独特之处在于它的双向链接功能，这使您可以创建一个交叉连接的笔记网络。另外，Obsidian 还具有高度的自定义性和灵活性，允许您根据特定的需求和工作流程来调整应用程序。&lt;/p>
+&lt;p>&lt;strong>Q2: 我如何在 Obsidian 中组织我的笔记？是像传统的文件夹结构一样吗？&lt;/strong>&lt;/p>
+&lt;p>A2: Obsidian 使用非层次结构的图形结构，这意味着您不需要担心创建文件夹或以一种僵固的方式分类您的笔记。相反，您可以创建笔记并将它们链接起来，创建一个交叉连接的想法网络。您也可以使用标签、关键词和其他元数据来帮助您找到和过滤您的笔记。&lt;/p>
+&lt;p>&lt;strong>Q3: 我如何在 Obsidian 中创建笔记之间的链接？是否类似于创建超链接？&lt;/strong>&lt;/p>
+&lt;p>A3: 是的，在 Obsidian 中创建笔记之间的链接类似于创建超链接。您可以使用双括号 &lt;code>[[&lt;/code> 和 &lt;code>]]&lt;/code> 将笔记标题括起来，从而创建到该笔记的链接。您也可以使用编辑器中的“链接”按钮来创建到笔记的链接。此外，Obsidian 还具有自动完成功能，可以在您输入时建议链接到其他笔记。&lt;/p>
+&lt;p>&lt;strong>Q4: 我可以使用 Obsidian 进行协作工作或与他人共享笔记吗？&lt;/strong>&lt;/p>
+&lt;p>A4: 是的，Obsidian 支持协作工作和笔记共享。您可以创建一个“金库”，这是一个共享的笔记仓库，并邀请他人编辑或查看您的笔记。您也可以使用 Obsidian 的“发布”功能将单个笔记或笔记集合作为网页共享。&lt;/p>
+&lt;p>&lt;strong>Q5: Obsidian 是否可以在移动设备上使用，还是只能在桌面电脑上使用？&lt;/strong>&lt;/p>
+&lt;p>A5: 目前，Obsidian 可以作为桌面应用程序在 Windows、macOS 和 Linux 上使用。然而，Obsidian 团队正在开发移动应用程序以便在 Android 和 iOS 设备上使用。在那之前，您可以通过 Obsidian 的 web 界面在移动设备上访问和编辑您的笔记。&lt;/p></description></item></channel></rss>
