@@ -30,17 +30,9 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="update-64-with-llama3-70b-8192">Update 6.4, with LLaMA3 70b-8192
-&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">我要向第一次接触 Obsidian 的朋友介绍这个软件。希望他们从现有的笔记软件转移到 ob 上；
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">我要向第一次接触 Obsidian 的朋友介绍这个软件。希望他们从现有的笔记软件转移到 ob 上；
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">假设你使用过 Evernote 和 Notion，但刚刚接触 obsidian，你会提出哪些问题呢？给出最有可能的前 5 个问题并回答
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>Q1: Obsidian 和其他笔记应用程序（如 Evernote 或 OneNote）有什么不同之处？&lt;/strong>&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Q1: Obsidian 和其他笔记应用程序（如 Evernote 或 OneNote）有什么不同之处？&lt;/strong>&lt;/p>
 &lt;p>A1: Obsidian 的独特之处在于它的双向链接功能，这使您可以创建一个交叉连接的笔记网络。另外，Obsidian 还具有高度的自定义性和灵活性，允许您根据特定的需求和工作流程来调整应用程序。&lt;/p>
 &lt;p>&lt;strong>Q2: 我如何在 Obsidian 中组织我的笔记？是像传统的文件夹结构一样吗？&lt;/strong>&lt;/p>
 &lt;p>A2: Obsidian 使用非层次结构的图形结构，这意味着您不需要担心创建文件夹或以一种僵固的方式分类您的笔记。相反，您可以创建笔记并将它们链接起来，创建一个交叉连接的想法网络。您也可以使用标签、关键词和其他元数据来帮助您找到和过滤您的笔记。&lt;/p>

@@ -21,21 +21,11 @@
 >https://github.com/jekyll/jekyll-import/blob/v0.10.0/lib/jekyll-import/importers/wordpress.rb&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="构建-pelican-项目">构建 Pelican 项目
-&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ pelican mkdir mysite &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nb">cd&lt;/span> mysite
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ pelican mkdir mysite &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nb">cd&lt;/span> mysite
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ mysite pelican-quickstart &lt;span class="c1"># 按提示完成快速初始化--主要是写publishconf.py&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ mysite pelican content &lt;span class="c1"># 在output生成静态站点&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ mysite &lt;span class="nb">cd&lt;/span> output &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> python -m SimpleHTTPServer &lt;span class="c1"># 浏览器访问http://localhost:8000/&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="rsync-同步到服务器">rsync 同步到服务器
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="rsync-同步到服务器">rsync 同步到服务器
 &lt;/h3>&lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="http://docs.getpelican.com/en/3.6.3/quickstart.htm" target="_blank" rel="noopener"

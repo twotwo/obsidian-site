@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Mon, 13 May 2024 20:25:25 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>markdown 博客方案 - obsidian + hugo</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link><pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
+&lt;p>&lt;a class="link" href="https://github.com/twotwo/obsidian-site" target="_blank" rel="noopener"
+>https://github.com/twotwo/obsidian-site&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian-site.svg"
+loading="lazy"
+alt="在手机、平板和电脑上的效果"
+>&lt;/p>
+&lt;p>用 Excalidraw 合成了一下页面在三端上的效果，粗看还行。&lt;/p></description></item><item><title>markdown 博客方案 - obsidian + hugo</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link><pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid><description>
 &lt;p>2015 年底，弃用 Wordpress，使用 Markdown 写作博客。&lt;/p>
 &lt;p>Hugo 默认不支持 Ob 链接&lt;/p>
 &lt;blockquote>
@@ -10,26 +17,13 @@
 &lt;/blockquote>
 &lt;p>2024 年个人知识库升级，all in obsidian，更新博客方案。&lt;/p>
 &lt;h2 id="博客方案">博客方案
-&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">flowchart LR
+&lt;/h2>&lt;p>Render In Obsidian&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">flowchart LR
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Obsidian --&amp;gt; File([Markdown])
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File --&amp;gt;|Hugo| Site(((HTML)))
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Site --&amp;gt;|rsync| Host
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-tpl" data-lang="tpl">&lt;span class="line">&lt;span class="cl">&lt;span class="x">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Render By Hugo Shortcode&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-tpl" data-lang="tpl">&lt;span class="line">&lt;span class="cl">&lt;span class="x">
 &lt;script src="https://all-in-obsidian.li3huo.com/mermaid.min.js">&lt;/script>
 &lt;p class="mermaid optional">
 flowchart LR
@@ -37,45 +31,29 @@ Obsidian --> File([Markdown])
 File -->|Hugo| Site(((HTML)))
 Site -->|rsync| Host
 &lt;/p>
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="wordpress-转-markdown">Wordpress 转 Markdown
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="hugo-themes">Hugo Themes
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-papermod/" >Hugo PaperMod 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/" >Hugo book 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="其他资源">其他资源
+&lt;/h3>&lt;p>开源字体&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/lxgw/LxgwWenKai" target="_blank" rel="noopener"
+>霞鹜文楷&lt;/a>，基于 Klee One 日文开源字体补全简繁常用字的一款开源字体。&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/TrionesType/zhuque" target="_blank" rel="noopener"
+>朱雀仿宋&lt;/a>改刻自民国活字「南宋」的开源字体。&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/atelier-anchor/smiley-sans" target="_blank" rel="noopener"
+>得意黑&lt;/a>，一款在人文观感和几何特征中寻找视觉平衡的现代窄斜体。&lt;/li>
+&lt;/ul>
+&lt;h2 id="wordpress-转-markdown">Wordpress 转 Markdown
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/wp2octopress" target="_blank" rel="noopener"
 >https://github.com/twotwo/wp2octopress&lt;/a>&lt;/p>
 &lt;h2 id="markdown-构建静态网站">Markdown 构建静态网站
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/hugo-template/" target="_blank" rel="noopener"
 >https://github.com/twotwo/hugo-template/&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ brew install hugo &lt;span class="c1"># Mac 上安装 hugo&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ brew install hugo &lt;span class="c1"># Mac 上安装 hugo&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ hugo env
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.125.7+extended darwin/amd64 &lt;span class="nv">BuildDate&lt;/span>&lt;span class="o">=&lt;/span>2024-05-08T14:46:24Z &lt;span class="nv">VendorInfo&lt;/span>&lt;span class="o">=&lt;/span>brew
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOOS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;darwin&amp;#34;&lt;/span>
@@ -101,19 +79,10 @@ Site -->|rsync| Host
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Cleaned &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total in &lt;span class="m">2370&lt;/span> ms
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="上传到服务器nginx">上传到服务器(Nginx)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="上传到服务器nginx">上传到服务器(Nginx)
 &lt;/h2>&lt;p>把构建的静态内容上传到服务器的 Nginx 对应目录下&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ rsync -avP public/* &lt;span class="si">${&lt;/span>&lt;span class="nv">host&lt;/span>&lt;span class="si">}&lt;/span>:/var/www/myblog.com/output/
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="obsidian-编辑">Obsidian 编辑
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ rsync -avP public/* &lt;span class="si">${&lt;/span>&lt;span class="nv">host&lt;/span>&lt;span class="si">}&lt;/span>:/var/www/myblog.com/output/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="obsidian-编辑">Obsidian 编辑
 &lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/huge-create-vault.png"
 loading="lazy"
 alt="huge-create-vault.png"
@@ -160,17 +129,9 @@ alt="hugo-vault.png"
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="update-64-with-llama3-70b-8192">Update 6.4, with LLaMA3 70b-8192
-&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">我要向第一次接触 Obsidian 的朋友介绍这个软件。希望他们从现有的笔记软件转移到 ob 上；
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">我要向第一次接触 Obsidian 的朋友介绍这个软件。希望他们从现有的笔记软件转移到 ob 上；
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">假设你使用过 Evernote 和 Notion，但刚刚接触 obsidian，你会提出哪些问题呢？给出最有可能的前 5 个问题并回答
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>Q1: Obsidian 和其他笔记应用程序（如 Evernote 或 OneNote）有什么不同之处？&lt;/strong>&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Q1: Obsidian 和其他笔记应用程序（如 Evernote 或 OneNote）有什么不同之处？&lt;/strong>&lt;/p>
 &lt;p>A1: Obsidian 的独特之处在于它的双向链接功能，这使您可以创建一个交叉连接的笔记网络。另外，Obsidian 还具有高度的自定义性和灵活性，允许您根据特定的需求和工作流程来调整应用程序。&lt;/p>
 &lt;p>&lt;strong>Q2: 我如何在 Obsidian 中组织我的笔记？是像传统的文件夹结构一样吗？&lt;/strong>&lt;/p>
 &lt;p>A2: Obsidian 使用非层次结构的图形结构，这意味着您不需要担心创建文件夹或以一种僵固的方式分类您的笔记。相反，您可以创建笔记并将它们链接起来，创建一个交叉连接的想法网络。您也可以使用标签、关键词和其他元数据来帮助您找到和过滤您的笔记。&lt;/p>

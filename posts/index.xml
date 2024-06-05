@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/posts/</link><description>Recent content in Posts on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Mon, 13 May 2024 20:25:25 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>👋 《再见，WordPress 补记》</title><link>https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/</link><pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/posts/</link><description>Recent content in Posts on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>👋 《再见，WordPress 补记》</title><link>https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/</link><pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/</guid><description>
 &lt;h2 id="原因与方案">原因与方案
 &lt;/h2>&lt;p>放弃 WordPress 的最主要原因是希望降低维护成本&lt;/p>
 &lt;ul>
@@ -21,21 +21,11 @@
 >https://github.com/jekyll/jekyll-import/blob/v0.10.0/lib/jekyll-import/importers/wordpress.rb&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="构建-pelican-项目">构建 Pelican 项目
-&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ pelican mkdir mysite &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nb">cd&lt;/span> mysite
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ pelican mkdir mysite &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nb">cd&lt;/span> mysite
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ mysite pelican-quickstart &lt;span class="c1"># 按提示完成快速初始化--主要是写publishconf.py&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ mysite pelican content &lt;span class="c1"># 在output生成静态站点&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ mysite &lt;span class="nb">cd&lt;/span> output &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> python -m SimpleHTTPServer &lt;span class="c1"># 浏览器访问http://localhost:8000/&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="rsync-同步到服务器">rsync 同步到服务器
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="rsync-同步到服务器">rsync 同步到服务器
 &lt;/h3>&lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="http://docs.getpelican.com/en/3.6.3/quickstart.htm" target="_blank" rel="noopener"
@@ -46,7 +36,14 @@
 >http://pelican-docs-zh-cn.readthedocs.io/en/latest/&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="http://haridas.in/wordpress-blog-migrated-to-pelican.html" target="_blank" rel="noopener"
 >http://haridas.in/wordpress-blog-migrated-to-pelican.html&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>markdown 博客方案 - obsidian + hugo</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link><pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid><description>
+&lt;/ul></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
+&lt;p>&lt;a class="link" href="https://github.com/twotwo/obsidian-site" target="_blank" rel="noopener"
+>https://github.com/twotwo/obsidian-site&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian-site.svg"
+loading="lazy"
+alt="在手机、平板和电脑上的效果"
+>&lt;/p>
+&lt;p>用 Excalidraw 合成了一下页面在三端上的效果，粗看还行。&lt;/p></description></item><item><title>markdown 博客方案 - obsidian + hugo</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link><pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid><description>
 &lt;p>2015 年底，弃用 Wordpress，使用 Markdown 写作博客。&lt;/p>
 &lt;p>Hugo 默认不支持 Ob 链接&lt;/p>
 &lt;blockquote>
@@ -58,26 +55,13 @@
 &lt;/blockquote>
 &lt;p>2024 年个人知识库升级，all in obsidian，更新博客方案。&lt;/p>
 &lt;h2 id="博客方案">博客方案
-&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">flowchart LR
+&lt;/h2>&lt;p>Render In Obsidian&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">flowchart LR
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Obsidian --&amp;gt; File([Markdown])
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File --&amp;gt;|Hugo| Site(((HTML)))
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Site --&amp;gt;|rsync| Host
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-tpl" data-lang="tpl">&lt;span class="line">&lt;span class="cl">&lt;span class="x">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Render By Hugo Shortcode&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-tpl" data-lang="tpl">&lt;span class="line">&lt;span class="cl">&lt;span class="x">
 &lt;script src="https://all-in-obsidian.li3huo.com/mermaid.min.js">&lt;/script>
 &lt;p class="mermaid optional">
 flowchart LR
@@ -85,45 +69,29 @@ Obsidian --> File([Markdown])
 File -->|Hugo| Site(((HTML)))
 Site -->|rsync| Host
 &lt;/p>
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="wordpress-转-markdown">Wordpress 转 Markdown
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="hugo-themes">Hugo Themes
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-papermod/" >Hugo PaperMod 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/" >Hugo book 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="其他资源">其他资源
+&lt;/h3>&lt;p>开源字体&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/lxgw/LxgwWenKai" target="_blank" rel="noopener"
+>霞鹜文楷&lt;/a>，基于 Klee One 日文开源字体补全简繁常用字的一款开源字体。&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/TrionesType/zhuque" target="_blank" rel="noopener"
+>朱雀仿宋&lt;/a>改刻自民国活字「南宋」的开源字体。&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/atelier-anchor/smiley-sans" target="_blank" rel="noopener"
+>得意黑&lt;/a>，一款在人文观感和几何特征中寻找视觉平衡的现代窄斜体。&lt;/li>
+&lt;/ul>
+&lt;h2 id="wordpress-转-markdown">Wordpress 转 Markdown
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/wp2octopress" target="_blank" rel="noopener"
 >https://github.com/twotwo/wp2octopress&lt;/a>&lt;/p>
 &lt;h2 id="markdown-构建静态网站">Markdown 构建静态网站
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/hugo-template/" target="_blank" rel="noopener"
 >https://github.com/twotwo/hugo-template/&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ brew install hugo &lt;span class="c1"># Mac 上安装 hugo&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ brew install hugo &lt;span class="c1"># Mac 上安装 hugo&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ hugo env
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.125.7+extended darwin/amd64 &lt;span class="nv">BuildDate&lt;/span>&lt;span class="o">=&lt;/span>2024-05-08T14:46:24Z &lt;span class="nv">VendorInfo&lt;/span>&lt;span class="o">=&lt;/span>brew
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOOS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;darwin&amp;#34;&lt;/span>
@@ -149,19 +117,10 @@ Site -->|rsync| Host
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Cleaned &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total in &lt;span class="m">2370&lt;/span> ms
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="上传到服务器nginx">上传到服务器(Nginx)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="上传到服务器nginx">上传到服务器(Nginx)
 &lt;/h2>&lt;p>把构建的静态内容上传到服务器的 Nginx 对应目录下&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ rsync -avP public/* &lt;span class="si">${&lt;/span>&lt;span class="nv">host&lt;/span>&lt;span class="si">}&lt;/span>:/var/www/myblog.com/output/
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="obsidian-编辑">Obsidian 编辑
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ rsync -avP public/* &lt;span class="si">${&lt;/span>&lt;span class="nv">host&lt;/span>&lt;span class="si">}&lt;/span>:/var/www/myblog.com/output/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="obsidian-编辑">Obsidian 编辑
 &lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/huge-create-vault.png"
 loading="lazy"
 alt="huge-create-vault.png"
