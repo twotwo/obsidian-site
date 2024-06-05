@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidians on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/</link><description>Recent content in Obsidians on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>5 分钟向你推荐 Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</guid><description>
 &lt;p>Obsidian 是一款基于 markdown 格式的笔记软件，它的所有文件都保存在本地，确保了数据的安全性和隐私性。用户可以通过文件夹式管理来组织笔记，并且可以同时打开多个库（文件夹）来管理不同类型的内容。Obsidian 支持双向链接，可以生成关系图谱，帮助用户构建知识体系。此外，Obsidian 提供了丰富的插件，如日记插件、PPT 插件、思维导图插件等，用户可以根据自己的需求进行个性化配置。&lt;/p>
 &lt;p>如何向小伙伴们安利 Obsidian 呢，这里列出了以下几个问题。&lt;/p>
-&lt;h2 id="418-和-chatgpt-整理的问题">4.18 和 ChatGPT 整理的问题
+&lt;h2 id="418-用-chatgpt-整理的问题">4.18 用 ChatGPT 整理的问题
 &lt;/h2>&lt;ol>
-&lt;li>What is Obsidian? &lt;a class="link" href="#/1/0" >&lt;!-- raw HTML omitted -->&lt;/a>
+&lt;li>What is Obsidian? &lt;a class="link" href="#/1/0" >&lt;i class="fas fa-book-open" />&lt;/a>
 &lt;ul>
 &lt;li>它与其他笔记应用相比有哪些独特之处？&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>How to Get Started? &lt;a class="link" href="#/2" >&lt;!-- raw HTML omitted -->&lt;/a>
+&lt;li>How to Get Started? &lt;a class="link" href="#/2" >&lt;i class="fas fa-hand-pointer" />&lt;/a>
 &lt;ul>
 &lt;li> 对于新用户来说，设置和使用流程是怎样的？&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Which Platforms are Supported? &lt;a class="link" href="#/3" >&lt;!-- raw HTML omitted -->&lt;/a>
+&lt;li>Which Platforms are Supported? &lt;a class="link" href="#/3" >&lt;i class="fas fa-play" />&lt;/a>
 &lt;ul>
 &lt;li>是否可以在不同的操作系统或设备上使用？&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Where is the Data Stored? &lt;a class="link" href="#/4" >&lt;!-- raw HTML omitted -->&lt;/a>
+&lt;li>Where is the Data Stored? &lt;a class="link" href="#/4" >&lt;i class="fas fa-database" />&lt;/a>
 &lt;ul>
 &lt;li>是否支持分享与协作编辑？&lt;/li>
 &lt;/ul>
@@ -30,9 +30,17 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="update-64-with-llama3-70b-8192">Update 6.4, with LLaMA3 70b-8192
-&lt;/h2>&lt;pre tabindex="0">&lt;code>我要向第一次接触 Obsidian 的朋友介绍这个软件。希望他们从现有的笔记软件转移到 ob 上；
-假设你使用过 Evernote 和 Notion，但刚刚接触 obsidian，你会提出哪些问题呢？给出最有可能的前 5 个问题并回答
-&lt;/code>&lt;/pre>&lt;p>&lt;strong>Q1: Obsidian 和其他笔记应用程序（如 Evernote 或 OneNote）有什么不同之处？&lt;/strong>&lt;/p>
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">我要向第一次接触 Obsidian 的朋友介绍这个软件。希望他们从现有的笔记软件转移到 ob 上；
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">假设你使用过 Evernote 和 Notion，但刚刚接触 obsidian，你会提出哪些问题呢？给出最有可能的前 5 个问题并回答
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Q1: Obsidian 和其他笔记应用程序（如 Evernote 或 OneNote）有什么不同之处？&lt;/strong>&lt;/p>
 &lt;p>A1: Obsidian 的独特之处在于它的双向链接功能，这使您可以创建一个交叉连接的笔记网络。另外，Obsidian 还具有高度的自定义性和灵活性，允许您根据特定的需求和工作流程来调整应用程序。&lt;/p>
 &lt;p>&lt;strong>Q2: 我如何在 Obsidian 中组织我的笔记？是像传统的文件夹结构一样吗？&lt;/strong>&lt;/p>
 &lt;p>A2: Obsidian 使用非层次结构的图形结构，这意味着您不需要担心创建文件夹或以一种僵固的方式分类您的笔记。相反，您可以创建笔记并将它们链接起来，创建一个交叉连接的想法网络。您也可以使用标签、关键词和其他元数据来帮助您找到和过滤您的笔记。&lt;/p>
@@ -41,4 +49,39 @@
 &lt;p>&lt;strong>Q4: 我可以使用 Obsidian 进行协作工作或与他人共享笔记吗？&lt;/strong>&lt;/p>
 &lt;p>A4: 是的，Obsidian 支持协作工作和笔记共享。您可以创建一个“金库”，这是一个共享的笔记仓库，并邀请他人编辑或查看您的笔记。您也可以使用 Obsidian 的“发布”功能将单个笔记或笔记集合作为网页共享。&lt;/p>
 &lt;p>&lt;strong>Q5: Obsidian 是否可以在移动设备上使用，还是只能在桌面电脑上使用？&lt;/strong>&lt;/p>
-&lt;p>A5: 目前，Obsidian 可以作为桌面应用程序在 Windows、macOS 和 Linux 上使用。然而，Obsidian 团队正在开发移动应用程序以便在 Android 和 iOS 设备上使用。在那之前，您可以通过 Obsidian 的 web 界面在移动设备上访问和编辑您的笔记。&lt;/p></description></item></channel></rss>
+&lt;p>A5: 目前，Obsidian 可以作为桌面应用程序在 Windows、macOS 和 Linux 上使用。然而，Obsidian 团队正在开发移动应用程序以便在 Android 和 iOS 设备上使用。在那之前，您可以通过 Obsidian 的 web 界面在移动设备上访问和编辑您的笔记。&lt;/p></description></item><item><title>Obsidian 笔记综述</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-review/</link><pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-review/</guid><description>
+&lt;p>上手，从 2023 年底，使用社区插件 &lt;code>Importer&lt;/code>，把 Notion 上的近 900 篇笔记迁移到 OB；从此就开始了边用、边学、边分享的快乐过程。&lt;/p>
+&lt;h2 id="应用场景篇">应用场景篇
+&lt;/h2>&lt;ol>
+&lt;li>快速创建闪念笔记，使用 Templater 插件 23/12/17&lt;/li>
+&lt;li>做提案，使用 advanced-slides 插件 23/12/23&lt;/li>
+&lt;li>做主题阅读笔记，使用 dataview 插件 23/12/29&lt;/li>
+&lt;li>做脑图，使用 Excalidraw 插件 24/1/5&lt;/li>
+&lt;li>健康打卡，使用 Habit Tracker + Templater 插件 24/2/23&lt;/li>
+&lt;li>周期笔记的管理 24/3/31&lt;/li>
+&lt;/ol>
+&lt;h2 id="插件篇">插件篇
+&lt;/h2>&lt;p>有一些插件，是值得好好学学的，因为回报会更大。&lt;/p>
+&lt;ol>
+&lt;li>Advanced Slides 边用边学，定制化最高的一个插件&lt;/li>
+&lt;li>Excalidraw 系列 24/1/12&lt;/li>
+&lt;li>Templater 一个离不开的插件&lt;/li>
+&lt;li>Dataview&lt;/li>
+&lt;li>QuickAdd&lt;/li>
+&lt;/ol>
+&lt;p>有一些插件，在特定应用场景下很有用，有类似需求的时候需要了解一下。&lt;/p>
+&lt;ol>
+&lt;li>Habit Tracker 月度记录&lt;/li>
+&lt;li>Dice Roller 内容随机访问&lt;/li>
+&lt;/ol>
+&lt;p>还有一些插件，已经有好的替代了，一定要谨慎使用。&lt;/p>
+&lt;ol>
+&lt;li>markmind 脑图渲染，编辑功能有缺陷。更推荐用 excalidraw&lt;/li>
+&lt;li>Buttons 有缺陷，用 QuickAdd 替换&lt;/li>
+&lt;/ol>
+&lt;h2 id="知识库方法论篇">知识库方法论篇
+&lt;/h2>&lt;p>目标、理论与实践，三者要统一。&lt;/p>
+&lt;ol>
+&lt;li>笔记的组织 24/3/9&lt;/li>
+&lt;li>知识的提炼 24/3/16&lt;/li>
+&lt;/ol></description></item></channel></rss>

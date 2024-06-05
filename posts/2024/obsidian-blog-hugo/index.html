@@ -5,16 +5,21 @@
 <span>About</span></a></li><li><a href=/menu/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
 <span>Archives</span></a></li><li><a href=/menu/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
 <span>Search</span></a></li><li><a href=/menu/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
-<span>Links</span></a></li><li><a href=/obsidian/obsidian-101/><span>5 分钟向你推荐 Obsidian</span></a></li><li><a href><span>个人网站</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>Links</span></a></li><li><a href=/obsidian/obsidian-101/><span>5 分钟向你推荐 Obsidian</span></a></li><li><a href=/obsidian/obsidian-review/><span>Obsidian 笔记综述</span></a></li><li><a href><span>个人网站</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
-<span>Dark Mode</span></li></ol></li></ol></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/Obsidian/>Obsidian
+<span>Dark Mode</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">Table of contents</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#博客方案>博客方案</a></li><li><a href=#wordpress-转-markdown>Wordpress 转 Markdown</a></li><li><a href=#markdown-构建静态网站>Markdown 构建静态网站</a></li><li><a href=#上传到服务器nginx>上传到服务器(Nginx)</a></li><li><a href=#obsidian-编辑>Obsidian 编辑</a></li><li><a href=#参考>参考</a></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category><a href=/categories/Obsidian/>Obsidian
 </a><a href=/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/>个人网站</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/posts/2024/obsidian-blog-hugo/>markdown 博客方案 - obsidian + hugo</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
 <time class=article-time--published>2024-05-13</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
-<time class=article-time--reading>1 minute read</time></div></footer></div></header><section class=article-content><p>2015 年底，弃用 Wordpress，使用 Markdown 写作博客。</p><p>Hugo 默认不支持 Ob 链接</p><blockquote><p>[[farewell-wordpress|再见，WordPress 补记]]</p></blockquote><p>在 Hugo 上的写法</p><blockquote><p><a class=link href=https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/>再见，WordPress 补记</a></p></blockquote><p>2024 年个人知识库升级，all in obsidian，更新博客方案。</p><h2 id=博客方案>博客方案</h2><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
-Obsidian --&gt; File([Markdown])
-File --&gt;|Hugo| Site(((HTML)))
-Site --&gt;|rsync| Host
-</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-tpl data-lang=tpl><span style=display:flex><span>
+<time class=article-time--reading>1 minute read</time></div></footer></div></header><section class=article-content><p>2015 年底，弃用 Wordpress，使用 Markdown 写作博客。</p><p>Hugo 默认不支持 Ob 链接</p><blockquote><p>[[farewell-wordpress|再见，WordPress 补记]]</p></blockquote><p>在 Hugo 上的写法</p><blockquote><p><a class=link href=https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/>再见，WordPress 补记</a></p></blockquote><p>2024 年个人知识库升级，all in obsidian，更新博客方案。</p><h2 id=博客方案>博客方案</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>Obsidian --&gt; File([Markdown])
+</span></span><span class=line><span class=cl>File --&gt;|Hugo| Site(((HTML)))
+</span></span><span class=line><span class=cl>Site --&gt;|rsync| Host
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-tpl data-lang=tpl><span class=line><span class=cl><span class=x>
 
 <script src=/mermaid.min.js></script>
 
@@ -28,34 +33,61 @@ File -->|Hugo| Site(((HTML)))
 Site -->|rsync| Host
 </p>
 
-</span></span></code></pre></div><h2 id=wordpress-转-markdown>Wordpress 转 Markdown</h2><p><a class=link href=https://github.com/twotwo/wp2octopress target=_blank rel=noopener>https://github.com/twotwo/wp2octopress</a></p><h2 id=markdown-构建静态网站>Markdown 构建静态网站</h2><p><a class=link href=https://github.com/twotwo/hugo-template/ target=_blank rel=noopener>https://github.com/twotwo/hugo-template/</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ brew install hugo <span style=color:#75715e># Mac 上安装 hugo</span>
-</span></span><span style=display:flex><span>$ hugo env
-</span></span><span style=display:flex><span>hugo v0.125.7+extended darwin/amd64 BuildDate<span style=color:#f92672>=</span>2024-05-08T14:46:24Z VendorInfo<span style=color:#f92672>=</span>brew
-</span></span><span style=display:flex><span>GOOS<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;darwin&#34;</span>
-</span></span><span style=display:flex><span>GOARCH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;amd64&#34;</span>
-</span></span><span style=display:flex><span>GOVERSION<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;go1.22.3&#34;</span>
-</span></span><span style=display:flex><span>github.com/sass/libsass<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;3.6.5&#34;</span>
-</span></span><span style=display:flex><span>github.com/webmproject/libwebp<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;v1.3.2&#34;</span>
-</span></span><span style=display:flex><span>$ git clone --recurse-submodules https://github.com/twotwo/hugo-template/
-</span></span><span style=display:flex><span>$ hugo server <span style=color:#75715e># 本地预览 http://localhost:1313/</span>
-</span></span><span style=display:flex><span>$ hugo <span style=color:#75715e># 发布成静态网页：public 目录下</span>
-</span></span><span style=display:flex><span>Start building sites …
-</span></span><span style=display:flex><span>hugo v0.125.7+extended darwin/amd64 BuildDate<span style=color:#f92672>=</span>2024-05-08T14:46:24Z VendorInfo<span style=color:#f92672>=</span>brew
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>                   |  EN
-</span></span><span style=display:flex><span>-------------------+-------
-</span></span><span style=display:flex><span>  Pages            | <span style=color:#ae81ff>1888</span>
-</span></span><span style=display:flex><span>  Paginator pages  |   <span style=color:#ae81ff>87</span>
-</span></span><span style=display:flex><span>  Non-page files   |    <span style=color:#ae81ff>0</span>
-</span></span><span style=display:flex><span>  Static files     |   <span style=color:#ae81ff>26</span>
-</span></span><span style=display:flex><span>  Processed images |    <span style=color:#ae81ff>0</span>
-</span></span><span style=display:flex><span>  Aliases          |    <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span>  Cleaned          |    <span style=color:#ae81ff>0</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>Total in <span style=color:#ae81ff>2370</span> ms
-</span></span></code></pre></div><h2 id=上传到服务器nginx>上传到服务器(Nginx)</h2><p>把构建的静态内容上传到服务器的 Nginx 对应目录下</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ rsync -avP public/* <span style=color:#e6db74>${</span>host<span style=color:#e6db74>}</span>:/var/www/myblog.com/output/
-</span></span></code></pre></div><h2 id=obsidian-编辑>Obsidian 编辑</h2><p><img src=/photos/huge-create-vault.png loading=lazy alt=huge-create-vault.png></p><p><img src=/photos/hugo-vault.png loading=lazy alt=hugo-vault.png></p><h2 id=参考>参考</h2><ul><li><a class=link href=https://lillianwho.com/posts/obsidian-hugo-cloudflare/ target=_blank rel=noopener>obsidian 配合 hugo 发布博客</a></li><li><a class=link href=https://blog.hacperme.com/posts/notes/hugo_notes/ target=_blank rel=noopener>弃用 wordpress，拥抱 hugo</a></li></ul></section><footer class=article-footer><section class=article-tags><a href=/tags/hugo/>Hugo</a></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=wordpress-转-markdown>Wordpress 转 Markdown</h2><p><a class=link href=https://github.com/twotwo/wp2octopress target=_blank rel=noopener>https://github.com/twotwo/wp2octopress</a></p><h2 id=markdown-构建静态网站>Markdown 构建静态网站</h2><p><a class=link href=https://github.com/twotwo/hugo-template/ target=_blank rel=noopener>https://github.com/twotwo/hugo-template/</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ brew install hugo <span class=c1># Mac 上安装 hugo</span>
+</span></span><span class=line><span class=cl>$ hugo env
+</span></span><span class=line><span class=cl>hugo v0.125.7+extended darwin/amd64 <span class=nv>BuildDate</span><span class=o>=</span>2024-05-08T14:46:24Z <span class=nv>VendorInfo</span><span class=o>=</span>brew
+</span></span><span class=line><span class=cl><span class=nv>GOOS</span><span class=o>=</span><span class=s2>&#34;darwin&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>GOARCH</span><span class=o>=</span><span class=s2>&#34;amd64&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>GOVERSION</span><span class=o>=</span><span class=s2>&#34;go1.22.3&#34;</span>
+</span></span><span class=line><span class=cl>github.com/sass/libsass<span class=o>=</span><span class=s2>&#34;3.6.5&#34;</span>
+</span></span><span class=line><span class=cl>github.com/webmproject/libwebp<span class=o>=</span><span class=s2>&#34;v1.3.2&#34;</span>
+</span></span><span class=line><span class=cl>$ git clone --recurse-submodules https://github.com/twotwo/hugo-template/
+</span></span><span class=line><span class=cl>$ hugo server <span class=c1># 本地预览 http://localhost:1313/</span>
+</span></span><span class=line><span class=cl>$ hugo <span class=c1># 发布成静态网页：public 目录下</span>
+</span></span><span class=line><span class=cl>Start building sites …
+</span></span><span class=line><span class=cl>hugo v0.125.7+extended darwin/amd64 <span class=nv>BuildDate</span><span class=o>=</span>2024-05-08T14:46:24Z <span class=nv>VendorInfo</span><span class=o>=</span>brew
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                   <span class=p>|</span>  EN
+</span></span><span class=line><span class=cl>-------------------+-------
+</span></span><span class=line><span class=cl>  Pages            <span class=p>|</span> <span class=m>1888</span>
+</span></span><span class=line><span class=cl>  Paginator pages  <span class=p>|</span>   <span class=m>87</span>
+</span></span><span class=line><span class=cl>  Non-page files   <span class=p>|</span>    <span class=m>0</span>
+</span></span><span class=line><span class=cl>  Static files     <span class=p>|</span>   <span class=m>26</span>
+</span></span><span class=line><span class=cl>  Processed images <span class=p>|</span>    <span class=m>0</span>
+</span></span><span class=line><span class=cl>  Aliases          <span class=p>|</span>    <span class=m>2</span>
+</span></span><span class=line><span class=cl>  Cleaned          <span class=p>|</span>    <span class=m>0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Total in <span class=m>2370</span> ms
+</span></span></code></pre></td></tr></table></div></div><h2 id=上传到服务器nginx>上传到服务器(Nginx)</h2><p>把构建的静态内容上传到服务器的 Nginx 对应目录下</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ rsync -avP public/* <span class=si>${</span><span class=nv>host</span><span class=si>}</span>:/var/www/myblog.com/output/
+</span></span></code></pre></td></tr></table></div></div><h2 id=obsidian-编辑>Obsidian 编辑</h2><p><img src=/photos/huge-create-vault.png loading=lazy alt=huge-create-vault.png></p><p><img src=/photos/hugo-vault.png loading=lazy alt=hugo-vault.png></p><h2 id=参考>参考</h2><ul><li><a class=link href=https://lillianwho.com/posts/obsidian-hugo-cloudflare/ target=_blank rel=noopener>obsidian 配合 hugo 发布博客</a></li><li><a class=link href=https://blog.hacperme.com/posts/notes/hugo_notes/ target=_blank rel=noopener>弃用 wordpress，拥抱 hugo</a></li></ul></section><footer class=article-footer><section class=article-tags><a href=/tags/hugo/>Hugo</a></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
 <span>Last updated on 2024-06-04 20:42</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>Related content</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/hugo/themes-hugo-book/><div class=article-details><h2 class=article-title>Hugo Book 主题配置指南</h2></div></a></article><article><a href=/hugo/themes-hugo-stack/><div class=article-details><h2 class=article-title>Hugo Stack 主题配置指南</h2></div></a></article><article><a href=/hugo/switch-themes-in-hugo/><div class=article-details><h2 class=article-title>如何指定 Hugo 网站主题</h2></div></a></article><article><a href=/hugo/themes-hugo-papermod/><div class=article-details><h2 class=article-title>Hugo PaperMod 主题配置指南</h2></div></a></article><article><a href=/hugo/hugo-getting-started/><div class=article-details><h2 class=article-title>Getting Started with Hugo</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
 2023 -
 2024 All in Obsidian</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
