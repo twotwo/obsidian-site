@@ -31,13 +31,7 @@ Obsidian --> File([Markdown])
 File -->|Hugo| Site(((HTML)))
 Site -->|rsync| Host
 &lt;/p>
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="hugo-themes">Hugo Themes
-&lt;/h3>&lt;ul>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-papermod/" >Hugo PaperMod 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/" >Hugo book 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="其他资源">其他资源
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="其他资源">其他资源
 &lt;/h3>&lt;p>开源字体&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://github.com/lxgw/LxgwWenKai" target="_blank" rel="noopener"
@@ -97,6 +91,8 @@ alt="hugo-vault.png"
 >obsidian 配合 hugo 发布博客&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://blog.hacperme.com/posts/notes/hugo_notes/" target="_blank" rel="noopener"
 >弃用 wordpress，拥抱 hugo&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://immmmm.com/hugo-with-obsidian/" target="_blank" rel="noopener"
+>Hugo With Obsidian&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>5 分钟向你推荐 Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</guid><description>
 &lt;p>Obsidian 是一款基于 markdown 格式的笔记软件，它的所有文件都保存在本地，确保了数据的安全性和隐私性。用户可以通过文件夹式管理来组织笔记，并且可以同时打开多个库（文件夹）来管理不同类型的内容。Obsidian 支持双向链接，可以生成关系图谱，帮助用户构建知识体系。此外，Obsidian 提供了丰富的插件，如日记插件、PPT 插件、思维导图插件等，用户可以根据自己的需求进行个性化配置。&lt;/p>
 &lt;p>如何向小伙伴们安利 Obsidian 呢，这里列出了以下几个问题。&lt;/p>

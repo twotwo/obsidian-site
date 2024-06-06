@@ -24,13 +24,7 @@ Obsidian --> File([Markdown])
 File -->|Hugo| Site(((HTML)))
 Site -->|rsync| Host
 &lt;/p>
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="hugo-themes">Hugo Themes
-&lt;/h3>&lt;ul>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-papermod/" >Hugo PaperMod 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/" >Hugo book 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="其他资源">其他资源
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="其他资源">其他资源
 &lt;/h3>&lt;p>开源字体&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://github.com/lxgw/LxgwWenKai" target="_blank" rel="noopener"
@@ -90,4 +84,6 @@ alt="hugo-vault.png"
 >obsidian 配合 hugo 发布博客&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://blog.hacperme.com/posts/notes/hugo_notes/" target="_blank" rel="noopener"
 >弃用 wordpress，拥抱 hugo&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://immmmm.com/hugo-with-obsidian/" target="_blank" rel="noopener"
+>Hugo With Obsidian&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>

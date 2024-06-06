@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>个人网站 on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><description>Recent content in 个人网站 on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>如何指定 Hugo 网站主题</title><link>https://all-in-obsidian.li3huo.com/hugo/switch-themes-in-hugo/</link><pubDate>Sat, 25 May 2024 10:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/switch-themes-in-hugo/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>个人网站 on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><description>Recent content in 个人网站 on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 06 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>如何指定 Hugo 网站主题</title><link>https://all-in-obsidian.li3huo.com/hugo/switch-themes-in-hugo/</link><pubDate>Sat, 25 May 2024 10:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/switch-themes-in-hugo/</guid><description>
 &lt;p>Hugo 提供了大量可选&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
 >主题&lt;/a> 供我们使用。虽然适配工作有一定成本，但这个付出是值得的。这次总结一下如何快速切换适配好的主题。&lt;/p>
 &lt;p>查看 &lt;a class="link" href="https://gohugo.io/commands/hugo_server/" target="_blank" rel="noopener"
@@ -820,48 +820,35 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&amp;rsquo;re figuring that out, accept that you&amp;rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&amp;rsquo;s okay to delay splitting up a template.&lt;/p></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
+&lt;/h3>&lt;p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&amp;rsquo;re figuring that out, accept that you&amp;rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&amp;rsquo;s okay to delay splitting up a template.&lt;/p></description></item><item><title>Hugo Seven 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-seven/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-seven/</guid><description>
+&lt;h2 id="参考资料">参考资料
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/seven/" target="_blank" rel="noopener"
+>官网文档&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/mrhelloboy/seven" target="_blank" rel="noopener"
+>https://github.com/mrhelloboy/seven&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://hugoseven.netlify.app/" target="_blank" rel="noopener"
+>Demo site&lt;/a> # 博客主题&lt;/li>
+&lt;li>&lt;a class="link" href="https://hugoseven.netlify.app/docs/" target="_blank" rel="noopener"
+>Document&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="兼容性">兼容性
+&lt;/h2>&lt;p>需要删除已有 themes，放弃&lt;/p></description></item><item><title>Hugo 主题概览</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-overview/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-overview/</guid><description>
+&lt;h2 id="推荐主题">推荐主题
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-papermod/" >Hugo PaperMod 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/" >Hugo book 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="试用主题">试用主题
+&lt;/h2>&lt;p>有一些主题不遵循标准结构，无法与其它主题共存，比如 Seven&lt;/p></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
 &lt;p>&lt;a class="link" href="https://github.com/twotwo/obsidian-site" target="_blank" rel="noopener"
 >https://github.com/twotwo/obsidian-site&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian-site.svg"
 loading="lazy"
 alt="在手机、平板和电脑上的效果"
 >&lt;/p>
-&lt;p>用 Excalidraw 合成了一下页面在三端上的效果，粗看还行。&lt;/p></description></item><item><title>Hugo Book 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</link><pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</guid><description>
-&lt;h2 id="参考资料">参考资料
-&lt;/h2>&lt;ul>
-&lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-book/" target="_blank" rel="noopener"
->官网文档&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://github.com/alex-shpak/hugo-book" target="_blank" rel="noopener"
->https://github.com/alex-shpak/hugo-book&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://hugo-book-demo.netlify.app/" target="_blank" rel="noopener"
->Demo site&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="显示-post-属性">显示 Post 属性
-&lt;/h2>&lt;p>提供的 &lt;a class="link" href="https://themes.gohugo.io/themes/hugo-book/#partials" target="_blank" rel="noopener"
->partials&lt;/a> 没地方加作者&lt;/p>
-&lt;p>只能 overwrite &lt;code>layouts/partials/docs/post-meta.html&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;h5&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ with .Date }}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ partial &amp;#34;docs/date&amp;#34; (dict &amp;#34;Date&amp;#34; . &amp;#34;Format&amp;#34; $.Site.Params.DateFormat) }}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">·
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ with .Params.author }}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ . }}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ else }}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Site.Params.author }}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/h5&amp;gt;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="extra-customisation">Extra Customisation
-&lt;/h2>&lt;p>&lt;code>assets/_fonts.scss&lt;/code> 替换默认字体&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@import url(&amp;#39;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&amp;#39;);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">body {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="右侧菜单">右侧菜单
-&lt;/h2>&lt;p>编写 &lt;code>content/menu/book/index.md&lt;/code>&lt;/p>
-&lt;p>在配置中设置：&lt;code>params.BookMenuBundle: /menu/book&lt;/code>&lt;/p></description></item><item><title>Hugo Stack 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/</link><pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/</guid><description>
+&lt;p>用 Excalidraw 合成了一下页面在三端上的效果，粗看还行。&lt;/p></description></item><item><title>Hugo Stack 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/</guid><description>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-theme-stack/" target="_blank" rel="noopener"
@@ -930,7 +917,46 @@ alt="在手机、平板和电脑上的效果"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">document&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">appendChild&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">customFont&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}());&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;lt;/&lt;/span>&lt;span class="n">script&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Update Google Analytics to GA4</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-add-google-analytics/</link><pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-add-google-analytics/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="接入评论系统">接入评论系统
+&lt;/h2>&lt;p>&lt;a class="link" href="https://stack.jimmycai.com/config/comments" target="_blank" rel="noopener"
+>https://stack.jimmycai.com/config/comments&lt;/a>&lt;/p>
+&lt;p>配置说明参见 &lt;a class="link" href="https://giscus.app/" target="_blank" rel="noopener"
+>官网&lt;/a>：公开仓库，启用 Discussions，仓库中安装 &lt;a class="link" href="https://github.com/apps/giscus" target="_blank" rel="noopener"
+>giscus&lt;/a> app&lt;/p></description></item><item><title>Hugo Book 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</link><pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</guid><description>
+&lt;h2 id="参考资料">参考资料
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-book/" target="_blank" rel="noopener"
+>官网文档&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/alex-shpak/hugo-book" target="_blank" rel="noopener"
+>https://github.com/alex-shpak/hugo-book&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://hugo-book-demo.netlify.app/" target="_blank" rel="noopener"
+>Demo site&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="显示-post-属性">显示 Post 属性
+&lt;/h2>&lt;p>提供的 &lt;a class="link" href="https://themes.gohugo.io/themes/hugo-book/#partials" target="_blank" rel="noopener"
+>partials&lt;/a> 没地方加作者&lt;/p>
+&lt;p>只能 overwrite &lt;code>layouts/partials/docs/post-meta.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;h5&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ with .Date }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ partial &amp;#34;docs/date&amp;#34; (dict &amp;#34;Date&amp;#34; . &amp;#34;Format&amp;#34; $.Site.Params.DateFormat) }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">·
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ with .Params.author }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ . }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ else }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Site.Params.author }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/h5&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="extra-customisation">Extra Customisation
+&lt;/h2>&lt;p>&lt;code>assets/_fonts.scss&lt;/code> 替换默认字体&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@import url(&amp;#39;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&amp;#39;);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">body {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="右侧菜单">右侧菜单
+&lt;/h2>&lt;p>编写 &lt;code>content/menu/book/index.md&lt;/code>&lt;/p>
+&lt;p>在配置中设置：&lt;code>params.BookMenuBundle: /menu/book&lt;/code>&lt;/p></description></item><item><title>Update Google Analytics to GA4</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-add-google-analytics/</link><pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-add-google-analytics/</guid><description>
 &lt;p>在官网找到 Google Analytics 4 Property Setup Assistant, 点击确认后出现 &lt;code>You have successfully connected your properties.&lt;/code>&lt;/p>
 &lt;p>&lt;a class="link" href="https://support.google.com/analytics/answer/9744165?hl=en_US&amp;amp;utm_id=ad" target="_blank" rel="noopener"
 >Learn more about Google Analytics 4 properties&lt;/a>&lt;/p>
@@ -995,13 +1021,7 @@ Obsidian --> File([Markdown])
 File -->|Hugo| Site(((HTML)))
 Site -->|rsync| Host
 &lt;/p>
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="hugo-themes">Hugo Themes
-&lt;/h3>&lt;ul>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-papermod/" >Hugo PaperMod 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/" >Hugo book 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="其他资源">其他资源
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="其他资源">其他资源
 &lt;/h3>&lt;p>开源字体&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://github.com/lxgw/LxgwWenKai" target="_blank" rel="noopener"
@@ -1061,6 +1081,8 @@ alt="hugo-vault.png"
 >obsidian 配合 hugo 发布博客&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://blog.hacperme.com/posts/notes/hugo_notes/" target="_blank" rel="noopener"
 >弃用 wordpress，拥抱 hugo&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://immmmm.com/hugo-with-obsidian/" target="_blank" rel="noopener"
+>Hugo With Obsidian&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Getting Started with Hugo</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-getting-started/</link><pubDate>Fri, 02 Feb 2024 04:14:54 -0800</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-getting-started/</guid><description>
 &lt;p>Hugo &lt;a class="link" href="https://gohugo.io/content-management/front-matter/" target="_blank" rel="noopener"
 >Front matter&lt;/a>&lt;/p>
