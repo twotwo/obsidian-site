@@ -858,7 +858,43 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&amp;rsquo;re figuring that out, accept that you&amp;rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&amp;rsquo;s okay to delay splitting up a template.&lt;/p></description></item><item><title>Hugo Seven 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-seven/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-seven/</guid><description>
+&lt;/h3>&lt;p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&amp;rsquo;re figuring that out, accept that you&amp;rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&amp;rsquo;s okay to delay splitting up a template.&lt;/p></description></item><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
+&lt;p>v1.6 大版本更新说明&lt;/p>
+&lt;blockquote>
+&lt;p>这次更新的重点是改善应用程序中的一些长期存在的痛点。最值得注意的是，我们已经彻底检查了应用程序界面，以更好地支持右到左(RTL)语言。现在，当应用程序语言被设置为 RTL 语言时，整个界面将被镜像。我们也在&lt;strong>提高脚注的编辑和阅读体验&lt;/strong>方面给予了很大的关注。这个版本充满了 bug 修复，但在加载应用程序和编辑应用程序时，您可能还会注意到一些性能改进。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="重要内容">重要内容
+&lt;/h2>&lt;ul>
+&lt;li>支持 RTL。当应用程序被设置为 RTL 语言时，界面方向现在被镜像。&lt;/li>
+&lt;li>更新左侧工具条布局。一个新的 Vault 切换器现在显示在底部。App Ribbon 现在可以隐藏在设置中，或者右键单击色带并选择”Hide ribbon”。&lt;/li>
+&lt;li>字符和单词计数现在根据当前的文本选择进行更新。&lt;/li>
+&lt;li>更快的工作空间加载。&lt;/li>
+&lt;li>更快的编辑器解析。&lt;/li>
+&lt;/ul>
+&lt;h2 id="其它更新">其它更新
+&lt;/h2>&lt;h3 id="improvements">Improvements
+&lt;/h3>&lt;ul>
+&lt;li>“Tab” 现在将在快速切换和“移动文件”模式中完成当前选择文件的路径段。&lt;/li>
+&lt;li>添加 “Add alias ”命令。&lt;/li>
+&lt;li>增加了“创建新文件夹”命令。&lt;/li>
+&lt;li>在应用外修改设置文件，热键和属性类型现在会自动重新加载。&lt;/li>
+&lt;li>添加自定义指令和结果时，添加显示文本的链接。&lt;/li>
+&lt;li>提示符现在有一个”clear”按钮来清除输入。在没有输入的情况下按下按钮将会使提示消失。&lt;/li>
+&lt;li>页面预览弹出窗口现在应该有更一致的大小和定位。&lt;/li>
+&lt;/ul>
+&lt;h3 id="footnotes">Footnotes
+&lt;/h3>&lt;ul>
+&lt;li>使用 &lt;code>[^&lt;/code> 为脚注引用添加自动补全。&lt;/li>
+&lt;li>修正了编辑器中脚注的解析和渲染。&lt;/li>
+&lt;li>增加了对内联脚注的悬浮预览支持。&lt;/li>
+&lt;li>悬停在一个脚注ID上，会弹出一个相应的脚注。&lt;/li>
+&lt;/ul>
+&lt;h3 id="properties">Properties
+&lt;/h3>&lt;h3 id="no-longer-broken">No longer broken
+&lt;/h3>&lt;h3 id="formatting">Formatting
+&lt;/h3>&lt;h3 id="settings">Settings
+&lt;/h3>&lt;h3 id="search">Search
+&lt;/h3></description></item><item><title>Hugo Seven 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-seven/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-seven/</guid><description>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/seven/" target="_blank" rel="noopener"
@@ -879,7 +915,40 @@
 &lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="试用主题">试用主题
-&lt;/h2>&lt;p>有一些主题不遵循标准结构，无法与其它主题共存，比如 Seven&lt;/p></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
+&lt;/h2>&lt;p>看一下 tags&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/blog/" target="_blank" rel="noopener"
+>Blog&lt;/a> # 博客&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/minimal/" target="_blank" rel="noopener"
+>Minimal&lt;/a> # 一般是单行&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/personal/" target="_blank" rel="noopener"
+>Personal&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/responsive/" target="_blank" rel="noopener"
+>Responsive&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>有一些主题不遵循标准结构，无法与其它主题共存，比如 Seven&lt;/p>
+&lt;h3 id="coder">Coder
+&lt;/h3>&lt;p>很漂亮的单行主题，可惜不是纯粹的 Hugo&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-coder/" target="_blank" rel="noopener"
+>官网文档&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/luizdepra/hugo-coder" target="_blank" rel="noopener"
+>https://github.com/luizdepra/hugo-coder&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://hugo-coder.netlify.app/" target="_blank" rel="noopener"
+>Demo site&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/luizdepra/hugo-coder/blob/main/docs/home.md" target="_blank" rel="noopener"
+>Document&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="hello-friend-ng">Hello Friend NG
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/" target="_blank" rel="noopener"
+>官网文档&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/rhazdon/hugo-theme-hello-friend-ng" target="_blank" rel="noopener"
+>https://github.com/rhazdon/hugo-theme-hello-friend-ng&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://hugo-hello-friend.vercel.app/" target="_blank" rel="noopener"
+>Demo site&lt;/a> # 没 demo，参考的主题这个样子&lt;/li>
+&lt;li>也没独立的文档页面&lt;/li>
+&lt;/ul></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
 &lt;p>&lt;a class="link" href="https://github.com/twotwo/obsidian-site" target="_blank" rel="noopener"
 >https://github.com/twotwo/obsidian-site&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian-site.svg"
@@ -960,7 +1029,26 @@ alt="在手机、平板和电脑上的效果"
 >https://stack.jimmycai.com/config/comments&lt;/a>&lt;/p>
 &lt;p>配置说明参见 &lt;a class="link" href="https://giscus.app/" target="_blank" rel="noopener"
 >官网&lt;/a>：公开仓库，启用 Discussions，仓库中安装 &lt;a class="link" href="https://github.com/apps/giscus" target="_blank" rel="noopener"
->giscus&lt;/a> app&lt;/p></description></item><item><title>Hugo Book 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</link><pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</guid><description>
+>giscus&lt;/a> app&lt;/p></description></item><item><title>世界无烟日：保护青少年免受烟草业干扰</title><link>https://all-in-obsidian.li3huo.com/posts/2024/world-no-tobacco-day/</link><pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/world-no-tobacco-day/</guid><description>
+&lt;p>2024年5月31日是 WHO 设立的第37个“世界无烟日”，本年度主题为 &lt;strong>保护青少年免受烟草业干扰&lt;/strong>，敦促各国政府保护未成年人免受烟草业欺骗性营销的危害。&lt;/p>
+&lt;h2 id="起源">起源
+&lt;/h2>&lt;p>1987年11月，世界卫生组织在日本东京举行的第6届吸烟与健康国际会议上建议把每年的4月7日定为世界无烟日，并从1988年开始执行。但&lt;strong>从1989年开始，世界无烟日改为每年的5月31日，因为第二天是国际儿童节，希望下一代免受烟草危害。&lt;/strong>&lt;/p>
+&lt;h2 id="烟草的危害">烟草的危害☠️
+&lt;/h2>&lt;p>“吸烟有害健康”早已是社会共识，&lt;strong>烟草中含有&lt;/strong>尼古丁、烟焦油、一氧化碳、刺激性化合物等&lt;strong>7000余种化学物质，包括至少69种致癌物质&lt;/strong>。&lt;/p>
+&lt;p>吸烟除了对自身健康不利，对周围人群有很大的影响。一手烟，害己；二手烟，害亲朋好友；三手烟，害每一个擦肩而过的陌生人。&lt;/p>
+&lt;p>二手烟即&lt;strong>被动吸烟&lt;/strong>，指生活和工作在吸烟者周围的人们，不自觉地吸进烟雾尘粒和各种有毒物质。据国际性的抽样调查证实，吸烟致癌患者中的50%是被动吸烟者。&lt;/p>
+&lt;p>三手烟，烟雾沉积在环境中留下的各种有毒物质，其中包括高浓度的尼古丁、焦油刺激物和致癌物。&lt;/p>
+&lt;h2 id="烟草即毒品">烟草即毒品💉
+&lt;/h2>&lt;p>目前在公共场所禁烟的法规来自《公共场所卫生管理条例》的规定&lt;/p>
+&lt;blockquote>
+&lt;p>第十八条　室内公共场所禁止吸烟。公共场所经营者应当设置醒目的禁止吸烟警语和标志。&lt;/p>
+&lt;ul>
+&lt;li>室外公共场所设置的吸烟区不得位于行人必经的通道上。&lt;/li>
+&lt;li>公共场所不得设置自动售烟机。&lt;/li>
+&lt;li>公共场所经营者应当开展吸烟危害健康的宣传，并配备专（兼）职人员对吸烟者进行劝阻。&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>在很多时候还能看到有人随地吸烟，置法规如无物，也没人监管，没有惩罚，可叹～&lt;/p></description></item><item><title>Hugo Book 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</link><pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</guid><description>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-book/" target="_blank" rel="noopener"

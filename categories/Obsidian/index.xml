@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sat, 08 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
+&lt;p>v1.6 大版本更新说明&lt;/p>
+&lt;blockquote>
+&lt;p>这次更新的重点是改善应用程序中的一些长期存在的痛点。最值得注意的是，我们已经彻底检查了应用程序界面，以更好地支持右到左(RTL)语言。现在，当应用程序语言被设置为 RTL 语言时，整个界面将被镜像。我们也在&lt;strong>提高脚注的编辑和阅读体验&lt;/strong>方面给予了很大的关注。这个版本充满了 bug 修复，但在加载应用程序和编辑应用程序时，您可能还会注意到一些性能改进。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="重要内容">重要内容
+&lt;/h2>&lt;ul>
+&lt;li>支持 RTL。当应用程序被设置为 RTL 语言时，界面方向现在被镜像。&lt;/li>
+&lt;li>更新左侧工具条布局。一个新的 Vault 切换器现在显示在底部。App Ribbon 现在可以隐藏在设置中，或者右键单击色带并选择”Hide ribbon”。&lt;/li>
+&lt;li>字符和单词计数现在根据当前的文本选择进行更新。&lt;/li>
+&lt;li>更快的工作空间加载。&lt;/li>
+&lt;li>更快的编辑器解析。&lt;/li>
+&lt;/ul>
+&lt;h2 id="其它更新">其它更新
+&lt;/h2>&lt;h3 id="improvements">Improvements
+&lt;/h3>&lt;ul>
+&lt;li>“Tab” 现在将在快速切换和“移动文件”模式中完成当前选择文件的路径段。&lt;/li>
+&lt;li>添加 “Add alias ”命令。&lt;/li>
+&lt;li>增加了“创建新文件夹”命令。&lt;/li>
+&lt;li>在应用外修改设置文件，热键和属性类型现在会自动重新加载。&lt;/li>
+&lt;li>添加自定义指令和结果时，添加显示文本的链接。&lt;/li>
+&lt;li>提示符现在有一个”clear”按钮来清除输入。在没有输入的情况下按下按钮将会使提示消失。&lt;/li>
+&lt;li>页面预览弹出窗口现在应该有更一致的大小和定位。&lt;/li>
+&lt;/ul>
+&lt;h3 id="footnotes">Footnotes
+&lt;/h3>&lt;ul>
+&lt;li>使用 &lt;code>[^&lt;/code> 为脚注引用添加自动补全。&lt;/li>
+&lt;li>修正了编辑器中脚注的解析和渲染。&lt;/li>
+&lt;li>增加了对内联脚注的悬浮预览支持。&lt;/li>
+&lt;li>悬停在一个脚注ID上，会弹出一个相应的脚注。&lt;/li>
+&lt;/ul>
+&lt;h3 id="properties">Properties
+&lt;/h3>&lt;h3 id="no-longer-broken">No longer broken
+&lt;/h3>&lt;h3 id="formatting">Formatting
+&lt;/h3>&lt;h3 id="settings">Settings
+&lt;/h3>&lt;h3 id="search">Search
+&lt;/h3></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
 &lt;p>&lt;a class="link" href="https://github.com/twotwo/obsidian-site" target="_blank" rel="noopener"
 >https://github.com/twotwo/obsidian-site&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian-site.svg"
