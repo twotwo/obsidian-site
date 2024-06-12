@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sat, 08 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 12 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
+&lt;p>推荐几个 Youtuber 和他们的频道。&lt;/p>
+&lt;h2 id="visualpkm">@VisualPKM
+&lt;/h2>&lt;p>Zsolt Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者。&lt;/p>
+&lt;p>VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@VisualPKM" target="_blank" rel="noopener"
+>https://www.youtube.com/@VisualPKM&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
+>solt&amp;rsquo;s Blog&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849106.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="nicolevdh">@nicolevdh
+&lt;/h2>&lt;p>Nicole van der Hoeven，一位在 Grafana Labs 担任高级开发者倡导者的专家，她的 YouTube 频道拥有 52.6K 订阅者，并且发布了 166 个视频。内容涵盖了如何在 Obsidian 中使用社区和核心插件来清单化、结构化、分类和解释笔记，以提高笔记的实用性。她还分享了如何使用 Obsidian 进行学习、创作和组织工作，包括针对非编程人士的教程、核心插件的推荐、个人插件使用习惯、以及如何使用 Obsidian 进行桌面角色扮演游戏（TTRPG）。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@nicolevdh" target="_blank" rel="noopener"
+>https://www.youtube.com/@nicolevdh&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121848581.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="fromsergio">@FromSergio
+&lt;/h2>&lt;p>FromSergio 频道拥有超过 45.6K 的订阅者，并已发布 52 个视频。教授如何从初学者到高级用户使用 Obsidian 个人知识管理工具。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@FromSergio" target="_blank" rel="noopener"
+>https://www.youtube.com/@FromSergio&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849068.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="linkingyourthinking">@linkingyourthinking
+&lt;/h2>&lt;p>Nick Milo 的 YouTube 频道 “Linking Your Thinking” 专注于个人知识管理（PKM）的实践和技巧，尤其是在 Obsidian 笔记应用中。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@linkingyourthinking" target="_blank" rel="noopener"
+>https://www.youtube.com/@linkingyourthinking&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121847212.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="cyanvoxel">@cyanvoxel
+&lt;/h2>&lt;p>CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，提供了他的 Osidian 保险库参观，展示了如何将字段笔记数字化并整合到 Osidian 中。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@cyanvoxel" target="_blank" rel="noopener"
+>https://www.youtube.com/@cyanvoxel&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121840729.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul></description></item><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
 &lt;p>v1.6 大版本更新说明&lt;/p>
 &lt;blockquote>
 &lt;p>这次更新的重点是改善应用程序中的一些长期存在的痛点。最值得注意的是，我们已经彻底检查了应用程序界面，以更好地支持右到左(RTL)语言。现在，当应用程序语言被设置为 RTL 语言时，整个界面将被镜像。我们也在&lt;strong>提高脚注的编辑和阅读体验&lt;/strong>方面给予了很大的关注。这个版本充满了 bug 修复，但在加载应用程序和编辑应用程序时，您可能还会注意到一些性能改进。&lt;/p>

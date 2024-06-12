@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Posts on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/</link><description>Recent content in My Posts on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><atom:link href="https://all-in-obsidian.li3huo.com/index.xml" rel="self" type="application/rss+xml"/><item><title>如何指定 Hugo 网站主题</title><link>https://all-in-obsidian.li3huo.com/hugo/switch-themes-in-hugo/</link><pubDate>Sat, 25 May 2024 10:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/switch-themes-in-hugo/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Posts on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/</link><description>Recent content in My Posts on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><atom:link href="https://all-in-obsidian.li3huo.com/index.xml" rel="self" type="application/rss+xml"/><item><title>如何指定 Hugo 网站主题</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</link><pubDate>Sat, 25 May 2024 10:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</guid><description>
 &lt;p>Hugo 提供了大量可选&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
 >主题&lt;/a> 供我们使用。虽然适配工作有一定成本，但这个付出是值得的。这次总结一下如何快速切换适配好的主题。&lt;/p>
 &lt;p>查看 &lt;a class="link" href="https://gohugo.io/commands/hugo_server/" target="_blank" rel="noopener"
@@ -54,6 +54,7 @@
 &lt;/ul></description></item><item><title>Creating a New Theme in Hugo</title><link>https://all-in-obsidian.li3huo.com/hugo/creating-a-new-theme/</link><pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/creating-a-new-theme/</guid><description>
 &lt;h2 id="introduction">Introduction
 &lt;/h2>&lt;p>本教程将展示如何在 Hugo 中创建一个简单的主题。我假设你熟悉 HTML、bash 命令行，并且你很熟悉使用 Markdown 来格式化内容。我将解释 Hugo 如何使用模板以及如何组织模板以创建主题。我不会介绍如何使用 CSS 来设置主题样式。&lt;/p>
+&lt;p>打算深入理解 Hugo 如何工作的话，这是一篇非常好的文档。&lt;/p>
 &lt;blockquote>
 &lt;/blockquote>
 &lt;p>我们将从创建一个具有非常基本模板的新站点开始。然后，我们将添加一些页面和帖子。通过微小的变化，你将能够创建许多不同类型的网站。&lt;/p>
@@ -65,48 +66,59 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## edit the file
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ vi foo.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date = &amp;#34;2014-09-28&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title = &amp;#34;creating a new theme&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: &amp;#34;2014-09-28&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: &amp;#34;creating a new theme&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bah and humbug
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## show it
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ cat foo.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date = &amp;#34;2014-09-28&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title = &amp;#34;creating a new theme&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: &amp;#34;2014-09-28&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: &amp;#34;creating a new theme&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bah and humbug
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="some-definitions">Some Definitions
-&lt;/h2>&lt;p>There are a few concepts that you need to understand before creating a theme.&lt;/p>
+&lt;/h2>&lt;p>在创建主题之前，需要了解一些概念。&lt;/p>
 &lt;h3 id="skins">Skins
-&lt;/h3>&lt;p>Skins are the files responsible for the look and feel of your site. It’s the CSS that controls colors and fonts, it’s the Javascript that determines actions and reactions. It’s also the rules that Hugo uses to transform your content into the HTML that the site will serve to visitors.&lt;/p>
-&lt;p>You have two ways to create a skin. The simplest way is to create it in the &lt;code>layouts/&lt;/code> directory. If you do, then you don’t have to worry about configuring Hugo to recognize it. The first place that Hugo will look for rules and files is in the &lt;code>layouts/&lt;/code> directory so it will always find the skin.&lt;/p>
-&lt;p>Your second choice is to create it in a sub-directory of the &lt;code>themes/&lt;/code> directory. If you do, then you must always tell Hugo where to search for the skin. It’s extra work, though, so why bother with it?&lt;/p>
-&lt;p>The difference between creating a skin in &lt;code>layouts/&lt;/code> and creating it in &lt;code>themes/&lt;/code> is very subtle. A skin in &lt;code>layouts/&lt;/code> can’t be customized without updating the templates and static files that it is built from. A skin created in &lt;code>themes/&lt;/code>, on the other hand, can be and that makes it easier for other people to use it.&lt;/p>
+&lt;/h3>&lt;p>皮肤(skin)是负责站点视觉风格(look and feel)的文件。CSS 控制颜色和字体，Javascript决定动作和反应。这也是 Hugo 用来将内容转换为 HTML 的规则，该网站将为访客提供服务。&lt;/p>
+&lt;p>创建皮肤有两种方法。最简单的方法是在 &lt;code>layouts/&lt;/code> 目录中进行创建。如果你这样做了，那么就不必额外去配置 Hugo 来识别它。Hugo 寻找规则和文件的第一个地方就是在 &lt;code>layouts/&lt;/code> 目录中，所以它总是会找到皮肤。&lt;/p>
+&lt;p>第二个选择是在 &lt;code>themes/&lt;/code> 目录的子目录中创建皮肤。如果这样做了，那么你必须告诉 Hugo 去哪里寻找皮肤。不过，这是额外的工作，为什么要费心去做呢?&lt;/p>
+&lt;p>在 &lt;code>layouts/&lt;/code> 中创建皮肤和在 &lt;code>themes/&lt;/code> 中创建皮肤之间的区别是非常微妙的。&lt;code>layouts/&lt;/code> 中的皮肤不能在没有更新模板和静态文件的情况下进行定制；而在 &lt;code>themes/&lt;/code> 中创建的皮肤是可以的，这让其他人更容易使用它。&lt;/p>
 &lt;p>The rest of this tutorial will call a skin created in the &lt;code>themes/&lt;/code> directory a theme.&lt;/p>
-&lt;p>Note that you can use this tutorial to create a skin in the &lt;code>layouts/&lt;/code> directory if you wish to. The main difference will be that you won’t need to update the site’s configuration file to use a theme.&lt;/p>
+&lt;p>注意，如果你愿意，可以使用本教程在 &lt;code>layouts/&lt;/code> 目录中创建一个皮肤。主要的区别是，不需要更新站点的配置文件来使用主题。&lt;/p>
 &lt;h3 id="the-home-page">The Home Page
-&lt;/h3>&lt;p>The home page, or landing page, is the first page that many visitors to a site see. It is the index.html file in the root directory of the web site. Since Hugo writes files to the public/ directory, our home page is public/index.html.&lt;/p>
+&lt;/h3>&lt;p>首页，或登陆页，是许多访问网站的人看到的第一页。它是网站根目录下的 index.html 文件。由于 Hugo 将文件写入 &lt;code>public/&lt;/code> 目录，所以我们的主页是 &lt;code>public/index.html&lt;/code>。&lt;/p>
 &lt;h3 id="site-configuration-file">Site Configuration File
-&lt;/h3>&lt;p>When Hugo runs, it looks for a configuration file that contains settings that override default values for the entire site. The file can use TOML, YAML, or JSON. I prefer to use TOML for my configuration files. If you prefer to use JSON or YAML, you’ll need to translate my examples. You’ll also need to change the name of the file since Hugo uses the extension to determine how to process it.&lt;/p>
-&lt;p>Hugo translates Markdown files into HTML. By default, Hugo expects to find Markdown files in your &lt;code>content/&lt;/code> directory and template files in your &lt;code>themes/&lt;/code> directory. It will create HTML files in your &lt;code>public/&lt;/code> directory. You can change this by specifying alternate locations in the configuration file.&lt;/p>
+&lt;/h3>&lt;p>Hugo 运行时，将查找包含覆盖整个站点默认值的设置的配置文件。YAML、TOML 或 JSON。我更喜欢在配置文件中使用 YAML。如果您更喜欢使用 JSON 或 TOML，则需要翻译我的示例。你还需要更改文件的名称，因为 Hugo 使用扩展名来确定如何处理它。&lt;/p>
+&lt;p>Hugo translates Markdown files into HTML. By default, Hugo expects to find Markdown files in your &lt;code>content/&lt;/code> directory and template files in your &lt;code>themes/&lt;/code> directory. It will create HTML files in your &lt;code>public/&lt;/code> directory. You can change this by specifying alternate locations in the configuration file.
+Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
+&lt;ul>
+&lt;li>在 &lt;code>content/&lt;/code> 目录中找到 Markdown 内容文件&lt;/li>
+&lt;li>在 &lt;code>themes/&lt;/code> 目录中找到模板文件&lt;/li>
+&lt;li>在 &lt;code>public/&lt;/code> 目录中创建 HTML 文件
+你可以通过在配置文件中指定备用位置来更改这一点。&lt;/li>
+&lt;/ul>
 &lt;h3 id="content">Content
-&lt;/h3>&lt;p>Content is stored in text files that contain two sections. The first section is the “front matter,” which is the meta-information on the content. The second section contains Markdown that will be converted to HTML.&lt;/p>
+&lt;/h3>&lt;p>内容存储在包含两个部分(two sections)的文本文件中&lt;/p>
+&lt;ul>
+&lt;li>第一部分是 “front matter”，即内容的元信息&lt;/li>
+&lt;li>第二部分包含将被转换为 HTML 的 Markdown 文本内容。&lt;/li>
+&lt;/ul>
 &lt;h4 id="front-matter">Front Matter
-&lt;/h4>&lt;p>The front matter is information about the content. Like the configuration file, it can be written in TOML, YAML, or JSON. Unlike the configuration file, Hugo doesn’t use the file’s extension to know the format. It looks for markers to signal the type. TOML is surrounded by “&lt;code>+++&lt;/code>”, YAML by “&lt;code>---&lt;/code>”, and JSON is enclosed in curly braces. I prefer to use TOML, so you’ll need to translate my examples if you prefer YAML or JSON.&lt;/p>
+&lt;/h4>&lt;p>&lt;code>Front Matter&lt;/code> 是关于内容的信息。与配置文件一样，它可以用 YAML、TOML 或 JSON 编写。与配置文件不同，Hugo 不使用文件的扩展名来了解格式。它寻找标志类型的标记。YAML 被 “&lt;code>---&lt;/code>” 包围，TOML 被 “&lt;code>+++&lt;/code>” 包围，JSON 被大括号包围。&lt;/p>
 &lt;p>The information in the front matter is passed into the template before the content is rendered into HTML.&lt;/p>
 &lt;h4 id="markdown">Markdown
 &lt;/h4>&lt;p>Content is written in Markdown which makes it easier to create the content. Hugo runs the content through a Markdown engine to create the HTML which will be written to the output file.&lt;/p>
 &lt;h3 id="template-files">Template Files
-&lt;/h3>&lt;p>Hugo uses template files to render content into HTML. Template files are a bridge between the content and presentation. Rules in the template define what content is published, where it&amp;rsquo;s published to, and how it will rendered to the HTML file. The template guides the presentation by specifying the style to use.&lt;/p>
-&lt;p>There are three types of templates: single, list, and partial. Each type takes a bit of content as input and transforms it based on the commands in the template.&lt;/p>
-&lt;p>Hugo uses its knowledge of the content to find the template file used to render the content. If it can’t find a template that is an exact match for the content, it will shift up a level and search from there. It will continue to do so until it finds a matching template or runs out of templates to try. If it can’t find a template, it will use the default template for the site.&lt;/p>
+&lt;/h3>&lt;p>Hugo 使用模板文件将内容呈现为 HTML。模板文件是内容和表示之间的桥梁。模板中的规则定义了发布什么内容、发布到哪里以及如何将其呈现给 HTML 文件。模板通过指定要使用的样式来指导表示。&lt;/p>
+&lt;p>有三种类型的模板：single 模板、list 模板和 partial 模板。每种类型都接受一些内容作为输入，并根据模板中的命令对其进行转换。&lt;/p>
+&lt;p>Hugo 使用其内容知识来查找用于呈现内容的模板文件。如果它不能找到与内容完全匹配的模板，它将从那里转移到上一个级别和搜索。它将继续这样做，直到它找到一个匹配的模板或没有模板可以尝试。如果它找不到模板，它将使用该站点的默认模板(&lt;code>layouts/&lt;/code>)。&lt;/p>
 &lt;p>Please note that you can use the front matter to influence Hugo’s choice of templates.&lt;/p>
 &lt;h4 id="single-template">Single Template
 &lt;/h4>&lt;p>A single template is used to render a single piece of content. For example, an article or post would be a single piece of content and use a single template.&lt;/p>
@@ -114,167 +126,246 @@
 &lt;/h4>&lt;p>A list template renders a group of related content. That could be a summary of recent postings or all articles in a category. List templates can contain multiple groups.&lt;/p>
 &lt;p>The homepage template is a special type of list template. Hugo assumes that the home page of your site will act as the portal for the rest of the content in the site.&lt;/p>
 &lt;h4 id="partial-template">Partial Template
-&lt;/h4>&lt;p>A partial template is a template that can be included in other templates. Partial templates must be called using the “partial” template command. They are very handy for rolling up common behavior. For example, your site may have a banner that all pages use. Instead of copying the text of the banner into every single and list template, you could create a partial with the banner in it. That way if you decide to change the banner, you only have to change the partial template.&lt;/p>
+&lt;/h4>&lt;p>部分(Partial)模板是可以包含在其他模板中的模板。必须使用 “Partial” &lt;em>template 命令&lt;/em> 调用部分模板。它们在汇总常见行为时非常方便。例如，站点可能有一个所有页面都使用的横幅(banner)。就可以创建一个带有横幅的部分，而不是将横幅的文本复制到每个单独和列表模板中。这样，如果你决定改变横幅，只需要改变部分模板。&lt;/p>
 &lt;h2 id="create-a-new-site">Create a New Site
 &lt;/h2>&lt;p>Let&amp;rsquo;s use Hugo to create a new web site. I&amp;rsquo;m a Mac user, so I&amp;rsquo;ll create mine in my home directory, in the Sites folder. If you&amp;rsquo;re using Linux, you might have to create the folder first.&lt;/p>
 &lt;p>The &amp;ldquo;new site&amp;rdquo; command will create a skeleton of a site. It will give you the basic directory structure and a useable configuration file.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo new site ~/Sites/zafta
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ cd ~/Sites/zafta
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo new site _site --format yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ cd _site
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ ls -l
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">total 8
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 7 quoha staff 238 Sep 29 16:49 .
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 3 quoha staff 102 Sep 29 16:49 ..
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 archetypes
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 82 Sep 29 16:49 config.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 layouts
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 static
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 3 liyan wheel 96 Jun 12 13:28 archetypes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 assets
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 content
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 data
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan wheel 74 Jun 12 13:28 hugo.yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 i18n
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 layouts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 static
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 themes
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Take a look in the content/ directory to confirm that it is empty.&lt;/p>
 &lt;p>The other directories (archetypes/, layouts/, and static/) are used when customizing a theme. That&amp;rsquo;s a topic for a different tutorial, so please ignore them for now.&lt;/p>
 &lt;h3 id="generate-the-html-for-the-new-site">Generate the HTML For the New Site
 &lt;/h3>&lt;p>Running the &lt;code>hugo&lt;/code> command with no options will read all the available content and generate the HTML files. It will also copy all static files (that&amp;rsquo;s everything that&amp;rsquo;s not content). Since we have an empty site, it won&amp;rsquo;t do much, but it will do it very quickly.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo --verbose
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 Using config file: config.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN: 2014/09/29 Unable to locate layout: [404.html]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 draft content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 future content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 pages created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 tags created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 categories created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">in 2 ms
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo --logLevel info
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Start building sites …
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.126.3+extended darwin/amd64 BuildDate=2024-06-02T13:02:43Z VendorInfo=brew
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step process substep collect files 0 files_total 0 pages_total 0 resources_total 0 duration 106.829µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step process duration 158.408µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO static: syncing static files to / duration 198.757µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step assemble duration 270.923µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN found no layout file for &amp;#34;html&amp;#34; for kind &amp;#34;home&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN found no layout file for &amp;#34;html&amp;#34; for kind &amp;#34;taxonomy&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step render substep pages site en outputFormat html duration 883.92µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step render substep pages site en outputFormat rss duration 2.045369ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step render pages 4 content 0 duration 3.020519ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step postProcess duration 9.589µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: duration 3.592496ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | EN
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-------------------+-----
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Pages | 4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Paginator pages | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Non-page files | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Static files | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Processed images | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Aliases | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Cleaned | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total in 9 ms
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &amp;ldquo;&lt;code>--verbose&lt;/code>&amp;rdquo; flag gives extra information that will be helpful when we build the template. Every line of the output that starts with &amp;ldquo;INFO:&amp;rdquo; or &amp;ldquo;WARN:&amp;rdquo; is present because we used that flag. The lines that start with &amp;ldquo;WARN:&amp;rdquo; are warning messages. We&amp;rsquo;ll go over them later.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&amp;ldquo;&lt;code>--logLevel info&lt;/code>&amp;rdquo; 标志提供了在构建模板时有用的额外信息。每一行以&amp;quot;INFO&amp;quot;或&amp;quot;WARN&amp;quot;开头的输出都存在，因为我们使用了这个标志。以“WARN”开头的行是警告信息。我们稍后再讨论。&lt;/p>
 &lt;p>We can verify that the command worked by looking at the directory again.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ ls -l
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">total 8
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 archetypes
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 82 Sep 29 16:49 config.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 layouts
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 4 quoha staff 136 Sep 29 17:02 public
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 static
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 3 liyan wheel 96 Jun 12 13:28 archetypes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 assets
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 content
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 data
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan wheel 74 Jun 12 13:28 hugo.yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 i18n
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 layouts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 6 liyan wheel 192 Jun 12 13:30 public
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 static
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 liyan wheel 64 Jun 12 13:28 themes
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>See that new public/ directory? Hugo placed all generated content there. When you&amp;rsquo;re ready to publish your web site, that&amp;rsquo;s the place to start. For now, though, let&amp;rsquo;s just confirm that we have what we&amp;rsquo;d expect from a site with no content.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ ls -l public
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">total 16
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 416 Sep 29 17:02 index.xml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 262 Sep 29 17:02 sitemap.xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 3 liyan wheel 96 Jun 12 13:30 categories
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan wheel 445 Jun 12 13:30 index.xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan wheel 341 Jun 12 13:30 sitemap.xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 3 liyan wheel 96 Jun 12 13:30 tags
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Hugo created two XML files, which is standard, but there are no HTML files.&lt;/p>
 &lt;h3 id="test-the-new-site">Test the New Site
 &lt;/h3>&lt;p>Verify that you can run the built-in web server. It will dramatically shorten your development cycle if you do. Start it by running the &amp;ldquo;server&amp;rdquo; command. If it is successful, you will see output similar to the following:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo server --verbose
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN: 2014/09/29 Unable to locate layout: [404.html]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 draft content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 future content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 pages created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 tags created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 categories created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">in 2 ms
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Serving pages from /Users/quoha/Sites/zafta/public
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Web Server is available at http://localhost:1313
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN found no layout file for &amp;#34;html&amp;#34; for kind &amp;#34;home&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN found no layout file for &amp;#34;html&amp;#34; for kind &amp;#34;taxonomy&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | EN
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-------------------+-----
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Pages | 4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Paginator pages | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Non-page files | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Static files | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Processed images | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Aliases | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Cleaned | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Built in 2 ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Environment: &amp;#34;development&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Serving pages from disk
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Press Ctrl+C to stop
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Connect to the listed URL (it&amp;rsquo;s on the line that starts with &amp;ldquo;Web Server&amp;rdquo;). If everything is working correctly, you should get a page that shows the following:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">index.xml
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sitemap.xml
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>That&amp;rsquo;s a listing of your public/ directory. Hugo didn&amp;rsquo;t create a home page because our site has no content. When there&amp;rsquo;s no index.html file in a directory, the server lists the files in the directory, which is what you should see in your browser.&lt;/p>
 &lt;p>Let’s go back and look at those warnings again.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN: 2014/09/29 Unable to locate layout: [404.html]
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">WARN found no layout file for &amp;#34;html&amp;#34; for kind &amp;#34;home&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN found no layout file for &amp;#34;html&amp;#34; for kind &amp;#34;taxonomy&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>That second warning is easier to explain. We haven’t created a template to be used to generate “page not found errors.” The 404 message is a topic for a separate tutorial.&lt;/p>
-&lt;p>Now for the first warning. It is for the home page. You can tell because the first layout that it looked for was “index.html.” That’s only used by the home page.&lt;/p>
-&lt;p>I like that the verbose flag causes Hugo to list the files that it&amp;rsquo;s searching for. For the home page, they are index.html, _default/list.html, and _default/single.html. There are some rules that we&amp;rsquo;ll cover later that explain the names and paths. For now, just remember that Hugo couldn&amp;rsquo;t find a template for the home page and it told you so.&lt;/p>
+&lt;p>第一个警告是生成类型为&lt;strong>首页&lt;/strong>的提示(kind &amp;ldquo;home&amp;rdquo;)。我们需要提供 &lt;code>layouts/home.html&lt;/code> 模版来生成首页。&lt;/p>
+&lt;p>第二个警告是生成类型为&lt;strong>分类&lt;/strong>的提示(kind &amp;ldquo;taxonomy&amp;rdquo;)。我们需要提供 &lt;code>layouts/terms.html&lt;/code> 模版来生成分类。&lt;/p>
 &lt;p>At this point, you&amp;rsquo;ve got a working installation and site that we can build upon. All that’s left is to add some content and a theme to display it.&lt;/p>
 &lt;h2 id="create-a-new-theme">Create a New Theme
-&lt;/h2>&lt;p>Hugo doesn&amp;rsquo;t ship with a default theme. There are a few available (I counted a dozen when I first installed Hugo) and Hugo comes with a command to create new themes.&lt;/p>
-&lt;p>We&amp;rsquo;re going to create a new theme called &amp;ldquo;zafta.&amp;rdquo; Since the goal of this tutorial is to show you how to fill out the files to pull in your content, the theme will not contain any CSS. In other words, ugly but functional.&lt;/p>
-&lt;p>All themes have opinions on content and layout. For example, Zafta uses &amp;ldquo;post&amp;rdquo; over &amp;ldquo;blog&amp;rdquo;. Strong opinions make for simpler templates but differing opinions make it tougher to use themes. When you build a theme, consider using the terms that other themes do.&lt;/p>
+&lt;/h2>&lt;p>Hugo 没有附带默认主题。官网上提供了大量可用的第三方&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
+>主题&lt;/a>，Hugo 附带一个创建新主题的命令：&lt;code>hugo new theme &amp;lt;theme name&amp;gt;&lt;/code>&lt;/p>
+&lt;p>我们要创建一个叫 &amp;ldquo;twotwo&amp;rdquo; 的新主题，由于本教程的目标是展示如何填充文件以注入内容，因此主题将不包含任何 CSS(新版本的 Hugo 在创建主题时，已经包含了 CSS 和 JS)。换句话说，丑陋但实用。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo env
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.126.3+extended darwin/amd64 BuildDate=2024-06-02T13:02:43Z VendorInfo=brew
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOOS=&amp;#34;darwin&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOARCH=&amp;#34;amd64&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOVERSION=&amp;#34;go1.22.3&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/sass/libsass=&amp;#34;3.6.5&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/webmproject/libwebp=&amp;#34;v1.3.2&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>所有主题对内容和布局都有自己的看法。强烈建议使模板更简单，使用个性化的参数会使主题更难使用。当你构建一个主题时，请考虑使用其他主题所使用的术语。&lt;/p>
 &lt;h3 id="create-a-skeleton">Create a Skeleton
 &lt;/h3>&lt;p>Use the hugo &amp;ldquo;new&amp;rdquo; command to create the skeleton of a theme. This creates the directory structure and places empty files for you to fill out.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo new theme zafta
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo new theme twotwo
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">total 8
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 archetypes
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 82 Sep 29 16:49 config.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 layouts
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 4 quoha staff 136 Sep 29 17:02 public
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 16:49 static
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 3 quoha staff 102 Sep 29 17:31 themes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x - liyan 13 May 20:11 archetypes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x - liyan 24 May 19:37 content
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x - liyan 23 May 16:35 layouts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x - liyan 4 Jun 16:27 public
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x - liyan 14 May 17:50 static
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x - liyan 12 Jun 11:57 themes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.rw-r--r-- 3.2k liyan 23 May 21:24 hugo.yml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.rw-r--r-- 1.4k liyan 23 May 21:32 README.md
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find themes -type f | xargs ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 1081 Sep 29 17:31 themes/zafta/LICENSE.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/archetypes/default.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/_default/list.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/_default/single.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/partials/footer.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/partials/header.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 93 Sep 29 17:31 themes/zafta/theme.toml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find themes/twotwo -type f | xargs ls -l
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 1069 Jun 12 11:57 themes/twotwo/LICENSE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 61 Jun 12 11:57 themes/twotwo/README.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 102 Jun 12 11:57 themes/twotwo/archetypes/default.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 284 Jun 12 11:57 themes/twotwo/assets/css/main.css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 49 Jun 12 11:57 themes/twotwo/assets/js/main.js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 279 Jun 12 11:57 themes/twotwo/content/_index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 367 Jun 12 11:57 themes/twotwo/content/posts/_index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 812 Jun 12 11:57 themes/twotwo/content/posts/post-1.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 940 Jun 12 11:57 themes/twotwo/content/posts/post-2.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 19224 Jun 12 11:57 themes/twotwo/content/posts/post-3/bryce-canyon.jpg
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 996 Jun 12 11:57 themes/twotwo/content/posts/post-3/index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 335 Jun 12 11:57 themes/twotwo/hugo.toml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 354 Jun 12 11:57 themes/twotwo/layouts/_default/baseof.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 174 Jun 12 11:57 themes/twotwo/layouts/_default/home.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 187 Jun 12 11:57 themes/twotwo/layouts/_default/list.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 325 Jun 12 11:57 themes/twotwo/layouts/_default/single.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 54 Jun 12 11:57 themes/twotwo/layouts/partials/footer.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 257 Jun 12 11:57 themes/twotwo/layouts/partials/head.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 351 Jun 12 11:57 themes/twotwo/layouts/partials/head/css.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 429 Jun 12 11:57 themes/twotwo/layouts/partials/head/js.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 84 Jun 12 11:57 themes/twotwo/layouts/partials/header.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 1343 Jun 12 11:57 themes/twotwo/layouts/partials/menu.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 554 Jun 12 11:57 themes/twotwo/layouts/partials/terms.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 15406 Jun 12 11:57 themes/twotwo/static/favicon.ico
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 830 Jun 12 11:57 themes/twotwo/theme.toml
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.&lt;/p>
 &lt;p>Please take a minute to fill out the theme.toml and LICENSE.md files. They&amp;rsquo;re optional, but if you&amp;rsquo;re going to be distributing your theme, it tells the world who to praise (or blame). It&amp;rsquo;s also nice to declare the license so that people will know how they can use the theme.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi themes/zafta/theme.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">author = &amp;#34;michael d henderson&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">description = &amp;#34;a minimal working template&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">license = &amp;#34;MIT&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">name = &amp;#34;zafta&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">source_repo = &amp;#34;&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tags = [&amp;#34;tags&amp;#34;, &amp;#34;categories&amp;#34;]
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi themes/twotwo/theme.toml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">name = &amp;#39;Theme name&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">license = &amp;#39;MIT&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">licenselink = &amp;#39;https://github.com/owner/repo/LICENSE&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">description = &amp;#39;Theme description&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># The home page of the theme, where the source can be found
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">homepage = &amp;#39;https://github.com/twotwo/hugo-theme-twotwo&amp;#39;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## also edit themes/zafta/LICENSE.md and change
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## also edit themes/twotwo/LICENSE.md and change
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## the bit that says &amp;#34;YOUR_NAME_HERE&amp;#34;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that the the skeleton&amp;rsquo;s template files are empty. Don&amp;rsquo;t worry, we&amp;rsquo;ll be changing that shortly.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ find themes/zafta -name &amp;#39;*.html&amp;#39; | xargs ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/_default/list.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/_default/single.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/partials/footer.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:31 themes/zafta/layouts/partials/header.html
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ find themes/twotwo -name &amp;#39;*.html&amp;#39; | xargs ls -l
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 354 Jun 12 11:57 themes/twotwo/layouts/_default/baseof.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 174 Jun 12 11:57 themes/twotwo/layouts/_default/home.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 187 Jun 12 11:57 themes/twotwo/layouts/_default/list.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 325 Jun 12 11:57 themes/twotwo/layouts/_default/single.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 54 Jun 12 11:57 themes/twotwo/layouts/partials/footer.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 257 Jun 12 11:57 themes/twotwo/layouts/partials/head.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 351 Jun 12 11:57 themes/twotwo/layouts/partials/head/css.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 429 Jun 12 11:57 themes/twotwo/layouts/partials/head/js.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 84 Jun 12 11:57 themes/twotwo/layouts/partials/header.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 1343 Jun 12 11:57 themes/twotwo/layouts/partials/menu.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 554 Jun 12 11:57 themes/twotwo/layouts/partials/terms.html
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="update-the-configuration-file-to-use-the-theme">Update the Configuration File to Use the Theme
-&lt;/h3>&lt;p>Now that we&amp;rsquo;ve got a theme to work with, it&amp;rsquo;s a good idea to add the theme name to the configuration file. This is optional, because you can always add &amp;ldquo;-t zafta&amp;rdquo; on all your commands. I like to put it the configuration file because I like shorter command lines. If you don&amp;rsquo;t put it in the configuration file or specify it on the command line, you won&amp;rsquo;t use the template that you&amp;rsquo;re expecting to.&lt;/p>
-&lt;p>Edit the file to add the theme, add a title for the site, and specify that all of our content will use the TOML format.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi config.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">theme = &amp;#34;zafta&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">baseurl = &amp;#34;&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">languageCode = &amp;#34;en-us&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title = &amp;#34;zafta - totally refreshing&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">MetaDataFormat = &amp;#34;toml&amp;#34;
+&lt;/h3>&lt;p>既然我们已经有了一个可以使用的主题，那么最好将主题名称添加到配置文件中。这是可选的，因为总是可以在所有命令中添加“-t twotwo”。我喜欢把它放在配置文件中，因为我喜欢更短的命令行。如果你没有将它放入配置文件或在命令行中指定它，那么你就使用不了你期望使用的模板。&lt;/p>
+&lt;p>Edit the file to add the theme, add a title for the site, and specify that all of our content will use the YAML format.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi hugo.yaml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">baseURL: &amp;#34;http://li3huo.com/&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: Demo Site
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">copyright: © 2005 ~ 2024
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">theme: towtwo
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="generate-the-site">Generate the Site
 &lt;/h3>&lt;p>Now that we have an empty theme, let&amp;rsquo;s generate the site again.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo --verbose
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 draft content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 future content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 pages created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 tags created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 categories created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">in 2 ms
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ rm -rf public resources
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ hugo --logLevel info
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Start building sites …
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.126.3+extended darwin/amd64 BuildDate=2024-06-02T13:02:43Z VendorInfo=brew
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO static: syncing static files to / duration 574.283µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step process substep collect files 6 files_total 6 pages_total 5 resources_total 1 duration 760.226µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step process duration 1.731464ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step assemble duration 695.993µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step render substep pages site en outputFormat html duration 12.782324ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step render substep pages site en outputFormat rss duration 1.207044ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step render pages 18 content 10 duration 14.075383ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: step postProcess duration 13.424µs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO build: duration 16.664339ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | EN
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-------------------+-----
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Pages | 18
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Paginator pages | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Non-page files | 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Static files | 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Processed images | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Aliases | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Cleaned | 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total in 25 ms
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Did you notice that the output is different? The warning message for the home page has disappeared and we have an additional information line saying that Hugo is syncing from the theme&amp;rsquo;s directory.&lt;/p>
 &lt;p>Let&amp;rsquo;s check the public/ directory to see what Hugo&amp;rsquo;s created.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ ls -l public
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">total 16
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 17:56 css
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 0 Sep 29 17:56 index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 407 Sep 29 17:56 index.xml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 2 quoha staff 68 Sep 29 17:56 js
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 243 Sep 29 17:56 sitemap.xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">total 56
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 4 liyan wheel 128 Jun 12 12:59 categories
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 3 liyan wheel 96 Jun 12 12:59 css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan wheel 15406 Jun 12 12:54 favicon.ico
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan wheel 2911 Jun 12 12:59 index.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan wheel 2772 Jun 12 12:59 index.xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 3 liyan wheel 96 Jun 12 12:59 js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 7 liyan wheel 224 Jun 12 12:59 posts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan wheel 1207 Jun 12 12:59 sitemap.xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x 7 liyan wheel 224 Jun 12 12:59 tags
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Notice four things:&lt;/p>
 &lt;ol>
@@ -430,11 +521,11 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>That wasn&amp;rsquo;t very nice, was it?&lt;/p>
 &lt;p>The &amp;ldquo;new&amp;rdquo; command uses an archetype to create the post file. Hugo created an empty default archetype file, but that causes an error when there&amp;rsquo;s a theme. For me, the workaround was to create an archetypes file specifically for the post type.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi themes/zafta/archetypes/post.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Description = &amp;#34;&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Tags = []
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Categories = []
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find themes/zafta/archetypes -type f | xargs ls -l
@@ -461,25 +552,25 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 105 Sep 29 21:57 second.md
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ cat content/post/first.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Categories = []
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Description = &amp;#34;&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Tags = []
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date = &amp;#34;2014-09-29T21:54:53-05:00&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title = &amp;#34;first&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: &amp;#34;2014-09-29T21:54:53-05:00&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: &amp;#34;first&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">my first post
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ cat content/post/second.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Categories = []
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Description = &amp;#34;&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Tags = []
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date = &amp;#34;2014-09-29T21:57:09-05:00&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title = &amp;#34;second&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: &amp;#34;2014-09-29T21:57:09-05:00&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: &amp;#34;second&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">my second post
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
@@ -565,16 +656,16 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/body&amp;gt;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/html&amp;gt;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Congratulations, the home page shows the title of the two posts. The posts themselves are still empty, but let&amp;rsquo;s take a moment to appreciate what we&amp;rsquo;ve done. Your template now generates output dynamically. Believe it or not, by inserting the range command inside of those curly braces, you&amp;rsquo;ve learned everything you need to know to build a theme. All that&amp;rsquo;s really left is understanding which template will be used to generate each content file and becoming familiar with the commands for the template engine.&lt;/p>
-&lt;p>And, if that were entirely true, this tutorial would be much shorter. There are a few things to know that will make creating a new template much easier. Don&amp;rsquo;t worry, though, that&amp;rsquo;s all to come.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>恭喜，主页显示了这两篇文章的标题。帖子本身仍然是空的，但让我们花一点时间来欣赏我们所做的事情。模板现在动态地生成了输出。信不信由你，通过在那些花括号内插入 &lt;code>range&lt;/code> 命令，你已经学习了构建主题所需的所有知识。真正剩下的就是了解将使用哪个模板来生成每个内容文件，并熟悉模板引擎的命令。&lt;/p>
+&lt;p>如果这是完全正确的，本教程将会更短。有一些事情你需要知道，这将使创建一个新的模板更容易。不过，别担心，这就是接下来的内容。&lt;/p>
 &lt;h3 id="add-content-to-the-posts">Add Content to the Posts
 &lt;/h3>&lt;p>We&amp;rsquo;re working with posts, which are in the content/post/ directory. That means that their section is &amp;ldquo;post&amp;rdquo; (and if we don&amp;rsquo;t do something weird, their type is also &amp;ldquo;post&amp;rdquo;).&lt;/p>
-&lt;p>Hugo uses the section and type to find the template file for every piece of content. Hugo will first look for a template file that matches the section or type name. If it can&amp;rsquo;t find one, then it will look in the _default/ directory. There are some twists that we&amp;rsquo;ll cover when we get to categories and tags, but for now we can assume that Hugo will try post/single.html, then _default/single.html.&lt;/p>
+&lt;p>Hugo 使用 section 和 type 为每一段内容找到模板文件。Hugo 将首先查找与 section 或 type 名匹配的模板文件，如果没找到，那么它将在 &lt;code>_default/&lt;/code> 目录中查找。在讨论 categories 和 tags 时，我们将讨论一些变化，但现在我们可以假设 Hugo 将尝试&lt;code>post/single.html&lt;/code>，然后是 &lt;code>_default/single.html&lt;/code>。&lt;/p>
 &lt;p>Now that we know the search rule, let&amp;rsquo;s see what we actually have available:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ find themes/zafta -name single.html | xargs ls -l
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 132 Sep 29 17:31 themes/zafta/layouts/_default/single.html
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We could create a new template, post/single.html, or change the default. Since we don&amp;rsquo;t know of any other content types, let&amp;rsquo;s start with updating the default.&lt;/p>
-&lt;p>Remember, any content that we haven&amp;rsquo;t created a template for will end up using this template. That can be good or bad. Bad because I know that we&amp;rsquo;re going to be adding different types of content and we&amp;rsquo;re going to end up undoing some of the changes we&amp;rsquo;ve made. It&amp;rsquo;s good because we&amp;rsquo;ll be able to see immediate results. It&amp;rsquo;s also good to start here because we can start to build the basic layout for the site. As we add more content types, we&amp;rsquo;ll refactor this file and move logic around. Hugo makes that fairly painless, so we&amp;rsquo;ll accept the cost and proceed.&lt;/p>
+&lt;p>记住，我们还没有创建模板的任何内容最终都会使用这个模板。这可能是好事，也可能是坏事。不好是因为我知道我们将添加不同类型的内容，我们将最终取消我们所做的一些更改。这很好，因为我们将能够看到立即的结果。从这里开始也很好，因为我们可以开始为站点构建基本布局。随着我们添加更多的内容类型，我们将重构这个文件并移动逻辑。Hugo 让这个过程变得很轻松，所以我们接受这个代价，继续前进。&lt;/p>
 &lt;p>Please see the Hugo documentation on template rendering for all the details on determining which template to use. And, as the docs mention, if you&amp;rsquo;re building a single page application (SPA) web site, you can delete all of the other templates and work with just the default single page. That&amp;rsquo;s a refreshing amount of joy right there.&lt;/p>
 &lt;h4 id="update-the-template-file">Update the Template File
 &lt;/h4>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi themes/zafta/layouts/_default/single.html
@@ -694,25 +785,32 @@
 &lt;/h2>&lt;p>Let&amp;rsquo;s add an &amp;ldquo;about&amp;rdquo; page and display it at the top level (as opposed to a sub-level like we did with posts).&lt;/p>
 &lt;p>The default in Hugo is to use the directory structure of the content/ directory to guide the location of the generated html in the public/ directory. Let&amp;rsquo;s verify that by creating an &amp;ldquo;about&amp;rdquo; page at the top level:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi content/about.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title = &amp;#34;about&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">description = &amp;#34;about this site&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date = &amp;#34;2014-09-27&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">slug = &amp;#34;about time&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: &amp;#34;2010-06-13&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">layout: posts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: 关于
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## about us
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">About twotwo &amp;amp; apple
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">i&amp;#39;m speechless
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Slogan: Life is a journey, not a destination. Let&amp;#39;s enjoy the process, learn from our experiences, and become better versions of ourselves! 🌟
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">### Code base
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- WordPress Posts to Markdown File：&amp;lt;https://github.com/twotwo/wp2octopress&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- Hugo：&amp;lt;https://gohugo.io/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- Hugo Theme: &amp;lt;https://github.com/adityatelange/hugo-PaperMod&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- 本站代码: &amp;lt;https://github.com/twotwo/hugo-template&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!--more--&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Generate the web site and verify the results.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ find public -name &amp;#39;*.html&amp;#39; | xargs ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-rw-r-- 1 mdhender staff 334 Sep 27 15:08 public/about-time/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-rw-r-- 1 mdhender staff 527 Sep 27 15:08 public/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-rw-r-- 1 mdhender staff 358 Sep 27 15:08 public/post/first-post/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-rw-r-- 1 mdhender staff 0 Sep 27 15:08 public/post/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-rw-r-- 1 mdhender staff 342 Sep 27 15:08 public/post/second-post/index.html
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Notice that the page wasn&amp;rsquo;t created at the top level. It was created in a sub-directory named &amp;lsquo;about-time/&amp;rsquo;. That name came from our slug. Hugo will use the slug to name the generated content. It&amp;rsquo;s a reasonable default, by the way, but we can learn a few things by fighting it for this file.&lt;/p>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 12454 Jun 12 10:39 public/about/index.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Notice that the page wasn&amp;rsquo;t created at the top level. It was created in a sub-directory named &amp;lsquo;about/&amp;rsquo;.&lt;/p>
 &lt;p>One other thing. Take a look at the home page.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">$&lt;/span> &lt;span class="n">cat&lt;/span> &lt;span class="n">public&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">html&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;lt;!&lt;/span>&lt;span class="n">DOCTYPE&lt;/span> &lt;span class="n">html&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
@@ -838,7 +936,7 @@
 &lt;p>Let&amp;rsquo;s assume, though, that we&amp;rsquo;ve made our site so complex that we feel we have to create a new template type. In Hugo-speak, we&amp;rsquo;re going to create a section template.&lt;/p>
 &lt;p>Let&amp;rsquo;s restore the default single template before we forget.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ mkdir themes/zafta/layouts/post
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ vi themes/zafta/layouts/_default/single.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ vi themes/zafta/layouts/post/single.html
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ partial &amp;#34;header.html&amp;#34; . }}
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h1&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;
@@ -858,7 +956,95 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&amp;rsquo;re figuring that out, accept that you&amp;rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&amp;rsquo;s okay to delay splitting up a template.&lt;/p></description></item><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
+&lt;p>推荐几个 Youtuber 和他们的频道。&lt;/p>
+&lt;h2 id="visualpkm">@VisualPKM
+&lt;/h2>&lt;p>Zsolt Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者。&lt;/p>
+&lt;p>VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@VisualPKM" target="_blank" rel="noopener"
+>https://www.youtube.com/@VisualPKM&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
+>solt&amp;rsquo;s Blog&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849106.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="nicolevdh">@nicolevdh
+&lt;/h2>&lt;p>Nicole van der Hoeven，一位在 Grafana Labs 担任高级开发者倡导者的专家，她的 YouTube 频道拥有 52.6K 订阅者，并且发布了 166 个视频。内容涵盖了如何在 Obsidian 中使用社区和核心插件来清单化、结构化、分类和解释笔记，以提高笔记的实用性。她还分享了如何使用 Obsidian 进行学习、创作和组织工作，包括针对非编程人士的教程、核心插件的推荐、个人插件使用习惯、以及如何使用 Obsidian 进行桌面角色扮演游戏（TTRPG）。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@nicolevdh" target="_blank" rel="noopener"
+>https://www.youtube.com/@nicolevdh&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121848581.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="fromsergio">@FromSergio
+&lt;/h2>&lt;p>FromSergio 频道拥有超过 45.6K 的订阅者，并已发布 52 个视频。教授如何从初学者到高级用户使用 Obsidian 个人知识管理工具。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@FromSergio" target="_blank" rel="noopener"
+>https://www.youtube.com/@FromSergio&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849068.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="linkingyourthinking">@linkingyourthinking
+&lt;/h2>&lt;p>Nick Milo 的 YouTube 频道 “Linking Your Thinking” 专注于个人知识管理（PKM）的实践和技巧，尤其是在 Obsidian 笔记应用中。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@linkingyourthinking" target="_blank" rel="noopener"
+>https://www.youtube.com/@linkingyourthinking&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121847212.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="cyanvoxel">@cyanvoxel
+&lt;/h2>&lt;p>CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，提供了他的 Osidian 保险库参观，展示了如何将字段笔记数字化并整合到 Osidian 中。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@cyanvoxel" target="_blank" rel="noopener"
+>https://www.youtube.com/@cyanvoxel&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121840729.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul></description></item><item><title>Hugo Hello Friend NG 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-hello-friend-ng/</link><pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-hello-friend-ng/</guid><description>
+&lt;h2 id="参考资料">参考资料
+&lt;/h2>&lt;p>Hello Friend NG&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/" target="_blank" rel="noopener"
+>官网文档&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/rhazdon/hugo-theme-hello-friend-ng" target="_blank" rel="noopener"
+>https://github.com/rhazdon/hugo-theme-hello-friend-ng&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://amehta.github.io/" target="_blank" rel="noopener"
+>Demo site&lt;/a>&lt;/li>
+&lt;li>没有独立的文档页面&lt;/li>
+&lt;/ul>
+&lt;h2 id="运行-examplesite">运行 exampleSite
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://gohugo.io/commands/hugo_server/" target="_blank" rel="noopener"
+>hugo server&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">es&lt;/span>&lt;span class="o">=&lt;/span>themes/hello-friend-ng/exampleSite hugo server --disableFastRender -D --contentDir &lt;span class="si">${&lt;/span>&lt;span class="nv">es&lt;/span>&lt;span class="si">}&lt;/span>/content --config themes/hello-friend-ng/exampleSite/config.toml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="替换默认字体">替换默认字体
+&lt;/h2>&lt;p>在 &lt;code>assets/scss/_fonts.scss&lt;/code> 中添加内容，无效；需要放到 &lt;code>assets/scss/_main.scss&lt;/code> 中&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@import url(&amp;#39;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&amp;#39;);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">body {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="接入评论系统">接入评论系统
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/content-management/comments/" target="_blank" rel="noopener"
+>https://gohugo.io/content-management/comments/&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://commento.io/" target="_blank" rel="noopener"
+>Commento&lt;/a>&lt;/p>
+&lt;ol>
+&lt;li>注册账号&lt;/li>
+&lt;li>添加域名&lt;/li>
+&lt;li>引入配置&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">params:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> commento:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> url: &amp;#34;https://cdn.commento.io/js/commento.js&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>免费计划：每个月只有 1000 次的 API 请求&lt;/p></description></item><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
 &lt;p>v1.6 大版本更新说明&lt;/p>
 &lt;blockquote>
 &lt;p>这次更新的重点是改善应用程序中的一些长期存在的痛点。最值得注意的是，我们已经彻底检查了应用程序界面，以更好地支持右到左(RTL)语言。现在，当应用程序语言被设置为 RTL 语言时，整个界面将被镜像。我们也在&lt;strong>提高脚注的编辑和阅读体验&lt;/strong>方面给予了很大的关注。这个版本充满了 bug 修复，但在加载应用程序和编辑应用程序时，您可能还会注意到一些性能改进。&lt;/p>
@@ -894,7 +1080,7 @@
 &lt;/h3>&lt;h3 id="formatting">Formatting
 &lt;/h3>&lt;h3 id="settings">Settings
 &lt;/h3>&lt;h3 id="search">Search
-&lt;/h3></description></item><item><title>Hugo Seven 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-seven/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-seven/</guid><description>
+&lt;/h3></description></item><item><title>Hugo Seven 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-seven/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-seven/</guid><description>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/seven/" target="_blank" rel="noopener"
@@ -907,12 +1093,13 @@
 >Document&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="兼容性">兼容性
-&lt;/h2>&lt;p>需要删除已有 themes，放弃&lt;/p></description></item><item><title>Hugo 主题概览</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-overview/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-overview/</guid><description>
+&lt;/h2>&lt;p>需要删除已有 themes，放弃&lt;/p></description></item><item><title>Hugo 主题概览</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-themes-overview/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-themes-overview/</guid><description>
 &lt;h2 id="推荐主题">推荐主题
 &lt;/h2>&lt;ul>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-papermod/" >Hugo PaperMod 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/" >Hugo book 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-papermod/" >Hugo PaperMod 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-book/" >Hugo book 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-hello-friend-ng/" >Hugo Hello Friend NG 主题&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="试用主题">试用主题
 &lt;/h2>&lt;p>看一下 tags&lt;/p>
@@ -938,16 +1125,6 @@
 >Demo site&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://github.com/luizdepra/hugo-coder/blob/main/docs/home.md" target="_blank" rel="noopener"
 >Document&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="hello-friend-ng">Hello Friend NG
-&lt;/h3>&lt;ul>
-&lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/" target="_blank" rel="noopener"
->官网文档&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://github.com/rhazdon/hugo-theme-hello-friend-ng" target="_blank" rel="noopener"
->https://github.com/rhazdon/hugo-theme-hello-friend-ng&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://hugo-hello-friend.vercel.app/" target="_blank" rel="noopener"
->Demo site&lt;/a> # 没 demo，参考的主题这个样子&lt;/li>
-&lt;li>也没独立的文档页面&lt;/li>
 &lt;/ul></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
 &lt;p>&lt;a class="link" href="https://github.com/twotwo/obsidian-site" target="_blank" rel="noopener"
 >https://github.com/twotwo/obsidian-site&lt;/a>&lt;/p>
@@ -955,7 +1132,7 @@
 loading="lazy"
 alt="在手机、平板和电脑上的效果"
 >&lt;/p>
-&lt;p>用 Excalidraw 合成了一下页面在三端上的效果，粗看还行。&lt;/p></description></item><item><title>Hugo Stack 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-stack/</guid><description>
+&lt;p>用 Excalidraw 合成了一下页面在三端上的效果，粗看还行。&lt;/p></description></item><item><title>Hugo Stack 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/</guid><description>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-theme-stack/" target="_blank" rel="noopener"
@@ -1031,6 +1208,7 @@ alt="在手机、平板和电脑上的效果"
 >官网&lt;/a>：公开仓库，启用 Discussions，仓库中安装 &lt;a class="link" href="https://github.com/apps/giscus" target="_blank" rel="noopener"
 >giscus&lt;/a> app&lt;/p></description></item><item><title>世界无烟日：保护青少年免受烟草业干扰</title><link>https://all-in-obsidian.li3huo.com/posts/2024/world-no-tobacco-day/</link><pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/world-no-tobacco-day/</guid><description>
 &lt;p>2024年5月31日是 WHO 设立的第37个“世界无烟日”，本年度主题为 &lt;strong>保护青少年免受烟草业干扰&lt;/strong>，敦促各国政府保护未成年人免受烟草业欺骗性营销的危害。&lt;/p>
+&lt;p>在过去的20年里，全球吸烟率持续下降，这在一定程度上要归功于广泛实施的禁烟令，然而我们对晚期肺癌的任何一种治疗方法都比不上通过降低吸烟率来降低死亡率那样有效。相较于医学上的那些晚期干预措施，这种简单的预防措施（不吸烟）反而挽救了更多的生命。&lt;/p>
 &lt;h2 id="起源">起源
 &lt;/h2>&lt;p>1987年11月，世界卫生组织在日本东京举行的第6届吸烟与健康国际会议上建议把每年的4月7日定为世界无烟日，并从1988年开始执行。但&lt;strong>从1989年开始，世界无烟日改为每年的5月31日，因为第二天是国际儿童节，希望下一代免受烟草危害。&lt;/strong>&lt;/p>
 &lt;h2 id="烟草的危害">烟草的危害☠️
@@ -1048,7 +1226,7 @@ alt="在手机、平板和电脑上的效果"
 &lt;li>公共场所经营者应当开展吸烟危害健康的宣传，并配备专（兼）职人员对吸烟者进行劝阻。&lt;/li>
 &lt;/ul>
 &lt;/blockquote>
-&lt;p>在很多时候还能看到有人随地吸烟，置法规如无物，也没人监管，没有惩罚，可叹～&lt;/p></description></item><item><title>Hugo Book 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</link><pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-book/</guid><description>
+&lt;p>在很多时候还能看到有人随地吸烟，置法规如无物，也没人监管，没有惩罚，可叹～&lt;/p></description></item><item><title>Hugo Book 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-book/</link><pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-book/</guid><description>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-book/" target="_blank" rel="noopener"
@@ -1092,7 +1270,7 @@ alt="在手机、平板和电脑上的效果"
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">googleAnalytics&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">88888888&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>生效后，页面中加入了&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">async&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://www.googletagmanager.com/gtag/js?id=88888888&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hugo PaperMod 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-papermod/</link><pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/themes-hugo-papermod/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hugo PaperMod 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-papermod/</link><pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-papermod/</guid><description>
 &lt;p>目前官网排名第一的主题，的确很不错。&lt;/p>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
@@ -1121,6 +1299,13 @@ alt="在手机、平板和电脑上的效果"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">font&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">family&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;LXGW WenKai Screen&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">apple&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">system&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">BlinkMacSystemFont&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Segoe UI&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Roboto&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Oxygen&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Ubuntu&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Cantarell&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Open Sans&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Helvetica Neue&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sans&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">serif&lt;/span> &lt;span class="o">!&lt;/span>&lt;span class="n">important&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;lt;/&lt;/span>&lt;span class="n">style&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="search">Search
+&lt;/h2>&lt;p>&lt;code>content/search.md&lt;/code> # 必须放在这里&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">menu:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> main:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Search
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> url: search/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> weight: 10
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>markdown 博客方案 - obsidian + hugo</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link><pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid><description>
 &lt;p>2015 年底，弃用 Wordpress，使用 Markdown 写作博客。&lt;/p>
 &lt;p>Hugo 默认不支持 Ob 链接&lt;/p>
@@ -1348,16 +1533,7 @@ are located at the same relative location as the url, in our case
 &lt;p>Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building. I double dare you.
 Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p>
 &lt;h2 id="step-4-have-fun">Step 4. Have fun
-&lt;/h2>&lt;p>The best way to learn something is to play with it.&lt;/p></description></item><item><title>Archives</title><link>https://all-in-obsidian.li3huo.com/menu/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/archives/</guid><description/></item><item><title>Links</title><link>https://all-in-obsidian.li3huo.com/menu/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/links/</guid><description>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://twotwo.github.io/" target="_blank" rel="noopener"
->twotwo&amp;rsquo;s home&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://cyddgh.github.io/" target="_blank" rel="noopener"
->软通达&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://lillianwho.com/" target="_blank" rel="noopener"
->Lillian Who&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Search</title><link>https://all-in-obsidian.li3huo.com/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/page/search/</guid><description/></item><item><title>友链</title><link>https://all-in-obsidian.li3huo.com/menu/friends/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/friends/</guid><description>
-&lt;p>&lt;strong>友链&lt;/strong>&lt;/p>
+&lt;/h2>&lt;p>The best way to learn something is to play with it.&lt;/p></description></item><item><title>Archives</title><link>https://all-in-obsidian.li3huo.com/menu/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/archives/</guid><description/></item><item><title>Friends</title><link>https://all-in-obsidian.li3huo.com/menu/friends/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/friends/</guid><description>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://twotwo.github.io/" target="_blank" rel="noopener"
 >twotwo&amp;rsquo;s home&lt;/a>&lt;/li>
@@ -1371,4 +1547,12 @@ Having nearly instant feedback enables you to have your creativity flow without 
 >张老汉的博客&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="http://lixinyang.com" target="_blank" rel="noopener"
 >李新阳的博客&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Links</title><link>https://all-in-obsidian.li3huo.com/menu/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/links/</guid><description>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://twotwo.github.io/" target="_blank" rel="noopener"
+>twotwo&amp;rsquo;s home&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://cyddgh.github.io/" target="_blank" rel="noopener"
+>软通达&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://lillianwho.com/" target="_blank" rel="noopener"
+>Lillian Who&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Search</title><link>https://all-in-obsidian.li3huo.com/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/page/search/</guid><description/></item><item><title>Search</title><link>https://all-in-obsidian.li3huo.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/search/</guid><description/></item></channel></rss>
