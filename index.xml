@@ -956,16 +956,22 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
-&lt;p>推荐几个 Youtuber 和他们的频道。&lt;/p>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Frame Your Thoughts with Concept Modeling</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Zg_DUj68VkY" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=Zg_DUj68VkY&lt;/a>&lt;/p>
+&lt;p>通过对概念建模，组织个人对知识的理解。概念图由一些关键元素构成。&lt;/p>
+&lt;h2 id="what-is-a-concept-map">What is a Concept Map?
+&lt;/h2>&lt;p>概念图，Concept Diagram，或者叫做 Concept Map / Concept Model&lt;/p>
+&lt;h2 id="compare-concept-maps-vs-mind-maps">Compare Concept Maps vs Mind Maps
+&lt;/h2></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
+&lt;p>从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
 &lt;h2 id="visualpkm">@VisualPKM
-&lt;/h2>&lt;p>Zsolt Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者。&lt;/p>
+&lt;/h2>&lt;p>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
+>Zsolt&lt;/a> Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p>
 &lt;p>VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://www.youtube.com/@VisualPKM" target="_blank" rel="noopener"
 >https://www.youtube.com/@VisualPKM&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
->solt&amp;rsquo;s Blog&lt;/a>&lt;/li>
 &lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849106.png"
 loading="lazy"
 >&lt;/li>
@@ -993,15 +999,17 @@ loading="lazy"
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://www.youtube.com/@linkingyourthinking" target="_blank" rel="noopener"
 >https://www.youtube.com/@linkingyourthinking&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121847212.png"
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406122010580.png"
 loading="lazy"
 >&lt;/li>
 &lt;/ul>
 &lt;h2 id="cyanvoxel">@cyanvoxel
-&lt;/h2>&lt;p>CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，提供了他的 Osidian 保险库参观，展示了如何将字段笔记数字化并整合到 Osidian 中。&lt;/p>
+&lt;/h2>&lt;p>CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，共享了他的 Osidian Vault，展示了如何将实体笔记数字化并整合到 Osidian 中。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://www.youtube.com/@cyanvoxel" target="_blank" rel="noopener"
 >https://www.youtube.com/@cyanvoxel&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/CyanVoxel/Obsidian-Vault-Template" target="_blank" rel="noopener"
+>https://github.com/CyanVoxel/Obsidian-Vault-Template&lt;/a>&lt;/li>
 &lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121840729.png"
 loading="lazy"
 >&lt;/li>

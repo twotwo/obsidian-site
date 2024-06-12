@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 12 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
-&lt;p>推荐几个 Youtuber 和他们的频道。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 12 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Frame Your Thoughts with Concept Modeling</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Zg_DUj68VkY" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=Zg_DUj68VkY&lt;/a>&lt;/p>
+&lt;p>通过对概念建模，组织个人对知识的理解。概念图由一些关键元素构成。&lt;/p>
+&lt;h2 id="what-is-a-concept-map">What is a Concept Map?
+&lt;/h2>&lt;p>概念图，Concept Diagram，或者叫做 Concept Map / Concept Model&lt;/p>
+&lt;h2 id="compare-concept-maps-vs-mind-maps">Compare Concept Maps vs Mind Maps
+&lt;/h2></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
+&lt;p>从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
 &lt;h2 id="visualpkm">@VisualPKM
-&lt;/h2>&lt;p>Zsolt Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者。&lt;/p>
+&lt;/h2>&lt;p>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
+>Zsolt&lt;/a> Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p>
 &lt;p>VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://www.youtube.com/@VisualPKM" target="_blank" rel="noopener"
 >https://www.youtube.com/@VisualPKM&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
->solt&amp;rsquo;s Blog&lt;/a>&lt;/li>
 &lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849106.png"
 loading="lazy"
 >&lt;/li>
@@ -35,15 +41,17 @@ loading="lazy"
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://www.youtube.com/@linkingyourthinking" target="_blank" rel="noopener"
 >https://www.youtube.com/@linkingyourthinking&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121847212.png"
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406122010580.png"
 loading="lazy"
 >&lt;/li>
 &lt;/ul>
 &lt;h2 id="cyanvoxel">@cyanvoxel
-&lt;/h2>&lt;p>CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，提供了他的 Osidian 保险库参观，展示了如何将字段笔记数字化并整合到 Osidian 中。&lt;/p>
+&lt;/h2>&lt;p>CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，共享了他的 Osidian Vault，展示了如何将实体笔记数字化并整合到 Osidian 中。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://www.youtube.com/@cyanvoxel" target="_blank" rel="noopener"
 >https://www.youtube.com/@cyanvoxel&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/CyanVoxel/Obsidian-Vault-Template" target="_blank" rel="noopener"
+>https://github.com/CyanVoxel/Obsidian-Vault-Template&lt;/a>&lt;/li>
 &lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121840729.png"
 loading="lazy"
 >&lt;/li>
