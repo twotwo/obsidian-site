@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Excalidraw on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/excalidraw/</link><description>Recent content in Excalidraw on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/excalidraw/index.xml" rel="self" type="application/rss+xml"/><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Excalidraw on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/excalidraw/</link><description>Recent content in Excalidraw on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Fri, 14 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/excalidraw/index.xml" rel="self" type="application/rss+xml"/><item><title>Excalidraw Features</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</link><pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</guid><description>
+&lt;p>随着版本的更新，excalidraw 中增加了新的功能，在此进行记录整理。&lt;/p>
+&lt;h2 id="appearance-and-behavior">Appearance and Behavior
+&lt;/h2>&lt;h3 id="multiple-templates">Multiple Templates
+&lt;/h3>&lt;p>Basic -&amp;gt; Excalidraw Template Folder&lt;/p>
+&lt;h2 id="笔记引用-excalidraw">笔记引用 Excalidraw
+&lt;/h2>&lt;h3 id="frame-reference">Frame Reference
+&lt;/h3>&lt;p>在 Markdown 笔记中只引入部分图画(Frame) &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>
+语法说明：&lt;code>![[.excalidraw#^frame=&amp;lt;frame name&amp;gt;]]&lt;/code>&lt;/p>
+&lt;h2 id="footnotes">Footnotes
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>v2.0.26 &lt;a class="link" href="https://youtu.be/tHUcD4rWIuY" target="_blank" rel="noopener"
+>Start using the flipside of your markdown notes&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
 &lt;p>&lt;a class="link" href="https://github.com/twotwo/obsidian-site" target="_blank" rel="noopener"
 >https://github.com/twotwo/obsidian-site&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian-site.svg"

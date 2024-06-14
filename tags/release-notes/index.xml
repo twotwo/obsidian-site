@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release-Notes on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/release-notes/</link><description>Recent content in Release-Notes on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sat, 08 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/release-notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
-&lt;p>v1.6 大版本更新说明&lt;/p>
+&lt;p>v1.6 大版本更新说明&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
 &lt;blockquote>
 &lt;p>这次更新的重点是改善应用程序中的一些长期存在的痛点。最值得注意的是，我们已经彻底检查了应用程序界面，以更好地支持右到左(RTL)语言。现在，当应用程序语言被设置为 RTL 语言时，整个界面将被镜像。我们也在&lt;strong>提高脚注的编辑和阅读体验&lt;/strong>方面给予了很大的关注。这个版本充满了 bug 修复，但在加载应用程序和编辑应用程序时，您可能还会注意到一些性能改进。&lt;/p>
 &lt;/blockquote>
@@ -24,14 +24,101 @@
 &lt;/ul>
 &lt;h3 id="footnotes">Footnotes
 &lt;/h3>&lt;ul>
-&lt;li>使用 &lt;code>[^&lt;/code> 为脚注引用添加自动补全。&lt;/li>
+&lt;li>使用 &lt;code>[^&lt;/code> 为脚注引用添加自动补全&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/li>
 &lt;li>修正了编辑器中脚注的解析和渲染。&lt;/li>
-&lt;li>增加了对内联脚注的悬浮预览支持。&lt;/li>
+&lt;li>增加了对内联脚注的悬浮预览支持^[这是一条内联注脚，格式为&lt;code>^[content]&lt;/code>]。&lt;/li>
 &lt;li>悬停在一个脚注ID上，会弹出一个相应的脚注。&lt;/li>
 &lt;/ul>
 &lt;h3 id="properties">Properties
-&lt;/h3>&lt;h3 id="no-longer-broken">No longer broken
-&lt;/h3>&lt;h3 id="formatting">Formatting
-&lt;/h3>&lt;h3 id="settings">Settings
-&lt;/h3>&lt;h3 id="search">Search
-&lt;/h3></description></item></channel></rss>
+&lt;/h3>&lt;ul>
+&lt;li>当合并两个属性时，新的属性名称将在全局属性列表中刷新。&lt;/li>
+&lt;li>现在属性列表项可以通过双击来编辑了。&lt;/li>
+&lt;li>如果打开的文件有无效的 frontmatter&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>，属性视图上会出现编辑按钮。&lt;/li>
+&lt;/ul>
+&lt;h3 id="no-longer-broken">No longer broken
+&lt;/h3>&lt;p>各种 bug 修复&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;h3 id="formatting">Formatting
+&lt;/h3>&lt;ul>
+&lt;li>修正了有换行符情况时的不正确格式应用。&lt;/li>
+&lt;li>现在切换项目列表命令(Toggle bullet list)会把任务列表变成项目列表。&lt;/li>
+&lt;li>修正了切换格式命令有时在编辑器的最后一行不起作用。&lt;/li>
+&lt;/ul>
+&lt;h3 id="settings">Settings
+&lt;/h3>&lt;ul>
+&lt;li>改进了设置内部登录界面的布局。&lt;/li>
+&lt;li>对安装社区主题和插件时显示的通知进行了小幅更新。&lt;/li>
+&lt;li>使用“adapt to system”时，“Light themes only”切换不再显示。&lt;/li>
+&lt;li>改进了命令调色板重新排序的拖放功能。&lt;/li>
+&lt;li>修正了重新排序处理程序在弹出窗口中不工作。&lt;/li>
+&lt;/ul>
+&lt;h3 id="search">Search
+&lt;/h3>&lt;ul>
+&lt;li>键入引号字符串时不触发搜索建议。&lt;/li>
+&lt;li>除非光标在查询的最后，或者下一个字符是空格，否则不会显示搜索建议。&lt;/li>
+&lt;li>点击“清除”按钮将不会导致搜索输入失去焦点。&lt;/li>
+&lt;/ul>
+&lt;h3 id="table">Table
+&lt;/h3>&lt;ul>
+&lt;li>点击 table 右侧边距(margin)，现在编辑器会聚焦。&lt;/li>
+&lt;li>修复 shift +箭头键不响应。&lt;/li>
+&lt;li>确保主编辑器的单元格更新正确更新单元格偏移量。&lt;/li>
+&lt;li>修复在表格单元格内解析数学块(math blocks)。&lt;/li>
+&lt;li>修复在表格单元格内双击不工作。&lt;/li>
+&lt;li>Fixed rendering tables inside callouts.&lt;/li>
+&lt;/ul>
+&lt;h3 id="source-mode">Source mode
+&lt;/h3>&lt;ul>
+&lt;li>Fixed pressing &lt;code>End&lt;/code> key not moving to end of line if cursor is in table.&lt;/li>
+&lt;/ul>
+&lt;h3 id="live-preview">Live Preview
+&lt;/h3>&lt;ul>
+&lt;li>Fix callout menu overlapping with URL menu when right-clicking on a link.&lt;/li>
+&lt;li>Fix failing to render headings with trailing &lt;code>#&lt;/code> at the end of the line.&lt;/li>
+&lt;li>Fixed checklist items getting unfolded if cursor was inside a folded region.&lt;/li>
+&lt;li>Allow blank lines in multi-line footnotes.&lt;/li>
+&lt;/ul>
+&lt;h3 id="reading-mode">Reading mode
+&lt;/h3>&lt;ul>
+&lt;li>Reading mode will no longer render footnote refs that contain spaces.&lt;/li>
+&lt;li>Fixed rendering of inline footnotes in reading mode.&lt;/li>
+&lt;/ul>
+&lt;h3 id="themes">Themes
+&lt;/h3>&lt;ul>
+&lt;li>Switched to Cascadia Mono instead of Cascadia Code for default monospace on Windows.&lt;/li>
+&lt;li>Bold is now computed based on the current text weight, so bold inside a heading will still appear bold.&lt;/li>
+&lt;li>Added &lt;code>--caret-color&lt;/code> CSS variable to make it easier to style caret color on both desktop and mobile.&lt;/li>
+&lt;li>Added new &lt;code>--link-weight&lt;/code> variable.&lt;/li>
+&lt;li>The user&amp;rsquo;s interface language is added to the &lt;code>lang&lt;/code> attribute on the &lt;code>html&lt;/code> element, which allows language-specific CSS rules.&lt;/li>
+&lt;li>The &lt;code>.mod-rtl&lt;/code> class is added to &lt;code>body&lt;/code> element when the user&amp;rsquo;s interface language is RTL.&lt;/li>
+&lt;/ul>
+&lt;h3 id="plugins">Plugins
+&lt;/h3>&lt;ul>
+&lt;li>Fixed &lt;code>processFrontmatter&lt;/code> failing to process file if all properties are removed.&lt;/li>
+&lt;li>Improve detection of external config changes.&lt;/li>
+&lt;li>We&amp;rsquo;ve made several improvements to the behavior of &lt;code>app.emulateMobile&lt;/code> that should make it easier to test that your plugins are mobile-compatible. Attempting to run a NodeJS library will present a Notice. Drag and drop will more accurately mirror the behavior on mobile. The app will have default &lt;code>safe-area-inset&lt;/code> properties set so that your views properly account for offsets in the mobile device viewport (such as the iPhone Dynamic Island).&lt;/li>
+&lt;li>Bare modals should respect &lt;code>safe-area-insets&lt;/code> by default.&lt;/li>
+&lt;li>Added loading state to some of the settings button that make remote requests.&lt;/li>
+&lt;li>Global &lt;code>app&lt;/code> has been completely removed from the API spec (previously it was marked as deprecated).&lt;/li>
+&lt;/ul>
+&lt;h2 id="reference">Reference
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://obsidian.md/changelog/" target="_blank" rel="noopener"
+>Changelog&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>Basic formatting syntax &lt;a class="link" href="https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Basic&amp;#43;formatting&amp;#43;syntax#Footnotes" target="_blank" rel="noopener"
+>Footnotes&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a class="link" href="https://help.obsidian.md/Getting&amp;#43;started/Glossary#Frontmatter" target="_blank" rel="noopener"
+>Frontmatter&lt;/a> is a way to define &lt;a class="link" href="https://help.obsidian.md/Getting&amp;#43;started/Glossary#property" target="_blank" rel="noopener"
+>properties&lt;/a> by adding &lt;a class="link" href="https://yaml.org/" target="_blank" rel="noopener"
+>YAML&lt;/a> or &lt;a class="link" href="https://www.json.org/" target="_blank" rel="noopener"
+>JSON&lt;/a> at the top of the note. See also &lt;a class="link" href="https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Properties#Property%20format" target="_blank" rel="noopener"
+>Property format&lt;/a>.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>

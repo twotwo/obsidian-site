@@ -1,11 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zsolt on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/zsolt/</link><description>Recent content in Zsolt on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 12 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/zsolt/index.xml" rel="self" type="application/rss+xml"/><item><title>Frame Your Thoughts with Concept Modeling</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
-&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Zg_DUj68VkY" target="_blank" rel="noopener"
->https://www.youtube.com/watch?v=Zg_DUj68VkY&lt;/a>&lt;/p>
-&lt;p>通过对概念建模，组织个人对知识的理解。概念图由一些关键元素构成。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zsolt on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/zsolt/</link><description>Recent content in Zsolt on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Fri, 14 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/zsolt/index.xml" rel="self" type="application/rss+xml"/><item><title>Excalidraw Features</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</link><pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</guid><description>
+&lt;p>随着版本的更新，excalidraw 中增加了新的功能，在此进行记录整理。&lt;/p>
+&lt;h2 id="appearance-and-behavior">Appearance and Behavior
+&lt;/h2>&lt;h3 id="multiple-templates">Multiple Templates
+&lt;/h3>&lt;p>Basic -&amp;gt; Excalidraw Template Folder&lt;/p>
+&lt;h2 id="笔记引用-excalidraw">笔记引用 Excalidraw
+&lt;/h2>&lt;h3 id="frame-reference">Frame Reference
+&lt;/h3>&lt;p>在 Markdown 笔记中只引入部分图画(Frame) &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>
+语法说明：&lt;code>![[.excalidraw#^frame=&amp;lt;frame name&amp;gt;]]&lt;/code>&lt;/p>
+&lt;h2 id="footnotes">Footnotes
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>v2.0.26 &lt;a class="link" href="https://youtu.be/tHUcD4rWIuY" target="_blank" rel="noopener"
+>Start using the flipside of your markdown notes&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Frame Your Thoughts with Concept Modeling</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
+&lt;p>在这个视频&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>中，Zsolt 使用 Obsidian.md 和 Excalidraw 插件深入探讨了概念建模的概念。&lt;/p>
+&lt;ol>
+&lt;li>从 &lt;strong>What are key elements of diagram?&lt;/strong> 问题开始，探索了图表的关键元素，如形状、线条、标签等；通过创建概念图，zsolt 展示了概念之间是如何相互连接的，以及它们是如何形成命题的。&lt;/li>
+&lt;li>然后讨论了概念建模作为内容创作和学习过程中的基础步骤的重要性。作者强调了&lt;strong>概念建模与插图之间的区别&lt;/strong>，概念建模是在内容创作之前进行的思考和定义术语的过程，而插图是在内容创作之后进行的视觉化过程。&lt;/li>
+&lt;li>接着，作者将概念图与思维导图进行了比较，强调了它们之间的差异和应用场景。&lt;/li>
+&lt;li>最后，作者总结了概念建模的重要性，并鼓励观众在写作之前先创建概念模型，以便更深入地理解和学习新概念。&lt;/li>
+&lt;/ol>
+&lt;p>通过对这个视频的学习，认识到概念模型的重要性，并学到了创建&lt;strong>概念图&lt;/strong>来组织和澄清思想的操作步骤，有助于以后在&lt;strong>内容创作&lt;/strong>和&lt;strong>学习新概念&lt;/strong>时提高理解和知识整合程度。&lt;/p>
 &lt;h2 id="what-is-a-concept-map">What is a Concept Map?
-&lt;/h2>&lt;p>概念图，Concept Diagram，或者叫做 Concept Map / Concept Model&lt;/p>
+&lt;/h2>&lt;p>概念图&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>，Concept Diagram，或者叫做 Concept Model，是一种将建议的概念关系以图表的形式呈现出来的工具，通常用于组织和结构化知识。&lt;/p>
+&lt;p>概念图是一种用图形方式展示概念、思想或信息之间关系的视觉工具。它们通常由多个称为概念或节点的元素组成，这些元素通过连线相互连接，展示它们之间的联系和等级结构。概念图的制作过程可以帮助人们整理信息、解决问题、进行决策，并以易于理解的方式共享和协作信息，特别适用于深入理解复杂话题。&lt;/p>
+&lt;p>概念图最早是由康奈尔大学的Joseph D.Novak和他的研究团队在20世纪70年代提出的。当时，Novak将这种绘图技巧应用在科学学科的教学上，作为一种增进理解的教学技术。
+在Novak的著作《习得学习》（Learning to Learn）中，指出“有意义的学习，涉及将新概念与命题同化于既有的认知架构中”。&lt;/p>
+&lt;p>![[concept-modeling.excalidraw#^frame=concept modeling]]&lt;/p>
+&lt;p>BABOK^[Business Analysis Body Of Knowledge]&lt;/p>
+&lt;p>这张概念图来自这个视频[^conceptmodeling]&lt;/p>
+&lt;h2 id="what-are-key-elements-of-diagram">What are key elements of diagram?
+&lt;/h2>&lt;p>![[concept-modeling.excalidraw#^frame=diagram key elements]]&lt;/p>
+&lt;p>概念图使用的术语&lt;/p>
+&lt;ul>
+&lt;li>Diagrams &lt;em>概念图本身&lt;/em>&lt;/li>
+&lt;li>Shapes &lt;em>概念或想法&lt;/em>&lt;/li>
+&lt;li>Arrows &lt;em>关系&lt;/em>&lt;/li>
+&lt;li>Labels &lt;em>描述概念和关系&lt;/em>&lt;/li>
+&lt;li>Keys&lt;/li>
+&lt;li>Scope&lt;/li>
+&lt;li>Audience&lt;/li>
+&lt;li>Intention&lt;/li>
+&lt;li>Topic&lt;/li>
+&lt;li>Scale&lt;/li>
+&lt;/ul>
+&lt;p>3 basic elements&lt;/p>
+&lt;ul>
+&lt;li>Shapes &lt;em>概念，一般是名词&lt;/em>&lt;/li>
+&lt;li>Arrows &lt;em>连接器，一般是动词&lt;/em>&lt;/li>
+&lt;li>Keys&lt;/li>
+&lt;/ul>
+&lt;p>可视元素和不可视元素&lt;/p>
+&lt;h2 id="modeling-vs-illustration">Modeling vs Illustration
+&lt;/h2>&lt;p>建模与插图之间的差异&lt;/p>
+&lt;blockquote>
+&lt;p>建模是在内容创作前进行的思维整理工作，而插图则是在内容创作后进行的视觉化过程。&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="compare-concept-maps-vs-mind-maps">Compare Concept Maps vs Mind Maps
-&lt;/h2></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
+&lt;/h2>&lt;p>![[concept_map-vs-mindmap.excalidraw]]&lt;/p>
+&lt;h2 id="conclusion">Conclusion
+&lt;/h2>&lt;p>概念建模可以 精炼知识(Refining Knowledge)，增进理解。&lt;/p>
+&lt;p>在下次开始写作之前，尝试先构建概念图，再动笔输出文字。&lt;/p>
+&lt;h2 id="reference">Reference
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Zg_DUj68VkY" target="_blank" rel="noopener"
+>Before You Write: Frame Your Thoughts with Concept Modeling&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Concept_map" target="_blank" rel="noopener"
+>https://en.wikipedia.org/wiki/Concept_map&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
 &lt;p>从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
 &lt;h2 id="visualpkm">@VisualPKM
 &lt;/h2>&lt;p>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
@@ -53,6 +126,16 @@ loading="lazy"
 &lt;li>&lt;a class="link" href="https://github.com/CyanVoxel/Obsidian-Vault-Template" target="_blank" rel="noopener"
 >https://github.com/CyanVoxel/Obsidian-Vault-Template&lt;/a>&lt;/li>
 &lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121840729.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="dannberg">@DannBerg
+&lt;/h2>&lt;p>&lt;a class="link" href="https://dannb.org/" target="_blank" rel="noopener"
+>Dann Berg&lt;/a> 是一位资深 FinOps(个人财务运营) 从业者，他的 YouTube 频道拥有超过 4.48K 名订阅者，并且发布了 55 个视频。他的视频内容涵盖了个人财务和工程的交叉点，以及他个人感兴趣的主题。频道内容包括提高笔记效率的技巧、Obsidian 应用的教程、生产力书籍推荐、以及如何撰写和管理新闻通讯等。他还分享了自己的个人 Obsidian 笔记库，并提供了一系列的 Obsidian 系统和模板教程。此外，Dann Berg 还探讨了如何摆脱 Google 生态系统，实现数字生活的独立性。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@DannBerg" target="_blank" rel="noopener"
+>https://www.youtube.com/@DannBerg&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121900655.png"
 loading="lazy"
 >&lt;/li>
 &lt;/ul></description></item></channel></rss>

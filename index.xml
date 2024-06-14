@@ -956,14 +956,87 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Frame Your Thoughts with Concept Modeling</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
-&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Zg_DUj68VkY" target="_blank" rel="noopener"
->https://www.youtube.com/watch?v=Zg_DUj68VkY&lt;/a>&lt;/p>
-&lt;p>通过对概念建模，组织个人对知识的理解。概念图由一些关键元素构成。&lt;/p>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Excalidraw Features</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</link><pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</guid><description>
+&lt;p>随着版本的更新，excalidraw 中增加了新的功能，在此进行记录整理。&lt;/p>
+&lt;h2 id="appearance-and-behavior">Appearance and Behavior
+&lt;/h2>&lt;h3 id="multiple-templates">Multiple Templates
+&lt;/h3>&lt;p>Basic -&amp;gt; Excalidraw Template Folder&lt;/p>
+&lt;h2 id="笔记引用-excalidraw">笔记引用 Excalidraw
+&lt;/h2>&lt;h3 id="frame-reference">Frame Reference
+&lt;/h3>&lt;p>在 Markdown 笔记中只引入部分图画(Frame) &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>
+语法说明：&lt;code>![[.excalidraw#^frame=&amp;lt;frame name&amp;gt;]]&lt;/code>&lt;/p>
+&lt;h2 id="footnotes">Footnotes
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>v2.0.26 &lt;a class="link" href="https://youtu.be/tHUcD4rWIuY" target="_blank" rel="noopener"
+>Start using the flipside of your markdown notes&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Frame Your Thoughts with Concept Modeling</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
+&lt;p>在这个视频&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>中，Zsolt 使用 Obsidian.md 和 Excalidraw 插件深入探讨了概念建模的概念。&lt;/p>
+&lt;ol>
+&lt;li>从 &lt;strong>What are key elements of diagram?&lt;/strong> 问题开始，探索了图表的关键元素，如形状、线条、标签等；通过创建概念图，zsolt 展示了概念之间是如何相互连接的，以及它们是如何形成命题的。&lt;/li>
+&lt;li>然后讨论了概念建模作为内容创作和学习过程中的基础步骤的重要性。作者强调了&lt;strong>概念建模与插图之间的区别&lt;/strong>，概念建模是在内容创作之前进行的思考和定义术语的过程，而插图是在内容创作之后进行的视觉化过程。&lt;/li>
+&lt;li>接着，作者将概念图与思维导图进行了比较，强调了它们之间的差异和应用场景。&lt;/li>
+&lt;li>最后，作者总结了概念建模的重要性，并鼓励观众在写作之前先创建概念模型，以便更深入地理解和学习新概念。&lt;/li>
+&lt;/ol>
+&lt;p>通过对这个视频的学习，认识到概念模型的重要性，并学到了创建&lt;strong>概念图&lt;/strong>来组织和澄清思想的操作步骤，有助于以后在&lt;strong>内容创作&lt;/strong>和&lt;strong>学习新概念&lt;/strong>时提高理解和知识整合程度。&lt;/p>
 &lt;h2 id="what-is-a-concept-map">What is a Concept Map?
-&lt;/h2>&lt;p>概念图，Concept Diagram，或者叫做 Concept Map / Concept Model&lt;/p>
+&lt;/h2>&lt;p>概念图&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>，Concept Diagram，或者叫做 Concept Model，是一种将建议的概念关系以图表的形式呈现出来的工具，通常用于组织和结构化知识。&lt;/p>
+&lt;p>概念图是一种用图形方式展示概念、思想或信息之间关系的视觉工具。它们通常由多个称为概念或节点的元素组成，这些元素通过连线相互连接，展示它们之间的联系和等级结构。概念图的制作过程可以帮助人们整理信息、解决问题、进行决策，并以易于理解的方式共享和协作信息，特别适用于深入理解复杂话题。&lt;/p>
+&lt;p>概念图最早是由康奈尔大学的Joseph D.Novak和他的研究团队在20世纪70年代提出的。当时，Novak将这种绘图技巧应用在科学学科的教学上，作为一种增进理解的教学技术。
+在Novak的著作《习得学习》（Learning to Learn）中，指出“有意义的学习，涉及将新概念与命题同化于既有的认知架构中”。&lt;/p>
+&lt;p>![[concept-modeling.excalidraw#^frame=concept modeling]]&lt;/p>
+&lt;p>BABOK^[Business Analysis Body Of Knowledge]&lt;/p>
+&lt;p>这张概念图来自这个视频[^conceptmodeling]&lt;/p>
+&lt;h2 id="what-are-key-elements-of-diagram">What are key elements of diagram?
+&lt;/h2>&lt;p>![[concept-modeling.excalidraw#^frame=diagram key elements]]&lt;/p>
+&lt;p>概念图使用的术语&lt;/p>
+&lt;ul>
+&lt;li>Diagrams &lt;em>概念图本身&lt;/em>&lt;/li>
+&lt;li>Shapes &lt;em>概念或想法&lt;/em>&lt;/li>
+&lt;li>Arrows &lt;em>关系&lt;/em>&lt;/li>
+&lt;li>Labels &lt;em>描述概念和关系&lt;/em>&lt;/li>
+&lt;li>Keys&lt;/li>
+&lt;li>Scope&lt;/li>
+&lt;li>Audience&lt;/li>
+&lt;li>Intention&lt;/li>
+&lt;li>Topic&lt;/li>
+&lt;li>Scale&lt;/li>
+&lt;/ul>
+&lt;p>3 basic elements&lt;/p>
+&lt;ul>
+&lt;li>Shapes &lt;em>概念，一般是名词&lt;/em>&lt;/li>
+&lt;li>Arrows &lt;em>连接器，一般是动词&lt;/em>&lt;/li>
+&lt;li>Keys&lt;/li>
+&lt;/ul>
+&lt;p>可视元素和不可视元素&lt;/p>
+&lt;h2 id="modeling-vs-illustration">Modeling vs Illustration
+&lt;/h2>&lt;p>建模与插图之间的差异&lt;/p>
+&lt;blockquote>
+&lt;p>建模是在内容创作前进行的思维整理工作，而插图则是在内容创作后进行的视觉化过程。&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="compare-concept-maps-vs-mind-maps">Compare Concept Maps vs Mind Maps
-&lt;/h2></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
+&lt;/h2>&lt;p>![[concept_map-vs-mindmap.excalidraw]]&lt;/p>
+&lt;h2 id="conclusion">Conclusion
+&lt;/h2>&lt;p>概念建模可以 精炼知识(Refining Knowledge)，增进理解。&lt;/p>
+&lt;p>在下次开始写作之前，尝试先构建概念图，再动笔输出文字。&lt;/p>
+&lt;h2 id="reference">Reference
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Zg_DUj68VkY" target="_blank" rel="noopener"
+>Before You Write: Frame Your Thoughts with Concept Modeling&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Concept_map" target="_blank" rel="noopener"
+>https://en.wikipedia.org/wiki/Concept_map&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
 &lt;p>从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
 &lt;h2 id="visualpkm">@VisualPKM
 &lt;/h2>&lt;p>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
@@ -1013,6 +1086,16 @@ loading="lazy"
 &lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121840729.png"
 loading="lazy"
 >&lt;/li>
+&lt;/ul>
+&lt;h2 id="dannberg">@DannBerg
+&lt;/h2>&lt;p>&lt;a class="link" href="https://dannb.org/" target="_blank" rel="noopener"
+>Dann Berg&lt;/a> 是一位资深 FinOps(个人财务运营) 从业者，他的 YouTube 频道拥有超过 4.48K 名订阅者，并且发布了 55 个视频。他的视频内容涵盖了个人财务和工程的交叉点，以及他个人感兴趣的主题。频道内容包括提高笔记效率的技巧、Obsidian 应用的教程、生产力书籍推荐、以及如何撰写和管理新闻通讯等。他还分享了自己的个人 Obsidian 笔记库，并提供了一系列的 Obsidian 系统和模板教程。此外，Dann Berg 还探讨了如何摆脱 Google 生态系统，实现数字生活的独立性。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@DannBerg" target="_blank" rel="noopener"
+>https://www.youtube.com/@DannBerg&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121900655.png"
+loading="lazy"
+>&lt;/li>
 &lt;/ul></description></item><item><title>Hugo Hello Friend NG 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-hello-friend-ng/</link><pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-hello-friend-ng/</guid><description>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;p>Hello Friend NG&lt;/p>
@@ -1053,7 +1136,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> commento:
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> url: &amp;#34;https://cdn.commento.io/js/commento.js&amp;#34;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>免费计划：每个月只有 1000 次的 API 请求&lt;/p></description></item><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
-&lt;p>v1.6 大版本更新说明&lt;/p>
+&lt;p>v1.6 大版本更新说明&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
 &lt;blockquote>
 &lt;p>这次更新的重点是改善应用程序中的一些长期存在的痛点。最值得注意的是，我们已经彻底检查了应用程序界面，以更好地支持右到左(RTL)语言。现在，当应用程序语言被设置为 RTL 语言时，整个界面将被镜像。我们也在&lt;strong>提高脚注的编辑和阅读体验&lt;/strong>方面给予了很大的关注。这个版本充满了 bug 修复，但在加载应用程序和编辑应用程序时，您可能还会注意到一些性能改进。&lt;/p>
 &lt;/blockquote>
@@ -1078,17 +1161,104 @@ loading="lazy"
 &lt;/ul>
 &lt;h3 id="footnotes">Footnotes
 &lt;/h3>&lt;ul>
-&lt;li>使用 &lt;code>[^&lt;/code> 为脚注引用添加自动补全。&lt;/li>
+&lt;li>使用 &lt;code>[^&lt;/code> 为脚注引用添加自动补全&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/li>
 &lt;li>修正了编辑器中脚注的解析和渲染。&lt;/li>
-&lt;li>增加了对内联脚注的悬浮预览支持。&lt;/li>
+&lt;li>增加了对内联脚注的悬浮预览支持^[这是一条内联注脚，格式为&lt;code>^[content]&lt;/code>]。&lt;/li>
 &lt;li>悬停在一个脚注ID上，会弹出一个相应的脚注。&lt;/li>
 &lt;/ul>
 &lt;h3 id="properties">Properties
-&lt;/h3>&lt;h3 id="no-longer-broken">No longer broken
-&lt;/h3>&lt;h3 id="formatting">Formatting
-&lt;/h3>&lt;h3 id="settings">Settings
-&lt;/h3>&lt;h3 id="search">Search
-&lt;/h3></description></item><item><title>Hugo Seven 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-seven/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-seven/</guid><description>
+&lt;/h3>&lt;ul>
+&lt;li>当合并两个属性时，新的属性名称将在全局属性列表中刷新。&lt;/li>
+&lt;li>现在属性列表项可以通过双击来编辑了。&lt;/li>
+&lt;li>如果打开的文件有无效的 frontmatter&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>，属性视图上会出现编辑按钮。&lt;/li>
+&lt;/ul>
+&lt;h3 id="no-longer-broken">No longer broken
+&lt;/h3>&lt;p>各种 bug 修复&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;h3 id="formatting">Formatting
+&lt;/h3>&lt;ul>
+&lt;li>修正了有换行符情况时的不正确格式应用。&lt;/li>
+&lt;li>现在切换项目列表命令(Toggle bullet list)会把任务列表变成项目列表。&lt;/li>
+&lt;li>修正了切换格式命令有时在编辑器的最后一行不起作用。&lt;/li>
+&lt;/ul>
+&lt;h3 id="settings">Settings
+&lt;/h3>&lt;ul>
+&lt;li>改进了设置内部登录界面的布局。&lt;/li>
+&lt;li>对安装社区主题和插件时显示的通知进行了小幅更新。&lt;/li>
+&lt;li>使用“adapt to system”时，“Light themes only”切换不再显示。&lt;/li>
+&lt;li>改进了命令调色板重新排序的拖放功能。&lt;/li>
+&lt;li>修正了重新排序处理程序在弹出窗口中不工作。&lt;/li>
+&lt;/ul>
+&lt;h3 id="search">Search
+&lt;/h3>&lt;ul>
+&lt;li>键入引号字符串时不触发搜索建议。&lt;/li>
+&lt;li>除非光标在查询的最后，或者下一个字符是空格，否则不会显示搜索建议。&lt;/li>
+&lt;li>点击“清除”按钮将不会导致搜索输入失去焦点。&lt;/li>
+&lt;/ul>
+&lt;h3 id="table">Table
+&lt;/h3>&lt;ul>
+&lt;li>点击 table 右侧边距(margin)，现在编辑器会聚焦。&lt;/li>
+&lt;li>修复 shift +箭头键不响应。&lt;/li>
+&lt;li>确保主编辑器的单元格更新正确更新单元格偏移量。&lt;/li>
+&lt;li>修复在表格单元格内解析数学块(math blocks)。&lt;/li>
+&lt;li>修复在表格单元格内双击不工作。&lt;/li>
+&lt;li>Fixed rendering tables inside callouts.&lt;/li>
+&lt;/ul>
+&lt;h3 id="source-mode">Source mode
+&lt;/h3>&lt;ul>
+&lt;li>Fixed pressing &lt;code>End&lt;/code> key not moving to end of line if cursor is in table.&lt;/li>
+&lt;/ul>
+&lt;h3 id="live-preview">Live Preview
+&lt;/h3>&lt;ul>
+&lt;li>Fix callout menu overlapping with URL menu when right-clicking on a link.&lt;/li>
+&lt;li>Fix failing to render headings with trailing &lt;code>#&lt;/code> at the end of the line.&lt;/li>
+&lt;li>Fixed checklist items getting unfolded if cursor was inside a folded region.&lt;/li>
+&lt;li>Allow blank lines in multi-line footnotes.&lt;/li>
+&lt;/ul>
+&lt;h3 id="reading-mode">Reading mode
+&lt;/h3>&lt;ul>
+&lt;li>Reading mode will no longer render footnote refs that contain spaces.&lt;/li>
+&lt;li>Fixed rendering of inline footnotes in reading mode.&lt;/li>
+&lt;/ul>
+&lt;h3 id="themes">Themes
+&lt;/h3>&lt;ul>
+&lt;li>Switched to Cascadia Mono instead of Cascadia Code for default monospace on Windows.&lt;/li>
+&lt;li>Bold is now computed based on the current text weight, so bold inside a heading will still appear bold.&lt;/li>
+&lt;li>Added &lt;code>--caret-color&lt;/code> CSS variable to make it easier to style caret color on both desktop and mobile.&lt;/li>
+&lt;li>Added new &lt;code>--link-weight&lt;/code> variable.&lt;/li>
+&lt;li>The user&amp;rsquo;s interface language is added to the &lt;code>lang&lt;/code> attribute on the &lt;code>html&lt;/code> element, which allows language-specific CSS rules.&lt;/li>
+&lt;li>The &lt;code>.mod-rtl&lt;/code> class is added to &lt;code>body&lt;/code> element when the user&amp;rsquo;s interface language is RTL.&lt;/li>
+&lt;/ul>
+&lt;h3 id="plugins">Plugins
+&lt;/h3>&lt;ul>
+&lt;li>Fixed &lt;code>processFrontmatter&lt;/code> failing to process file if all properties are removed.&lt;/li>
+&lt;li>Improve detection of external config changes.&lt;/li>
+&lt;li>We&amp;rsquo;ve made several improvements to the behavior of &lt;code>app.emulateMobile&lt;/code> that should make it easier to test that your plugins are mobile-compatible. Attempting to run a NodeJS library will present a Notice. Drag and drop will more accurately mirror the behavior on mobile. The app will have default &lt;code>safe-area-inset&lt;/code> properties set so that your views properly account for offsets in the mobile device viewport (such as the iPhone Dynamic Island).&lt;/li>
+&lt;li>Bare modals should respect &lt;code>safe-area-insets&lt;/code> by default.&lt;/li>
+&lt;li>Added loading state to some of the settings button that make remote requests.&lt;/li>
+&lt;li>Global &lt;code>app&lt;/code> has been completely removed from the API spec (previously it was marked as deprecated).&lt;/li>
+&lt;/ul>
+&lt;h2 id="reference">Reference
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://obsidian.md/changelog/" target="_blank" rel="noopener"
+>Changelog&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>Basic formatting syntax &lt;a class="link" href="https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Basic&amp;#43;formatting&amp;#43;syntax#Footnotes" target="_blank" rel="noopener"
+>Footnotes&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a class="link" href="https://help.obsidian.md/Getting&amp;#43;started/Glossary#Frontmatter" target="_blank" rel="noopener"
+>Frontmatter&lt;/a> is a way to define &lt;a class="link" href="https://help.obsidian.md/Getting&amp;#43;started/Glossary#property" target="_blank" rel="noopener"
+>properties&lt;/a> by adding &lt;a class="link" href="https://yaml.org/" target="_blank" rel="noopener"
+>YAML&lt;/a> or &lt;a class="link" href="https://www.json.org/" target="_blank" rel="noopener"
+>JSON&lt;/a> at the top of the note. See also &lt;a class="link" href="https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Properties#Property%20format" target="_blank" rel="noopener"
+>Property format&lt;/a>.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Hugo Seven 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-seven/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-seven/</guid><description>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/seven/" target="_blank" rel="noopener"
