@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zsolt on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/zsolt/</link><description>Recent content in Zsolt on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Fri, 14 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/zsolt/index.xml" rel="self" type="application/rss+xml"/><item><title>Excalidraw Features</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</link><pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zsolt on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/zsolt/</link><description>Recent content in Zsolt on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/zsolt/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
+&lt;p>如何在 Obsidian 中创建和管理 Graph。如何创建和编辑 Graph 中的节点和关系，以及如何使用 Graph 进行知识探索和管理。最后，视频还提到了一些高级功能，如自动化链接创建和图的导出。&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/8LE_QdYQZVk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/watch?v=8LE_QdYQZVk" target="_blank" rel="noopener"
+>Getting started with ExcaliBrain&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Excalidraw Features</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</link><pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</guid><description>
 &lt;p>随着版本的更新，excalidraw 中增加了新的功能，在此进行记录整理。&lt;/p>
 &lt;h2 id="appearance-and-behavior">Appearance and Behavior
 &lt;/h2>&lt;h3 id="multiple-templates">Multiple Templates
@@ -17,23 +30,23 @@
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>用概念图🗺️表述想法💡</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
-&lt;p>概念图是一种用图形方式展示概念、思想或信息之间关系的视觉工具。通常由多个概念元素组成，概念由线段相互连接，展示相互之间的联系和等级结构。概念图的制作过程可以帮助人们整理信息、进行决策，并以易于理解的方式共享和协作信息，特别适用于对复杂话题的深入理解。&lt;/p>
-&lt;p>在动笔输出文字之前，先建立概念建模可以帮我 精炼知识(Refining Knowledge)，增进理解。&lt;/p>
+&lt;p>概念图是一种用图形方式展示概念、思想或信息之间关系的视觉工具。概念图通常由多个概念元素和相互连接的线段组成，展示相互之间的联系和等级结构。概念图的制作过程可以帮助人们 整理信息、进行决策，并用易于理解的方式共享和协作信息，尤其适用于复杂话题的深入理解。&lt;/p>
+&lt;p>在动笔输出文字之前，先对概念进行建模，可以 精炼知识(Refining Knowledge)，增进理解。&lt;/p>
 &lt;h2 id="what-is-a-concept-map">What is a Concept Map?
 &lt;/h2>&lt;p>概念图，Concept Diagram，或者叫做 Concept Model，是一种将 建议的概念关系 以图表的形式呈现出来的工具，通常用于组织和结构化知识。Concept Map WikiPedia&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;p>概念图 最早是由康奈尔大学的 Joseph D.Novak 和他的研究团队在20世纪70年代提出的。当时，Novak 将这种绘图技巧应用在教学中，作为一种增进理解的教学技术。
-在 Novak 的著作 &lt;strong>Learning to Learn&lt;/strong>（中文版《习得学习》）中，指出“有意义的学习，涉及将新概念与命题同化于既有的认知架构中”。&lt;/p>
-&lt;p>例子一、对概念建模的概念图，来自这个视频[^conceptmodeling]&lt;/p>
+&lt;p>概念图 最早是由康奈尔大学的 Joseph D.Novak 和他的研究团队在20世纪70年代提出。当时，Novak 将这种绘图技巧应用在教学中，以增进理解。
+在 Novak 的著作 &lt;strong>Learning to Learn&lt;/strong>（中文版《习得学习》）中指出，“有意义的学习，涉及将新概念与命题同化于既有的认知架构中”。&lt;/p>
+&lt;p>例1、对概念建模的概念图，来自这个视频[^conceptmodeling]&lt;/p>
 &lt;p>![[concept-modeling.excalidraw#^frame=concept modeling]]&lt;/p>
 &lt;p>BABOK^[Business Analysis Body Of Knowledge]&lt;/p>
 &lt;h2 id="what-are-key-elements-of-diagram">What are key elements of diagram?
-&lt;/h2>&lt;p>对概念建模，源于一个关键问题。请看例子二、概念图里的关键元素&lt;/p>
-&lt;p>![[concept-modeling.excalidraw#^frame=diagram key elements]]&lt;/p>
+&lt;/h2>&lt;p>对概念建模，源于一个关键问题。请看 例2、概念图里的关键元素&lt;/p>
+&lt;p>![[concept-modeling.excalidraw#^frame=diagram key elements|800]]&lt;/p>
 &lt;p>概念图使用的术语&lt;/p>
 &lt;ul>
 &lt;li>Diagrams &lt;em>概念图本身&lt;/em>&lt;/li>
 &lt;li>Shapes &lt;em>概念或想法&lt;/em>&lt;/li>
-&lt;li>Arrows &lt;em>关系&lt;/em>&lt;/li>
+&lt;li>Lines &lt;em>关系&lt;/em>&lt;/li>
 &lt;li>Labels &lt;em>描述概念和关系&lt;/em>&lt;/li>
 &lt;li>Keys&lt;/li>
 &lt;li>Scope&lt;/li>
@@ -45,7 +58,7 @@
 &lt;p>3 basic elements&lt;/p>
 &lt;ul>
 &lt;li>Shapes &lt;em>概念，一般是名词&lt;/em>&lt;/li>
-&lt;li>Arrows &lt;em>连接器，一般是动词&lt;/em>&lt;/li>
+&lt;li>Lines &lt;em>连接器，一般是动词&lt;/em>&lt;/li>
 &lt;li>Labels &lt;em>描述概念和关系&lt;/em>&lt;/li>
 &lt;/ul>
 &lt;p>可视元素和不可视元素&lt;/p>
@@ -57,10 +70,18 @@
 &lt;/blockquote>
 &lt;p>除了用于内容创作，概念建模对阅读和学习也适用，能够增进理解和记忆。&lt;/p>
 &lt;h2 id="compare-concept-maps-vs-mind-maps">Compare Concept Maps vs Mind Maps
-&lt;/h2>&lt;p>见图&lt;/p>
-&lt;p>![[concept-modeling.excalidraw#^frame=Frame 03]]&lt;/p>
+&lt;/h2>&lt;p>例3、概念图与思维导图的对比&lt;/p>
+&lt;p>![[concept-modeling.excalidraw#^frame=Frame 03|800]]&lt;/p>
 &lt;h2 id="frame-your-thoughts-with-concept-modeling">Frame Your Thoughts with Concept Modeling
-&lt;/h2>&lt;p>在这个视频&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>中，Zsolt 使用 Obsidian.md 和 Excalidraw 插件深入探讨了概念建模的概念。&lt;/p>
+&lt;/h2>&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/Zg_DUj68VkY"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>在这个视频&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>中，Zsolt 使用 Obsidian.md 和 Excalidraw&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> 插件深入探讨了概念建模的概念。&lt;/p>
 &lt;ol>
 &lt;li>从 &lt;strong>What are key elements of diagram?&lt;/strong> 问题开始，探索了图表的关键元素，如形状、线条、标签等；通过创建概念图，zsolt 展示了概念之间是如何相互连接的，以及它们是如何形成命题的。&lt;/li>
 &lt;li>然后讨论了概念建模作为内容创作和学习过程中的基础步骤的重要性。作者强调了&lt;strong>概念建模与插图之间的区别&lt;/strong>，概念建模是在内容创作之前进行的思考和定义术语的过程，而插图是在内容创作之后进行的视觉化过程。&lt;/li>
@@ -79,6 +100,10 @@
 &lt;li id="fn:2">
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Zg_DUj68VkY" target="_blank" rel="noopener"
 >Before You Write: Frame Your Thoughts with Concept Modeling&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a class="link" href="https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA" target="_blank" rel="noopener"
+>https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>

@@ -1056,6 +1056,21 @@ alt="在手机、平板和电脑上的效果"
 &lt;h2 id="右侧边栏">右侧边栏
 &lt;/h2>&lt;p>&lt;a class="link" href="https://stack.jimmycai.com/config/widgets" target="_blank" rel="noopener"
 >Widgets&lt;/a> 一直没搞出来；Hugo 升级到 0.126.2 后，自己就出来了。&lt;/p>
+&lt;h2 id="rich-content">Rich Content
+&lt;/h2>&lt;p>Hugo ships with several &lt;a class="link" href="https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes" target="_blank" rel="noopener"
+>Built-in Shortcodes&lt;/a> for rich content.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://gohugo.io/content-management/shortcodes/#youtube" target="_blank" rel="noopener"
+>youtube&lt;/a> &lt;code>&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/Zg_DUj68VkY"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;/code>&lt;/li>
+&lt;/ul>
 &lt;h2 id="替换默认字体">替换默认字体
 &lt;/h2>&lt;p>&lt;a class="link" href="https://stack.jimmycai.com/config/header-footer" target="_blank" rel="noopener"
 >Custom Header / Footer&lt;/a>&lt;/p>
@@ -1198,6 +1213,8 @@ Site -->|rsync| Host
 >朱雀仿宋&lt;/a>改刻自民国活字「南宋」的开源字体。&lt;/li>
 &lt;li>&lt;a class="link" href="https://github.com/atelier-anchor/smiley-sans" target="_blank" rel="noopener"
 >得意黑&lt;/a>，一款在人文观感和几何特征中寻找视觉平衡的现代窄斜体。&lt;/li>
+&lt;li>&lt;a class="link" href="https://chinese-font.netlify.app/fonts/lxgwwenkai/lxgwwenkai-bold/" target="_blank" rel="noopener"
+>中文网字计划&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="wordpress-转-markdown">Wordpress 转 Markdown
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/wp2octopress" target="_blank" rel="noopener"

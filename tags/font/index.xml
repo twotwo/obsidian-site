@@ -33,6 +33,8 @@ Site -->|rsync| Host
 >朱雀仿宋&lt;/a>改刻自民国活字「南宋」的开源字体。&lt;/li>
 &lt;li>&lt;a class="link" href="https://github.com/atelier-anchor/smiley-sans" target="_blank" rel="noopener"
 >得意黑&lt;/a>，一款在人文观感和几何特征中寻找视觉平衡的现代窄斜体。&lt;/li>
+&lt;li>&lt;a class="link" href="https://chinese-font.netlify.app/fonts/lxgwwenkai/lxgwwenkai-bold/" target="_blank" rel="noopener"
+>中文网字计划&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="wordpress-转-markdown">Wordpress 转 Markdown
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/wp2octopress" target="_blank" rel="noopener"
