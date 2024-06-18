@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Excalibrain on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/excalibrain/</link><description>Recent content in Excalibrain on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/excalibrain/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
-&lt;p>如何在 Obsidian 中创建和管理 Graph。如何创建和编辑 Graph 中的节点和关系，以及如何使用 Graph 进行知识探索和管理。最后，视频还提到了一些高级功能，如自动化链接创建和图的导出。&lt;/p>
+&lt;p>Getting started with ExcaliBrain, zsolt 发了三个视频做为新手入门引导。&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/8LE_QdYQZVk"
@@ -10,5 +10,58 @@ title="YouTube Video"
 &lt;/div>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://www.youtube.com/watch?v=8LE_QdYQZVk" target="_blank" rel="noopener"
->Getting started with ExcaliBrain&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+>Getting started with ExcaliBrain 1/3&lt;/a> Aug 12, 2023&lt;/li>
+&lt;li>&lt;a class="link" href="https://youtu.be/JjyEicYtVcU" target="_blank" rel="noopener"
+>Getting started with ExcaliBrain 2/3&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://youtu.be/yPJ2hTXqlXQ" target="_blank" rel="noopener"
+>Getting started with ExcaliBrain 3/3&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>安装&lt;/p>
+&lt;ul>
+&lt;li>Excalidraw&lt;/li>
+&lt;li>Dataview&lt;/li>
+&lt;li>Excalibrain&lt;/li>
+&lt;/ul>
+&lt;h2 id="issue-based-information-system">Issue-Based Information System
+&lt;/h2>&lt;p>IBIS(基于问题的信息系统)框架，它是一种对话映射方法，包括问题、立场、支持和反对论点，以及证据和结论。&lt;/p>
+&lt;ul>
+&lt;li>Issues: phrased as questions, drives a conversation about issues&lt;/li>
+&lt;li>Positions: 相应问题时对应的立场&lt;/li>
+&lt;li>Supporting and Objecting Arguments: support or object positions&lt;/li>
+&lt;li>Evidences: 证据，attach to various nodes reaching a conclusion&lt;/li>
+&lt;li>Conclusion&lt;/li>
+&lt;/ul>
+&lt;p>《Visualizing Argumentation》&lt;/p>
+&lt;h2 id="设置">设置
+&lt;/h2>&lt;h3 id="节点">节点
+&lt;/h3>&lt;h3 id="链接">链接
+&lt;/h3>&lt;h2 id="videos">Videos
+&lt;/h2>&lt;h3 id="how-to-use-the-excalibrain-obsidian-plugin">How to use the ExcaliBrain Obsidian plugin
+&lt;/h3>&lt;p>Sep 17, 2022 by &lt;a class="link" href="https://www.youtube.com/@nicolevdh" target="_blank" rel="noopener"
+>Nicole van der Hoeven&lt;/a>&lt;/p>
+&lt;p>4 Levels use ExcaliBrain&lt;/p>
+&lt;ul>
+&lt;li>Level 1 - Letting ExcaliBrain infer relationships&lt;/li>
+&lt;li>Level 2 - Setting explicit relationships&lt;/li>
+&lt;li>Level 3 - Creating custom relationships&lt;/li>
+&lt;li>Level 4 - Creating semantic relationships&lt;/li>
+&lt;/ul>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/gqEtn3gCZF0"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h3 id="使用-excalibrain-创作动态思维导图">使用 ExcaliBrain 创作动态思维导图
+&lt;/h3>&lt;p>“A dynamic mind-mapping experience with Obsidian with ExcaliBrain” Jul 18, 2023&lt;/p>
+&lt;p>如何使用 Obsidian 和 ExcaliBrain 插件来进行动态的思维导图创建。&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/_wldRlxTAxs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item></channel></rss>

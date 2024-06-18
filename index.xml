@@ -956,8 +956,86 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
-&lt;p>如何在 Obsidian 中创建和管理 Graph。如何创建和编辑 Graph 中的节点和关系，以及如何使用 Graph 进行知识探索和管理。最后，视频还提到了一些高级功能，如自动化链接创建和图的导出。&lt;/p>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Hugo Clean White 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-cleanwhite/</link><pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-cleanwhite/</guid><description>
+&lt;p>Tags: &lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/blog/" target="_blank" rel="noopener"
+>Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/light/" target="_blank" rel="noopener"
+>Light&lt;/a> &lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/minimal/" target="_blank" rel="noopener"
+>Minimal&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/responsive/" target="_blank" rel="noopener"
+>Responsive&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="参考资料">参考资料
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-theme-cleanwhite/" target="_blank" rel="noopener"
+>官网文档&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/zhaohuabing/hugo-theme-cleanwhite" target="_blank" rel="noopener"
+>https://github.com/zhaohuabing/hugo-theme-cleanwhite&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.zhaohuabing.com/" target="_blank" rel="noopener"
+>Demo site&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/zhaohuabing/hugo-theme-cleanwhite#quick-start" target="_blank" rel="noopener"
+>Document&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="examplesite">exampleSite
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>&lt;code>git submodule add https://github.com/zhaohuabing/hugo-theme-cleanwhite.git themes/cleanwhite&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/zhaohuabing/hugo_blog/blob/master/config.yaml" target="_blank" rel="noopener"
+>config.yaml&lt;/a> -&amp;gt; clean-white.yaml&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://gohugo.io/commands/hugo_server/" target="_blank" rel="noopener"
+>hugo server&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">hugo server --disableFastRender -D --contentDir themes/cleanwhite/exampleSite/content --config clean-white.yaml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="修复-content-type-兼容性post---posts">修复 Content Type 兼容性：post -&amp;gt; posts
+&lt;/h2>&lt;p>Hugo &lt;a class="link" href="https://gohugo.io/getting-started/glossary/#content-type" target="_blank" rel="noopener"
+>content type&lt;/a> 由 &lt;a class="link" href="https://gohugo.io/getting-started/glossary/#front-matter" target="_blank" rel="noopener"
+>front matter&lt;/a>.type(P0) 和 content 下对应的子目录(P1) 决定。^[content 根目录下的类型是 page]&lt;/p>
+&lt;p>找到锁死 &lt;code>content type&lt;/code> 为 &amp;ldquo;post&amp;rdquo; 的模版&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ grep post\&amp;#34; themes/cleanwhite/layouts/* -r
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/cleanwhite/layouts/_default/archive.html:{{ $pages := (where (where .Site.Pages &amp;#34;Type&amp;#34; &amp;#34;post&amp;#34;) &amp;#34;IsPage&amp;#34; true) }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/cleanwhite/layouts/partials/category.html:{{ $paginator := .Paginate (where .Data.Pages &amp;#34;Section&amp;#34; &amp;#34;post&amp;#34;) }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/cleanwhite/layouts/partials/portfolio.html:{{ $paginator := .Paginate (where (where .Site.Pages &amp;#34;Type&amp;#34; &amp;#34;post&amp;#34;) &amp;#34;IsPage&amp;#34; true) }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Search 无效问题 &lt;code>themes/cleanwhite/static/js/jquery.js&lt;/code>&lt;/p>
+&lt;h2 id="适配菜单">适配菜单
+&lt;/h2>&lt;ul>
+&lt;li>🔍&lt;/li>
+&lt;li>ARCHIVE &lt;code>content/menu/archive&lt;/code>: &lt;code>type: archive&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">params:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addtional_menus:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - title: ARCHIVE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> href: /menu/archive/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="替换默认字体">替换默认字体
+&lt;/h2>&lt;p>&lt;code>static/css/hugo-theme-cleanwhite.min.css&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@import url(&amp;#39;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&amp;#39;);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">body {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">h1, h2, h3, h4, h5, h6 {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, &amp;#34;raleway&amp;#34;, sans-serif;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> margin: 0;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding: 0;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> font-weight: 400;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>cp static/css/hugo-theme-cleanwhite.min.css public/css&lt;/code>&lt;/p>
+&lt;h2 id="头图">头图
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">params:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> header_image: /photos/202403171612965.png
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sidebar_avatar: /photos/202403191629989.png
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
+&lt;p>Getting started with ExcaliBrain, zsolt 发了三个视频做为新手入门引导。&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/8LE_QdYQZVk"
@@ -968,8 +1046,61 @@ title="YouTube Video"
 &lt;/div>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://www.youtube.com/watch?v=8LE_QdYQZVk" target="_blank" rel="noopener"
->Getting started with ExcaliBrain&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Excalidraw Features</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</link><pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</guid><description>
+>Getting started with ExcaliBrain 1/3&lt;/a> Aug 12, 2023&lt;/li>
+&lt;li>&lt;a class="link" href="https://youtu.be/JjyEicYtVcU" target="_blank" rel="noopener"
+>Getting started with ExcaliBrain 2/3&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://youtu.be/yPJ2hTXqlXQ" target="_blank" rel="noopener"
+>Getting started with ExcaliBrain 3/3&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>安装&lt;/p>
+&lt;ul>
+&lt;li>Excalidraw&lt;/li>
+&lt;li>Dataview&lt;/li>
+&lt;li>Excalibrain&lt;/li>
+&lt;/ul>
+&lt;h2 id="issue-based-information-system">Issue-Based Information System
+&lt;/h2>&lt;p>IBIS(基于问题的信息系统)框架，它是一种对话映射方法，包括问题、立场、支持和反对论点，以及证据和结论。&lt;/p>
+&lt;ul>
+&lt;li>Issues: phrased as questions, drives a conversation about issues&lt;/li>
+&lt;li>Positions: 相应问题时对应的立场&lt;/li>
+&lt;li>Supporting and Objecting Arguments: support or object positions&lt;/li>
+&lt;li>Evidences: 证据，attach to various nodes reaching a conclusion&lt;/li>
+&lt;li>Conclusion&lt;/li>
+&lt;/ul>
+&lt;p>《Visualizing Argumentation》&lt;/p>
+&lt;h2 id="设置">设置
+&lt;/h2>&lt;h3 id="节点">节点
+&lt;/h3>&lt;h3 id="链接">链接
+&lt;/h3>&lt;h2 id="videos">Videos
+&lt;/h2>&lt;h3 id="how-to-use-the-excalibrain-obsidian-plugin">How to use the ExcaliBrain Obsidian plugin
+&lt;/h3>&lt;p>Sep 17, 2022 by &lt;a class="link" href="https://www.youtube.com/@nicolevdh" target="_blank" rel="noopener"
+>Nicole van der Hoeven&lt;/a>&lt;/p>
+&lt;p>4 Levels use ExcaliBrain&lt;/p>
+&lt;ul>
+&lt;li>Level 1 - Letting ExcaliBrain infer relationships&lt;/li>
+&lt;li>Level 2 - Setting explicit relationships&lt;/li>
+&lt;li>Level 3 - Creating custom relationships&lt;/li>
+&lt;li>Level 4 - Creating semantic relationships&lt;/li>
+&lt;/ul>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/gqEtn3gCZF0"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h3 id="使用-excalibrain-创作动态思维导图">使用 ExcaliBrain 创作动态思维导图
+&lt;/h3>&lt;p>“A dynamic mind-mapping experience with Obsidian with ExcaliBrain” Jul 18, 2023&lt;/p>
+&lt;p>如何使用 Obsidian 和 ExcaliBrain 插件来进行动态的思维导图创建。&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/_wldRlxTAxs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Excalidraw Features</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</link><pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</guid><description>
 &lt;p>随着版本的更新，excalidraw 中增加了新的功能，在此进行记录整理。&lt;/p>
 &lt;h2 id="appearance-and-behavior">Appearance and Behavior
 &lt;/h2>&lt;h3 id="multiple-templates">Multiple Templates
@@ -1125,6 +1256,22 @@ loading="lazy"
 loading="lazy"
 >&lt;/li>
 &lt;/ul></description></item><item><title>Hugo Hello Friend NG 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-hello-friend-ng/</link><pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-hello-friend-ng/</guid><description>
+&lt;p>很有个性的一个主题，有一些想定制化的东西，如果能搞定也会用。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/blog/" target="_blank" rel="noopener"
+>Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/dark/" target="_blank" rel="noopener"
+>Dark&lt;/a>/&lt;a class="link" href="https://themes.gohugo.io/tags/light/" target="_blank" rel="noopener"
+>Light&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/minimal/" target="_blank" rel="noopener"
+>Minimal&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/multilingual/" target="_blank" rel="noopener"
+>Multilingual&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/personal/" target="_blank" rel="noopener"
+>Personal&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/responsive/" target="_blank" rel="noopener"
+>Responsive&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;p>Hello Friend NG&lt;/p>
 &lt;ul>
@@ -1136,7 +1283,7 @@ loading="lazy"
 >Demo site&lt;/a>&lt;/li>
 &lt;li>没有独立的文档页面&lt;/li>
 &lt;/ul>
-&lt;h2 id="运行-examplesite">运行 exampleSite
+&lt;h2 id="examplesite">exampleSite
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://gohugo.io/commands/hugo_server/" target="_blank" rel="noopener"
 >hugo server&lt;/a>&lt;/li>
@@ -1302,10 +1449,11 @@ loading="lazy"
 &lt;/h2>&lt;p>需要删除已有 themes，放弃&lt;/p></description></item><item><title>Hugo 主题概览</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-themes-overview/</link><pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-themes-overview/</guid><description>
 &lt;h2 id="推荐主题">推荐主题
 &lt;/h2>&lt;ul>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-papermod/" >Hugo PaperMod 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-book/" >Hugo book 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/" >Hugo Stack 主题&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-hello-friend-ng/" >Hugo Hello Friend NG 主题&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-papermod/" >Hugo PaperMod 主题&lt;/a> ★★☆&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-book/" >Hugo book 主题&lt;/a> ★☆&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/" >Hugo Stack 主题&lt;/a> ★★★&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-hello-friend-ng/" >Hugo Hello Friend NG 主题&lt;/a> ★☆&lt;/li>
+&lt;li>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/hugo/hugo-theme-cleanwhite/" >Hugo Clean White 主题&lt;/a> ★★☆&lt;/li>
 &lt;/ul>
 &lt;h2 id="试用主题">试用主题
 &lt;/h2>&lt;p>看一下 tags&lt;/p>
@@ -1339,6 +1487,18 @@ loading="lazy"
 alt="在手机、平板和电脑上的效果"
 >&lt;/p>
 &lt;p>用 Excalidraw 合成了一下页面在三端上的效果，粗看还行。&lt;/p></description></item><item><title>Hugo Stack 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/</guid><description>
+&lt;p>目前我最喜欢的主题，响应式最多展示三列。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/blog/" target="_blank" rel="noopener"
+>Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/dark/" target="_blank" rel="noopener"
+>Dark&lt;/a>/&lt;a class="link" href="https://themes.gohugo.io/tags/light/" target="_blank" rel="noopener"
+>Light&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/personal/" target="_blank" rel="noopener"
+>Personal&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/responsive/" target="_blank" rel="noopener"
+>Responsive&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-theme-stack/" target="_blank" rel="noopener"
@@ -1350,7 +1510,7 @@ alt="在手机、平板和电脑上的效果"
 &lt;li>&lt;a class="link" href="https://stack.jimmycai.com/" target="_blank" rel="noopener"
 >Document&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="运行-examplesite">运行 exampleSite
+&lt;h2 id="examplesite">exampleSite
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://gohugo.io/commands/hugo_server/" target="_blank" rel="noopener"
 >hugo server&lt;/a>&lt;/li>
@@ -1493,6 +1653,17 @@ title="YouTube Video"
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">async&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://www.googletagmanager.com/gtag/js?id=88888888&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hugo PaperMod 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-papermod/</link><pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-papermod/</guid><description>
 &lt;p>目前官网排名第一的主题，的确很不错。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/blog/" target="_blank" rel="noopener"
+>Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/dark/" target="_blank" rel="noopener"
+>Dark&lt;/a>/&lt;a class="link" href="https://themes.gohugo.io/tags/light/" target="_blank" rel="noopener"
+>Light&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/minimal/" target="_blank" rel="noopener"
+>Minimal&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/responsive/" target="_blank" rel="noopener"
+>Responsive&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="参考资料">参考资料
 &lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/themes/hugo-papermod/" target="_blank" rel="noopener"
@@ -1701,62 +1872,73 @@ alt="hugo-vault.png"
 &lt;p>Hugo &lt;a class="link" href="https://gohugo.io/content-management/front-matter/" target="_blank" rel="noopener"
 >Front matter&lt;/a>&lt;/p>
 &lt;h2 id="step-1-install-hugo">Step 1. Install Hugo
-&lt;/h2>&lt;p>Go to &lt;a class="link" href="https://github.com/spf13/hugo/releases" target="_blank" rel="noopener"
+&lt;/h2>&lt;p>Go to &lt;a class="link" href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"
 >Hugo releases&lt;/a> and download the
 appropriate version for your OS and architecture.&lt;/p>
-&lt;p>Save it somewhere specific as we will be using it in the next step.&lt;/p>
-&lt;p>More complete instructions are available at &lt;a class="link" href="https://gohugo.io/getting-started/installing/" target="_blank" rel="noopener"
->Install Hugo&lt;/a>&lt;/p>
-&lt;h2 id="step-2-build-the-docs">Step 2. Build the Docs
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ hugo env
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.126.3+extended darwin/amd64 &lt;span class="nv">BuildDate&lt;/span>&lt;span class="o">=&lt;/span>2024-06-02T13:02:43Z &lt;span class="nv">VendorInfo&lt;/span>&lt;span class="o">=&lt;/span>brew
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOOS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;darwin&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOARCH&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;amd64&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOVERSION&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;go1.22.3&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/sass/libsass&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;3.6.5&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/webmproject/libwebp&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;v1.3.2&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-2-launch-example-site">Step 2. Launch Example Site
 &lt;/h2>&lt;p>Hugo has its own example site which happens to also be the documentation site
 you are reading right now.&lt;/p>
 &lt;p>Follow the following steps:&lt;/p>
 &lt;ol>
-&lt;li>Clone the &lt;a class="link" href="http://github.com/spf13/hugo" target="_blank" rel="noopener"
+&lt;li>Clone the &lt;a class="link" href="https://github.com/twotwo/hugo-template" target="_blank" rel="noopener"
 >Hugo repository&lt;/a>&lt;/li>
 &lt;li>Go into the repo&lt;/li>
-&lt;li>Run hugo in server mode and build the docs&lt;/li>
+&lt;li>Copy example site files&lt;/li>
+&lt;li>Run hugo in server mode&lt;/li>
 &lt;li>Open your browser to http://localhost:1313&lt;/li>
 &lt;/ol>
 &lt;p>Corresponding pseudo commands:&lt;/p>
-&lt;pre>&lt;code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&amp;gt; 29 pages created
-&amp;gt; 0 tags index created
-&amp;gt; in 27 ms
-&amp;gt; Web Server is available at http://localhost:1313
-&amp;gt; Press ctrl+c to stop
+&lt;pre>&lt;code>git clone https://github.com/twotwo/hugo-template
+cd hugo-template
+cp -r themes/cleanwhite/exampleSite/* .
+hugo server --disableFastRender -D
 &lt;/code>&lt;/pre>
 &lt;p>Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p>
-&lt;h2 id="step-3-change-the-docs-site">Step 3. Change the docs site
+&lt;h2 id="step-3-change-content">Step 3. Change content
 &lt;/h2>&lt;p>Stop the Hugo process by hitting Ctrl+C.&lt;/p>
-&lt;p>Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p>
-&lt;pre>&lt;code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&amp;gt; 29 pages created
-&amp;gt; 0 tags index created
-&amp;gt; in 27 ms
-&amp;gt; Web Server is available at http://localhost:1313
-&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&amp;gt; Press ctrl+c to stop
+&lt;p>Here    we export WordPress posts into content&lt;/p>
+&lt;ol>
+&lt;li>Remove example posts&lt;/li>
+&lt;li>Export WP content to Markdown files, use this &lt;a class="link" href="https://github.com/twotwo/wp2octopress" target="_blank" rel="noopener"
+>script&lt;/a>&lt;/li>
+&lt;li>Run hugo in server mode&lt;/li>
+&lt;/ol>
+&lt;p>Corresponding pseudo commands:&lt;/p>
+&lt;pre>&lt;code>rm -rf content/posts
+python wp2octopress.py wp_lixinyang localhost user password /tmp/hugo-template/content/posts /tmp/hugo-template/content/pages
+hugo server --disableFastRender -D
 &lt;/code>&lt;/pre>
-&lt;p>Open your &lt;a class="link" href="http://vim.spf13.com" target="_blank" rel="noopener"
->favorite editor&lt;/a> and change one of the source
-content pages. How about changing this very file to &lt;em>fix the typo&lt;/em>. How about changing this very file to &lt;em>fix the typo&lt;/em>.&lt;/p>
-&lt;p>Content files are found in &lt;code>docs/content/&lt;/code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-&lt;code>docs/content/overview/quickstart.md&lt;/code>.&lt;/p>
 &lt;p>Change and save this file.. Notice what happened in your terminal.&lt;/p>
-&lt;pre>&lt;code>&amp;gt; Change detected, rebuilding site
-&amp;gt; 29 pages created
-&amp;gt; 0 tags index created
-&amp;gt; in 26 ms
+&lt;pre>&lt;code> $ hugo server --disableFastRender -D
+Watching for changes in /tmp/hugo-template/{archetypes,content,data,themes}
+Watching for config changes in /tmp/hugo-template/hugo.yaml
+Start building sites …
+| EN
+-------------------+-------
+Pages | 1018
+Paginator pages | 336
+Non-page files | 0
+Static files | 73
+Processed images | 0
+Aliases | 146
+Cleaned | 0
+Built in 859 ms
 &lt;/code>&lt;/pre>
 &lt;p>Refresh the browser and observe that the typo is now fixed.&lt;/p>
 &lt;p>Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building. I double dare you.
 Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p>
-&lt;h2 id="step-4-have-fun">Step 4. Have fun
-&lt;/h2>&lt;p>The best way to learn something is to play with it.&lt;/p></description></item><item><title>Archives</title><link>https://all-in-obsidian.li3huo.com/menu/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/archives/</guid><description/></item><item><title>Friends</title><link>https://all-in-obsidian.li3huo.com/menu/friends/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/friends/</guid><description>
+&lt;h2 id="step-4-publish-service">Step 4. Publish Service
+&lt;/h2>&lt;p>Generate static site in &lt;code>public&lt;/code> folder&lt;/p>
+&lt;pre>&lt;code>$ hugo --minify --gc
+$ rsync -avP public/* vps-server:local/path
+&lt;/code>&lt;/pre></description></item><item><title>Archives</title><link>https://all-in-obsidian.li3huo.com/menu/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/archives/</guid><description/></item><item><title>Friends</title><link>https://all-in-obsidian.li3huo.com/menu/friends/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/friends/</guid><description>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://twotwo.github.io/" target="_blank" rel="noopener"
 >twotwo&amp;rsquo;s home&lt;/a>&lt;/li>
@@ -1778,4 +1960,4 @@ Having nearly instant feedback enables you to have your creativity flow without 
 >软通达&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://lillianwho.com/" target="_blank" rel="noopener"
 >Lillian Who&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Search</title><link>https://all-in-obsidian.li3huo.com/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/page/search/</guid><description/></item><item><title>Search</title><link>https://all-in-obsidian.li3huo.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/search/</guid><description/></item></channel></rss>
+&lt;/ul></description></item><item><title>Posts Archive</title><link>https://all-in-obsidian.li3huo.com/menu/archive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/menu/archive/</guid><description/></item><item><title>Search</title><link>https://all-in-obsidian.li3huo.com/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/page/search/</guid><description/></item><item><title>Search</title><link>https://all-in-obsidian.li3huo.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/search/</guid><description/></item></channel></rss>
