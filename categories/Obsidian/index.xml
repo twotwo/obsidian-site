@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Best task plugin in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</link><pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</guid><description>
+&lt;p>本视频教程介绍了 Obsidian 中的任务插件（Task Plugin）的安装、配置、使用方法以及如何通过查询、过滤器和任务状态来管理任务。&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/quXNtjTe5WE"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h2 id="task-插件的用法适配主要内容摘要">Task 插件的用法(适配主要内容摘要)
+&lt;/h2>&lt;p>视频首先介绍了 Obsidian 的基本功能，特别是其作为一个标记语言（Markdown）编辑器的特点，然后详细讲解了如何在 Obsidian 中安装和配置 Task Plugin。演示了如何创建和管理任务，包括如何设置任务的格式、状态、优先级和日期。此外，介绍了如何使用查询来过滤和展示特定的任务，包括使用标签、状态、日期和依赖项等条件。视频还涉及了如何处理重复任务、任务依赖性以及如何通过 CSS 自定义任务的显示样式。最后，提到了 Obsidian 社区和 Discord 频道作为获取帮助的资源。&lt;/p>
+&lt;p>&lt;a class="link" href="https://publish.obsidian.md/tasks/Introduction" target="_blank" rel="noopener"
+>Task User Guide&lt;/a>&lt;/p>
+&lt;h3 id="global-filter-and-query">Global Filter and Query
+&lt;/h3>&lt;h3 id="任务插件的高级功能">任务插件的高级功能
+&lt;/h3>&lt;p>如设置任务的优先级、使用自定义状态和处理重复任务。&lt;/p>
+&lt;h3 id="通过添加-css-来自定义任务查询的显示">通过添加 CSS 来自定义任务查询的显示
+&lt;/h3>&lt;p>&lt;a class="link" href="https://publish.obsidian.md/tasks/Advanced/Styling#CSS%20Examples" target="_blank" rel="noopener"
+>https://publish.obsidian.md/tasks/Advanced/Styling#CSS%20Examples&lt;/a>&lt;/p>
+&lt;h3 id="task-queries">Task Queries
+&lt;/h3>&lt;p>如何使用查询来管理和显示任务，包括如何根据任务的描述和标签来过滤。&lt;/p>
+&lt;h3 id="backlinks-in-queries">Backlinks in Queries
+&lt;/h3>&lt;p>如何反向链接到任务文件&lt;/p>
+&lt;h3 id="querying-files">Querying files
+&lt;/h3>&lt;h3 id="query-result-status-change">Query result status change
+&lt;/h3>&lt;p>如何在任务查询中直接修改任务状态，例如将任务从 “待办” 更改为 “进行中” 或 “已取消”。&lt;/p>
+&lt;h2 id="youtube-频道-danny-talks-tech">YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo;
+&lt;/h2>&lt;p>发现这位博主(Danny Hatcher)的其他内容也很不错：[[youtube-channels#@DannyHatcherTech]]。比如&lt;/p>
+&lt;h3 id="why-justin-sung-is-wrong-about-obsidian">Why Justin Sung is wrong about Obsidian
+&lt;/h3>&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/yFQ-OyNmg6U"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>主要讨论了 Justin Sung 对 Osidian 应用程序在第二大脑管理中作为参考工具的看法，并对 Zettelkasten 方法、第二大脑概念以及 Osidian 作为笔记工具的优势和使用方式进行了深入分析和讨论。&lt;/p>
+&lt;h4 id="对-zettelkasten-方法的理解">对 Zettelkasten 方法的理解
+&lt;/h4>&lt;p>与 Justin 不同，danny 认为 Zettelkasten 是一种笔记盒子，可以是任何可以链接笔记的系统，而不仅仅是特定的软件实现。&lt;/p>
+&lt;p>作者强调了 Zettelkasten 方法的本质，即是一种笔记管理系统，可以通过任何计算机或笔记软件实现，而不仅仅局限于 Obsidian。作者认为，Atomic notes 和 Zettelkasten 是两个不同的概念，后者更侧重于如何组织和链接笔记。而他更倾向于使用一个大文件来记录一个概念，而不是分散成许多小文件，因为这样更容易搜索和组织。&lt;/p>
+&lt;h4 id="对第二大脑的理解">对第二大脑的理解
+&lt;/h4>&lt;p>第二大脑不仅仅是一个应用程序或工具，而是一套工具和过程，涉及到认知的延伸。danny 认为，无论是数字工具还是模拟工具，都应该根据个人的认知技能来选择和使用。他还讨论了数字工具与模拟工具在学习和记忆过程中的优势和局限性，认为数字工具提供了更多的编辑和删除便利性。&lt;/p>
+&lt;p>第二大脑的概念来自于扩展认知理论，不仅仅是一个应用程序或工具，而是一个工具箱，包括了所有帮助我们思考的工具和过程。&lt;/p>
+&lt;h4 id="osidian-不适合用于主要编码primary-encoding的反驳">Osidian 不适合用于主要编码（primary encoding）的反驳
+&lt;/h4>&lt;p>Osidian 和其他写作工具都可以用于思考和学习。danny 认为，所有的写作工具都是思维工具，可以帮助用户以不同的方式记忆、连接和表达想法。&lt;/p></description></item><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
 &lt;p>Getting started with ExcaliBrain, zsolt 发了三个视频做为新手入门引导。&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
@@ -219,7 +265,18 @@ loading="lazy"
 &lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121900655.png"
 loading="lazy"
 >&lt;/li>
-&lt;/ul></description></item><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
+&lt;/ul>
+&lt;h2 id="dannyhatchertech">@DannyHatcherTech
+&lt;/h2>&lt;p>Danny Hatcher 运营的 YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo; 拥有 31.6K 订阅者和 395 个视频。频道内容涉及研究、技术和相关话题的视频。频道提供了关于如何在 Obsidian 中测试 BookFusion、Obsidian 的最新版本更新、使用 Afforai 进行研究的测试、以及如何从书籍中取好笔记等视频教程。此外，还讨论了为什么不使用思维导图、反对原子笔记和迷你文章、以及为什么选择使用 Morgen 等主题。Danny 还分享了他如何在 Obsidian 中写作、如何进行研究和写作、以及他对于 Notion 日历不满意的看法。频道还包括了与其他 YouTuber 如 Ali Abdaal 讨论研究的视频。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@DannyHatcherTech" target="_blank" rel="noopener"
+>https://www.youtube.com/@DannyHatcherTech&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202407061829667.png"
+loading="lazy"
+alt="800x950"
+>&lt;/li>
+&lt;/ul>
+&lt;!-- sips -g all photos/202406121900655.png # 查看图片分辨率: 1550 x 1910 --></description></item><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
 &lt;p>v1.6 大版本更新说明&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
 &lt;blockquote>
 &lt;p>这次更新的重点是改善应用程序中的一些长期存在的痛点。最值得注意的是，我们已经彻底检查了应用程序界面，以更好地支持右到左(RTL)语言。现在，当应用程序语言被设置为 RTL 语言时，整个界面将被镜像。我们也在&lt;strong>提高脚注的编辑和阅读体验&lt;/strong>方面给予了很大的关注。这个版本充满了 bug 修复，但在加载应用程序和编辑应用程序时，您可能还会注意到一些性能改进。&lt;/p>
@@ -342,104 +399,7 @@ loading="lazy"
 >Property format&lt;/a>.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
-&lt;p>&lt;a class="link" href="https://github.com/twotwo/obsidian-site" target="_blank" rel="noopener"
->https://github.com/twotwo/obsidian-site&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian-site.svg"
-loading="lazy"
-alt="在手机、平板和电脑上的效果"
->&lt;/p>
-&lt;p>用 Excalidraw 合成了一下页面在三端上的效果，粗看还行。&lt;/p></description></item><item><title>markdown 博客方案 - obsidian + hugo</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link><pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid><description>
-&lt;p>2015 年底，弃用 Wordpress，使用 Markdown 写作博客。&lt;/p>
-&lt;p>Hugo 默认不支持 Ob 链接&lt;/p>
-&lt;blockquote>
-&lt;p>[[farewell-wordpress|再见，WordPress 补记]]&lt;/p>
-&lt;/blockquote>
-&lt;p>在 Hugo 上的写法&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/" >再见，WordPress 补记&lt;/a>&lt;/p>
-&lt;/blockquote>
-&lt;p>2024 年个人知识库升级，all in obsidian，更新博客方案。&lt;/p>
-&lt;h2 id="博客方案">博客方案
-&lt;/h2>&lt;p>Render In Obsidian&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">flowchart LR
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Obsidian --&amp;gt; File([Markdown])
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File --&amp;gt;|Hugo| Site(((HTML)))
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Site --&amp;gt;|rsync| Host
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Render By Hugo Shortcode&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-tpl" data-lang="tpl">&lt;span class="line">&lt;span class="cl">&lt;span class="x">
-&lt;script src="https://all-in-obsidian.li3huo.com/mermaid.min.js">&lt;/script>
-&lt;p class="mermaid optional">
-flowchart LR
-Obsidian --> File([Markdown])
-File -->|Hugo| Site(((HTML)))
-Site -->|rsync| Host
-&lt;/p>
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="其他资源">其他资源
-&lt;/h3>&lt;p>开源字体&lt;/p>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://github.com/lxgw/LxgwWenKai" target="_blank" rel="noopener"
->霞鹜文楷&lt;/a>，基于 Klee One 日文开源字体补全简繁常用字的一款开源字体。&lt;/li>
-&lt;li>&lt;a class="link" href="https://github.com/TrionesType/zhuque" target="_blank" rel="noopener"
->朱雀仿宋&lt;/a>改刻自民国活字「南宋」的开源字体。&lt;/li>
-&lt;li>&lt;a class="link" href="https://github.com/atelier-anchor/smiley-sans" target="_blank" rel="noopener"
->得意黑&lt;/a>，一款在人文观感和几何特征中寻找视觉平衡的现代窄斜体。&lt;/li>
-&lt;li>&lt;a class="link" href="https://chinese-font.netlify.app/fonts/lxgwwenkai/lxgwwenkai-bold/" target="_blank" rel="noopener"
->中文网字计划&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="wordpress-转-markdown">Wordpress 转 Markdown
-&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/wp2octopress" target="_blank" rel="noopener"
->https://github.com/twotwo/wp2octopress&lt;/a>&lt;/p>
-&lt;h2 id="markdown-构建静态网站">Markdown 构建静态网站
-&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/hugo-template/" target="_blank" rel="noopener"
->https://github.com/twotwo/hugo-template/&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ brew install hugo &lt;span class="c1"># Mac 上安装 hugo&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ hugo env
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.125.7+extended darwin/amd64 &lt;span class="nv">BuildDate&lt;/span>&lt;span class="o">=&lt;/span>2024-05-08T14:46:24Z &lt;span class="nv">VendorInfo&lt;/span>&lt;span class="o">=&lt;/span>brew
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOOS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;darwin&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOARCH&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;amd64&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOVERSION&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;go1.22.3&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/sass/libsass&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;3.6.5&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/webmproject/libwebp&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;v1.3.2&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git clone --recurse-submodules https://github.com/twotwo/hugo-template/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ hugo server &lt;span class="c1"># 本地预览 http://localhost:1313/&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ hugo &lt;span class="c1"># 发布成静态网页：public 目录下&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Start building sites …
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.125.7+extended darwin/amd64 &lt;span class="nv">BuildDate&lt;/span>&lt;span class="o">=&lt;/span>2024-05-08T14:46:24Z &lt;span class="nv">VendorInfo&lt;/span>&lt;span class="o">=&lt;/span>brew
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">|&lt;/span> EN
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-------------------+-------
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Pages &lt;span class="p">|&lt;/span> &lt;span class="m">1888&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Paginator pages &lt;span class="p">|&lt;/span> &lt;span class="m">87&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Non-page files &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Static files &lt;span class="p">|&lt;/span> &lt;span class="m">26&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Processed images &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Aliases &lt;span class="p">|&lt;/span> &lt;span class="m">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Cleaned &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total in &lt;span class="m">2370&lt;/span> ms
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="上传到服务器nginx">上传到服务器(Nginx)
-&lt;/h2>&lt;p>把构建的静态内容上传到服务器的 Nginx 对应目录下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ rsync -avP public/* &lt;span class="si">${&lt;/span>&lt;span class="nv">host&lt;/span>&lt;span class="si">}&lt;/span>:/var/www/myblog.com/output/
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="obsidian-编辑">Obsidian 编辑
-&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/huge-create-vault.png"
-loading="lazy"
-alt="huge-create-vault.png"
->&lt;/p>
-&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/hugo-vault.png"
-loading="lazy"
-alt="hugo-vault.png"
->&lt;/p>
-&lt;h2 id="参考">参考
-&lt;/h2>&lt;ul>
-&lt;li>&lt;a class="link" href="https://lillianwho.com/posts/obsidian-hugo-cloudflare/" target="_blank" rel="noopener"
->obsidian 配合 hugo 发布博客&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://blog.hacperme.com/posts/notes/hugo_notes/" target="_blank" rel="noopener"
->弃用 wordpress，拥抱 hugo&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://immmmm.com/hugo-with-obsidian/" target="_blank" rel="noopener"
->Hugo With Obsidian&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>5 分钟向你推荐 Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</guid><description>
+&lt;/div></description></item><item><title>5 分钟向你推荐 Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</guid><description>
 &lt;p>Obsidian 是一款基于 markdown 格式的笔记软件，它的所有文件都保存在本地，确保了数据的安全性和隐私性。用户可以通过文件夹式管理来组织笔记，并且可以同时打开多个库（文件夹）来管理不同类型的内容。Obsidian 支持双向链接，可以生成关系图谱，帮助用户构建知识体系。此外，Obsidian 提供了丰富的插件，如日记插件、PPT 插件、思维导图插件等，用户可以根据自己的需求进行个性化配置。&lt;/p>
 &lt;p>如何向小伙伴们安利 Obsidian 呢，这里列出了以下几个问题。&lt;/p>
 &lt;h2 id="418-用-chatgpt-整理的问题">4.18 用 ChatGPT 整理的问题

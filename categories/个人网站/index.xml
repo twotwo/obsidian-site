@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>个人网站 on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><description>Recent content in 个人网站 on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Mon, 17 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>如何指定 Hugo 网站主题</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</link><pubDate>Sat, 25 May 2024 10:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>个人网站 on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link><description>Recent content in 个人网站 on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 20 Jun 2024 10:18:58 +0800</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>如何指定 Hugo 网站主题</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</link><pubDate>Sat, 25 May 2024 10:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</guid><description>
 &lt;p>Hugo 提供了大量可选&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
 >主题&lt;/a> 供我们使用。虽然适配工作有一定成本，但这个付出是值得的。这次总结一下如何快速切换适配好的主题。&lt;/p>
 &lt;p>查看 &lt;a class="link" href="https://gohugo.io/commands/hugo_server/" target="_blank" rel="noopener"
@@ -918,7 +918,85 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Hugo Clean White 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-cleanwhite/</link><pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-cleanwhite/</guid><description>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Hugo 进阶</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-advanced-guide/</link><pubDate>Thu, 20 Jun 2024 10:18:58 +0800</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-advanced-guide/</guid><description>
+&lt;p>参考 &lt;a class="link" href="./hugo-getting-started" >Hugo 快速上手指南&lt;/a> 可以快速把用户的内容部署成个人网站。&lt;/p>
+&lt;p>适配主题过程中遇到的问题，可以在&lt;a class="link" href="./creating-a-new-theme" >创建一个新 Hugo 主题&lt;/a> 获得部分解答。&lt;/p>
+&lt;p>剩下的问题，只能好好读官网文档，不断验证才能找到答案了。&lt;/p>
+&lt;h2 id="内容篇">内容篇
+&lt;/h2>&lt;p>参见 &lt;a class="link" href="https://gohugo.io/categories/content-management" target="_blank" rel="noopener"
+>CONTENT MANAGEMENT&lt;/a> 与内容相关的部分，其余内容见 配置篇。&lt;/p>
+&lt;h3 id="如何在-hugo-中组织和管理内容">如何在 Hugo 中组织和管理内容？
+&lt;/h3>&lt;p>在 Hugo 中，内容组织是通过在文件系统中创建和管理内容文件来实现的。这些内容文件通常存储在 &lt;code>content/&lt;/code> 目录下，并且可以进一步组织成不同的子目录，以表示不同的内容类型或分类。每个内容文件都需要一个前置元数据块，用于定义内容的属性，如标题、日期、分类等。&lt;/p>
+&lt;p>Hugo 支持多种内容类型，包括页面（Page）、单页（Single page）和列表（List）。页面是独立的内容项，单页是只有一个内容项的列表，而列表则是多个内容项的集合，通常用于博客文章或产品页面。见 配置篇。&lt;/p>
+&lt;p>Hugo 还提供了内容分类和标签功能，允许用户通过 taxonomies 来组织和关联内容。此外，Hugo 支持内容摘要的自动生成，以及手动设置摘要和权重，以便在生成网站时更好地控制内容的展示。见 配置篇。&lt;/p>
+&lt;h3 id="文件结构">文件结构
+&lt;/h3>&lt;p>Hugo 网站内容组织基于文件结构，通过 Page Bundles 管理页面相关的图片和资源，同时支持内容嵌套，以反映渲染后的网站结构。&lt;/p>
+&lt;p>输入的内容都放在 &lt;code>content&lt;/code> 目录下。&lt;code>content&lt;/code> 下的一级子目录叫做 &lt;code>Section&lt;/code>，其中内容默认的 &lt;code>type&lt;/code> 就是这个目录名。对应文档见 &lt;a class="link" href="https://gohugo.io/content-management/organization/" target="_blank" rel="noopener"
+>Content organization&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://gohugo.io/content-management/types/" target="_blank" rel="noopener"
+>Content types&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ hugo env
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find . -type d &lt;span class="p">|&lt;/span>xargs ls -ld
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">11&lt;/span> liyan wheel &lt;span class="m">352&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:21 .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">3&lt;/span> liyan wheel &lt;span class="m">96&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:21 ./archetypes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">2&lt;/span> liyan wheel &lt;span class="m">64&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:21 ./assets
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">3&lt;/span> liyan wheel &lt;span class="m">96&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:23 ./content
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">2&lt;/span> liyan wheel &lt;span class="m">64&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:23 ./content/posts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">2&lt;/span> liyan wheel &lt;span class="m">64&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:21 ./data
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">2&lt;/span> liyan wheel &lt;span class="m">64&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:21 ./i18n
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">2&lt;/span> liyan wheel &lt;span class="m">64&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:21 ./layouts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">2&lt;/span> liyan wheel &lt;span class="m">64&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:21 ./static
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x &lt;span class="m">2&lt;/span> liyan wheel &lt;span class="m">64&lt;/span> Jun &lt;span class="m">20&lt;/span> 11:21 ./themes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>页面默认的网站路径：&lt;a class="link" href="https://gohugo.io/content-management/organization/#single-pages-in-sections" target="_blank" rel="noopener"
+>Single pages in sections&lt;/a>&lt;/p>
+&lt;h4 id="sections">Sections
+&lt;/h4>&lt;p>Hugo 通过 &lt;a class="link" href="https://gohugo.io/content-management/sections/" target="_blank" rel="noopener"
+>&lt;/a> 功能支持将内容组织成结构化的方式，使得内容管理更加清晰。&lt;/p>
+&lt;p>所以带有 &lt;code>_index.md&lt;/code> 文件的内容目录 和 顶层内容目录(即使没有 &lt;code>_index.md&lt;/code> 文件)都是 Section，也被称为分支包（branch bundle）。&lt;/p>
+&lt;h4 id="content-formats">Content formats
+&lt;/h4>&lt;p>Hugo 支持多种内容格式，包括 Markdown、HTML、Emacs Org Mode、AsciiDoc、Pandoc 和 reStructuredText，并且可以在同一网站中混合使用这些格式。见 &lt;a class="link" href="https://gohugo.io/content-management/formats/" target="_blank" rel="noopener"
+>Content formats&lt;/a>&lt;/p>
+&lt;h4 id="content-types">Content types
+&lt;/h4>&lt;p>&lt;a class="link" href="https://gohugo.io/content-management/types/" target="_blank" rel="noopener"
+>Content types&lt;/a>&lt;/p>
+&lt;h4 id="related-content">Related content
+&lt;/h4>&lt;p>Hugo 网站介绍了如何使用其相关内容功能，通过前置参数和配置选项来列出与当前页面相关的内容。&lt;/p>
+&lt;p>&lt;a class="link" href="https://gohugo.io/content-management/related/" target="_blank" rel="noopener"
+>Related content&lt;/a>&lt;/p>
+&lt;h3 id="内容的组织">内容的组织
+&lt;/h3>&lt;h4 id="markdown-attributes">Markdown attributes
+&lt;/h4>&lt;p>&lt;a class="link" href="https://gohugo.io/content-management/markdown-attributes/" target="_blank" rel="noopener"
+>Markdown attributes&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://gohugo.io/content-management/summaries/" target="_blank" rel="noopener"
+>Content summaries&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="配置篇">配置篇
+&lt;/h2>&lt;p>从 版本之后，默认的配置文件是 &lt;code>yaml.toml&lt;/code>&lt;/p>
+&lt;h3 id="permalinks">Permalinks
+&lt;/h3>&lt;p>根据文件类型(type)设置文章在网站上的路径。&lt;/p>
+&lt;p>配置文章链接格式，参见 &lt;a class="link" href="https://gohugo.io/content-management/urls/#permalinks" target="_blank" rel="noopener"
+>Permalinks&lt;/a>&lt;/p>
+&lt;h2 id="模版篇">模版篇
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/categories/templates" target="_blank" rel="noopener"
+>TEMPLATES&lt;/a>&lt;/p>
+&lt;h3 id="template-lookup-order">Template lookup order
+&lt;/h3>&lt;p>Hugo 网站模板查找顺序页面主要介绍了 Hugo 如何根据特定的参数选择合适的模板来渲染页面，这些参数包括页面类型（Kind）、布局（Layout）、输出格式（Output Format）、语言（Language）、类型（Type）和部分（Section）。&lt;/p>
+&lt;p>&lt;a class="link" href="https://gohugo.io/templates/lookup-order/" target="_blank" rel="noopener"
+>Template lookup order&lt;/a>&lt;/p>
+&lt;h4 id="home-page">Home page
+&lt;/h4>&lt;p>主页内容文件：&lt;code>content/_index.md&lt;/code>&lt;/p>
+&lt;p>模版 lookup order 1: &lt;code>layouts/index.html.html&lt;/code>&lt;/p>
+&lt;h3 id="homepage-template">Homepage template
+&lt;/h3>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/homepage/" target="_blank" rel="noopener"
+>Homepage template&lt;/a>&lt;/p>
+&lt;h3 id="taxonomy-templates">Taxonomy templates
+&lt;/h3>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/taxonomy-templates/" target="_blank" rel="noopener"
+>Taxonomy templates&lt;/a>&lt;/p>
+&lt;h2 id="开发篇">开发篇
+&lt;/h2></description></item><item><title>Hugo Clean White 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-cleanwhite/</link><pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-cleanwhite/</guid><description>
 &lt;p>Tags: &lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/blog/" target="_blank" rel="noopener"
@@ -976,7 +1054,33 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addtional_menus:
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - title: ARCHIVE
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> href: /menu/archive/
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="替换默认字体">替换默认字体
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="替换搜索工具">替换搜索工具
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/replicatedhq/hugo-algolia" target="_blank" rel="noopener"
+>https://github.com/replicatedhq/hugo-algolia&lt;/a>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://harrycresswell.com/writing/hugo-algolia-2/" target="_blank" rel="noopener"
+>Static search with Algolia and Hugo&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/cloudcannon/pagefind" target="_blank" rel="noopener"
+>https://github.com/cloudcannon/pagefind&lt;/a>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://pagefind.app/docs/" target="_blank" rel="noopener"
+>Getting Started with Pagefind&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a class="link" href="https://makewithhugo.com/add-search-to-a-hugo-site/" target="_blank" rel="noopener"
+>Add Search To A Hugo Site&lt;/a> # 最后采用的方案&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">params:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> algolia_search: false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol>
+&lt;li>&lt;code>layouts/_default/search.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/_default/index.json&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h2 id="替换默认字体">替换默认字体
 &lt;/h2>&lt;p>&lt;code>static/css/hugo-theme-cleanwhite.min.css&lt;/code>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@import url(&amp;#39;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&amp;#39;);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
@@ -1030,7 +1134,14 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 >hugo server&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">es&lt;/span>&lt;span class="o">=&lt;/span>themes/hello-friend-ng/exampleSite hugo server --disableFastRender -D --contentDir &lt;span class="si">${&lt;/span>&lt;span class="nv">es&lt;/span>&lt;span class="si">}&lt;/span>/content --config themes/hello-friend-ng/exampleSite/config.toml
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="替换默认字体">替换默认字体
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="permalinks">Permalinks
+&lt;/h2>&lt;p>配置文章链接格式，参见 &lt;a class="link" href="https://gohugo.io/content-management/urls/#permalinks" target="_blank" rel="noopener"
+>Permalinks&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">permalinks:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> page:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> posts: /posts/:year/:slugorfilename/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>:slug&lt;/code> 对这个主题无效，需要用 &lt;code>:slugorfilename&lt;/code>&lt;/p>
+&lt;h2 id="替换默认字体">替换默认字体
 &lt;/h2>&lt;p>在 &lt;code>assets/scss/_fonts.scss&lt;/code> 中添加内容，无效；需要放到 &lt;code>assets/scss/_main.scss&lt;/code> 中&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@import url(&amp;#39;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&amp;#39;);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
@@ -1097,14 +1208,7 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 >Demo site&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://github.com/luizdepra/hugo-coder/blob/main/docs/home.md" target="_blank" rel="noopener"
 >Document&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>给 Obsidian 分享专门建了个网站</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-site/</guid><description>
-&lt;p>&lt;a class="link" href="https://github.com/twotwo/obsidian-site" target="_blank" rel="noopener"
->https://github.com/twotwo/obsidian-site&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian-site.svg"
-loading="lazy"
-alt="在手机、平板和电脑上的效果"
->&lt;/p>
-&lt;p>用 Excalidraw 合成了一下页面在三端上的效果，粗看还行。&lt;/p></description></item><item><title>Hugo Stack 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/</guid><description>
+&lt;/ul></description></item><item><title>Hugo Stack 主题配置指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-stack/</guid><description>
 &lt;p>目前我最喜欢的主题，响应式最多展示三列。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://themes.gohugo.io/tags/blog/" target="_blank" rel="noopener"
@@ -1296,97 +1400,7 @@ title="YouTube Video"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Search
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> url: search/
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> weight: 10
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>markdown 博客方案 - obsidian + hugo</title><link>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</link><pubDate>Mon, 13 May 2024 20:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/posts/2024/obsidian-blog-hugo/</guid><description>
-&lt;p>2015 年底，弃用 Wordpress，使用 Markdown 写作博客。&lt;/p>
-&lt;p>Hugo 默认不支持 Ob 链接&lt;/p>
-&lt;blockquote>
-&lt;p>[[farewell-wordpress|再见，WordPress 补记]]&lt;/p>
-&lt;/blockquote>
-&lt;p>在 Hugo 上的写法&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/posts/2024/farewell-wordpress/" >再见，WordPress 补记&lt;/a>&lt;/p>
-&lt;/blockquote>
-&lt;p>2024 年个人知识库升级，all in obsidian，更新博客方案。&lt;/p>
-&lt;h2 id="博客方案">博客方案
-&lt;/h2>&lt;p>Render In Obsidian&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">flowchart LR
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Obsidian --&amp;gt; File([Markdown])
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File --&amp;gt;|Hugo| Site(((HTML)))
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Site --&amp;gt;|rsync| Host
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Render By Hugo Shortcode&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-tpl" data-lang="tpl">&lt;span class="line">&lt;span class="cl">&lt;span class="x">
-&lt;script src="https://all-in-obsidian.li3huo.com/mermaid.min.js">&lt;/script>
-&lt;p class="mermaid optional">
-flowchart LR
-Obsidian --> File([Markdown])
-File -->|Hugo| Site(((HTML)))
-Site -->|rsync| Host
-&lt;/p>
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="其他资源">其他资源
-&lt;/h3>&lt;p>开源字体&lt;/p>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://github.com/lxgw/LxgwWenKai" target="_blank" rel="noopener"
->霞鹜文楷&lt;/a>，基于 Klee One 日文开源字体补全简繁常用字的一款开源字体。&lt;/li>
-&lt;li>&lt;a class="link" href="https://github.com/TrionesType/zhuque" target="_blank" rel="noopener"
->朱雀仿宋&lt;/a>改刻自民国活字「南宋」的开源字体。&lt;/li>
-&lt;li>&lt;a class="link" href="https://github.com/atelier-anchor/smiley-sans" target="_blank" rel="noopener"
->得意黑&lt;/a>，一款在人文观感和几何特征中寻找视觉平衡的现代窄斜体。&lt;/li>
-&lt;li>&lt;a class="link" href="https://chinese-font.netlify.app/fonts/lxgwwenkai/lxgwwenkai-bold/" target="_blank" rel="noopener"
->中文网字计划&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="wordpress-转-markdown">Wordpress 转 Markdown
-&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/wp2octopress" target="_blank" rel="noopener"
->https://github.com/twotwo/wp2octopress&lt;/a>&lt;/p>
-&lt;h2 id="markdown-构建静态网站">Markdown 构建静态网站
-&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/twotwo/hugo-template/" target="_blank" rel="noopener"
->https://github.com/twotwo/hugo-template/&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ brew install hugo &lt;span class="c1"># Mac 上安装 hugo&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ hugo env
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.125.7+extended darwin/amd64 &lt;span class="nv">BuildDate&lt;/span>&lt;span class="o">=&lt;/span>2024-05-08T14:46:24Z &lt;span class="nv">VendorInfo&lt;/span>&lt;span class="o">=&lt;/span>brew
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOOS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;darwin&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOARCH&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;amd64&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">GOVERSION&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;go1.22.3&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/sass/libsass&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;3.6.5&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/webmproject/libwebp&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;v1.3.2&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git clone --recurse-submodules https://github.com/twotwo/hugo-template/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ hugo server &lt;span class="c1"># 本地预览 http://localhost:1313/&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ hugo &lt;span class="c1"># 发布成静态网页：public 目录下&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Start building sites …
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.125.7+extended darwin/amd64 &lt;span class="nv">BuildDate&lt;/span>&lt;span class="o">=&lt;/span>2024-05-08T14:46:24Z &lt;span class="nv">VendorInfo&lt;/span>&lt;span class="o">=&lt;/span>brew
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">|&lt;/span> EN
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-------------------+-------
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Pages &lt;span class="p">|&lt;/span> &lt;span class="m">1888&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Paginator pages &lt;span class="p">|&lt;/span> &lt;span class="m">87&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Non-page files &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Static files &lt;span class="p">|&lt;/span> &lt;span class="m">26&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Processed images &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Aliases &lt;span class="p">|&lt;/span> &lt;span class="m">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Cleaned &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total in &lt;span class="m">2370&lt;/span> ms
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="上传到服务器nginx">上传到服务器(Nginx)
-&lt;/h2>&lt;p>把构建的静态内容上传到服务器的 Nginx 对应目录下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ rsync -avP public/* &lt;span class="si">${&lt;/span>&lt;span class="nv">host&lt;/span>&lt;span class="si">}&lt;/span>:/var/www/myblog.com/output/
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="obsidian-编辑">Obsidian 编辑
-&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/huge-create-vault.png"
-loading="lazy"
-alt="huge-create-vault.png"
->&lt;/p>
-&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/hugo-vault.png"
-loading="lazy"
-alt="hugo-vault.png"
->&lt;/p>
-&lt;h2 id="参考">参考
-&lt;/h2>&lt;ul>
-&lt;li>&lt;a class="link" href="https://lillianwho.com/posts/obsidian-hugo-cloudflare/" target="_blank" rel="noopener"
->obsidian 配合 hugo 发布博客&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://blog.hacperme.com/posts/notes/hugo_notes/" target="_blank" rel="noopener"
->弃用 wordpress，拥抱 hugo&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://immmmm.com/hugo-with-obsidian/" target="_blank" rel="noopener"
->Hugo With Obsidian&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Getting Started with Hugo</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-getting-started/</link><pubDate>Fri, 02 Feb 2024 04:14:54 -0800</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-getting-started/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Getting Started with Hugo</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-getting-started/</link><pubDate>Fri, 02 Feb 2024 04:14:54 -0800</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-getting-started/</guid><description>
 &lt;p>Hugo &lt;a class="link" href="https://gohugo.io/content-management/front-matter/" target="_blank" rel="noopener"
 >Front matter&lt;/a>&lt;/p>
 &lt;h2 id="step-1-install-hugo">Step 1. Install Hugo
