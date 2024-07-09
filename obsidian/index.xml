@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidians on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/</link><description>Recent content in Obsidians on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Best task plugin in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</link><pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</guid><description>
-&lt;p>本视频教程介绍了 Obsidian 中的任务插件（Task Plugin）的安装、配置、使用方法以及如何通过查询、过滤器和任务状态来管理任务。&lt;/p>
+&lt;p>本视频教程介绍了 Obsidian 中的任务插件（Task Plugin）的安装、配置、使用方法以及如何通过查询、过滤器和任务状态来管理任务。&lt;a class="link" href="https://publish.obsidian.md/tasks/Introduction" target="_blank" rel="noopener"
+>Task User Guide&lt;/a>&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/quXNtjTe5WE"
@@ -8,23 +9,72 @@ title="YouTube Video"
 >
 &lt;/iframe>
 &lt;/div>
-&lt;h2 id="task-插件的用法适配主要内容摘要">Task 插件的用法(适配主要内容摘要)
-&lt;/h2>&lt;p>视频首先介绍了 Obsidian 的基本功能，特别是其作为一个标记语言（Markdown）编辑器的特点，然后详细讲解了如何在 Obsidian 中安装和配置 Task Plugin。演示了如何创建和管理任务，包括如何设置任务的格式、状态、优先级和日期。此外，介绍了如何使用查询来过滤和展示特定的任务，包括使用标签、状态、日期和依赖项等条件。视频还涉及了如何处理重复任务、任务依赖性以及如何通过 CSS 自定义任务的显示样式。最后，提到了 Obsidian 社区和 Discord 频道作为获取帮助的资源。&lt;/p>
-&lt;p>&lt;a class="link" href="https://publish.obsidian.md/tasks/Introduction" target="_blank" rel="noopener"
->Task User Guide&lt;/a>&lt;/p>
-&lt;h3 id="global-filter-and-query">Global Filter and Query
-&lt;/h3>&lt;h3 id="任务插件的高级功能">任务插件的高级功能
-&lt;/h3>&lt;p>如设置任务的优先级、使用自定义状态和处理重复任务。&lt;/p>
-&lt;h3 id="通过添加-css-来自定义任务查询的显示">通过添加 CSS 来自定义任务查询的显示
-&lt;/h3>&lt;p>&lt;a class="link" href="https://publish.obsidian.md/tasks/Advanced/Styling#CSS%20Examples" target="_blank" rel="noopener"
->https://publish.obsidian.md/tasks/Advanced/Styling#CSS%20Examples&lt;/a>&lt;/p>
-&lt;h3 id="task-queries">Task Queries
+&lt;h2 id="安装">安装
+&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/tasks-7.6.0.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="配置tasks-settings">配置(Tasks Settings)
+&lt;/h2>&lt;h3 id="task-format-settings">Task Format Settings
+&lt;/h3>&lt;p>Tasks 插件用于在 Markdown 中管理任务，通过任务格式来表达任务的属性。建议选择默认的 Emoji 格式。&lt;/p>
+&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Reference/Task&amp;#43;Formats/About&amp;#43;Task&amp;#43;Formats" target="_blank" rel="noopener"
+>About Task Formats&lt;/a>&lt;/p>
+&lt;h3 id="global-filter-settings">Global filter Settings
+&lt;/h3>&lt;p>使用全局过滤器功能来限制 Tasks 插件只匹配特定的待办事项，在设置中配置这一功能。详细说明见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Global&amp;#43;Filter" target="_blank" rel="noopener"
+>Global Filter&lt;/a>&lt;/p>
+&lt;h3 id="global-query">Global Query
+&lt;/h3>&lt;p>用户可以在设置中设置一个全局查询，该查询将自动添加到用户词典中的所有查询之前。全局查询可以包括路径、标签、标题等多种条件，以便默认筛选任务。&lt;/p>
+&lt;h3 id="task-statuses">Task Statuses
+&lt;/h3>&lt;p>用户可以根据自己的需求定义任务的状态&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Core Statuses&lt;/code> 包含未完成和已完成两种状态：&lt;code>[ ]&lt;/code>:&lt;code>TODO&lt;/code> 和 &lt;code>[x]&lt;/code>:&lt;code>DONE&lt;/code>&lt;/li>
+&lt;li>可以在 &lt;code>Costom Statuses&lt;/code> 中引入自定义任务状态：&lt;code>[/]&lt;/code>:&lt;code>IN_PROGRESS&lt;/code>,  &lt;code>[-]&lt;/code>:&lt;code>CANCELLED&lt;/code>, &lt;code>NON_TASK&lt;/code>
+切换成 &lt;code>Mininal&lt;/code> 主题，可以显示自定义状态的图标。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>Review and check your Statuses&lt;/code> 查看可视化状态说明&lt;/p>
+&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Statuses" target="_blank" rel="noopener"
+>Statuses&lt;/a>&lt;/p>
+&lt;h3 id="date-settings">Date Settings
+&lt;/h3>&lt;p>任务行中可以添加的不同日期类型，包括&lt;/p>
+&lt;ul>
+&lt;li>完成日期（done date） ✅ YYYY-MM-DD # 默认开&lt;/li>
+&lt;li>取消日期（cancelled date）❌ YYYY-MM-DD # 默认开&lt;/li>
+&lt;li>开始日期（start date）➕YYYY-MM-DD&lt;/li>
+&lt;/ul>
+&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Dates#Created&amp;#43;date" target="_blank" rel="noopener"
+>Dates&lt;/a>&lt;/p>
+&lt;h3 id="周期任务recurring-task-settings">周期任务(Recurring task Settings)
+&lt;/h3>&lt;p>设置和管理重复任务，默认关。&lt;/p>
+&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Recurring&amp;#43;Tasks" target="_blank" rel="noopener"
+>Recurring Tasks&lt;/a>&lt;/p>
+&lt;h3 id="auto-suggest-settings">Auto-suggest Settings
+&lt;/h3>&lt;p>自动提示（Auto-Suggest）功能，用于在编辑任务时帮助用户快速输入特定的表情符号和日期，提高编辑效率，尤其在移动设备上使用时的便利性。&lt;/p>
+&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Editing/Auto-Suggest" target="_blank" rel="noopener"
+>Intelligent Auto-Suggest&lt;/a>&lt;/p>
+&lt;h3 id="dialog-settings">Dialog Settings
+&lt;/h3>&lt;p>“创建或编辑任务” 模态框的使用方法和功能。&lt;code>Tasks: Create or edit&lt;/code> 命令触发：&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/tasks-dialog.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="任务插件的高级功能">任务插件的高级功能
+&lt;/h2>&lt;p>如设置任务的优先级、使用自定义状态和处理重复任务。&lt;/p>
+&lt;h3 id="自定义任务查询的显示">自定义任务查询的显示
+&lt;/h3>&lt;p>插件允许用户通过 CSS 对任务列表进行详细的样式设置。支持 &lt;code>short mode&lt;/code>/&lt;code>full mode&lt;/code>&lt;/p>
+&lt;p>&lt;a class="link" href="https://publish.obsidian.md/tasks/Advanced/Styling#CSS&amp;#43;Examples" target="_blank" rel="noopener"
+>CSS Examples&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-CSS" data-lang="CSS">&lt;span class="line">&lt;span class="cl">&lt;span class="o">//&lt;/span> &lt;span class="nt">Status&lt;/span> &lt;span class="nt">Symbols&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">li&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nc">task-list-item&lt;/span>&lt;span class="o">[&lt;/span>&lt;span class="nt">data-task&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;/&amp;#34;&lt;/span>&lt;span class="o">]&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nc">task-list-item-checkbox&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">box-shadow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="kt">px&lt;/span> &lt;span class="kc">green&lt;/span> &lt;span class="cp">!important&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="task-queries">Task Queries
 &lt;/h3>&lt;p>如何使用查询来管理和显示任务，包括如何根据任务的描述和标签来过滤。&lt;/p>
+&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Queries/About&amp;#43;Queries" target="_blank" rel="noopener"
+>About Queries&lt;/a>, &lt;a class="link" href="https://publish.obsidian.md/tasks/Quick&amp;#43;Reference" target="_blank" rel="noopener"
+>Quick Reference&lt;/a>&lt;/p>
 &lt;h3 id="backlinks-in-queries">Backlinks in Queries
 &lt;/h3>&lt;p>如何反向链接到任务文件&lt;/p>
 &lt;h3 id="querying-files">Querying files
 &lt;/h3>&lt;h3 id="query-result-status-change">Query result status change
 &lt;/h3>&lt;p>如何在任务查询中直接修改任务状态，例如将任务从 “待办” 更改为 “进行中” 或 “已取消”。&lt;/p>
+&lt;h2 id="视频内容总结">视频内容总结
+&lt;/h2>&lt;p>视频首先介绍了 Obsidian 的基本功能，特别是其作为一个标记语言（Markdown）编辑器的特点，然后详细讲解了如何在 Obsidian 中安装和配置 Task Plugin。演示了如何创建和管理任务，包括如何设置任务的格式、状态、优先级和日期。此外，介绍了如何使用查询来过滤和展示特定的任务，包括使用标签、状态、日期和依赖项等条件。视频还涉及了如何处理重复任务、任务依赖性以及如何通过 CSS 自定义任务的显示样式。最后，提到了 Obsidian 社区和 Discord 频道作为获取帮助的资源。&lt;/p>
 &lt;h2 id="youtube-频道-danny-talks-tech">YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo;
 &lt;/h2>&lt;p>发现这位博主(Danny Hatcher)的其他内容也很不错：[[youtube-channels#@DannyHatcherTech]]。比如&lt;/p>
 &lt;h3 id="why-justin-sung-is-wrong-about-obsidian">Why Justin Sung is wrong about Obsidian
