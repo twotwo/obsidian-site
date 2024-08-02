@@ -1,4 +1,106 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Best tasks plugin in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</link><pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian Shortcuts</title><link>https://all-in-obsidian.li3huo.com/obsidian/shortcuts/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/shortcuts/</guid><description>
+&lt;p>Obsidian 笔记编辑默认支持了一些快捷键&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。用户也可以自定义快捷键，提示编辑效率。&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
+&lt;h2 id="内置快捷键">内置快捷键
+&lt;/h2>&lt;h3 id="操作类">操作类
+&lt;/h3>&lt;ul>
+&lt;li>Open settings: &lt;code>Cmd + ,&lt;/code>&lt;/li>
+&lt;li>Open command palette: &lt;code>Cmd + P&lt;/code> &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>Open graphview: &lt;code>Cmd + G&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="编辑类">编辑类
+&lt;/h3>&lt;p>已经内置的编辑快捷键&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，包括&lt;/p>
+&lt;ul>
+&lt;li>常见操作（如复制、剪切、粘贴、撤销和重做）&lt;/li>
+&lt;li>文本编辑（如插入新行、删除字符或单词）&lt;/li>
+&lt;li>文本导航（如光标移动、页面滚动）&lt;/li>
+&lt;li>文本选择（如扩展选择区域）&lt;/li>
+&lt;/ul>
+&lt;h3 id="viewing-hotkeys">Viewing hotkeys
+&lt;/h3>&lt;p>用户可以通过命令面板快速查看命令的快捷键。&lt;/p>
+&lt;h2 id="设置快捷键">设置快捷键
+&lt;/h2>&lt;h3 id="setting-hotkeys">Setting hotkeys
+&lt;/h3>&lt;p>用户可以在设置中的快捷键部分添加、删除或恢复快捷键。&lt;/p>
+&lt;h3 id="hotkeysjson">hotkeys.json
+&lt;/h3>&lt;p>每个 &lt;em>vault&lt;/em> 都包含一个 &lt;code>.obsidian&lt;/code> 配置文件夹，其中包含了该 &lt;em>vault&lt;/em> 特定的设置，如快捷键(&lt;code>hotkeys.json&lt;/code>)、主题(&lt;code>appearance.json&lt;/code>)和插件(&lt;code>community-plugins.json&lt;/code>)。&lt;/p>
+&lt;p>所以我们可以通过拷贝 &lt;code>.obsidian/hotkeys.json&lt;/code> 文件的方式来共享快捷键配置。&lt;/p>
+&lt;h2 id="my-hotkeys">My hotkeys
+&lt;/h2>&lt;p>Markdown 编辑用快捷键，都是 &lt;code>Ctrl&lt;/code> 打头&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Action&lt;/th>
+&lt;th>Shortcut&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>editor:set-heading-1&lt;/td>
+&lt;td>&lt;code>Ctrl+1&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&amp;hellip;&lt;/td>
+&lt;td>&lt;code>Ctrl+...&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>editor:set-heading-6&lt;/td>
+&lt;td>&lt;code>Ctrl+6&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>editor:toggle-bullet-list&lt;/td>
+&lt;td>&lt;code>Ctrl+b&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>editor:toggle-numbered-list&lt;/td>
+&lt;td>&lt;code>Ctrl+n&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>editor:toggle-highlight&lt;/td>
+&lt;td>&lt;code>Ctrl+h&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>editor:fold-all&lt;/td>
+&lt;td>&lt;code>Ctrl+f&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>editor:unfold-all&lt;/td>
+&lt;td>&lt;code>Ctrl+u&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>editor:swap-line-up&lt;/td>
+&lt;td>&lt;code>Ctrl+Cmd+↑&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>editor:swap-line-down&lt;/td>
+&lt;td>&lt;code>Ctrl+Cmd+↓&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Obsidian 1.6 后的版本，无法在界面中绑定 &lt;code>Cmd + Shift&lt;/code> 组合的快捷方式了，直接在配置中设置的，倒是也依然有效。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;modifiers&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="p">[&lt;/span> &lt;span class="s2">&amp;#34;Mod&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;Shift&amp;#34;&lt;/span> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>后来决定都调整为 &lt;code>Ctrl + Shift&lt;/code> 了。&lt;/p>
+&lt;p>大家也可以看一下论坛上的快捷键最佳实践帖 &lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/p>
+&lt;h2 id="reference">Reference
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Editing&amp;#43;shortcuts" target="_blank" rel="noopener"
+>https://help.obsidian.md/Editing+and+formatting/Editing+shortcuts&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://help.obsidian.md/User&amp;#43;interface/Hotkeys" target="_blank" rel="noopener"
+>https://help.obsidian.md/User+interface/Hotkeys&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a class="link" href="https://help.obsidian.md/Plugins/Command&amp;#43;palette" target="_blank" rel="noopener"
+>https://help.obsidian.md/Plugins/Command+palette&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4">
+&lt;p>&lt;a class="link" href="https://forum.obsidian.md/t/obsidian-hotkeys-favorites-and-best-practices/12125" target="_blank" rel="noopener"
+>https://forum.obsidian.md/t/obsidian-hotkeys-favorites-and-best-practices/12125&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Best tasks plugin in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</link><pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</guid><description>
 &lt;p>本视频教程介绍了 Obsidian 中的任务插件（Task Plugin）的安装、配置、使用方法以及如何通过查询、过滤器和任务状态来管理任务。&lt;a class="link" href="https://publish.obsidian.md/tasks/Introduction" target="_blank" rel="noopener"
 >Task User Guide&lt;/a>&lt;/p>
 &lt;div class="video-wrapper">
