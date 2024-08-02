@@ -1,204 +1,138 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Nicolevdh on All in Obsidian</title>
-        <link>http://localhost:1313/tags/nicolevdh/</link>
-        <description>Recent content in Nicolevdh on All in Obsidian</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <managingEditor>li3huo (li3huo)</managingEditor>
-        <webMaster>li3huo (li3huo)</webMaster>
-        <lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/nicolevdh/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Getting started with ExcaliBrain</title>
-        <link>http://localhost:1313/obsidian/excalibrain-getting-started/</link>
-        <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>http://localhost:1313/obsidian/excalibrain-getting-started/</guid>
-        <description>
-            &lt;p&gt;Getting started with ExcaliBrain, zsolt 发了三个视频做为新手入门引导。&lt;/p&gt;
-&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;iframe loading=&#34;lazy&#34; 
-            src=&#34;https://www.youtube.com/embed/8LE_QdYQZVk&#34; 
-            allowfullscreen 
-            title=&#34;YouTube Video&#34;
-    &gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=8LE_QdYQZVk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Getting started with ExcaliBrain 1/3&lt;/a&gt; Aug 12, 2023&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://youtu.be/JjyEicYtVcU&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Getting started with ExcaliBrain 2/3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://youtu.be/yPJ2hTXqlXQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Getting started with ExcaliBrain 3/3&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;安装&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Excalidraw&lt;/li&gt;
-&lt;li&gt;Dataview&lt;/li&gt;
-&lt;li&gt;Excalibrain&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;issue-based-information-system&#34;&gt;Issue-Based Information System
-&lt;/h2&gt;&lt;p&gt;IBIS(基于问题的信息系统)框架，它是一种对话映射方法，包括问题、立场、支持和反对论点，以及证据和结论。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Issues: phrased as questions, drives a conversation about issues&lt;/li&gt;
-&lt;li&gt;Positions: 相应问题时对应的立场&lt;/li&gt;
-&lt;li&gt;Supporting and Objecting Arguments: support or object positions&lt;/li&gt;
-&lt;li&gt;Evidences: 证据，attach to various nodes reaching a conclusion&lt;/li&gt;
-&lt;li&gt;Conclusion&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;《Visualizing Argumentation》&lt;/p&gt;
-&lt;h2 id=&#34;设置&#34;&gt;设置
-&lt;/h2&gt;&lt;h3 id=&#34;节点&#34;&gt;节点
-&lt;/h3&gt;&lt;h3 id=&#34;链接&#34;&gt;链接
-&lt;/h3&gt;&lt;h2 id=&#34;videos&#34;&gt;Videos
-&lt;/h2&gt;&lt;h3 id=&#34;how-to-use-the-excalibrain-obsidian-plugin&#34;&gt;How to use the ExcaliBrain Obsidian plugin
-&lt;/h3&gt;&lt;p&gt;Sep 17, 2022 by &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@nicolevdh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Nicole van der Hoeven&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;4 Levels use ExcaliBrain&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Level 1 - Letting ExcaliBrain infer relationships&lt;/li&gt;
-&lt;li&gt;Level 2 - Setting explicit relationships&lt;/li&gt;
-&lt;li&gt;Level 3 - Creating custom relationships&lt;/li&gt;
-&lt;li&gt;Level 4 - Creating semantic relationships&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;iframe loading=&#34;lazy&#34; 
-            src=&#34;https://www.youtube.com/embed/gqEtn3gCZF0&#34; 
-            allowfullscreen 
-            title=&#34;YouTube Video&#34;
-    &gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;使用-excalibrain-创作动态思维导图&#34;&gt;使用 ExcaliBrain 创作动态思维导图
-&lt;/h3&gt;&lt;p&gt;“A dynamic mind-mapping experience with Obsidian with ExcaliBrain” Jul 18, 2023&lt;/p&gt;
-&lt;p&gt;如何使用 Obsidian 和 ExcaliBrain 插件来进行动态的思维导图创建。&lt;/p&gt;
-&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;iframe loading=&#34;lazy&#34; 
-            src=&#34;https://www.youtube.com/embed/_wldRlxTAxs&#34; 
-            allowfullscreen 
-            title=&#34;YouTube Video&#34;
-    &gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>Youtube 上的 Obsidian 学习频道</title>
-        <link>http://localhost:1313/obsidian/youtube-channels/</link>
-        <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>http://localhost:1313/obsidian/youtube-channels/</guid>
-        <description>
-            &lt;p&gt;从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p&gt;
-&lt;h2 id=&#34;visualpkm&#34;&gt;@VisualPKM
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zsolt.blog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Zsolt&lt;/a&gt; Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p&gt;
-&lt;p&gt;VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@VisualPKM&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@VisualPKM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121849106.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;nicolevdh&#34;&gt;@nicolevdh
-&lt;/h2&gt;&lt;p&gt;Nicole van der Hoeven，一位在 Grafana Labs 担任高级开发者倡导者的专家，她的 YouTube 频道拥有 52.6K 订阅者，并且发布了 166 个视频。内容涵盖了如何在 Obsidian 中使用社区和核心插件来清单化、结构化、分类和解释笔记，以提高笔记的实用性。她还分享了如何使用 Obsidian 进行学习、创作和组织工作，包括针对非编程人士的教程、核心插件的推荐、个人插件使用习惯、以及如何使用 Obsidian 进行桌面角色扮演游戏（TTRPG）。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@nicolevdh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@nicolevdh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121848581.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;fromsergio&#34;&gt;@FromSergio
-&lt;/h2&gt;&lt;p&gt;FromSergio 频道拥有超过 45.6K 的订阅者，并已发布 52 个视频。教授如何从初学者到高级用户使用 Obsidian 个人知识管理工具。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@FromSergio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@FromSergio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121849068.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;linkingyourthinking&#34;&gt;@linkingyourthinking
-&lt;/h2&gt;&lt;p&gt;Nick Milo 的 YouTube 频道 “Linking Your Thinking” 专注于个人知识管理（PKM）的实践和技巧，尤其是在 Obsidian 笔记应用中。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@linkingyourthinking&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@linkingyourthinking&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406122010580.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;cyanvoxel&#34;&gt;@cyanvoxel
-&lt;/h2&gt;&lt;p&gt;CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，共享了他的 Osidian Vault，展示了如何将实体笔记数字化并整合到 Osidian 中。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@cyanvoxel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@cyanvoxel&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CyanVoxel/Obsidian-Vault-Template&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/CyanVoxel/Obsidian-Vault-Template&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121840729.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;dannberg&#34;&gt;@DannBerg
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://dannb.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Dann Berg&lt;/a&gt; 是一位资深 FinOps(个人财务运营) 从业者，他的 YouTube 频道拥有超过 4.48K 名订阅者，并且发布了 55 个视频。他的视频内容涵盖了个人财务和工程的交叉点，以及他个人感兴趣的主题。频道内容包括提高笔记效率的技巧、Obsidian 应用的教程、生产力书籍推荐、以及如何撰写和管理新闻通讯等。他还分享了自己的个人 Obsidian 笔记库，并提供了一系列的 Obsidian 系统和模板教程。此外，Dann Berg 还探讨了如何摆脱 Google 生态系统，实现数字生活的独立性。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@DannBerg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@DannBerg&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121900655.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;dannyhatchertech&#34;&gt;@DannyHatcherTech
-&lt;/h2&gt;&lt;p&gt;Danny Hatcher 运营的 YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo; 拥有 31.6K 订阅者和 395 个视频。频道内容涉及研究、技术和相关话题的视频。频道提供了关于如何在 Obsidian 中测试 BookFusion、Obsidian 的最新版本更新、使用 Afforai 进行研究的测试、以及如何从书籍中取好笔记等视频教程。此外，还讨论了为什么不使用思维导图、反对原子笔记和迷你文章、以及为什么选择使用 Morgen 等主题。Danny 还分享了他如何在 Obsidian 中写作、如何进行研究和写作、以及他对于 Notion 日历不满意的看法。频道还包括了与其他 YouTuber 如 Ali Abdaal 讨论研究的视频。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@DannyHatcherTech&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@DannyHatcherTech&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202407061829667.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;800x950&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- sips -g all photos/202406121900655.png # 查看图片分辨率: 1550 x 1910 --&gt;</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicolevdh on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/nicolevdh/</link><description>Recent content in Nicolevdh on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/nicolevdh/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
+&lt;p>Getting started with ExcaliBrain, zsolt 发了三个视频做为新手入门引导。&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/8LE_QdYQZVk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/watch?v=8LE_QdYQZVk" target="_blank" rel="noopener"
+>Getting started with ExcaliBrain 1/3&lt;/a> Aug 12, 2023&lt;/li>
+&lt;li>&lt;a class="link" href="https://youtu.be/JjyEicYtVcU" target="_blank" rel="noopener"
+>Getting started with ExcaliBrain 2/3&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://youtu.be/yPJ2hTXqlXQ" target="_blank" rel="noopener"
+>Getting started with ExcaliBrain 3/3&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>安装&lt;/p>
+&lt;ul>
+&lt;li>Excalidraw&lt;/li>
+&lt;li>Dataview&lt;/li>
+&lt;li>Excalibrain&lt;/li>
+&lt;/ul>
+&lt;h2 id="issue-based-information-system">Issue-Based Information System
+&lt;/h2>&lt;p>IBIS(基于问题的信息系统)框架，它是一种对话映射方法，包括问题、立场、支持和反对论点，以及证据和结论。&lt;/p>
+&lt;ul>
+&lt;li>Issues: phrased as questions, drives a conversation about issues&lt;/li>
+&lt;li>Positions: 相应问题时对应的立场&lt;/li>
+&lt;li>Supporting and Objecting Arguments: support or object positions&lt;/li>
+&lt;li>Evidences: 证据，attach to various nodes reaching a conclusion&lt;/li>
+&lt;li>Conclusion&lt;/li>
+&lt;/ul>
+&lt;p>《Visualizing Argumentation》&lt;/p>
+&lt;h2 id="设置">设置
+&lt;/h2>&lt;h3 id="节点">节点
+&lt;/h3>&lt;h3 id="链接">链接
+&lt;/h3>&lt;h2 id="videos">Videos
+&lt;/h2>&lt;h3 id="how-to-use-the-excalibrain-obsidian-plugin">How to use the ExcaliBrain Obsidian plugin
+&lt;/h3>&lt;p>Sep 17, 2022 by &lt;a class="link" href="https://www.youtube.com/@nicolevdh" target="_blank" rel="noopener"
+>Nicole van der Hoeven&lt;/a>&lt;/p>
+&lt;p>4 Levels use ExcaliBrain&lt;/p>
+&lt;ul>
+&lt;li>Level 1 - Letting ExcaliBrain infer relationships&lt;/li>
+&lt;li>Level 2 - Setting explicit relationships&lt;/li>
+&lt;li>Level 3 - Creating custom relationships&lt;/li>
+&lt;li>Level 4 - Creating semantic relationships&lt;/li>
+&lt;/ul>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/gqEtn3gCZF0"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h3 id="使用-excalibrain-创作动态思维导图">使用 ExcaliBrain 创作动态思维导图
+&lt;/h3>&lt;p>“A dynamic mind-mapping experience with Obsidian with ExcaliBrain” Jul 18, 2023&lt;/p>
+&lt;p>如何使用 Obsidian 和 ExcaliBrain 插件来进行动态的思维导图创建。&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/_wldRlxTAxs"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
+&lt;p>从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
+&lt;h2 id="visualpkm">@VisualPKM
+&lt;/h2>&lt;p>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
+>Zsolt&lt;/a> Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p>
+&lt;p>VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@VisualPKM" target="_blank" rel="noopener"
+>https://www.youtube.com/@VisualPKM&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849106.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="nicolevdh">@nicolevdh
+&lt;/h2>&lt;p>Nicole van der Hoeven，一位在 Grafana Labs 担任高级开发者倡导者的专家，她的 YouTube 频道拥有 52.6K 订阅者，并且发布了 166 个视频。内容涵盖了如何在 Obsidian 中使用社区和核心插件来清单化、结构化、分类和解释笔记，以提高笔记的实用性。她还分享了如何使用 Obsidian 进行学习、创作和组织工作，包括针对非编程人士的教程、核心插件的推荐、个人插件使用习惯、以及如何使用 Obsidian 进行桌面角色扮演游戏（TTRPG）。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@nicolevdh" target="_blank" rel="noopener"
+>https://www.youtube.com/@nicolevdh&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121848581.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="fromsergio">@FromSergio
+&lt;/h2>&lt;p>FromSergio 频道拥有超过 45.6K 的订阅者，并已发布 52 个视频。教授如何从初学者到高级用户使用 Obsidian 个人知识管理工具。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@FromSergio" target="_blank" rel="noopener"
+>https://www.youtube.com/@FromSergio&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849068.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="linkingyourthinking">@linkingyourthinking
+&lt;/h2>&lt;p>Nick Milo 的 YouTube 频道 “Linking Your Thinking” 专注于个人知识管理（PKM）的实践和技巧，尤其是在 Obsidian 笔记应用中。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@linkingyourthinking" target="_blank" rel="noopener"
+>https://www.youtube.com/@linkingyourthinking&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406122010580.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="cyanvoxel">@cyanvoxel
+&lt;/h2>&lt;p>CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，共享了他的 Osidian Vault，展示了如何将实体笔记数字化并整合到 Osidian 中。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@cyanvoxel" target="_blank" rel="noopener"
+>https://www.youtube.com/@cyanvoxel&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/CyanVoxel/Obsidian-Vault-Template" target="_blank" rel="noopener"
+>https://github.com/CyanVoxel/Obsidian-Vault-Template&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121840729.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="dannberg">@DannBerg
+&lt;/h2>&lt;p>&lt;a class="link" href="https://dannb.org/" target="_blank" rel="noopener"
+>Dann Berg&lt;/a> 是一位资深 FinOps(个人财务运营) 从业者，他的 YouTube 频道拥有超过 4.48K 名订阅者，并且发布了 55 个视频。他的视频内容涵盖了个人财务和工程的交叉点，以及他个人感兴趣的主题。频道内容包括提高笔记效率的技巧、Obsidian 应用的教程、生产力书籍推荐、以及如何撰写和管理新闻通讯等。他还分享了自己的个人 Obsidian 笔记库，并提供了一系列的 Obsidian 系统和模板教程。此外，Dann Berg 还探讨了如何摆脱 Google 生态系统，实现数字生活的独立性。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@DannBerg" target="_blank" rel="noopener"
+>https://www.youtube.com/@DannBerg&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121900655.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="dannyhatchertech">@DannyHatcherTech
+&lt;/h2>&lt;p>Danny Hatcher 运营的 YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo; 拥有 31.6K 订阅者和 395 个视频。频道内容涉及研究、技术和相关话题的视频。频道提供了关于如何在 Obsidian 中测试 BookFusion、Obsidian 的最新版本更新、使用 Afforai 进行研究的测试、以及如何从书籍中取好笔记等视频教程。此外，还讨论了为什么不使用思维导图、反对原子笔记和迷你文章、以及为什么选择使用 Morgen 等主题。Danny 还分享了他如何在 Obsidian 中写作、如何进行研究和写作、以及他对于 Notion 日历不满意的看法。频道还包括了与其他 YouTuber 如 Ali Abdaal 讨论研究的视频。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@DannyHatcherTech" target="_blank" rel="noopener"
+>https://www.youtube.com/@DannyHatcherTech&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202407061829667.png"
+loading="lazy"
+alt="800x950"
+>&lt;/li>
+&lt;/ul>
+&lt;!-- sips -g all photos/202406121900655.png # 查看图片分辨率: 1550 x 1910 --></description></item></channel></rss>

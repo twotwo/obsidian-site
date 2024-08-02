@@ -1,214 +1,149 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Youtube on All in Obsidian</title>
-        <link>http://localhost:1313/tags/youtube/</link>
-        <description>Recent content in Youtube on All in Obsidian</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <managingEditor>li3huo (li3huo)</managingEditor>
-        <webMaster>li3huo (li3huo)</webMaster>
-        <lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/youtube/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>用概念图🗺️表述想法💡</title>
-        <link>http://localhost:1313/obsidian/concept-modeling/</link>
-        <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>http://localhost:1313/obsidian/concept-modeling/</guid>
-        <description>
-            &lt;p&gt;概念图是一种用图形方式展示概念、思想或信息之间关系的视觉工具。概念图通常由多个概念元素和相互连接的线段组成，展示相互之间的联系和等级结构。概念图的制作过程可以帮助人们 整理信息、进行决策，并用易于理解的方式共享和协作信息，尤其适用于复杂话题的深入理解。&lt;/p&gt;
-&lt;p&gt;在动笔输出文字之前，先对概念进行建模，可以 精炼知识(Refining Knowledge)，增进理解。&lt;/p&gt;
-&lt;h2 id=&#34;what-is-a-concept-map&#34;&gt;What is a Concept Map?
-&lt;/h2&gt;&lt;p&gt;概念图，Concept Diagram，或者叫做 Concept Model，是一种将 建议的概念关系 以图表的形式呈现出来的工具，通常用于组织和结构化知识。Concept Map WikiPedia&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;概念图 最早是由康奈尔大学的 Joseph D.Novak 和他的研究团队在20世纪70年代提出。当时，Novak 将这种绘图技巧应用在教学中，以增进理解。
-在 Novak 的著作 &lt;strong&gt;Learning to Learn&lt;/strong&gt;（中文版《习得学习》）中指出，“有意义的学习，涉及将新概念与命题同化于既有的认知架构中”。&lt;/p&gt;
-&lt;p&gt;例1、对概念建模的概念图，来自这个视频[^conceptmodeling]&lt;/p&gt;
-&lt;p&gt;![[concept-modeling.excalidraw#^frame=concept modeling]]&lt;/p&gt;
-&lt;p&gt;BABOK^[Business Analysis Body Of Knowledge]&lt;/p&gt;
-&lt;h2 id=&#34;what-are-key-elements-of-diagram&#34;&gt;What are key elements of diagram?
-&lt;/h2&gt;&lt;p&gt;对概念建模，源于一个关键问题。请看 例2、概念图里的关键元素&lt;/p&gt;
-&lt;p&gt;![[concept-modeling.excalidraw#^frame=diagram key elements|800]]&lt;/p&gt;
-&lt;p&gt;概念图使用的术语&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Diagrams &lt;em&gt;概念图本身&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Shapes &lt;em&gt;概念或想法&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Lines &lt;em&gt;关系&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Labels &lt;em&gt;描述概念和关系&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Keys&lt;/li&gt;
-&lt;li&gt;Scope&lt;/li&gt;
-&lt;li&gt;Audience&lt;/li&gt;
-&lt;li&gt;Intention&lt;/li&gt;
-&lt;li&gt;Topic&lt;/li&gt;
-&lt;li&gt;Scale&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;3 basic elements&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Shapes &lt;em&gt;概念，一般是名词&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Lines &lt;em&gt;连接器，一般是动词&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Labels &lt;em&gt;描述概念和关系&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;可视元素和不可视元素&lt;/p&gt;
-&lt;h2 id=&#34;modeling-vs-illustration&#34;&gt;Modeling vs Illustration
-&lt;/h2&gt;&lt;p&gt;建模与插图之间的差异&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;建模是在内容创作前进行的思维整理工作，是创作新内容的基础。整理思绪、定义词汇，确保内容是全面的和有条理的；
-而插图则是逆向的，在内容创作后进行的视觉化过程。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;除了用于内容创作，概念建模对阅读和学习也适用，能够增进理解和记忆。&lt;/p&gt;
-&lt;h2 id=&#34;compare-concept-maps-vs-mind-maps&#34;&gt;Compare Concept Maps vs Mind Maps
-&lt;/h2&gt;&lt;p&gt;例3、概念图与思维导图的对比&lt;/p&gt;
-&lt;p&gt;![[concept-modeling.excalidraw#^frame=Frame 03|800]]&lt;/p&gt;
-&lt;h2 id=&#34;frame-your-thoughts-with-concept-modeling&#34;&gt;Frame Your Thoughts with Concept Modeling
-&lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;iframe loading=&#34;lazy&#34; 
-            src=&#34;https://www.youtube.com/embed/Zg_DUj68VkY&#34; 
-            allowfullscreen 
-            title=&#34;YouTube Video&#34;
-    &gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;在这个视频&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;中，Zsolt 使用 Obsidian.md 和 Excalidraw&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; 插件深入探讨了概念建模的概念。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;从 &lt;strong&gt;What are key elements of diagram?&lt;/strong&gt; 问题开始，探索了图表的关键元素，如形状、线条、标签等；通过创建概念图，zsolt 展示了概念之间是如何相互连接的，以及它们是如何形成命题的。&lt;/li&gt;
-&lt;li&gt;然后讨论了概念建模作为内容创作和学习过程中的基础步骤的重要性。作者强调了&lt;strong&gt;概念建模与插图之间的区别&lt;/strong&gt;，概念建模是在内容创作之前进行的思考和定义术语的过程，而插图是在内容创作之后进行的视觉化过程。&lt;/li&gt;
-&lt;li&gt;接着，作者将概念图与思维导图进行了比较，强调了它们之间的差异和应用场景。&lt;/li&gt;
-&lt;li&gt;最后，作者总结了概念建模的重要性，并鼓励观众在写作之前先创建概念模型，以便更深入地理解和学习新概念。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;通过对这个视频的学习，认识到概念模型的重要性，并学到了创建&lt;strong&gt;概念图&lt;/strong&gt;来组织和澄清思想的操作步骤，有助于以后在&lt;strong&gt;内容创作&lt;/strong&gt;和&lt;strong&gt;学习新概念&lt;/strong&gt;时提高理解和知识整合程度。&lt;/p&gt;
-&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes
-&lt;/h2&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Concept_map&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://en.wikipedia.org/wiki/Concept_map&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=Zg_DUj68VkY&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Before You Write: Frame Your Thoughts with Concept Modeling&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>Youtube 上的 Obsidian 学习频道</title>
-        <link>http://localhost:1313/obsidian/youtube-channels/</link>
-        <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
-        <author>li3huo (li3huo)</author>
-        <guid>http://localhost:1313/obsidian/youtube-channels/</guid>
-        <description>
-            &lt;p&gt;从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p&gt;
-&lt;h2 id=&#34;visualpkm&#34;&gt;@VisualPKM
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zsolt.blog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Zsolt&lt;/a&gt; Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p&gt;
-&lt;p&gt;VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@VisualPKM&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@VisualPKM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121849106.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;nicolevdh&#34;&gt;@nicolevdh
-&lt;/h2&gt;&lt;p&gt;Nicole van der Hoeven，一位在 Grafana Labs 担任高级开发者倡导者的专家，她的 YouTube 频道拥有 52.6K 订阅者，并且发布了 166 个视频。内容涵盖了如何在 Obsidian 中使用社区和核心插件来清单化、结构化、分类和解释笔记，以提高笔记的实用性。她还分享了如何使用 Obsidian 进行学习、创作和组织工作，包括针对非编程人士的教程、核心插件的推荐、个人插件使用习惯、以及如何使用 Obsidian 进行桌面角色扮演游戏（TTRPG）。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@nicolevdh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@nicolevdh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121848581.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;fromsergio&#34;&gt;@FromSergio
-&lt;/h2&gt;&lt;p&gt;FromSergio 频道拥有超过 45.6K 的订阅者，并已发布 52 个视频。教授如何从初学者到高级用户使用 Obsidian 个人知识管理工具。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@FromSergio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@FromSergio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121849068.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;linkingyourthinking&#34;&gt;@linkingyourthinking
-&lt;/h2&gt;&lt;p&gt;Nick Milo 的 YouTube 频道 “Linking Your Thinking” 专注于个人知识管理（PKM）的实践和技巧，尤其是在 Obsidian 笔记应用中。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@linkingyourthinking&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@linkingyourthinking&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406122010580.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;cyanvoxel&#34;&gt;@cyanvoxel
-&lt;/h2&gt;&lt;p&gt;CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，共享了他的 Osidian Vault，展示了如何将实体笔记数字化并整合到 Osidian 中。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@cyanvoxel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@cyanvoxel&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CyanVoxel/Obsidian-Vault-Template&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/CyanVoxel/Obsidian-Vault-Template&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121840729.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;dannberg&#34;&gt;@DannBerg
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://dannb.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Dann Berg&lt;/a&gt; 是一位资深 FinOps(个人财务运营) 从业者，他的 YouTube 频道拥有超过 4.48K 名订阅者，并且发布了 55 个视频。他的视频内容涵盖了个人财务和工程的交叉点，以及他个人感兴趣的主题。频道内容包括提高笔记效率的技巧、Obsidian 应用的教程、生产力书籍推荐、以及如何撰写和管理新闻通讯等。他还分享了自己的个人 Obsidian 笔记库，并提供了一系列的 Obsidian 系统和模板教程。此外，Dann Berg 还探讨了如何摆脱 Google 生态系统，实现数字生活的独立性。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@DannBerg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@DannBerg&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121900655.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;dannyhatchertech&#34;&gt;@DannyHatcherTech
-&lt;/h2&gt;&lt;p&gt;Danny Hatcher 运营的 YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo; 拥有 31.6K 订阅者和 395 个视频。频道内容涉及研究、技术和相关话题的视频。频道提供了关于如何在 Obsidian 中测试 BookFusion、Obsidian 的最新版本更新、使用 Afforai 进行研究的测试、以及如何从书籍中取好笔记等视频教程。此外，还讨论了为什么不使用思维导图、反对原子笔记和迷你文章、以及为什么选择使用 Morgen 等主题。Danny 还分享了他如何在 Obsidian 中写作、如何进行研究和写作、以及他对于 Notion 日历不满意的看法。频道还包括了与其他 YouTuber 如 Ali Abdaal 讨论研究的视频。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@DannyHatcherTech&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@DannyHatcherTech&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202407061829667.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;800x950&#34;
-	
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- sips -g all photos/202406121900655.png # 查看图片分辨率: 1550 x 1910 --&gt;</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Youtube on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/youtube/</link><description>Recent content in Youtube on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/youtube/index.xml" rel="self" type="application/rss+xml"/><item><title>用概念图🗺️表述想法💡</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
+&lt;p>概念图是一种用图形方式展示概念、思想或信息之间关系的视觉工具。概念图通常由多个概念元素和相互连接的线段组成，展示相互之间的联系和等级结构。概念图的制作过程可以帮助人们 整理信息、进行决策，并用易于理解的方式共享和协作信息，尤其适用于复杂话题的深入理解。&lt;/p>
+&lt;p>在动笔输出文字之前，先对概念进行建模，可以 精炼知识(Refining Knowledge)，增进理解。&lt;/p>
+&lt;h2 id="what-is-a-concept-map">What is a Concept Map?
+&lt;/h2>&lt;p>概念图，Concept Diagram，或者叫做 Concept Model，是一种将 建议的概念关系 以图表的形式呈现出来的工具，通常用于组织和结构化知识。Concept Map WikiPedia&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>概念图 最早是由康奈尔大学的 Joseph D.Novak 和他的研究团队在20世纪70年代提出。当时，Novak 将这种绘图技巧应用在教学中，以增进理解。
+在 Novak 的著作 &lt;strong>Learning to Learn&lt;/strong>（中文版《习得学习》）中指出，“有意义的学习，涉及将新概念与命题同化于既有的认知架构中”。&lt;/p>
+&lt;p>例1、对概念建模的概念图，来自这个视频[^conceptmodeling]&lt;/p>
+&lt;p>![[concept-modeling.excalidraw#^frame=concept modeling]]&lt;/p>
+&lt;p>BABOK^[Business Analysis Body Of Knowledge]&lt;/p>
+&lt;h2 id="what-are-key-elements-of-diagram">What are key elements of diagram?
+&lt;/h2>&lt;p>对概念建模，源于一个关键问题。请看 例2、概念图里的关键元素&lt;/p>
+&lt;p>![[concept-modeling.excalidraw#^frame=diagram key elements|800]]&lt;/p>
+&lt;p>概念图使用的术语&lt;/p>
+&lt;ul>
+&lt;li>Diagrams &lt;em>概念图本身&lt;/em>&lt;/li>
+&lt;li>Shapes &lt;em>概念或想法&lt;/em>&lt;/li>
+&lt;li>Lines &lt;em>关系&lt;/em>&lt;/li>
+&lt;li>Labels &lt;em>描述概念和关系&lt;/em>&lt;/li>
+&lt;li>Keys&lt;/li>
+&lt;li>Scope&lt;/li>
+&lt;li>Audience&lt;/li>
+&lt;li>Intention&lt;/li>
+&lt;li>Topic&lt;/li>
+&lt;li>Scale&lt;/li>
+&lt;/ul>
+&lt;p>3 basic elements&lt;/p>
+&lt;ul>
+&lt;li>Shapes &lt;em>概念，一般是名词&lt;/em>&lt;/li>
+&lt;li>Lines &lt;em>连接器，一般是动词&lt;/em>&lt;/li>
+&lt;li>Labels &lt;em>描述概念和关系&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;p>可视元素和不可视元素&lt;/p>
+&lt;h2 id="modeling-vs-illustration">Modeling vs Illustration
+&lt;/h2>&lt;p>建模与插图之间的差异&lt;/p>
+&lt;blockquote>
+&lt;p>建模是在内容创作前进行的思维整理工作，是创作新内容的基础。整理思绪、定义词汇，确保内容是全面的和有条理的；
+而插图则是逆向的，在内容创作后进行的视觉化过程。&lt;/p>
+&lt;/blockquote>
+&lt;p>除了用于内容创作，概念建模对阅读和学习也适用，能够增进理解和记忆。&lt;/p>
+&lt;h2 id="compare-concept-maps-vs-mind-maps">Compare Concept Maps vs Mind Maps
+&lt;/h2>&lt;p>例3、概念图与思维导图的对比&lt;/p>
+&lt;p>![[concept-modeling.excalidraw#^frame=Frame 03|800]]&lt;/p>
+&lt;h2 id="frame-your-thoughts-with-concept-modeling">Frame Your Thoughts with Concept Modeling
+&lt;/h2>&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/Zg_DUj68VkY"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>在这个视频&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>中，Zsolt 使用 Obsidian.md 和 Excalidraw&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> 插件深入探讨了概念建模的概念。&lt;/p>
+&lt;ol>
+&lt;li>从 &lt;strong>What are key elements of diagram?&lt;/strong> 问题开始，探索了图表的关键元素，如形状、线条、标签等；通过创建概念图，zsolt 展示了概念之间是如何相互连接的，以及它们是如何形成命题的。&lt;/li>
+&lt;li>然后讨论了概念建模作为内容创作和学习过程中的基础步骤的重要性。作者强调了&lt;strong>概念建模与插图之间的区别&lt;/strong>，概念建模是在内容创作之前进行的思考和定义术语的过程，而插图是在内容创作之后进行的视觉化过程。&lt;/li>
+&lt;li>接着，作者将概念图与思维导图进行了比较，强调了它们之间的差异和应用场景。&lt;/li>
+&lt;li>最后，作者总结了概念建模的重要性，并鼓励观众在写作之前先创建概念模型，以便更深入地理解和学习新概念。&lt;/li>
+&lt;/ol>
+&lt;p>通过对这个视频的学习，认识到概念模型的重要性，并学到了创建&lt;strong>概念图&lt;/strong>来组织和澄清思想的操作步骤，有助于以后在&lt;strong>内容创作&lt;/strong>和&lt;strong>学习新概念&lt;/strong>时提高理解和知识整合程度。&lt;/p>
+&lt;h2 id="footnotes">Footnotes
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Concept_map" target="_blank" rel="noopener"
+>https://en.wikipedia.org/wiki/Concept_map&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Zg_DUj68VkY" target="_blank" rel="noopener"
+>Before You Write: Frame Your Thoughts with Concept Modeling&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a class="link" href="https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA" target="_blank" rel="noopener"
+>https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
+&lt;p>从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
+&lt;h2 id="visualpkm">@VisualPKM
+&lt;/h2>&lt;p>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
+>Zsolt&lt;/a> Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p>
+&lt;p>VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@VisualPKM" target="_blank" rel="noopener"
+>https://www.youtube.com/@VisualPKM&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849106.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="nicolevdh">@nicolevdh
+&lt;/h2>&lt;p>Nicole van der Hoeven，一位在 Grafana Labs 担任高级开发者倡导者的专家，她的 YouTube 频道拥有 52.6K 订阅者，并且发布了 166 个视频。内容涵盖了如何在 Obsidian 中使用社区和核心插件来清单化、结构化、分类和解释笔记，以提高笔记的实用性。她还分享了如何使用 Obsidian 进行学习、创作和组织工作，包括针对非编程人士的教程、核心插件的推荐、个人插件使用习惯、以及如何使用 Obsidian 进行桌面角色扮演游戏（TTRPG）。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@nicolevdh" target="_blank" rel="noopener"
+>https://www.youtube.com/@nicolevdh&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121848581.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="fromsergio">@FromSergio
+&lt;/h2>&lt;p>FromSergio 频道拥有超过 45.6K 的订阅者，并已发布 52 个视频。教授如何从初学者到高级用户使用 Obsidian 个人知识管理工具。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@FromSergio" target="_blank" rel="noopener"
+>https://www.youtube.com/@FromSergio&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849068.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="linkingyourthinking">@linkingyourthinking
+&lt;/h2>&lt;p>Nick Milo 的 YouTube 频道 “Linking Your Thinking” 专注于个人知识管理（PKM）的实践和技巧，尤其是在 Obsidian 笔记应用中。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@linkingyourthinking" target="_blank" rel="noopener"
+>https://www.youtube.com/@linkingyourthinking&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406122010580.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="cyanvoxel">@cyanvoxel
+&lt;/h2>&lt;p>CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，共享了他的 Osidian Vault，展示了如何将实体笔记数字化并整合到 Osidian 中。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@cyanvoxel" target="_blank" rel="noopener"
+>https://www.youtube.com/@cyanvoxel&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/CyanVoxel/Obsidian-Vault-Template" target="_blank" rel="noopener"
+>https://github.com/CyanVoxel/Obsidian-Vault-Template&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121840729.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="dannberg">@DannBerg
+&lt;/h2>&lt;p>&lt;a class="link" href="https://dannb.org/" target="_blank" rel="noopener"
+>Dann Berg&lt;/a> 是一位资深 FinOps(个人财务运营) 从业者，他的 YouTube 频道拥有超过 4.48K 名订阅者，并且发布了 55 个视频。他的视频内容涵盖了个人财务和工程的交叉点，以及他个人感兴趣的主题。频道内容包括提高笔记效率的技巧、Obsidian 应用的教程、生产力书籍推荐、以及如何撰写和管理新闻通讯等。他还分享了自己的个人 Obsidian 笔记库，并提供了一系列的 Obsidian 系统和模板教程。此外，Dann Berg 还探讨了如何摆脱 Google 生态系统，实现数字生活的独立性。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@DannBerg" target="_blank" rel="noopener"
+>https://www.youtube.com/@DannBerg&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121900655.png"
+loading="lazy"
+>&lt;/li>
+&lt;/ul>
+&lt;h2 id="dannyhatchertech">@DannyHatcherTech
+&lt;/h2>&lt;p>Danny Hatcher 运营的 YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo; 拥有 31.6K 订阅者和 395 个视频。频道内容涉及研究、技术和相关话题的视频。频道提供了关于如何在 Obsidian 中测试 BookFusion、Obsidian 的最新版本更新、使用 Afforai 进行研究的测试、以及如何从书籍中取好笔记等视频教程。此外，还讨论了为什么不使用思维导图、反对原子笔记和迷你文章、以及为什么选择使用 Morgen 等主题。Danny 还分享了他如何在 Obsidian 中写作、如何进行研究和写作、以及他对于 Notion 日历不满意的看法。频道还包括了与其他 YouTuber 如 Ali Abdaal 讨论研究的视频。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/@DannyHatcherTech" target="_blank" rel="noopener"
+>https://www.youtube.com/@DannyHatcherTech&lt;/a>&lt;/li>
+&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202407061829667.png"
+loading="lazy"
+alt="800x950"
+>&lt;/li>
+&lt;/ul>
+&lt;!-- sips -g all photos/202406121900655.png # 查看图片分辨率: 1550 x 1910 --></description></item></channel></rss>
