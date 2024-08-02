@@ -1,672 +1,815 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidians on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/</link><description>Recent content in Obsidians on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian Shortcuts</title><link>https://all-in-obsidian.li3huo.com/obsidian/shortcuts/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/shortcuts/</guid><description>
-&lt;p>Obsidian 笔记编辑默认支持了一些快捷键&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。用户也可以自定义快捷键，提示编辑效率。&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
-&lt;h2 id="内置快捷键">内置快捷键
-&lt;/h2>&lt;h3 id="操作类">操作类
-&lt;/h3>&lt;ul>
-&lt;li>Open settings: &lt;code>Cmd + ,&lt;/code>&lt;/li>
-&lt;li>Open command palette: &lt;code>Cmd + P&lt;/code> &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/li>
-&lt;li>Open graphview: &lt;code>Cmd + G&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h3 id="编辑类">编辑类
-&lt;/h3>&lt;p>已经内置的编辑快捷键&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，包括&lt;/p>
-&lt;ul>
-&lt;li>常见操作（如复制、剪切、粘贴、撤销和重做）&lt;/li>
-&lt;li>文本编辑（如插入新行、删除字符或单词）&lt;/li>
-&lt;li>文本导航（如光标移动、页面滚动）&lt;/li>
-&lt;li>文本选择（如扩展选择区域）&lt;/li>
-&lt;/ul>
-&lt;h3 id="viewing-hotkeys">Viewing hotkeys
-&lt;/h3>&lt;p>用户可以通过命令面板快速查看命令的快捷键。&lt;/p>
-&lt;h2 id="设置快捷键">设置快捷键
-&lt;/h2>&lt;h3 id="setting-hotkeys">Setting hotkeys
-&lt;/h3>&lt;p>用户可以在设置中的快捷键部分添加、删除或恢复快捷键。&lt;/p>
-&lt;h3 id="hotkeysjson">hotkeys.json
-&lt;/h3>&lt;p>每个 &lt;em>vault&lt;/em> 都包含一个 &lt;code>.obsidian&lt;/code> 配置文件夹，其中包含了该 &lt;em>vault&lt;/em> 特定的设置，如快捷键(&lt;code>hotkeys.json&lt;/code>)、主题(&lt;code>appearance.json&lt;/code>)和插件(&lt;code>community-plugins.json&lt;/code>)。&lt;/p>
-&lt;p>所以我们可以通过拷贝 &lt;code>.obsidian/hotkeys.json&lt;/code> 文件的方式来共享快捷键配置。&lt;/p>
-&lt;h2 id="my-hotkeys">My hotkeys
-&lt;/h2>&lt;p>Markdown 编辑用快捷键，都是 &lt;code>Ctrl&lt;/code> 打头&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Action&lt;/th>
-&lt;th>Shortcut&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>editor:set-heading-1&lt;/td>
-&lt;td>&lt;code>Ctrl+1&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&amp;hellip;&lt;/td>
-&lt;td>&lt;code>Ctrl+...&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>editor:set-heading-6&lt;/td>
-&lt;td>&lt;code>Ctrl+6&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>editor:toggle-bullet-list&lt;/td>
-&lt;td>&lt;code>Ctrl+b&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>editor:toggle-numbered-list&lt;/td>
-&lt;td>&lt;code>Ctrl+n&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>editor:toggle-highlight&lt;/td>
-&lt;td>&lt;code>Ctrl+h&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>editor:fold-all&lt;/td>
-&lt;td>&lt;code>Ctrl+f&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>editor:unfold-all&lt;/td>
-&lt;td>&lt;code>Ctrl+u&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>editor:swap-line-up&lt;/td>
-&lt;td>&lt;code>Ctrl+Cmd+↑&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>editor:swap-line-down&lt;/td>
-&lt;td>&lt;code>Ctrl+Cmd+↓&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>Obsidian 1.6 后的版本，无法在界面中绑定 &lt;code>Cmd + Shift&lt;/code> 组合的快捷方式了，直接在配置中设置的，倒是也依然有效。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;modifiers&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="p">[&lt;/span> &lt;span class="s2">&amp;#34;Mod&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;Shift&amp;#34;&lt;/span> &lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>后来决定都调整为 &lt;code>Ctrl + Shift&lt;/code> 了。&lt;/p>
-&lt;p>大家也可以看一下论坛上的快捷键最佳实践帖 &lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/p>
-&lt;h2 id="reference">Reference
-&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>&lt;a class="link" href="https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Editing&amp;#43;shortcuts" target="_blank" rel="noopener"
->https://help.obsidian.md/Editing+and+formatting/Editing+shortcuts&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:2">
-&lt;p>&lt;a class="link" href="https://help.obsidian.md/User&amp;#43;interface/Hotkeys" target="_blank" rel="noopener"
->https://help.obsidian.md/User+interface/Hotkeys&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:3">
-&lt;p>&lt;a class="link" href="https://help.obsidian.md/Plugins/Command&amp;#43;palette" target="_blank" rel="noopener"
->https://help.obsidian.md/Plugins/Command+palette&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:4">
-&lt;p>&lt;a class="link" href="https://forum.obsidian.md/t/obsidian-hotkeys-favorites-and-best-practices/12125" target="_blank" rel="noopener"
->https://forum.obsidian.md/t/obsidian-hotkeys-favorites-and-best-practices/12125&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item><item><title>Best tasks plugin in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</link><pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-tasks-management/</guid><description>
-&lt;p>本视频教程介绍了 Obsidian 中的任务插件（Task Plugin）的安装、配置、使用方法以及如何通过查询、过滤器和任务状态来管理任务。&lt;a class="link" href="https://publish.obsidian.md/tasks/Introduction" target="_blank" rel="noopener"
->Task User Guide&lt;/a>&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/quXNtjTe5WE"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;h2 id="getting-started">Getting Started
-&lt;/h2>&lt;h3 id="功能介绍">功能介绍
-&lt;/h3>&lt;p>在整个知识库中追踪任务，查询任务状态，并在任意位置标记任务完成。&lt;/p>
-&lt;p>1、任务定义&lt;/p>
-&lt;ul>
-&lt;li>支持设置截止日期、重复任务、子任务&lt;/li>
-&lt;li>支持多种方式创建任务&lt;/li>
-&lt;/ul>
-&lt;p>2、统计分析&lt;/p>
-&lt;ul>
-&lt;li>支持在仓库中的任何位置进行任务查询&lt;/li>
-&lt;li>支持丰富的统计分析，如任务完成情况、任务优先级等，为用户提供任务分析和统计报告，帮助用户更好地了解和管理任务&lt;/li>
-&lt;/ul>
-&lt;h3 id="安装">安装
-&lt;/h3>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/tasks-7.6.0.jpg"
-loading="lazy"
->&lt;/p>
-&lt;h3 id="创建任务">创建任务
-&lt;/h3>&lt;p>&lt;a class="link" href="https://publish.obsidian.md/tasks/Editing/Auto-Suggest" target="_blank" rel="noopener"
->Auto-Suggest&lt;/a> 帮助用户输入任务数据，减少用户输入任务数据的负担。&lt;/p>
-&lt;p>&lt;a class="link" href="https://publish.obsidian.md/tasks/Editing/Create&amp;#43;or&amp;#43;edit&amp;#43;Task" target="_blank" rel="noopener"
->Create or edit Task&lt;/a> 用于添加和编辑任务数据的对话框 / 模态窗口。&lt;/p>
-&lt;h3 id="查询任务">查询任务
-&lt;/h3>&lt;p>&lt;a class="link" href="https://publish.obsidian.md/tasks/Queries/About&amp;#43;Queries" target="_blank" rel="noopener"
->About Queries&lt;/a>&lt;/p>
-&lt;p>如何进行基本的任务搜索、设置查询选项、使用过滤器、排序、分组、限制显示结果和布局等。&lt;/p>
-&lt;h2 id="配置tasks-settings">配置(Tasks Settings)
-&lt;/h2>&lt;h3 id="task-format-settings">Task Format Settings
-&lt;/h3>&lt;p>Tasks 插件用于在 Markdown 中管理任务，通过任务格式来表达任务的属性。建议选择默认的 Emoji 格式。&lt;/p>
-&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Reference/Task&amp;#43;Formats/About&amp;#43;Task&amp;#43;Formats" target="_blank" rel="noopener"
->About Task Formats&lt;/a>&lt;/p>
-&lt;h3 id="global-filter-settings">Global filter Settings
-&lt;/h3>&lt;p>使用全局过滤器功能来限制 Tasks 插件只匹配特定的待办事项，在设置中配置这一功能。详细说明见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Global&amp;#43;Filter" target="_blank" rel="noopener"
->Global Filter&lt;/a>&lt;/p>
-&lt;h3 id="global-query">Global Query
-&lt;/h3>&lt;p>用户可以在设置中设置一个全局查询，该查询将自动添加到用户词典中的所有查询之前。全局查询可以包括路径、标签、标题等多种条件，以便默认筛选任务。&lt;/p>
-&lt;h3 id="task-statuses">Task Statuses
-&lt;/h3>&lt;p>用户可以根据自己的需求定义任务的状态&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>Core Statuses&lt;/code> 包含未完成和已完成两种状态：&lt;code>[ ]&lt;/code>:&lt;code>TODO&lt;/code> 和 &lt;code>[x]&lt;/code>:&lt;code>DONE&lt;/code>&lt;/li>
-&lt;li>可以在 &lt;code>Costom Statuses&lt;/code> 中引入自定义任务状态：&lt;code>[/]&lt;/code>:&lt;code>IN_PROGRESS&lt;/code>,  &lt;code>[-]&lt;/code>:&lt;code>CANCELLED&lt;/code>, &lt;code>NON_TASK&lt;/code>
-切换成 &lt;code>Mininal&lt;/code> 主题，可以显示自定义状态的图标。&lt;/li>
-&lt;/ul>
-&lt;p>&lt;code>Review and check your Statuses&lt;/code> 查看可视化状态说明&lt;/p>
-&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Statuses" target="_blank" rel="noopener"
->Statuses&lt;/a>&lt;/p>
-&lt;h3 id="date-settings">Date Settings
-&lt;/h3>&lt;p>任务行中可以添加的不同日期类型，包括&lt;/p>
-&lt;ul>
-&lt;li>完成日期（done date） ✅ YYYY-MM-DD # 默认开&lt;/li>
-&lt;li>取消日期（cancelled date）❌ YYYY-MM-DD # 默认开&lt;/li>
-&lt;li>开始日期（start date）➕YYYY-MM-DD&lt;/li>
-&lt;/ul>
-&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Dates#Created&amp;#43;date" target="_blank" rel="noopener"
->Dates&lt;/a>&lt;/p>
-&lt;h3 id="周期任务recurring-task-settings">周期任务(Recurring task Settings)
-&lt;/h3>&lt;p>设置和管理重复任务，默认关。&lt;/p>
-&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Recurring&amp;#43;Tasks" target="_blank" rel="noopener"
->Recurring Tasks&lt;/a>&lt;/p>
-&lt;h3 id="auto-suggest-settings">Auto-suggest Settings
-&lt;/h3>&lt;p>自动提示（Auto-Suggest）功能，用于在编辑任务时帮助用户快速输入特定的表情符号和日期，提高编辑效率，尤其在移动设备上使用时的便利性。&lt;/p>
-&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Editing/Auto-Suggest" target="_blank" rel="noopener"
->Intelligent Auto-Suggest&lt;/a>&lt;/p>
-&lt;h3 id="dialog-settings">Dialog Settings
-&lt;/h3>&lt;p>“创建或编辑任务” 模态框的使用方法和功能。&lt;code>Tasks: Create or edit&lt;/code> 命令触发：&lt;/p>
-&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/tasks-dialog.jpg"
-loading="lazy"
->&lt;/p>
-&lt;h2 id="任务插件的高级功能">任务插件的高级功能
-&lt;/h2>&lt;p>如设置任务的优先级、使用自定义状态和处理重复任务。&lt;/p>
-&lt;h3 id="task-queries">Task Queries
-&lt;/h3>&lt;p>如何使用查询来管理和显示任务，包括如何根据任务的描述和标签来过滤。支持&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>sort&lt;/code>, &lt;code>group&lt;/code> 等语法&lt;/li>
-&lt;li>对任务名称、状态进行过滤，如 &lt;code>status.name includes in progress&lt;/code>&lt;/li>
-&lt;li>调整展示效果，如 &lt;code>hide due date&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;p>对任务状态进行过滤，可以获得看板的效果。&lt;/p>
-&lt;p>更多参考见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Queries/About&amp;#43;Queries" target="_blank" rel="noopener"
->About Queries&lt;/a>, &lt;a class="link" href="https://publish.obsidian.md/tasks/Quick&amp;#43;Reference" target="_blank" rel="noopener"
->Quick Reference&lt;/a>&lt;/p>
-&lt;h3 id="backlinks-in-queries">Backlinks in Queries
-&lt;/h3>&lt;p>调整反向链接的显示效果。&lt;/p>
-&lt;ol>
-&lt;li>查询中添加 &lt;code>short mode&lt;/code>&lt;/li>
-&lt;li>通过 CSS 对任务列表进行详细的样式设置&lt;/li>
-&lt;/ol>
-&lt;p>&lt;a class="link" href="https://publish.obsidian.md/tasks/How&amp;#43;To/" target="_blank" rel="noopener"
->How To&lt;/a> / &lt;a class="link" href="https://publish.obsidian.md/tasks/How&amp;#43;To/How&amp;#43;to&amp;#43;style&amp;#43;backlinks#Using&amp;#43;CSS&amp;#43;to&amp;#43;replace&amp;#43;the&amp;#43;backlinks&amp;#43;with&amp;#43;icons" target="_blank" rel="noopener"
->Using CSS to replace the backlinks with icons&lt;/a>&lt;/p>
-&lt;p>更多 &lt;a class="link" href="https://publish.obsidian.md/tasks/Advanced/Styling#CSS&amp;#43;Examples" target="_blank" rel="noopener"
->CSS Examples&lt;/a>&lt;/p>
-&lt;h3 id="querying-files">Querying files
-&lt;/h3>&lt;p>参见 &lt;a class="link" href="https://publish.obsidian.md/tasks/Queries/Filters#Filters%20for%20File%20Properties" target="_blank" rel="noopener"
->File properties&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">path/folder/filename (includes, does not include) &amp;lt;path&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">heading
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="query-result-status-change">Query result status change
-&lt;/h3>&lt;p>在预览模式下，右键 checkbox 弹出状态列表，可以修改任务状态。例如从 “待办” 更改为 “进行中” 或 “已取消”。&lt;/p>
-&lt;p>用 CSS 设置不同任务状态的显示&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-CSS" data-lang="CSS">&lt;span class="line">&lt;span class="cl">&lt;span class="o">//&lt;/span> &lt;span class="nt">Status&lt;/span> &lt;span class="nt">Symbols&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">li&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nc">task-list-item&lt;/span>&lt;span class="o">[&lt;/span>&lt;span class="nt">data-task&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;/&amp;#34;&lt;/span>&lt;span class="o">]&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nc">task-list-item-checkbox&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">box-shadow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="kt">px&lt;/span> &lt;span class="kc">green&lt;/span> &lt;span class="cp">!important&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="视频内容总结">视频内容总结
-&lt;/h2>&lt;p>视频首先介绍了 Obsidian 的基本功能，特别是其作为一个标记语言（Markdown）编辑器的特点，然后详细讲解了如何在 Obsidian 中安装和配置 Task Plugin。&lt;/p>
-&lt;p>演示了如何创建和管理任务，包括如何设置任务的格式、状态、优先级和日期。此外，介绍了如何使用查询来过滤和展示特定的任务，包括使用标签、状态、日期和依赖项等条件。&lt;/p>
-&lt;p>视频还涉及了如何处理重复任务、任务依赖性以及如何通过 CSS 自定义任务的显示样式。&lt;/p>
-&lt;h2 id="youtube-频道-danny-talks-tech">YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo;
-&lt;/h2>&lt;p>这位博主(Danny Hatcher)的其他内容也很不错：[[youtube-channels#@DannyHatcherTech]]。比如&lt;/p>
-&lt;h3 id="why-justin-sung-is-wrong-about-obsidian">Why Justin Sung is wrong about Obsidian
-&lt;/h3>&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/yFQ-OyNmg6U"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>主要讨论了 Justin Sung 对 Osidian 应用程序在第二大脑管理中作为参考工具的看法，并对 Zettelkasten 方法、第二大脑概念以及 Osidian 作为笔记工具的优势和使用方式进行了深入分析和讨论。&lt;/p>
-&lt;h4 id="对-zettelkasten-方法的理解">对 Zettelkasten 方法的理解
-&lt;/h4>&lt;p>与 Justin 不同，danny 认为 Zettelkasten 是一种笔记盒子，可以是任何可以链接笔记的系统，而不仅仅是特定的软件实现。&lt;/p>
-&lt;p>作者强调了 Zettelkasten 方法的本质，即是一种笔记管理系统，可以通过任何计算机或笔记软件实现，而不仅仅局限于 Obsidian。作者认为，Atomic notes 和 Zettelkasten 是两个不同的概念，后者更侧重于如何组织和链接笔记。而他更倾向于使用一个大文件来记录一个概念，而不是分散成许多小文件，因为这样更容易搜索和组织。&lt;/p>
-&lt;h4 id="对第二大脑的理解">对第二大脑的理解
-&lt;/h4>&lt;p>第二大脑不仅仅是一个应用程序或工具，而是一套工具和过程，涉及到认知的延伸。danny 认为，无论是数字工具还是模拟工具，都应该根据个人的认知技能来选择和使用。他还讨论了数字工具与模拟工具在学习和记忆过程中的优势和局限性，认为数字工具提供了更多的编辑和删除便利性。&lt;/p>
-&lt;p>第二大脑的概念来自于扩展认知理论，不仅仅是一个应用程序或工具，而是一个工具箱，包括了所有帮助我们思考的工具和过程。&lt;/p>
-&lt;h4 id="osidian-不适合用于主要编码primary-encoding的反驳">Osidian 不适合用于主要编码（primary encoding）的反驳
-&lt;/h4>&lt;p>Osidian 和其他写作工具都可以用于思考和学习。danny 认为，所有的写作工具都是思维工具，可以帮助用户以不同的方式记忆、连接和表达想法。&lt;/p></description></item><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
-&lt;p>Getting started with ExcaliBrain, zsolt 发了三个视频做为新手入门引导。&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/8LE_QdYQZVk"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://www.youtube.com/watch?v=8LE_QdYQZVk" target="_blank" rel="noopener"
->Getting started with ExcaliBrain 1/3&lt;/a> Aug 12, 2023&lt;/li>
-&lt;li>&lt;a class="link" href="https://youtu.be/JjyEicYtVcU" target="_blank" rel="noopener"
->Getting started with ExcaliBrain 2/3&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://youtu.be/yPJ2hTXqlXQ" target="_blank" rel="noopener"
->Getting started with ExcaliBrain 3/3&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>安装&lt;/p>
-&lt;ul>
-&lt;li>Excalidraw&lt;/li>
-&lt;li>Dataview&lt;/li>
-&lt;li>Excalibrain&lt;/li>
-&lt;/ul>
-&lt;h2 id="issue-based-information-system">Issue-Based Information System
-&lt;/h2>&lt;p>IBIS(基于问题的信息系统)框架，它是一种对话映射方法，包括问题、立场、支持和反对论点，以及证据和结论。&lt;/p>
-&lt;ul>
-&lt;li>Issues: phrased as questions, drives a conversation about issues&lt;/li>
-&lt;li>Positions: 相应问题时对应的立场&lt;/li>
-&lt;li>Supporting and Objecting Arguments: support or object positions&lt;/li>
-&lt;li>Evidences: 证据，attach to various nodes reaching a conclusion&lt;/li>
-&lt;li>Conclusion&lt;/li>
-&lt;/ul>
-&lt;p>《Visualizing Argumentation》&lt;/p>
-&lt;h2 id="设置">设置
-&lt;/h2>&lt;h3 id="节点">节点
-&lt;/h3>&lt;h3 id="链接">链接
-&lt;/h3>&lt;h2 id="videos">Videos
-&lt;/h2>&lt;h3 id="how-to-use-the-excalibrain-obsidian-plugin">How to use the ExcaliBrain Obsidian plugin
-&lt;/h3>&lt;p>Sep 17, 2022 by &lt;a class="link" href="https://www.youtube.com/@nicolevdh" target="_blank" rel="noopener"
->Nicole van der Hoeven&lt;/a>&lt;/p>
-&lt;p>4 Levels use ExcaliBrain&lt;/p>
-&lt;ul>
-&lt;li>Level 1 - Letting ExcaliBrain infer relationships&lt;/li>
-&lt;li>Level 2 - Setting explicit relationships&lt;/li>
-&lt;li>Level 3 - Creating custom relationships&lt;/li>
-&lt;li>Level 4 - Creating semantic relationships&lt;/li>
-&lt;/ul>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/gqEtn3gCZF0"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;h3 id="使用-excalibrain-创作动态思维导图">使用 ExcaliBrain 创作动态思维导图
-&lt;/h3>&lt;p>“A dynamic mind-mapping experience with Obsidian with ExcaliBrain” Jul 18, 2023&lt;/p>
-&lt;p>如何使用 Obsidian 和 ExcaliBrain 插件来进行动态的思维导图创建。&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/_wldRlxTAxs"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Excalidraw Features</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</link><pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalidraw-features/</guid><description>
-&lt;p>随着版本的更新，excalidraw 中增加了新的功能，在此进行记录整理。&lt;/p>
-&lt;h2 id="appearance-and-behavior">Appearance and Behavior
-&lt;/h2>&lt;h3 id="multiple-templates">Multiple Templates
-&lt;/h3>&lt;p>Basic -&amp;gt; Excalidraw Template Folder&lt;/p>
-&lt;h2 id="笔记引用-excalidraw">笔记引用 Excalidraw
-&lt;/h2>&lt;h3 id="frame-reference">Frame Reference
-&lt;/h3>&lt;p>在 Markdown 笔记中只引入部分图画(Frame) &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>
-语法说明：&lt;code>![[.excalidraw#^frame=&amp;lt;frame name&amp;gt;]]&lt;/code>&lt;/p>
-&lt;h2 id="footnotes">Footnotes
-&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>v2.0.26 &lt;a class="link" href="https://youtu.be/tHUcD4rWIuY" target="_blank" rel="noopener"
->Start using the flipside of your markdown notes&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item><item><title>用概念图🗺️表述想法💡</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
-&lt;p>概念图是一种用图形方式展示概念、思想或信息之间关系的视觉工具。概念图通常由多个概念元素和相互连接的线段组成，展示相互之间的联系和等级结构。概念图的制作过程可以帮助人们 整理信息、进行决策，并用易于理解的方式共享和协作信息，尤其适用于复杂话题的深入理解。&lt;/p>
-&lt;p>在动笔输出文字之前，先对概念进行建模，可以 精炼知识(Refining Knowledge)，增进理解。&lt;/p>
-&lt;h2 id="what-is-a-concept-map">What is a Concept Map?
-&lt;/h2>&lt;p>概念图，Concept Diagram，或者叫做 Concept Model，是一种将 建议的概念关系 以图表的形式呈现出来的工具，通常用于组织和结构化知识。Concept Map WikiPedia&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;p>概念图 最早是由康奈尔大学的 Joseph D.Novak 和他的研究团队在20世纪70年代提出。当时，Novak 将这种绘图技巧应用在教学中，以增进理解。
-在 Novak 的著作 &lt;strong>Learning to Learn&lt;/strong>（中文版《习得学习》）中指出，“有意义的学习，涉及将新概念与命题同化于既有的认知架构中”。&lt;/p>
-&lt;p>例1、对概念建模的概念图，来自这个视频[^conceptmodeling]&lt;/p>
-&lt;p>![[concept-modeling.excalidraw#^frame=concept modeling]]&lt;/p>
-&lt;p>BABOK^[Business Analysis Body Of Knowledge]&lt;/p>
-&lt;h2 id="what-are-key-elements-of-diagram">What are key elements of diagram?
-&lt;/h2>&lt;p>对概念建模，源于一个关键问题。请看 例2、概念图里的关键元素&lt;/p>
-&lt;p>![[concept-modeling.excalidraw#^frame=diagram key elements|800]]&lt;/p>
-&lt;p>概念图使用的术语&lt;/p>
-&lt;ul>
-&lt;li>Diagrams &lt;em>概念图本身&lt;/em>&lt;/li>
-&lt;li>Shapes &lt;em>概念或想法&lt;/em>&lt;/li>
-&lt;li>Lines &lt;em>关系&lt;/em>&lt;/li>
-&lt;li>Labels &lt;em>描述概念和关系&lt;/em>&lt;/li>
-&lt;li>Keys&lt;/li>
-&lt;li>Scope&lt;/li>
-&lt;li>Audience&lt;/li>
-&lt;li>Intention&lt;/li>
-&lt;li>Topic&lt;/li>
-&lt;li>Scale&lt;/li>
-&lt;/ul>
-&lt;p>3 basic elements&lt;/p>
-&lt;ul>
-&lt;li>Shapes &lt;em>概念，一般是名词&lt;/em>&lt;/li>
-&lt;li>Lines &lt;em>连接器，一般是动词&lt;/em>&lt;/li>
-&lt;li>Labels &lt;em>描述概念和关系&lt;/em>&lt;/li>
-&lt;/ul>
-&lt;p>可视元素和不可视元素&lt;/p>
-&lt;h2 id="modeling-vs-illustration">Modeling vs Illustration
-&lt;/h2>&lt;p>建模与插图之间的差异&lt;/p>
-&lt;blockquote>
-&lt;p>建模是在内容创作前进行的思维整理工作，是创作新内容的基础。整理思绪、定义词汇，确保内容是全面的和有条理的；
-而插图则是逆向的，在内容创作后进行的视觉化过程。&lt;/p>
-&lt;/blockquote>
-&lt;p>除了用于内容创作，概念建模对阅读和学习也适用，能够增进理解和记忆。&lt;/p>
-&lt;h2 id="compare-concept-maps-vs-mind-maps">Compare Concept Maps vs Mind Maps
-&lt;/h2>&lt;p>例3、概念图与思维导图的对比&lt;/p>
-&lt;p>![[concept-modeling.excalidraw#^frame=Frame 03|800]]&lt;/p>
-&lt;h2 id="frame-your-thoughts-with-concept-modeling">Frame Your Thoughts with Concept Modeling
-&lt;/h2>&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/Zg_DUj68VkY"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;p>在这个视频&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>中，Zsolt 使用 Obsidian.md 和 Excalidraw&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> 插件深入探讨了概念建模的概念。&lt;/p>
-&lt;ol>
-&lt;li>从 &lt;strong>What are key elements of diagram?&lt;/strong> 问题开始，探索了图表的关键元素，如形状、线条、标签等；通过创建概念图，zsolt 展示了概念之间是如何相互连接的，以及它们是如何形成命题的。&lt;/li>
-&lt;li>然后讨论了概念建模作为内容创作和学习过程中的基础步骤的重要性。作者强调了&lt;strong>概念建模与插图之间的区别&lt;/strong>，概念建模是在内容创作之前进行的思考和定义术语的过程，而插图是在内容创作之后进行的视觉化过程。&lt;/li>
-&lt;li>接着，作者将概念图与思维导图进行了比较，强调了它们之间的差异和应用场景。&lt;/li>
-&lt;li>最后，作者总结了概念建模的重要性，并鼓励观众在写作之前先创建概念模型，以便更深入地理解和学习新概念。&lt;/li>
-&lt;/ol>
-&lt;p>通过对这个视频的学习，认识到概念模型的重要性，并学到了创建&lt;strong>概念图&lt;/strong>来组织和澄清思想的操作步骤，有助于以后在&lt;strong>内容创作&lt;/strong>和&lt;strong>学习新概念&lt;/strong>时提高理解和知识整合程度。&lt;/p>
-&lt;h2 id="footnotes">Footnotes
-&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Concept_map" target="_blank" rel="noopener"
->https://en.wikipedia.org/wiki/Concept_map&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:2">
-&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Zg_DUj68VkY" target="_blank" rel="noopener"
->Before You Write: Frame Your Thoughts with Concept Modeling&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:3">
-&lt;p>&lt;a class="link" href="https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA" target="_blank" rel="noopener"
->https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
-&lt;p>从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
-&lt;h2 id="visualpkm">@VisualPKM
-&lt;/h2>&lt;p>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
->Zsolt&lt;/a> Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p>
-&lt;p>VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://www.youtube.com/@VisualPKM" target="_blank" rel="noopener"
->https://www.youtube.com/@VisualPKM&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849106.png"
-loading="lazy"
->&lt;/li>
-&lt;/ul>
-&lt;h2 id="nicolevdh">@nicolevdh
-&lt;/h2>&lt;p>Nicole van der Hoeven，一位在 Grafana Labs 担任高级开发者倡导者的专家，她的 YouTube 频道拥有 52.6K 订阅者，并且发布了 166 个视频。内容涵盖了如何在 Obsidian 中使用社区和核心插件来清单化、结构化、分类和解释笔记，以提高笔记的实用性。她还分享了如何使用 Obsidian 进行学习、创作和组织工作，包括针对非编程人士的教程、核心插件的推荐、个人插件使用习惯、以及如何使用 Obsidian 进行桌面角色扮演游戏（TTRPG）。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://www.youtube.com/@nicolevdh" target="_blank" rel="noopener"
->https://www.youtube.com/@nicolevdh&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121848581.png"
-loading="lazy"
->&lt;/li>
-&lt;/ul>
-&lt;h2 id="fromsergio">@FromSergio
-&lt;/h2>&lt;p>FromSergio 频道拥有超过 45.6K 的订阅者，并已发布 52 个视频。教授如何从初学者到高级用户使用 Obsidian 个人知识管理工具。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://www.youtube.com/@FromSergio" target="_blank" rel="noopener"
->https://www.youtube.com/@FromSergio&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121849068.png"
-loading="lazy"
->&lt;/li>
-&lt;/ul>
-&lt;h2 id="linkingyourthinking">@linkingyourthinking
-&lt;/h2>&lt;p>Nick Milo 的 YouTube 频道 “Linking Your Thinking” 专注于个人知识管理（PKM）的实践和技巧，尤其是在 Obsidian 笔记应用中。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://www.youtube.com/@linkingyourthinking" target="_blank" rel="noopener"
->https://www.youtube.com/@linkingyourthinking&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406122010580.png"
-loading="lazy"
->&lt;/li>
-&lt;/ul>
-&lt;h2 id="cyanvoxel">@cyanvoxel
-&lt;/h2>&lt;p>CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，共享了他的 Osidian Vault，展示了如何将实体笔记数字化并整合到 Osidian 中。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://www.youtube.com/@cyanvoxel" target="_blank" rel="noopener"
->https://www.youtube.com/@cyanvoxel&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://github.com/CyanVoxel/Obsidian-Vault-Template" target="_blank" rel="noopener"
->https://github.com/CyanVoxel/Obsidian-Vault-Template&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121840729.png"
-loading="lazy"
->&lt;/li>
-&lt;/ul>
-&lt;h2 id="dannberg">@DannBerg
-&lt;/h2>&lt;p>&lt;a class="link" href="https://dannb.org/" target="_blank" rel="noopener"
->Dann Berg&lt;/a> 是一位资深 FinOps(个人财务运营) 从业者，他的 YouTube 频道拥有超过 4.48K 名订阅者，并且发布了 55 个视频。他的视频内容涵盖了个人财务和工程的交叉点，以及他个人感兴趣的主题。频道内容包括提高笔记效率的技巧、Obsidian 应用的教程、生产力书籍推荐、以及如何撰写和管理新闻通讯等。他还分享了自己的个人 Obsidian 笔记库，并提供了一系列的 Obsidian 系统和模板教程。此外，Dann Berg 还探讨了如何摆脱 Google 生态系统，实现数字生活的独立性。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://www.youtube.com/@DannBerg" target="_blank" rel="noopener"
->https://www.youtube.com/@DannBerg&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202406121900655.png"
-loading="lazy"
->&lt;/li>
-&lt;/ul>
-&lt;h2 id="dannyhatchertech">@DannyHatcherTech
-&lt;/h2>&lt;p>Danny Hatcher 运营的 YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo; 拥有 31.6K 订阅者和 395 个视频。频道内容涉及研究、技术和相关话题的视频。频道提供了关于如何在 Obsidian 中测试 BookFusion、Obsidian 的最新版本更新、使用 Afforai 进行研究的测试、以及如何从书籍中取好笔记等视频教程。此外，还讨论了为什么不使用思维导图、反对原子笔记和迷你文章、以及为什么选择使用 Morgen 等主题。Danny 还分享了他如何在 Obsidian 中写作、如何进行研究和写作、以及他对于 Notion 日历不满意的看法。频道还包括了与其他 YouTuber 如 Ali Abdaal 讨论研究的视频。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a class="link" href="https://www.youtube.com/@DannyHatcherTech" target="_blank" rel="noopener"
->https://www.youtube.com/@DannyHatcherTech&lt;/a>&lt;/li>
-&lt;li>&lt;img src="https://all-in-obsidian.li3huo.com/photos/202407061829667.png"
-loading="lazy"
-alt="800x950"
->&lt;/li>
-&lt;/ul>
-&lt;!-- sips -g all photos/202406121900655.png # 查看图片分辨率: 1550 x 1910 --></description></item><item><title>Obsidian 1.6 正式对外发布了(1.6.2)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</link><pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.6/</guid><description>
-&lt;p>v1.6 大版本更新说明&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;blockquote>
-&lt;p>这次更新的重点是改善应用程序中的一些长期存在的痛点。最值得注意的是，我们已经彻底检查了应用程序界面，以更好地支持右到左(RTL)语言。现在，当应用程序语言被设置为 RTL 语言时，整个界面将被镜像。我们也在&lt;strong>提高脚注的编辑和阅读体验&lt;/strong>方面给予了很大的关注。这个版本充满了 bug 修复，但在加载应用程序和编辑应用程序时，您可能还会注意到一些性能改进。&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="重要内容">重要内容
-&lt;/h2>&lt;ul>
-&lt;li>支持 RTL。当应用程序被设置为 RTL 语言时，界面方向现在被镜像。&lt;/li>
-&lt;li>更新左侧工具条布局。一个新的 Vault 切换器现在显示在底部。App Ribbon 现在可以隐藏在设置中，或者右键单击色带并选择”Hide ribbon”。&lt;/li>
-&lt;li>字符和单词计数现在根据当前的文本选择进行更新。&lt;/li>
-&lt;li>更快的工作空间加载。&lt;/li>
-&lt;li>更快的编辑器解析。&lt;/li>
-&lt;/ul>
-&lt;h2 id="其它更新">其它更新
-&lt;/h2>&lt;h3 id="improvements">Improvements
-&lt;/h3>&lt;ul>
-&lt;li>“Tab” 现在将在快速切换和“移动文件”模式中完成当前选择文件的路径段。&lt;/li>
-&lt;li>添加 “Add alias ”命令。&lt;/li>
-&lt;li>增加了“创建新文件夹”命令。&lt;/li>
-&lt;li>在应用外修改设置文件，热键和属性类型现在会自动重新加载。&lt;/li>
-&lt;li>添加自定义指令和结果时，添加显示文本的链接。&lt;/li>
-&lt;li>提示符现在有一个”clear”按钮来清除输入。在没有输入的情况下按下按钮将会使提示消失。&lt;/li>
-&lt;li>页面预览弹出窗口现在应该有更一致的大小和定位。&lt;/li>
-&lt;/ul>
-&lt;h3 id="footnotes">Footnotes
-&lt;/h3>&lt;ul>
-&lt;li>使用 &lt;code>[^&lt;/code> 为脚注引用添加自动补全&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/li>
-&lt;li>修正了编辑器中脚注的解析和渲染。&lt;/li>
-&lt;li>增加了对内联脚注的悬浮预览支持^[这是一条内联注脚，格式为&lt;code>^[content]&lt;/code>]。&lt;/li>
-&lt;li>悬停在一个脚注ID上，会弹出一个相应的脚注。&lt;/li>
-&lt;/ul>
-&lt;h3 id="properties">Properties
-&lt;/h3>&lt;ul>
-&lt;li>当合并两个属性时，新的属性名称将在全局属性列表中刷新。&lt;/li>
-&lt;li>现在属性列表项可以通过双击来编辑了。&lt;/li>
-&lt;li>如果打开的文件有无效的 frontmatter&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>，属性视图上会出现编辑按钮。&lt;/li>
-&lt;/ul>
-&lt;h3 id="no-longer-broken">No longer broken
-&lt;/h3>&lt;p>各种 bug 修复&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;h3 id="formatting">Formatting
-&lt;/h3>&lt;ul>
-&lt;li>修正了有换行符情况时的不正确格式应用。&lt;/li>
-&lt;li>现在切换项目列表命令(Toggle bullet list)会把任务列表变成项目列表。&lt;/li>
-&lt;li>修正了切换格式命令有时在编辑器的最后一行不起作用。&lt;/li>
-&lt;/ul>
-&lt;h3 id="settings">Settings
-&lt;/h3>&lt;ul>
-&lt;li>改进了设置内部登录界面的布局。&lt;/li>
-&lt;li>对安装社区主题和插件时显示的通知进行了小幅更新。&lt;/li>
-&lt;li>使用“adapt to system”时，“Light themes only”切换不再显示。&lt;/li>
-&lt;li>改进了命令调色板重新排序的拖放功能。&lt;/li>
-&lt;li>修正了重新排序处理程序在弹出窗口中不工作。&lt;/li>
-&lt;/ul>
-&lt;h3 id="search">Search
-&lt;/h3>&lt;ul>
-&lt;li>键入引号字符串时不触发搜索建议。&lt;/li>
-&lt;li>除非光标在查询的最后，或者下一个字符是空格，否则不会显示搜索建议。&lt;/li>
-&lt;li>点击“清除”按钮将不会导致搜索输入失去焦点。&lt;/li>
-&lt;/ul>
-&lt;h3 id="table">Table
-&lt;/h3>&lt;ul>
-&lt;li>点击 table 右侧边距(margin)，现在编辑器会聚焦。&lt;/li>
-&lt;li>修复 shift +箭头键不响应。&lt;/li>
-&lt;li>确保主编辑器的单元格更新正确更新单元格偏移量。&lt;/li>
-&lt;li>修复在表格单元格内解析数学块(math blocks)。&lt;/li>
-&lt;li>修复在表格单元格内双击不工作。&lt;/li>
-&lt;li>Fixed rendering tables inside callouts.&lt;/li>
-&lt;/ul>
-&lt;h3 id="source-mode">Source mode
-&lt;/h3>&lt;ul>
-&lt;li>Fixed pressing &lt;code>End&lt;/code> key not moving to end of line if cursor is in table.&lt;/li>
-&lt;/ul>
-&lt;h3 id="live-preview">Live Preview
-&lt;/h3>&lt;ul>
-&lt;li>Fix callout menu overlapping with URL menu when right-clicking on a link.&lt;/li>
-&lt;li>Fix failing to render headings with trailing &lt;code>#&lt;/code> at the end of the line.&lt;/li>
-&lt;li>Fixed checklist items getting unfolded if cursor was inside a folded region.&lt;/li>
-&lt;li>Allow blank lines in multi-line footnotes.&lt;/li>
-&lt;/ul>
-&lt;h3 id="reading-mode">Reading mode
-&lt;/h3>&lt;ul>
-&lt;li>Reading mode will no longer render footnote refs that contain spaces.&lt;/li>
-&lt;li>Fixed rendering of inline footnotes in reading mode.&lt;/li>
-&lt;/ul>
-&lt;h3 id="themes">Themes
-&lt;/h3>&lt;ul>
-&lt;li>Switched to Cascadia Mono instead of Cascadia Code for default monospace on Windows.&lt;/li>
-&lt;li>Bold is now computed based on the current text weight, so bold inside a heading will still appear bold.&lt;/li>
-&lt;li>Added &lt;code>--caret-color&lt;/code> CSS variable to make it easier to style caret color on both desktop and mobile.&lt;/li>
-&lt;li>Added new &lt;code>--link-weight&lt;/code> variable.&lt;/li>
-&lt;li>The user&amp;rsquo;s interface language is added to the &lt;code>lang&lt;/code> attribute on the &lt;code>html&lt;/code> element, which allows language-specific CSS rules.&lt;/li>
-&lt;li>The &lt;code>.mod-rtl&lt;/code> class is added to &lt;code>body&lt;/code> element when the user&amp;rsquo;s interface language is RTL.&lt;/li>
-&lt;/ul>
-&lt;h3 id="plugins">Plugins
-&lt;/h3>&lt;ul>
-&lt;li>Fixed &lt;code>processFrontmatter&lt;/code> failing to process file if all properties are removed.&lt;/li>
-&lt;li>Improve detection of external config changes.&lt;/li>
-&lt;li>We&amp;rsquo;ve made several improvements to the behavior of &lt;code>app.emulateMobile&lt;/code> that should make it easier to test that your plugins are mobile-compatible. Attempting to run a NodeJS library will present a Notice. Drag and drop will more accurately mirror the behavior on mobile. The app will have default &lt;code>safe-area-inset&lt;/code> properties set so that your views properly account for offsets in the mobile device viewport (such as the iPhone Dynamic Island).&lt;/li>
-&lt;li>Bare modals should respect &lt;code>safe-area-insets&lt;/code> by default.&lt;/li>
-&lt;li>Added loading state to some of the settings button that make remote requests.&lt;/li>
-&lt;li>Global &lt;code>app&lt;/code> has been completely removed from the API spec (previously it was marked as deprecated).&lt;/li>
-&lt;/ul>
-&lt;h2 id="reference">Reference
-&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>&lt;a class="link" href="https://obsidian.md/changelog/" target="_blank" rel="noopener"
->Changelog&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:2">
-&lt;p>Basic formatting syntax &lt;a class="link" href="https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Basic&amp;#43;formatting&amp;#43;syntax#Footnotes" target="_blank" rel="noopener"
->Footnotes&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li id="fn:3">
-&lt;p>&lt;a class="link" href="https://help.obsidian.md/Getting&amp;#43;started/Glossary#Frontmatter" target="_blank" rel="noopener"
->Frontmatter&lt;/a> is a way to define &lt;a class="link" href="https://help.obsidian.md/Getting&amp;#43;started/Glossary#property" target="_blank" rel="noopener"
->properties&lt;/a> by adding &lt;a class="link" href="https://yaml.org/" target="_blank" rel="noopener"
->YAML&lt;/a> or &lt;a class="link" href="https://www.json.org/" target="_blank" rel="noopener"
->JSON&lt;/a> at the top of the note. See also &lt;a class="link" href="https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Properties#Property%20format" target="_blank" rel="noopener"
->Property format&lt;/a>.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item><item><title>5 分钟向你推荐 Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</guid><description>
-&lt;p>Obsidian 是一款基于 markdown 格式的笔记软件，它的所有文件都保存在本地，确保了数据的安全性和隐私性。用户可以通过文件夹式管理来组织笔记，并且可以同时打开多个库（文件夹）来管理不同类型的内容。Obsidian 支持双向链接，可以生成关系图谱，帮助用户构建知识体系。此外，Obsidian 提供了丰富的插件，如日记插件、PPT 插件、思维导图插件等，用户可以根据自己的需求进行个性化配置。&lt;/p>
-&lt;p>如何向小伙伴们安利 Obsidian 呢，这里列出了以下几个问题。&lt;/p>
-&lt;h2 id="418-用-chatgpt-整理的问题">4.18 用 ChatGPT 整理的问题
-&lt;/h2>&lt;ol>
-&lt;li>What is Obsidian? &lt;a class="link" href="#/1/0" >&lt;i class="fas fa-book-open" />&lt;/a>
-&lt;ul>
-&lt;li>它与其他笔记应用相比有哪些独特之处？&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>How to Get Started? &lt;a class="link" href="#/2" >&lt;i class="fas fa-hand-pointer" />&lt;/a>
-&lt;ul>
-&lt;li> 对于新用户来说，设置和使用流程是怎样的？&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Which Platforms are Supported? &lt;a class="link" href="#/3" >&lt;i class="fas fa-play" />&lt;/a>
-&lt;ul>
-&lt;li>是否可以在不同的操作系统或设备上使用？&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Where is the Data Stored? &lt;a class="link" href="#/4" >&lt;i class="fas fa-database" />&lt;/a>
-&lt;ul>
-&lt;li>是否支持分享与协作编辑？&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Is Obsidian Free?
-&lt;ul>
-&lt;li>个人用户使用是否需要付费？&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="update-64-with-llama3-70b-8192">Update 6.4, with LLaMA3 70b-8192
-&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">我要向第一次接触 Obsidian 的朋友介绍这个软件。希望他们从现有的笔记软件转移到 ob 上；
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">假设你使用过 Evernote 和 Notion，但刚刚接触 obsidian，你会提出哪些问题呢？给出最有可能的前 5 个问题并回答
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Q1: Obsidian 和其他笔记应用程序（如 Evernote 或 OneNote）有什么不同之处？&lt;/strong>&lt;/p>
-&lt;p>A1: Obsidian 的独特之处在于它的双向链接功能，这使您可以创建一个交叉连接的笔记网络。另外，Obsidian 还具有高度的自定义性和灵活性，允许您根据特定的需求和工作流程来调整应用程序。&lt;/p>
-&lt;p>&lt;strong>Q2: 我如何在 Obsidian 中组织我的笔记？是像传统的文件夹结构一样吗？&lt;/strong>&lt;/p>
-&lt;p>A2: Obsidian 使用非层次结构的图形结构，这意味着您不需要担心创建文件夹或以一种僵固的方式分类您的笔记。相反，您可以创建笔记并将它们链接起来，创建一个交叉连接的想法网络。您也可以使用标签、关键词和其他元数据来帮助您找到和过滤您的笔记。&lt;/p>
-&lt;p>&lt;strong>Q3: 我如何在 Obsidian 中创建笔记之间的链接？是否类似于创建超链接？&lt;/strong>&lt;/p>
-&lt;p>A3: 是的，在 Obsidian 中创建笔记之间的链接类似于创建超链接。您可以使用双括号 &lt;code>[[&lt;/code> 和 &lt;code>]]&lt;/code> 将笔记标题括起来，从而创建到该笔记的链接。您也可以使用编辑器中的“链接”按钮来创建到笔记的链接。此外，Obsidian 还具有自动完成功能，可以在您输入时建议链接到其他笔记。&lt;/p>
-&lt;p>&lt;strong>Q4: 我可以使用 Obsidian 进行协作工作或与他人共享笔记吗？&lt;/strong>&lt;/p>
-&lt;p>A4: 是的，Obsidian 支持协作工作和笔记共享。您可以创建一个“金库”，这是一个共享的笔记仓库，并邀请他人编辑或查看您的笔记。您也可以使用 Obsidian 的“发布”功能将单个笔记或笔记集合作为网页共享。&lt;/p>
-&lt;p>&lt;strong>Q5: Obsidian 是否可以在移动设备上使用，还是只能在桌面电脑上使用？&lt;/strong>&lt;/p>
-&lt;p>A5: 目前，Obsidian 可以作为桌面应用程序在 Windows、macOS 和 Linux 上使用。然而，Obsidian 团队正在开发移动应用程序以便在 Android 和 iOS 设备上使用。在那之前，您可以通过 Obsidian 的 web 界面在移动设备上访问和编辑您的笔记。&lt;/p></description></item><item><title>Obsidian 笔记综述</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-review/</link><pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-review/</guid><description>
-&lt;p>上手，从 2023 年底，使用社区插件 &lt;code>Importer&lt;/code>，把 Notion 上的近 900 篇笔记迁移到 OB；从此就开始了边用、边学、边分享的快乐过程。&lt;/p>
-&lt;h2 id="应用场景篇">应用场景篇
-&lt;/h2>&lt;ol>
-&lt;li>快速创建闪念笔记，使用 Templater 插件 23/12/17&lt;/li>
-&lt;li>做提案，使用 advanced-slides 插件 23/12/23&lt;/li>
-&lt;li>做主题阅读笔记，使用 dataview 插件 23/12/29&lt;/li>
-&lt;li>做脑图，使用 Excalidraw 插件 24/1/5&lt;/li>
-&lt;li>健康打卡，使用 Habit Tracker + Templater 插件 24/2/23&lt;/li>
-&lt;li>周期笔记的管理 24/3/31&lt;/li>
-&lt;/ol>
-&lt;h2 id="插件篇">插件篇
-&lt;/h2>&lt;p>有一些插件，是值得好好学学的，因为回报会更大。&lt;/p>
-&lt;ol>
-&lt;li>Advanced Slides 边用边学，定制化最高的一个插件&lt;/li>
-&lt;li>Excalidraw 系列 24/1/12&lt;/li>
-&lt;li>Templater 一个离不开的插件&lt;/li>
-&lt;li>Dataview&lt;/li>
-&lt;li>QuickAdd&lt;/li>
-&lt;/ol>
-&lt;p>有一些插件，在特定应用场景下很有用，有类似需求的时候需要了解一下。&lt;/p>
-&lt;ol>
-&lt;li>Habit Tracker 月度记录&lt;/li>
-&lt;li>Dice Roller 内容随机访问&lt;/li>
-&lt;/ol>
-&lt;p>还有一些插件，已经有好的替代了，一定要谨慎使用。&lt;/p>
-&lt;ol>
-&lt;li>markmind 脑图渲染，编辑功能有缺陷。更推荐用 excalidraw&lt;/li>
-&lt;li>Buttons 有缺陷，用 QuickAdd 替换&lt;/li>
-&lt;/ol>
-&lt;h2 id="知识库方法论篇">知识库方法论篇
-&lt;/h2>&lt;p>目标、理论与实践，三者要统一。&lt;/p>
-&lt;ol>
-&lt;li>笔记的组织 24/3/9&lt;/li>
-&lt;li>知识的提炼 24/3/16&lt;/li>
-&lt;/ol></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Obsidians on All in Obsidian</title>
+        <link>http://localhost:1313/obsidian/</link>
+        <description>Recent content in Obsidians on All in Obsidian</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>li3huo (li3huo)</managingEditor>
+        <webMaster>li3huo (li3huo)</webMaster>
+        <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/obsidian/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Obsidian Hotkeys</title>
+        <link>http://localhost:1313/obsidian/hotkeys/</link>
+        <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/obsidian/hotkeys/</guid>
+        <description>
+            &lt;p&gt;Obsidian 笔记编辑默认支持了一些快捷键&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;。用户也可以自定义快捷键，提示编辑效率。&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;内置快捷键&#34;&gt;内置快捷键
+&lt;/h2&gt;&lt;h3 id=&#34;操作类&#34;&gt;操作类
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Open settings: &lt;code&gt;Cmd + ,&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open command palette: &lt;code&gt;Cmd + P&lt;/code&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Open quick switcher: &lt;code&gt;Cmd + O&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open graph view: &lt;code&gt;Cmd + G&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;编辑类&#34;&gt;编辑类
+&lt;/h3&gt;&lt;p&gt;已经内置的编辑快捷键&lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，包括&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;常见操作（如复制、剪切、粘贴、撤销和重做）&lt;/li&gt;
+&lt;li&gt;&lt;mark class=&#34;more-highlight red-highlighter&#34;&gt;文本格式化&lt;/mark&gt;（只内置了黑体和斜体两种）&lt;/li&gt;
+&lt;li&gt;文本编辑（如插入新行、删除字符或单词）&lt;/li&gt;
+&lt;li&gt;文本导航（如光标移动、页面滚动、文首&lt;code&gt;Cmd+↑&lt;/code&gt;、文末&lt;code&gt;Cmd+↓&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;mark class=&#34;more-highlight yellow-highlighter&#34;&gt;文本选择&lt;/mark&gt;（如列式选择 &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;： 按住&lt;code&gt;Shift+Option&lt;/code&gt;后拖拽鼠标，扩展选择区域： 单字符&lt;code&gt;Shift+←/→&lt;/code&gt;、页&lt;code&gt;Ctrl+Shift+←/→&lt;/code&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;viewing-hotkeys&#34;&gt;Viewing hotkeys
+&lt;/h3&gt;&lt;p&gt;用户可以通过命令面板快速查看命令的快捷键。&lt;/p&gt;
+&lt;h2 id=&#34;设置快捷键&#34;&gt;设置快捷键
+&lt;/h2&gt;&lt;h3 id=&#34;setting-hotkeys&#34;&gt;Setting hotkeys
+&lt;/h3&gt;&lt;p&gt;用户可以在设置中的快捷键部分添加、删除或恢复快捷键。&lt;/p&gt;
+&lt;h3 id=&#34;hotkeysjson&#34;&gt;hotkeys.json
+&lt;/h3&gt;&lt;p&gt;每个 &lt;em&gt;vault&lt;/em&gt; 都包含一个 &lt;code&gt;.obsidian&lt;/code&gt; 配置文件夹，其中包含了该 &lt;em&gt;vault&lt;/em&gt; 特定的设置，如快捷键(&lt;code&gt;hotkeys.json&lt;/code&gt;)、主题(&lt;code&gt;appearance.json&lt;/code&gt;)和插件(&lt;code&gt;community-plugins.json&lt;/code&gt;)。&lt;/p&gt;
+&lt;p&gt;所以我们可以通过拷贝 &lt;code&gt;.obsidian/hotkeys.json&lt;/code&gt; 文件的方式来共享快捷键配置。&lt;/p&gt;
+&lt;h2 id=&#34;my-hotkeys&#34;&gt;My hotkeys
+&lt;/h2&gt;&lt;p&gt;Markdown 编辑用快捷键，都是 &lt;code&gt;Ctrl&lt;/code&gt; 打头&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Action&lt;/th&gt;
+&lt;th&gt;Shortcut&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;editor:set-heading-1&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+...&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;editor:set-heading-6&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+6&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;editor:toggle-bullet-list&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+b&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;editor:toggle-numbered-list&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+n&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;editor:toggle-highlight&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+h&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;editor:fold-all&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+f&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;editor:unfold-all&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+u&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;editor:swap-line-up&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+Cmd+↑&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;editor:swap-line-down&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl+Cmd+↓&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Obsidian 1.6 后的版本，无法在界面中绑定 &lt;code&gt;Cmd + Shift&lt;/code&gt; 组合的快捷方式了，直接在配置中设置的，倒是也依然有效。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;modifiers&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Mod&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Shift&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;后来决定都调整为 &lt;code&gt;Ctrl + Shift&lt;/code&gt; 了。&lt;/p&gt;
+&lt;p&gt;大家也可以看一下论坛上的快捷键最佳实践帖 &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference
+&lt;/h2&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Editing&amp;#43;shortcuts&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://help.obsidian.md/Editing+and+formatting/Editing+shortcuts&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.obsidian.md/User&amp;#43;interface/Hotkeys&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://help.obsidian.md/User+interface/Hotkeys&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.obsidian.md/Plugins/Command&amp;#43;palette&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://help.obsidian.md/Plugins/Command+palette&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Multiple&amp;#43;cursors&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://help.obsidian.md/Editing+and+formatting/Multiple+cursors&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://forum.obsidian.md/t/obsidian-hotkeys-favorites-and-best-practices/12125&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://forum.obsidian.md/t/obsidian-hotkeys-favorites-and-best-practices/12125&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
+        <title>Best tasks plugin in Obsidian</title>
+        <link>http://localhost:1313/obsidian/obsidian-tasks-management/</link>
+        <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/obsidian/obsidian-tasks-management/</guid>
+        <description>
+            &lt;p&gt;本视频教程介绍了 Obsidian 中的任务插件（Task Plugin）的安装、配置、使用方法以及如何通过查询、过滤器和任务状态来管理任务。&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Introduction&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Task User Guide&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/quXNtjTe5WE&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started
+&lt;/h2&gt;&lt;h3 id=&#34;功能介绍&#34;&gt;功能介绍
+&lt;/h3&gt;&lt;p&gt;在整个知识库中追踪任务，查询任务状态，并在任意位置标记任务完成。&lt;/p&gt;
+&lt;p&gt;1、任务定义&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持设置截止日期、重复任务、子任务&lt;/li&gt;
+&lt;li&gt;支持多种方式创建任务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2、统计分析&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持在仓库中的任何位置进行任务查询&lt;/li&gt;
+&lt;li&gt;支持丰富的统计分析，如任务完成情况、任务优先级等，为用户提供任务分析和统计报告，帮助用户更好地了解和管理任务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;安装&#34;&gt;安装
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/photos/obsidian/tasks-7.6.0.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;创建任务&#34;&gt;创建任务
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Editing/Auto-Suggest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Auto-Suggest&lt;/a&gt; 帮助用户输入任务数据，减少用户输入任务数据的负担。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Editing/Create&amp;#43;or&amp;#43;edit&amp;#43;Task&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Create or edit Task&lt;/a&gt; 用于添加和编辑任务数据的对话框 / 模态窗口。&lt;/p&gt;
+&lt;h3 id=&#34;查询任务&#34;&gt;查询任务
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Queries/About&amp;#43;Queries&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;About Queries&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如何进行基本的任务搜索、设置查询选项、使用过滤器、排序、分组、限制显示结果和布局等。&lt;/p&gt;
+&lt;h2 id=&#34;配置tasks-settings&#34;&gt;配置(Tasks Settings)
+&lt;/h2&gt;&lt;h3 id=&#34;task-format-settings&#34;&gt;Task Format Settings
+&lt;/h3&gt;&lt;p&gt;Tasks 插件用于在 Markdown 中管理任务，通过任务格式来表达任务的属性。建议选择默认的 Emoji 格式。&lt;/p&gt;
+&lt;p&gt;更多参考见 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Reference/Task&amp;#43;Formats/About&amp;#43;Task&amp;#43;Formats&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;About Task Formats&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;global-filter-settings&#34;&gt;Global filter Settings
+&lt;/h3&gt;&lt;p&gt;使用全局过滤器功能来限制 Tasks 插件只匹配特定的待办事项，在设置中配置这一功能。详细说明见 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Global&amp;#43;Filter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Global Filter&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;global-query&#34;&gt;Global Query
+&lt;/h3&gt;&lt;p&gt;用户可以在设置中设置一个全局查询，该查询将自动添加到用户词典中的所有查询之前。全局查询可以包括路径、标签、标题等多种条件，以便默认筛选任务。&lt;/p&gt;
+&lt;h3 id=&#34;task-statuses&#34;&gt;Task Statuses
+&lt;/h3&gt;&lt;p&gt;用户可以根据自己的需求定义任务的状态&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Core Statuses&lt;/code&gt; 包含未完成和已完成两种状态：&lt;code&gt;[ ]&lt;/code&gt;:&lt;code&gt;TODO&lt;/code&gt; 和 &lt;code&gt;[x]&lt;/code&gt;:&lt;code&gt;DONE&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可以在 &lt;code&gt;Costom Statuses&lt;/code&gt; 中引入自定义任务状态：&lt;code&gt;[/]&lt;/code&gt;:&lt;code&gt;IN_PROGRESS&lt;/code&gt;,  &lt;code&gt;[-]&lt;/code&gt;:&lt;code&gt;CANCELLED&lt;/code&gt;, &lt;code&gt;NON_TASK&lt;/code&gt;
+切换成 &lt;code&gt;Mininal&lt;/code&gt; 主题，可以显示自定义状态的图标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;Review and check your Statuses&lt;/code&gt; 查看可视化状态说明&lt;/p&gt;
+&lt;p&gt;更多参考见 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Statuses&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Statuses&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;date-settings&#34;&gt;Date Settings
+&lt;/h3&gt;&lt;p&gt;任务行中可以添加的不同日期类型，包括&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;完成日期（done date） ✅ YYYY-MM-DD # 默认开&lt;/li&gt;
+&lt;li&gt;取消日期（cancelled date）❌ YYYY-MM-DD # 默认开&lt;/li&gt;
+&lt;li&gt;开始日期（start date）➕YYYY-MM-DD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多参考见 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Dates#Created&amp;#43;date&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Dates&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;周期任务recurring-task-settings&#34;&gt;周期任务(Recurring task Settings)
+&lt;/h3&gt;&lt;p&gt;设置和管理重复任务，默认关。&lt;/p&gt;
+&lt;p&gt;更多参考见 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Getting&amp;#43;Started/Recurring&amp;#43;Tasks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Recurring Tasks&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;auto-suggest-settings&#34;&gt;Auto-suggest Settings
+&lt;/h3&gt;&lt;p&gt;自动提示（Auto-Suggest）功能，用于在编辑任务时帮助用户快速输入特定的表情符号和日期，提高编辑效率，尤其在移动设备上使用时的便利性。&lt;/p&gt;
+&lt;p&gt;更多参考见 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Editing/Auto-Suggest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Intelligent Auto-Suggest&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;dialog-settings&#34;&gt;Dialog Settings
+&lt;/h3&gt;&lt;p&gt;“创建或编辑任务” 模态框的使用方法和功能。&lt;code&gt;Tasks: Create or edit&lt;/code&gt; 命令触发：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/photos/obsidian/tasks-dialog.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;任务插件的高级功能&#34;&gt;任务插件的高级功能
+&lt;/h2&gt;&lt;p&gt;如设置任务的优先级、使用自定义状态和处理重复任务。&lt;/p&gt;
+&lt;h3 id=&#34;task-queries&#34;&gt;Task Queries
+&lt;/h3&gt;&lt;p&gt;如何使用查询来管理和显示任务，包括如何根据任务的描述和标签来过滤。支持&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sort&lt;/code&gt;, &lt;code&gt;group&lt;/code&gt; 等语法&lt;/li&gt;
+&lt;li&gt;对任务名称、状态进行过滤，如 &lt;code&gt;status.name includes in progress&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;调整展示效果，如 &lt;code&gt;hide due date&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对任务状态进行过滤，可以获得看板的效果。&lt;/p&gt;
+&lt;p&gt;更多参考见 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Queries/About&amp;#43;Queries&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;About Queries&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Quick&amp;#43;Reference&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Quick Reference&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;backlinks-in-queries&#34;&gt;Backlinks in Queries
+&lt;/h3&gt;&lt;p&gt;调整反向链接的显示效果。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;查询中添加 &lt;code&gt;short mode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;通过 CSS 对任务列表进行详细的样式设置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/How&amp;#43;To/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;How To&lt;/a&gt; / &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/How&amp;#43;To/How&amp;#43;to&amp;#43;style&amp;#43;backlinks#Using&amp;#43;CSS&amp;#43;to&amp;#43;replace&amp;#43;the&amp;#43;backlinks&amp;#43;with&amp;#43;icons&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Using CSS to replace the backlinks with icons&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更多 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Advanced/Styling#CSS&amp;#43;Examples&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CSS Examples&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;querying-files&#34;&gt;Querying files
+&lt;/h3&gt;&lt;p&gt;参见 &lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/tasks/Queries/Filters#Filters%20for%20File%20Properties&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;File properties&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;path/folder/filename (includes, does not include) &amp;lt;path&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;heading 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;query-result-status-change&#34;&gt;Query result status change
+&lt;/h3&gt;&lt;p&gt;在预览模式下，右键 checkbox 弹出状态列表，可以修改任务状态。例如从 “待办” 更改为 “进行中” 或 “已取消”。&lt;/p&gt;
+&lt;p&gt;用 CSS 设置不同任务状态的显示&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-CSS&#34; data-lang=&#34;CSS&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;Status&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;Symbols&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;task-list-item&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;data-task&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;task-list-item-checkbox&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;box-shadow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;green&lt;/span&gt; &lt;span class=&#34;cp&#34;&gt;!important&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;视频内容总结&#34;&gt;视频内容总结
+&lt;/h2&gt;&lt;p&gt;视频首先介绍了 Obsidian 的基本功能，特别是其作为一个标记语言（Markdown）编辑器的特点，然后详细讲解了如何在 Obsidian 中安装和配置 Task Plugin。&lt;/p&gt;
+&lt;p&gt;演示了如何创建和管理任务，包括如何设置任务的格式、状态、优先级和日期。此外，介绍了如何使用查询来过滤和展示特定的任务，包括使用标签、状态、日期和依赖项等条件。&lt;/p&gt;
+&lt;p&gt;视频还涉及了如何处理重复任务、任务依赖性以及如何通过 CSS 自定义任务的显示样式。&lt;/p&gt;
+&lt;h2 id=&#34;youtube-频道-danny-talks-tech&#34;&gt;YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo;
+&lt;/h2&gt;&lt;p&gt;这位博主(Danny Hatcher)的其他内容也很不错：[[youtube-channels#@DannyHatcherTech]]。比如&lt;/p&gt;
+&lt;h3 id=&#34;why-justin-sung-is-wrong-about-obsidian&#34;&gt;Why Justin Sung is wrong about Obsidian
+&lt;/h3&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/yFQ-OyNmg6U&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;主要讨论了 Justin Sung 对 Osidian 应用程序在第二大脑管理中作为参考工具的看法，并对 Zettelkasten 方法、第二大脑概念以及 Osidian 作为笔记工具的优势和使用方式进行了深入分析和讨论。&lt;/p&gt;
+&lt;h4 id=&#34;对-zettelkasten-方法的理解&#34;&gt;对 Zettelkasten 方法的理解
+&lt;/h4&gt;&lt;p&gt;与 Justin 不同，danny 认为 Zettelkasten 是一种笔记盒子，可以是任何可以链接笔记的系统，而不仅仅是特定的软件实现。&lt;/p&gt;
+&lt;p&gt;作者强调了 Zettelkasten 方法的本质，即是一种笔记管理系统，可以通过任何计算机或笔记软件实现，而不仅仅局限于 Obsidian。作者认为，Atomic notes 和 Zettelkasten 是两个不同的概念，后者更侧重于如何组织和链接笔记。而他更倾向于使用一个大文件来记录一个概念，而不是分散成许多小文件，因为这样更容易搜索和组织。&lt;/p&gt;
+&lt;h4 id=&#34;对第二大脑的理解&#34;&gt;对第二大脑的理解
+&lt;/h4&gt;&lt;p&gt;第二大脑不仅仅是一个应用程序或工具，而是一套工具和过程，涉及到认知的延伸。danny 认为，无论是数字工具还是模拟工具，都应该根据个人的认知技能来选择和使用。他还讨论了数字工具与模拟工具在学习和记忆过程中的优势和局限性，认为数字工具提供了更多的编辑和删除便利性。&lt;/p&gt;
+&lt;p&gt;第二大脑的概念来自于扩展认知理论，不仅仅是一个应用程序或工具，而是一个工具箱，包括了所有帮助我们思考的工具和过程。&lt;/p&gt;
+&lt;h4 id=&#34;osidian-不适合用于主要编码primary-encoding的反驳&#34;&gt;Osidian 不适合用于主要编码（primary encoding）的反驳
+&lt;/h4&gt;&lt;p&gt;Osidian 和其他写作工具都可以用于思考和学习。danny 认为，所有的写作工具都是思维工具，可以帮助用户以不同的方式记忆、连接和表达想法。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Getting started with ExcaliBrain</title>
+        <link>http://localhost:1313/obsidian/excalibrain-getting-started/</link>
+        <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/obsidian/excalibrain-getting-started/</guid>
+        <description>
+            &lt;p&gt;Getting started with ExcaliBrain, zsolt 发了三个视频做为新手入门引导。&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/8LE_QdYQZVk&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=8LE_QdYQZVk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Getting started with ExcaliBrain 1/3&lt;/a&gt; Aug 12, 2023&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://youtu.be/JjyEicYtVcU&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Getting started with ExcaliBrain 2/3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://youtu.be/yPJ2hTXqlXQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Getting started with ExcaliBrain 3/3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安装&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Excalidraw&lt;/li&gt;
+&lt;li&gt;Dataview&lt;/li&gt;
+&lt;li&gt;Excalibrain&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;issue-based-information-system&#34;&gt;Issue-Based Information System
+&lt;/h2&gt;&lt;p&gt;IBIS(基于问题的信息系统)框架，它是一种对话映射方法，包括问题、立场、支持和反对论点，以及证据和结论。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Issues: phrased as questions, drives a conversation about issues&lt;/li&gt;
+&lt;li&gt;Positions: 相应问题时对应的立场&lt;/li&gt;
+&lt;li&gt;Supporting and Objecting Arguments: support or object positions&lt;/li&gt;
+&lt;li&gt;Evidences: 证据，attach to various nodes reaching a conclusion&lt;/li&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;《Visualizing Argumentation》&lt;/p&gt;
+&lt;h2 id=&#34;设置&#34;&gt;设置
+&lt;/h2&gt;&lt;h3 id=&#34;节点&#34;&gt;节点
+&lt;/h3&gt;&lt;h3 id=&#34;链接&#34;&gt;链接
+&lt;/h3&gt;&lt;h2 id=&#34;videos&#34;&gt;Videos
+&lt;/h2&gt;&lt;h3 id=&#34;how-to-use-the-excalibrain-obsidian-plugin&#34;&gt;How to use the ExcaliBrain Obsidian plugin
+&lt;/h3&gt;&lt;p&gt;Sep 17, 2022 by &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@nicolevdh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Nicole van der Hoeven&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;4 Levels use ExcaliBrain&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Level 1 - Letting ExcaliBrain infer relationships&lt;/li&gt;
+&lt;li&gt;Level 2 - Setting explicit relationships&lt;/li&gt;
+&lt;li&gt;Level 3 - Creating custom relationships&lt;/li&gt;
+&lt;li&gt;Level 4 - Creating semantic relationships&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/gqEtn3gCZF0&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;使用-excalibrain-创作动态思维导图&#34;&gt;使用 ExcaliBrain 创作动态思维导图
+&lt;/h3&gt;&lt;p&gt;“A dynamic mind-mapping experience with Obsidian with ExcaliBrain” Jul 18, 2023&lt;/p&gt;
+&lt;p&gt;如何使用 Obsidian 和 ExcaliBrain 插件来进行动态的思维导图创建。&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/_wldRlxTAxs&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Excalidraw Features</title>
+        <link>http://localhost:1313/obsidian/excalidraw-features/</link>
+        <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/obsidian/excalidraw-features/</guid>
+        <description>
+            &lt;p&gt;随着版本的更新，excalidraw 中增加了新的功能，在此进行记录整理。&lt;/p&gt;
+&lt;h2 id=&#34;appearance-and-behavior&#34;&gt;Appearance and Behavior
+&lt;/h2&gt;&lt;h3 id=&#34;multiple-templates&#34;&gt;Multiple Templates
+&lt;/h3&gt;&lt;p&gt;Basic -&amp;gt; Excalidraw Template Folder&lt;/p&gt;
+&lt;h2 id=&#34;笔记引用-excalidraw&#34;&gt;笔记引用 Excalidraw
+&lt;/h2&gt;&lt;h3 id=&#34;frame-reference&#34;&gt;Frame Reference
+&lt;/h3&gt;&lt;p&gt;在 Markdown 笔记中只引入部分图画(Frame) &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+语法说明：&lt;code&gt;![[.excalidraw#^frame=&amp;lt;frame name&amp;gt;]]&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes
+&lt;/h2&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;v2.0.26 &lt;a class=&#34;link&#34; href=&#34;https://youtu.be/tHUcD4rWIuY&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Start using the flipside of your markdown notes&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>用概念图🗺️表述想法💡</title>
+        <link>http://localhost:1313/obsidian/concept-modeling/</link>
+        <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/obsidian/concept-modeling/</guid>
+        <description>
+            &lt;p&gt;概念图是一种用图形方式展示概念、思想或信息之间关系的视觉工具。概念图通常由多个概念元素和相互连接的线段组成，展示相互之间的联系和等级结构。概念图的制作过程可以帮助人们 整理信息、进行决策，并用易于理解的方式共享和协作信息，尤其适用于复杂话题的深入理解。&lt;/p&gt;
+&lt;p&gt;在动笔输出文字之前，先对概念进行建模，可以 精炼知识(Refining Knowledge)，增进理解。&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-concept-map&#34;&gt;What is a Concept Map?
+&lt;/h2&gt;&lt;p&gt;概念图，Concept Diagram，或者叫做 Concept Model，是一种将 建议的概念关系 以图表的形式呈现出来的工具，通常用于组织和结构化知识。Concept Map WikiPedia&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;概念图 最早是由康奈尔大学的 Joseph D.Novak 和他的研究团队在20世纪70年代提出。当时，Novak 将这种绘图技巧应用在教学中，以增进理解。
+在 Novak 的著作 &lt;strong&gt;Learning to Learn&lt;/strong&gt;（中文版《习得学习》）中指出，“有意义的学习，涉及将新概念与命题同化于既有的认知架构中”。&lt;/p&gt;
+&lt;p&gt;例1、对概念建模的概念图，来自这个视频[^conceptmodeling]&lt;/p&gt;
+&lt;p&gt;![[concept-modeling.excalidraw#^frame=concept modeling]]&lt;/p&gt;
+&lt;p&gt;BABOK^[Business Analysis Body Of Knowledge]&lt;/p&gt;
+&lt;h2 id=&#34;what-are-key-elements-of-diagram&#34;&gt;What are key elements of diagram?
+&lt;/h2&gt;&lt;p&gt;对概念建模，源于一个关键问题。请看 例2、概念图里的关键元素&lt;/p&gt;
+&lt;p&gt;![[concept-modeling.excalidraw#^frame=diagram key elements|800]]&lt;/p&gt;
+&lt;p&gt;概念图使用的术语&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diagrams &lt;em&gt;概念图本身&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Shapes &lt;em&gt;概念或想法&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Lines &lt;em&gt;关系&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Labels &lt;em&gt;描述概念和关系&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Keys&lt;/li&gt;
+&lt;li&gt;Scope&lt;/li&gt;
+&lt;li&gt;Audience&lt;/li&gt;
+&lt;li&gt;Intention&lt;/li&gt;
+&lt;li&gt;Topic&lt;/li&gt;
+&lt;li&gt;Scale&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3 basic elements&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shapes &lt;em&gt;概念，一般是名词&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Lines &lt;em&gt;连接器，一般是动词&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Labels &lt;em&gt;描述概念和关系&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可视元素和不可视元素&lt;/p&gt;
+&lt;h2 id=&#34;modeling-vs-illustration&#34;&gt;Modeling vs Illustration
+&lt;/h2&gt;&lt;p&gt;建模与插图之间的差异&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;建模是在内容创作前进行的思维整理工作，是创作新内容的基础。整理思绪、定义词汇，确保内容是全面的和有条理的；
+而插图则是逆向的，在内容创作后进行的视觉化过程。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;除了用于内容创作，概念建模对阅读和学习也适用，能够增进理解和记忆。&lt;/p&gt;
+&lt;h2 id=&#34;compare-concept-maps-vs-mind-maps&#34;&gt;Compare Concept Maps vs Mind Maps
+&lt;/h2&gt;&lt;p&gt;例3、概念图与思维导图的对比&lt;/p&gt;
+&lt;p&gt;![[concept-modeling.excalidraw#^frame=Frame 03|800]]&lt;/p&gt;
+&lt;h2 id=&#34;frame-your-thoughts-with-concept-modeling&#34;&gt;Frame Your Thoughts with Concept Modeling
+&lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/Zg_DUj68VkY&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在这个视频&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;中，Zsolt 使用 Obsidian.md 和 Excalidraw&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; 插件深入探讨了概念建模的概念。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;从 &lt;strong&gt;What are key elements of diagram?&lt;/strong&gt; 问题开始，探索了图表的关键元素，如形状、线条、标签等；通过创建概念图，zsolt 展示了概念之间是如何相互连接的，以及它们是如何形成命题的。&lt;/li&gt;
+&lt;li&gt;然后讨论了概念建模作为内容创作和学习过程中的基础步骤的重要性。作者强调了&lt;strong&gt;概念建模与插图之间的区别&lt;/strong&gt;，概念建模是在内容创作之前进行的思考和定义术语的过程，而插图是在内容创作之后进行的视觉化过程。&lt;/li&gt;
+&lt;li&gt;接着，作者将概念图与思维导图进行了比较，强调了它们之间的差异和应用场景。&lt;/li&gt;
+&lt;li&gt;最后，作者总结了概念建模的重要性，并鼓励观众在写作之前先创建概念模型，以便更深入地理解和学习新概念。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;通过对这个视频的学习，认识到概念模型的重要性，并学到了创建&lt;strong&gt;概念图&lt;/strong&gt;来组织和澄清思想的操作步骤，有助于以后在&lt;strong&gt;内容创作&lt;/strong&gt;和&lt;strong&gt;学习新概念&lt;/strong&gt;时提高理解和知识整合程度。&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes
+&lt;/h2&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Concept_map&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://en.wikipedia.org/wiki/Concept_map&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=Zg_DUj68VkY&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Before You Write: Frame Your Thoughts with Concept Modeling&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://excalidraw.com/#json=pwLtCkoKZVEkywvXNYjau,kbljw8nPClZPYrv5xJiSUA&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Youtube 上的 Obsidian 学习频道</title>
+        <link>http://localhost:1313/obsidian/youtube-channels/</link>
+        <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/obsidian/youtube-channels/</guid>
+        <description>
+            &lt;p&gt;从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p&gt;
+&lt;h2 id=&#34;visualpkm&#34;&gt;@VisualPKM
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zsolt.blog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Zsolt&lt;/a&gt; Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p&gt;
+&lt;p&gt;VisualPKM YouTube 频道由 Zsolt 创办，旨在通过视觉技术提升个人知识管理。频道拥有超过 30.8K 的订阅者，并提供了 232 个视频教程。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@VisualPKM&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@VisualPKM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121849106.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;nicolevdh&#34;&gt;@nicolevdh
+&lt;/h2&gt;&lt;p&gt;Nicole van der Hoeven，一位在 Grafana Labs 担任高级开发者倡导者的专家，她的 YouTube 频道拥有 52.6K 订阅者，并且发布了 166 个视频。内容涵盖了如何在 Obsidian 中使用社区和核心插件来清单化、结构化、分类和解释笔记，以提高笔记的实用性。她还分享了如何使用 Obsidian 进行学习、创作和组织工作，包括针对非编程人士的教程、核心插件的推荐、个人插件使用习惯、以及如何使用 Obsidian 进行桌面角色扮演游戏（TTRPG）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@nicolevdh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@nicolevdh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121848581.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;fromsergio&#34;&gt;@FromSergio
+&lt;/h2&gt;&lt;p&gt;FromSergio 频道拥有超过 45.6K 的订阅者，并已发布 52 个视频。教授如何从初学者到高级用户使用 Obsidian 个人知识管理工具。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@FromSergio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@FromSergio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121849068.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;linkingyourthinking&#34;&gt;@linkingyourthinking
+&lt;/h2&gt;&lt;p&gt;Nick Milo 的 YouTube 频道 “Linking Your Thinking” 专注于个人知识管理（PKM）的实践和技巧，尤其是在 Obsidian 笔记应用中。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@linkingyourthinking&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@linkingyourthinking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406122010580.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cyanvoxel&#34;&gt;@cyanvoxel
+&lt;/h2&gt;&lt;p&gt;CyanVoxel 是一个拥有 23.9K 订阅者的 YouTube 频道，专注于创作与个人生活管理、软件开发、3D 建模等相关内容的视频。在他的频道中，CyanVoxel 分享了自己制作文件组织器的过程，共享了他的 Osidian Vault，展示了如何将实体笔记数字化并整合到 Osidian 中。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@cyanvoxel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@cyanvoxel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CyanVoxel/Obsidian-Vault-Template&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/CyanVoxel/Obsidian-Vault-Template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121840729.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dannberg&#34;&gt;@DannBerg
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://dannb.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Dann Berg&lt;/a&gt; 是一位资深 FinOps(个人财务运营) 从业者，他的 YouTube 频道拥有超过 4.48K 名订阅者，并且发布了 55 个视频。他的视频内容涵盖了个人财务和工程的交叉点，以及他个人感兴趣的主题。频道内容包括提高笔记效率的技巧、Obsidian 应用的教程、生产力书籍推荐、以及如何撰写和管理新闻通讯等。他还分享了自己的个人 Obsidian 笔记库，并提供了一系列的 Obsidian 系统和模板教程。此外，Dann Berg 还探讨了如何摆脱 Google 生态系统，实现数字生活的独立性。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@DannBerg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@DannBerg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202406121900655.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dannyhatchertech&#34;&gt;@DannyHatcherTech
+&lt;/h2&gt;&lt;p&gt;Danny Hatcher 运营的 YouTube 频道 &amp;ldquo;Danny Talks Tech&amp;rdquo; 拥有 31.6K 订阅者和 395 个视频。频道内容涉及研究、技术和相关话题的视频。频道提供了关于如何在 Obsidian 中测试 BookFusion、Obsidian 的最新版本更新、使用 Afforai 进行研究的测试、以及如何从书籍中取好笔记等视频教程。此外，还讨论了为什么不使用思维导图、反对原子笔记和迷你文章、以及为什么选择使用 Morgen 等主题。Danny 还分享了他如何在 Obsidian 中写作、如何进行研究和写作、以及他对于 Notion 日历不满意的看法。频道还包括了与其他 YouTuber 如 Ali Abdaal 讨论研究的视频。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@DannyHatcherTech&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@DannyHatcherTech&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;http://localhost:1313/photos/202407061829667.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;800x950&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- sips -g all photos/202406121900655.png # 查看图片分辨率: 1550 x 1910 --&gt;</description>
+        </item>
+        <item>
+        <title>Obsidian 1.6 正式对外发布了(1.6.2)</title>
+        <link>http://localhost:1313/obsidian/obsidian-v1.6/</link>
+        <pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/obsidian/obsidian-v1.6/</guid>
+        <description>
+            &lt;p&gt;v1.6 大版本更新说明&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这次更新的重点是改善应用程序中的一些长期存在的痛点。最值得注意的是，我们已经彻底检查了应用程序界面，以更好地支持右到左(RTL)语言。现在，当应用程序语言被设置为 RTL 语言时，整个界面将被镜像。我们也在&lt;strong&gt;提高脚注的编辑和阅读体验&lt;/strong&gt;方面给予了很大的关注。这个版本充满了 bug 修复，但在加载应用程序和编辑应用程序时，您可能还会注意到一些性能改进。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;重要内容&#34;&gt;重要内容
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;支持 RTL。当应用程序被设置为 RTL 语言时，界面方向现在被镜像。&lt;/li&gt;
+&lt;li&gt;更新左侧工具条布局。一个新的 Vault 切换器现在显示在底部。App Ribbon 现在可以隐藏在设置中，或者右键单击色带并选择”Hide ribbon”。&lt;/li&gt;
+&lt;li&gt;字符和单词计数现在根据当前的文本选择进行更新。&lt;/li&gt;
+&lt;li&gt;更快的工作空间加载。&lt;/li&gt;
+&lt;li&gt;更快的编辑器解析。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;其它更新&#34;&gt;其它更新
+&lt;/h2&gt;&lt;h3 id=&#34;improvements&#34;&gt;Improvements
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;“Tab” 现在将在快速切换和“移动文件”模式中完成当前选择文件的路径段。&lt;/li&gt;
+&lt;li&gt;添加 “Add alias ”命令。&lt;/li&gt;
+&lt;li&gt;增加了“创建新文件夹”命令。&lt;/li&gt;
+&lt;li&gt;在应用外修改设置文件，热键和属性类型现在会自动重新加载。&lt;/li&gt;
+&lt;li&gt;添加自定义指令和结果时，添加显示文本的链接。&lt;/li&gt;
+&lt;li&gt;提示符现在有一个”clear”按钮来清除输入。在没有输入的情况下按下按钮将会使提示消失。&lt;/li&gt;
+&lt;li&gt;页面预览弹出窗口现在应该有更一致的大小和定位。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;footnotes&#34;&gt;Footnotes
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;使用 &lt;code&gt;[^&lt;/code&gt; 为脚注引用添加自动补全&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。&lt;/li&gt;
+&lt;li&gt;修正了编辑器中脚注的解析和渲染。&lt;/li&gt;
+&lt;li&gt;增加了对内联脚注的悬浮预览支持^[这是一条内联注脚，格式为&lt;code&gt;^[content]&lt;/code&gt;]。&lt;/li&gt;
+&lt;li&gt;悬停在一个脚注ID上，会弹出一个相应的脚注。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;properties&#34;&gt;Properties
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;当合并两个属性时，新的属性名称将在全局属性列表中刷新。&lt;/li&gt;
+&lt;li&gt;现在属性列表项可以通过双击来编辑了。&lt;/li&gt;
+&lt;li&gt;如果打开的文件有无效的 frontmatter&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;，属性视图上会出现编辑按钮。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;no-longer-broken&#34;&gt;No longer broken
+&lt;/h3&gt;&lt;p&gt;各种 bug 修复&lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h3 id=&#34;formatting&#34;&gt;Formatting
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;修正了有换行符情况时的不正确格式应用。&lt;/li&gt;
+&lt;li&gt;现在切换项目列表命令(Toggle bullet list)会把任务列表变成项目列表。&lt;/li&gt;
+&lt;li&gt;修正了切换格式命令有时在编辑器的最后一行不起作用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;settings&#34;&gt;Settings
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;改进了设置内部登录界面的布局。&lt;/li&gt;
+&lt;li&gt;对安装社区主题和插件时显示的通知进行了小幅更新。&lt;/li&gt;
+&lt;li&gt;使用“adapt to system”时，“Light themes only”切换不再显示。&lt;/li&gt;
+&lt;li&gt;改进了命令调色板重新排序的拖放功能。&lt;/li&gt;
+&lt;li&gt;修正了重新排序处理程序在弹出窗口中不工作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;search&#34;&gt;Search
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;键入引号字符串时不触发搜索建议。&lt;/li&gt;
+&lt;li&gt;除非光标在查询的最后，或者下一个字符是空格，否则不会显示搜索建议。&lt;/li&gt;
+&lt;li&gt;点击“清除”按钮将不会导致搜索输入失去焦点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;table&#34;&gt;Table
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;点击 table 右侧边距(margin)，现在编辑器会聚焦。&lt;/li&gt;
+&lt;li&gt;修复 shift +箭头键不响应。&lt;/li&gt;
+&lt;li&gt;确保主编辑器的单元格更新正确更新单元格偏移量。&lt;/li&gt;
+&lt;li&gt;修复在表格单元格内解析数学块(math blocks)。&lt;/li&gt;
+&lt;li&gt;修复在表格单元格内双击不工作。&lt;/li&gt;
+&lt;li&gt;Fixed rendering tables inside callouts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;source-mode&#34;&gt;Source mode
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Fixed pressing &lt;code&gt;End&lt;/code&gt; key not moving to end of line if cursor is in table.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;live-preview&#34;&gt;Live Preview
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Fix callout menu overlapping with URL menu when right-clicking on a link.&lt;/li&gt;
+&lt;li&gt;Fix failing to render headings with trailing &lt;code&gt;#&lt;/code&gt; at the end of the line.&lt;/li&gt;
+&lt;li&gt;Fixed checklist items getting unfolded if cursor was inside a folded region.&lt;/li&gt;
+&lt;li&gt;Allow blank lines in multi-line footnotes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;reading-mode&#34;&gt;Reading mode
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Reading mode will no longer render footnote refs that contain spaces.&lt;/li&gt;
+&lt;li&gt;Fixed rendering of inline footnotes in reading mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;themes&#34;&gt;Themes
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Switched to Cascadia Mono instead of Cascadia Code for default monospace on Windows.&lt;/li&gt;
+&lt;li&gt;Bold is now computed based on the current text weight, so bold inside a heading will still appear bold.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;--caret-color&lt;/code&gt; CSS variable to make it easier to style caret color on both desktop and mobile.&lt;/li&gt;
+&lt;li&gt;Added new &lt;code&gt;--link-weight&lt;/code&gt; variable.&lt;/li&gt;
+&lt;li&gt;The user&amp;rsquo;s interface language is added to the &lt;code&gt;lang&lt;/code&gt; attribute on the &lt;code&gt;html&lt;/code&gt; element, which allows language-specific CSS rules.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;.mod-rtl&lt;/code&gt; class is added to &lt;code&gt;body&lt;/code&gt; element when the user&amp;rsquo;s interface language is RTL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;plugins&#34;&gt;Plugins
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;processFrontmatter&lt;/code&gt; failing to process file if all properties are removed.&lt;/li&gt;
+&lt;li&gt;Improve detection of external config changes.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ve made several improvements to the behavior of &lt;code&gt;app.emulateMobile&lt;/code&gt; that should make it easier to test that your plugins are mobile-compatible. Attempting to run a NodeJS library will present a Notice. Drag and drop will more accurately mirror the behavior on mobile. The app will have default &lt;code&gt;safe-area-inset&lt;/code&gt; properties set so that your views properly account for offsets in the mobile device viewport (such as the iPhone Dynamic Island).&lt;/li&gt;
+&lt;li&gt;Bare modals should respect &lt;code&gt;safe-area-insets&lt;/code&gt; by default.&lt;/li&gt;
+&lt;li&gt;Added loading state to some of the settings button that make remote requests.&lt;/li&gt;
+&lt;li&gt;Global &lt;code&gt;app&lt;/code&gt; has been completely removed from the API spec (previously it was marked as deprecated).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference
+&lt;/h2&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/changelog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Changelog&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Basic formatting syntax &lt;a class=&#34;link&#34; href=&#34;https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Basic&amp;#43;formatting&amp;#43;syntax#Footnotes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Footnotes&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.obsidian.md/Getting&amp;#43;started/Glossary#Frontmatter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Frontmatter&lt;/a&gt; is a way to define &lt;a class=&#34;link&#34; href=&#34;https://help.obsidian.md/Getting&amp;#43;started/Glossary#property&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;properties&lt;/a&gt; by adding &lt;a class=&#34;link&#34; href=&#34;https://yaml.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;YAML&lt;/a&gt; or &lt;a class=&#34;link&#34; href=&#34;https://www.json.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;JSON&lt;/a&gt; at the top of the note. See also &lt;a class=&#34;link&#34; href=&#34;https://help.obsidian.md/Editing&amp;#43;and&amp;#43;formatting/Properties#Property%20format&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Property format&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>5 分钟向你推荐 Obsidian</title>
+        <link>http://localhost:1313/obsidian/obsidian-101/</link>
+        <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/obsidian/obsidian-101/</guid>
+        <description>
+            &lt;p&gt;Obsidian 是一款基于 markdown 格式的笔记软件，它的所有文件都保存在本地，确保了数据的安全性和隐私性。用户可以通过文件夹式管理来组织笔记，并且可以同时打开多个库（文件夹）来管理不同类型的内容。Obsidian 支持双向链接，可以生成关系图谱，帮助用户构建知识体系。此外，Obsidian 提供了丰富的插件，如日记插件、PPT 插件、思维导图插件等，用户可以根据自己的需求进行个性化配置。&lt;/p&gt;
+&lt;p&gt;如何向小伙伴们安利 Obsidian 呢，这里列出了以下几个问题。&lt;/p&gt;
+&lt;h2 id=&#34;418-用-chatgpt-整理的问题&#34;&gt;4.18 用 ChatGPT 整理的问题
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;What is Obsidian? &lt;a class=&#34;link&#34; href=&#34;#/1/0&#34; &gt;&lt;i class=&#34;fas fa-book-open&#34; /&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;它与其他笔记应用相比有哪些独特之处？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How to Get Started? &lt;a class=&#34;link&#34; href=&#34;#/2&#34; &gt;&lt;i class=&#34;fas fa-hand-pointer&#34; /&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt; 对于新用户来说，设置和使用流程是怎样的？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Which Platforms are Supported? &lt;a class=&#34;link&#34; href=&#34;#/3&#34; &gt;&lt;i class=&#34;fas fa-play&#34; /&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;是否可以在不同的操作系统或设备上使用？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Where is the Data Stored? &lt;a class=&#34;link&#34; href=&#34;#/4&#34; &gt;&lt;i class=&#34;fas fa-database&#34; /&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;是否支持分享与协作编辑？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Is Obsidian Free?
+&lt;ul&gt;
+&lt;li&gt;个人用户使用是否需要付费？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;update-64-with-llama3-70b-8192&#34;&gt;Update 6.4, with LLaMA3 70b-8192
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;我要向第一次接触 Obsidian 的朋友介绍这个软件。希望他们从现有的笔记软件转移到 ob 上；
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;假设你使用过 Evernote 和 Notion，但刚刚接触 obsidian，你会提出哪些问题呢？给出最有可能的前 5 个问题并回答
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Q1: Obsidian 和其他笔记应用程序（如 Evernote 或 OneNote）有什么不同之处？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A1: Obsidian 的独特之处在于它的双向链接功能，这使您可以创建一个交叉连接的笔记网络。另外，Obsidian 还具有高度的自定义性和灵活性，允许您根据特定的需求和工作流程来调整应用程序。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q2: 我如何在 Obsidian 中组织我的笔记？是像传统的文件夹结构一样吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A2: Obsidian 使用非层次结构的图形结构，这意味着您不需要担心创建文件夹或以一种僵固的方式分类您的笔记。相反，您可以创建笔记并将它们链接起来，创建一个交叉连接的想法网络。您也可以使用标签、关键词和其他元数据来帮助您找到和过滤您的笔记。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q3: 我如何在 Obsidian 中创建笔记之间的链接？是否类似于创建超链接？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A3: 是的，在 Obsidian 中创建笔记之间的链接类似于创建超链接。您可以使用双括号 &lt;code&gt;[[&lt;/code&gt; 和 &lt;code&gt;]]&lt;/code&gt; 将笔记标题括起来，从而创建到该笔记的链接。您也可以使用编辑器中的“链接”按钮来创建到笔记的链接。此外，Obsidian 还具有自动完成功能，可以在您输入时建议链接到其他笔记。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q4: 我可以使用 Obsidian 进行协作工作或与他人共享笔记吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A4: 是的，Obsidian 支持协作工作和笔记共享。您可以创建一个“金库”，这是一个共享的笔记仓库，并邀请他人编辑或查看您的笔记。您也可以使用 Obsidian 的“发布”功能将单个笔记或笔记集合作为网页共享。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q5: Obsidian 是否可以在移动设备上使用，还是只能在桌面电脑上使用？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A5: 目前，Obsidian 可以作为桌面应用程序在 Windows、macOS 和 Linux 上使用。然而，Obsidian 团队正在开发移动应用程序以便在 Android 和 iOS 设备上使用。在那之前，您可以通过 Obsidian 的 web 界面在移动设备上访问和编辑您的笔记。&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Obsidian 笔记综述</title>
+        <link>http://localhost:1313/obsidian/obsidian-review/</link>
+        <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/obsidian/obsidian-review/</guid>
+        <description>
+            &lt;p&gt;上手，从 2023 年底，使用社区插件 &lt;code&gt;Importer&lt;/code&gt;，把 Notion 上的近 900 篇笔记迁移到 OB；从此就开始了边用、边学、边分享的快乐过程。&lt;/p&gt;
+&lt;h2 id=&#34;应用场景篇&#34;&gt;应用场景篇
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;快速创建闪念笔记，使用 Templater 插件 23/12/17&lt;/li&gt;
+&lt;li&gt;做提案，使用 advanced-slides 插件 23/12/23&lt;/li&gt;
+&lt;li&gt;做主题阅读笔记，使用 dataview 插件 23/12/29&lt;/li&gt;
+&lt;li&gt;做脑图，使用 Excalidraw 插件 24/1/5&lt;/li&gt;
+&lt;li&gt;健康打卡，使用 Habit Tracker + Templater 插件 24/2/23&lt;/li&gt;
+&lt;li&gt;周期笔记的管理 24/3/31&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;插件篇&#34;&gt;插件篇
+&lt;/h2&gt;&lt;p&gt;有一些插件，是值得好好学学的，因为回报会更大。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Advanced Slides 边用边学，定制化最高的一个插件&lt;/li&gt;
+&lt;li&gt;Excalidraw 系列 24/1/12&lt;/li&gt;
+&lt;li&gt;Templater 一个离不开的插件&lt;/li&gt;
+&lt;li&gt;Dataview&lt;/li&gt;
+&lt;li&gt;QuickAdd&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;有一些插件，在特定应用场景下很有用，有类似需求的时候需要了解一下。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Habit Tracker 月度记录&lt;/li&gt;
+&lt;li&gt;Dice Roller 内容随机访问&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;还有一些插件，已经有好的替代了，一定要谨慎使用。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;markmind 脑图渲染，编辑功能有缺陷。更推荐用 excalidraw&lt;/li&gt;
+&lt;li&gt;Buttons 有缺陷，用 QuickAdd 替换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;知识库方法论篇&#34;&gt;知识库方法论篇
+&lt;/h2&gt;&lt;p&gt;目标、理论与实践，三者要统一。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;笔记的组织 24/3/9&lt;/li&gt;
+&lt;li&gt;知识的提炼 24/3/16&lt;/li&gt;
+&lt;/ol&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

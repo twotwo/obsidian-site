@@ -1,11 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Template on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/template/</link><description>Recent content in Template on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 23 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/template/index.xml" rel="self" type="application/rss+xml"/><item><title>Update Google Analytics to GA4</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-add-google-analytics/</link><pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-add-google-analytics/</guid><description>
-&lt;p>在官网找到 Google Analytics 4 Property Setup Assistant, 点击确认后出现 &lt;code>You have successfully connected your properties.&lt;/code>&lt;/p>
-&lt;p>&lt;a class="link" href="https://support.google.com/analytics/answer/9744165?hl=en_US&amp;amp;utm_id=ad" target="_blank" rel="noopener"
->Learn more about Google Analytics 4 properties&lt;/a>&lt;/p>
-&lt;p>Hugo 后台告警&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">WARN Google Analytics &lt;span class="m">4&lt;/span> &lt;span class="o">(&lt;/span>GA4&lt;span class="o">)&lt;/span> replaced Google Universal Analytics &lt;span class="o">(&lt;/span>UA&lt;span class="o">)&lt;/span> effective &lt;span class="m">1&lt;/span> July 2023. See https://support.google.com/analytics/answer/11583528. Create a GA4 property and data stream, &lt;span class="k">then&lt;/span> replace the Google Analytics ID in your site configuration with the new value.
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>修改 &lt;code>hugo.yml&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">googleAnalytics&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">88888888&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>生效后，页面中加入了&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">async&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;https://www.googletagmanager.com/gtag/js?id=88888888&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Template on All in Obsidian</title>
+        <link>http://localhost:1313/tags/template/</link>
+        <description>Recent content in Template on All in Obsidian</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>li3huo (li3huo)</managingEditor>
+        <webMaster>li3huo (li3huo)</webMaster>
+        <lastBuildDate>Thu, 23 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/template/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Update Google Analytics to GA4</title>
+        <link>http://localhost:1313/hugo/hugo-add-google-analytics/</link>
+        <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
+        <author>li3huo (li3huo)</author>
+        <guid>http://localhost:1313/hugo/hugo-add-google-analytics/</guid>
+        <description>
+            &lt;p&gt;在官网找到 Google Analytics 4 Property Setup Assistant, 点击确认后出现 &lt;code&gt;You have successfully connected your properties.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.google.com/analytics/answer/9744165?hl=en_US&amp;amp;utm_id=ad&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Learn more about Google Analytics 4 properties&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hugo 后台告警&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;WARN  Google Analytics &lt;span class=&#34;m&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;GA4&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; replaced Google Universal Analytics &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;UA&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; effective &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; July 2023. See https://support.google.com/analytics/answer/11583528. Create a GA4 property and data stream, &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt; replace the Google Analytics ID in your site configuration with the new value.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改 &lt;code&gt;hugo.yml&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;googleAnalytics&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;88888888&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;生效后，页面中加入了&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;async&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://www.googletagmanager.com/gtag/js?id=88888888&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

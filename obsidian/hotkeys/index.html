@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Hugo Book 主题配置要点">
-<title>Hugo Book 主题配置指南</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Obsidian 快捷键">
+<title>Obsidian Hotkeys</title>
 
-<link rel='canonical' href='http://localhost:1313/hugo/hugo-theme-book/'>
+<link rel='canonical' href='http://localhost:1313/obsidian/hotkeys/'>
 
-<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Hugo Book 主题配置指南">
-<meta property='og:description' content="Hugo Book 主题配置要点">
-<meta property='og:url' content='http://localhost:1313/hugo/hugo-theme-book/'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Obsidian Hotkeys">
+<meta property='og:description' content="Obsidian 快捷键">
+<meta property='og:url' content='http://localhost:1313/obsidian/hotkeys/'>
 <meta property='og:site_name' content='All in Obsidian'>
-<meta property='og:type' content='article'><meta property='article:section' content='Hugo' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2024-05-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-06-11T17:07:09&#43;08:00'/>
-<meta name="twitter:title" content="Hugo Book 主题配置指南">
-<meta name="twitter:description" content="Hugo Book 主题配置要点">
+<meta property='og:type' content='article'><meta property='article:section' content='Obsidian' /><meta property='article:published_time' content='2024-08-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-08-02T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Obsidian Hotkeys">
+<meta name="twitter:description" content="Obsidian 快捷键">
   
     
       <script async src="https://www.googletagmanager.com/gtag/js?id=397053425"></script>
@@ -298,10 +298,21 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#参考资料">参考资料</a></li>
-    <li><a href="#显示-post-属性">显示 Post 属性</a></li>
-    <li><a href="#extra-customisation">Extra Customisation</a></li>
-    <li><a href="#右侧菜单">右侧菜单</a></li>
+    <li><a href="#内置快捷键">内置快捷键</a>
+      <ol>
+        <li><a href="#操作类">操作类</a></li>
+        <li><a href="#编辑类">编辑类</a></li>
+        <li><a href="#viewing-hotkeys">Viewing hotkeys</a></li>
+      </ol>
+    </li>
+    <li><a href="#设置快捷键">设置快捷键</a>
+      <ol>
+        <li><a href="#setting-hotkeys">Setting hotkeys</a></li>
+        <li><a href="#hotkeysjson">hotkeys.json</a></li>
+      </ol>
+    </li>
+    <li><a href="#my-hotkeys">My hotkeys</a></li>
+    <li><a href="#reference">Reference</a></li>
   </ol>
 </nav>
         </div>
@@ -320,8 +331,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" >
-                个人网站
+            <a href="/categories/Obsidian/" >
+                Obsidian
             </a>
         
     </header>
@@ -329,12 +340,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/hugo/hugo-theme-book/">Hugo Book 主题配置指南</a>
+            <a href="/obsidian/hotkeys/">Obsidian Hotkeys</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Hugo Book 主题配置要点
+            Obsidian 快捷键
         </h3>
         
     </div>
@@ -355,7 +366,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024-05-26</time>
+                <time class="article-time--published">2024-08-02</time>
             </div>
         
 
@@ -385,65 +396,122 @@
     <section class="article-content">
     
     
-    <h2 id="参考资料">参考资料
-</h2><ul>
-<li><a class="link" href="https://themes.gohugo.io/themes/hugo-book/"  target="_blank" rel="noopener"
-    >官网文档</a></li>
-<li><a class="link" href="https://github.com/alex-shpak/hugo-book"  target="_blank" rel="noopener"
-    >https://github.com/alex-shpak/hugo-book</a></li>
-<li><a class="link" href="https://hugo-book-demo.netlify.app/"  target="_blank" rel="noopener"
-    >Demo site</a></li>
+    <p>Obsidian 笔记编辑默认支持了一些快捷键<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。用户也可以自定义快捷键，提示编辑效率。<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>。</p>
+<h2 id="内置快捷键">内置快捷键
+</h2><h3 id="操作类">操作类
+</h3><ul>
+<li>Open settings: <code>Cmd + ,</code></li>
+<li>Open command palette: <code>Cmd + P</code> <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+<li>Open quick switcher: <code>Cmd + O</code></li>
+<li>Open graph view: <code>Cmd + G</code></li>
 </ul>
-<h2 id="显示-post-属性">显示 Post 属性
-</h2><p>提供的 <a class="link" href="https://themes.gohugo.io/themes/hugo-book/#partials"  target="_blank" rel="noopener"
-    >partials</a> 没地方加作者</p>
-<p>只能 overwrite <code>layouts/partials/docs/post-meta.html</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;h5&gt;
-</span></span><span class="line"><span class="cl">{{ with .Date }}
-</span></span><span class="line"><span class="cl">  {{ partial &#34;docs/date&#34; (dict &#34;Date&#34; . &#34;Format&#34; $.Site.Params.DateFormat) }}
-</span></span><span class="line"><span class="cl">{{ end }}
-</span></span><span class="line"><span class="cl">· 
-</span></span><span class="line"><span class="cl">{{ with .Params.author }}
-</span></span><span class="line"><span class="cl">  {{ . }}
-</span></span><span class="line"><span class="cl">{{ else }}
-</span></span><span class="line"><span class="cl">  {{ .Site.Params.author }}
-</span></span><span class="line"><span class="cl">{{ end }}
-</span></span><span class="line"><span class="cl">&lt;/h5&gt;
-</span></span></code></pre></div><h2 id="extra-customisation">Extra Customisation
-</h2><p><code>assets/_fonts.scss</code> 替换默认字体</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@import url(&#39;https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css&#39;);
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">body {
-</span></span><span class="line"><span class="cl">  font-family: &#34;LXGW WenKai Screen&#34;, sans-serif;
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></div><h2 id="右侧菜单">右侧菜单
-</h2><p>编写 <code>content/menu/book/index.md</code></p>
-<p>在配置中设置：<code>params.BookMenuBundle: /menu/book</code></p>
+<h3 id="编辑类">编辑类
+</h3><p>已经内置的编辑快捷键<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>，包括</p>
+<ul>
+<li>常见操作（如复制、剪切、粘贴、撤销和重做）</li>
+<li><mark class="more-highlight red-highlighter">文本格式化</mark>（只内置了黑体和斜体两种）</li>
+<li>文本编辑（如插入新行、删除字符或单词）</li>
+<li>文本导航（如光标移动、页面滚动、文首<code>Cmd+↑</code>、文末<code>Cmd+↓</code>）</li>
+<li><mark class="more-highlight yellow-highlighter">文本选择</mark>（如列式选择 <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>： 按住<code>Shift+Option</code>后拖拽鼠标，扩展选择区域： 单字符<code>Shift+←/→</code>、页<code>Ctrl+Shift+←/→</code>）</li>
+</ul>
+<h3 id="viewing-hotkeys">Viewing hotkeys
+</h3><p>用户可以通过命令面板快速查看命令的快捷键。</p>
+<h2 id="设置快捷键">设置快捷键
+</h2><h3 id="setting-hotkeys">Setting hotkeys
+</h3><p>用户可以在设置中的快捷键部分添加、删除或恢复快捷键。</p>
+<h3 id="hotkeysjson">hotkeys.json
+</h3><p>每个 <em>vault</em> 都包含一个 <code>.obsidian</code> 配置文件夹，其中包含了该 <em>vault</em> 特定的设置，如快捷键(<code>hotkeys.json</code>)、主题(<code>appearance.json</code>)和插件(<code>community-plugins.json</code>)。</p>
+<p>所以我们可以通过拷贝 <code>.obsidian/hotkeys.json</code> 文件的方式来共享快捷键配置。</p>
+<h2 id="my-hotkeys">My hotkeys
+</h2><p>Markdown 编辑用快捷键，都是 <code>Ctrl</code> 打头</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>editor:set-heading-1</td>
+<td><code>Ctrl+1</code></td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td><code>Ctrl+...</code></td>
+</tr>
+<tr>
+<td>editor:set-heading-6</td>
+<td><code>Ctrl+6</code></td>
+</tr>
+<tr>
+<td>editor:toggle-bullet-list</td>
+<td><code>Ctrl+b</code></td>
+</tr>
+<tr>
+<td>editor:toggle-numbered-list</td>
+<td><code>Ctrl+n</code></td>
+</tr>
+<tr>
+<td>editor:toggle-highlight</td>
+<td><code>Ctrl+h</code></td>
+</tr>
+<tr>
+<td>editor:fold-all</td>
+<td><code>Ctrl+f</code></td>
+</tr>
+<tr>
+<td>editor:unfold-all</td>
+<td><code>Ctrl+u</code></td>
+</tr>
+<tr>
+<td>editor:swap-line-up</td>
+<td><code>Ctrl+Cmd+↑</code></td>
+</tr>
+<tr>
+<td>editor:swap-line-down</td>
+<td><code>Ctrl+Cmd+↓</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Obsidian 1.6 后的版本，无法在界面中绑定 <code>Cmd + Shift</code> 组合的快捷方式了，直接在配置中设置的，倒是也依然有效。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="s2">&#34;modifiers&#34;</span><span class="err">:</span> <span class="p">[</span> <span class="s2">&#34;Mod&#34;</span><span class="p">,</span> <span class="s2">&#34;Shift&#34;</span> <span class="p">]</span>
+</span></span></code></pre></div><p>后来决定都调整为 <code>Ctrl + Shift</code> 了。</p>
+<p>大家也可以看一下论坛上的快捷键最佳实践帖 <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
+<h2 id="reference">Reference
+</h2><div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a class="link" href="https://help.obsidian.md/Editing&#43;and&#43;formatting/Editing&#43;shortcuts"  target="_blank" rel="noopener"
+    >https://help.obsidian.md/Editing+and+formatting/Editing+shortcuts</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a class="link" href="https://help.obsidian.md/User&#43;interface/Hotkeys"  target="_blank" rel="noopener"
+    >https://help.obsidian.md/User+interface/Hotkeys</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a class="link" href="https://help.obsidian.md/Plugins/Command&#43;palette"  target="_blank" rel="noopener"
+    >https://help.obsidian.md/Plugins/Command+palette</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a class="link" href="https://help.obsidian.md/Editing&#43;and&#43;formatting/Multiple&#43;cursors"  target="_blank" rel="noopener"
+    >https://help.obsidian.md/Editing+and+formatting/Multiple+cursors</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p><a class="link" href="https://forum.obsidian.md/t/obsidian-hotkeys-favorites-and-best-practices/12125"  target="_blank" rel="noopener"
+    >https://forum.obsidian.md/t/obsidian-hotkeys-favorites-and-best-practices/12125</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
 </section>
 
 
     <footer class="article-footer">
     
-    <section class="article-tags">
-        
-            <a href="/tags/hugo/">Hugo</a>
-        
-    </section>
 
-
-    <section class="article-lastmod">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <span>
-            Last updated on 2024-06-11 17:07
-        </span>
-    </section></footer>
+    </footer>
 
 
     
@@ -460,12 +528,12 @@
             
                 
 <article class="">
-    <a href="/hugo/hugo-advanced-guide/">
+    <a href="/obsidian/obsidian-tasks-management/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo 进阶</h2>
+            <h2 class="article-title">Best tasks plugin in Obsidian</h2>
         </div>
     </a>
 </article>
@@ -473,12 +541,12 @@
             
                 
 <article class="">
-    <a href="/hugo/hugo-theme-cleanwhite/">
+    <a href="/obsidian/excalibrain-getting-started/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo Clean White 主题配置指南</h2>
+            <h2 class="article-title">Getting started with ExcaliBrain</h2>
         </div>
     </a>
 </article>
@@ -486,12 +554,12 @@
             
                 
 <article class="">
-    <a href="/hugo/hugo-theme-hello-friend-ng/">
+    <a href="/obsidian/excalidraw-features/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo Hello Friend NG 主题配置指南</h2>
+            <h2 class="article-title">Excalidraw Features</h2>
         </div>
     </a>
 </article>
@@ -499,12 +567,12 @@
             
                 
 <article class="">
-    <a href="/hugo/hugo-theme-seven/">
+    <a href="/obsidian/concept-modeling/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo Seven 主题配置指南</h2>
+            <h2 class="article-title">用概念图🗺️表述想法💡</h2>
         </div>
     </a>
 </article>
@@ -512,12 +580,12 @@
             
                 
 <article class="">
-    <a href="/hugo/hugo-themes-overview/">
+    <a href="/obsidian/youtube-channels/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo 主题概览</h2>
+            <h2 class="article-title">Youtube 上的 Obsidian 学习频道</h2>
         </div>
     </a>
 </article>
