@@ -918,16 +918,76 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Obsidian Hotkeys</title><link>https://all-in-obsidian.li3huo.com/obsidian/hotkeys/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/hotkeys/</guid><description>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>AnuPpuccin</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</link><pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</guid><description>
+&lt;p>Nicole 分享了使用 AnuPpuccin 主题 + Style Settings 插件进行界面美化的方法。&lt;/p>
+&lt;h2 id="colors">Colors
+&lt;/h2>&lt;p>Favorite Color:&lt;/p>
+&lt;ul>
+&lt;li>klein blue: &lt;code>#002fa7&lt;/code>&lt;/li>
+&lt;li>mars green &lt;code>#008c8c&lt;/code>&lt;/li>
+&lt;li>tiffany blue &lt;code>#81d8cf&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="参考视频">参考视频
+&lt;/h2>&lt;p>&lt;a class="link" href="https://youtu.be/7-SOwxpZQNI" target="_blank" rel="noopener"
+>My new favorite Obsidian theme&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>00:00 Intro&lt;/li>
+&lt;li>00:59 Installing AnuPpuccin&lt;/li>
+&lt;li>01:33 Installing Style Settings&lt;/li>
+&lt;li>04:22 Custom checkboxes and speech bubbles&lt;/li>
+&lt;li>05:25 Rainbow folders&lt;/li>
+&lt;li>07:17 Typography, headings, decorations&lt;/li>
+&lt;li>09:48 Cards layout&lt;/li>
+&lt;li>10:40 Extended color schemes&lt;/li>
+&lt;li>13:16 Minimal Cards in Anup&lt;/li>
+&lt;/ul>
+&lt;h2 id="integration">Integration
+&lt;/h2>&lt;h3 id="minimal-cards">Minimal Cards
+&lt;/h3>&lt;p>.scss -&amp;gt; css&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> npm install -g sass
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sass minimal-cards.scss minimal-cards.css
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a class="link" href="https://github.com/kepano/obsidian-minimal/blob/master/README.md#cards" target="_blank" rel="noopener"
+>https://github.com/kepano/obsidian-minimal/blob/master/README.md#cards&lt;/a>&lt;/p>
+&lt;p>&lt;code>cssClasses: cards&lt;/code>&lt;/p>
+&lt;h2 id="workspace">Workspace
+&lt;/h2>&lt;h3 id="workspace-layout">Workspace Layout
+&lt;/h3>&lt;p>Workspace Layout variant: &lt;code>Cards&lt;/code>&lt;/p></description></item><item><title>Obsidian Hotkeys</title><link>https://all-in-obsidian.li3huo.com/obsidian/hotkeys/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/hotkeys/</guid><description>
 &lt;p>Obsidian 笔记编辑默认支持了一些快捷键&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。用户也可以自定义快捷键，提示编辑效率。&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
 &lt;h2 id="内置快捷键">内置快捷键
 &lt;/h2>&lt;h3 id="操作类">操作类
-&lt;/h3>&lt;ul>
-&lt;li>Open settings: &lt;code>Cmd + ,&lt;/code>&lt;/li>
-&lt;li>Open command palette: &lt;code>Cmd + P&lt;/code> &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/li>
-&lt;li>Open quick switcher: &lt;code>Cmd + O&lt;/code>&lt;/li>
-&lt;li>Open graph view: &lt;code>Cmd + G&lt;/code>&lt;/li>
-&lt;/ul>
+&lt;/h3>&lt;blockquote>
+&lt;p>Windows / Linux 把 Cmd 换成 Ctrl&lt;/p>
+&lt;/blockquote>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Action&lt;/th>
+&lt;th>Shortcut&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Open help&lt;/td>
+&lt;td>&lt;code>F1&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Open settings&lt;/td>
+&lt;td>&lt;code>Cmd + ,&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Open command palette&lt;/td>
+&lt;td>&lt;code>Cmd + P&lt;/code> &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Open quick switcher&lt;/td>
+&lt;td>&lt;code>Cmd + O&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Open graph view&lt;/td>
+&lt;td>&lt;code>Cmd + G&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;h3 id="编辑类">编辑类
 &lt;/h3>&lt;p>已经内置的编辑快捷键&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，包括&lt;/p>
 &lt;ul>
@@ -935,11 +995,16 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;li>&lt;mark class="more-highlight red-highlighter">文本格式化&lt;/mark>（只内置了黑体和斜体两种）&lt;/li>
 &lt;li>文本编辑（如插入新行、删除字符或单词）&lt;/li>
 &lt;li>文本导航（如光标移动、页面滚动、文首&lt;code>Cmd+↑&lt;/code>、文末&lt;code>Cmd+↓&lt;/code>）&lt;/li>
-&lt;li>&lt;mark class="more-highlight yellow-highlighter">文本选择&lt;/mark>（如列式选择 &lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>： 按住&lt;code>Shift+Option&lt;/code>后拖拽鼠标，扩展选择区域： 单字符&lt;code>Shift+←/→&lt;/code>、页&lt;code>Ctrl+Shift+←/→&lt;/code>）&lt;/li>
+&lt;li>&lt;mark class="more-highlight yellow-highlighter">文本选择&lt;/mark>（如扩展选择区域： 单字符&lt;code>Shift+←/→&lt;/code>、页&lt;code>Ctrl+Shift+←/→&lt;/code>；列式选择 &lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>： 按住&lt;code>Shift+Option&lt;/code>后拖拽鼠标）&lt;/li>
 &lt;/ul>
 &lt;h2 id="快捷键管理">快捷键管理
 &lt;/h2>&lt;h3 id="viewing-hotkeys">Viewing hotkeys
 &lt;/h3>&lt;p>用户可以通过命令面板快速查看命令的快捷键。&lt;/p>
+&lt;ul>
+&lt;li>&lt;i class="fas fa-filter" /> Assigned / Assigned by me / Unassigned&lt;/li>
+&lt;li>🔍 输入要检索的快捷方式的名称，比如 &lt;code>create new note&lt;/code>&lt;/li>
+&lt;li>⌨ 输入要检索的快捷键，比如 &lt;code>Cmd + N&lt;/code>&lt;/li>
+&lt;/ul>
 &lt;h3 id="setting-hotkeys">Setting hotkeys
 &lt;/h3>&lt;p>用户可以在设置中的&lt;strong>快捷键&lt;/strong>部分，添加、删除或恢复快捷键。&lt;/p>
 &lt;h2 id="my-hotkeys">My hotkeys
