@@ -918,17 +918,50 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>AnuPpuccin</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</link><pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</guid><description>
-&lt;p>Nicole 分享了使用 AnuPpuccin 主题 + Style Settings 插件进行界面美化的方法。&lt;/p>
-&lt;h2 id="colors">Colors
-&lt;/h2>&lt;p>Favorite Color:&lt;/p>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>推荐主题：AnuPpuccin</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</link><pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</guid><description>
+&lt;p>AnuPpuccin 是一个为 Obsidian 知识库设计的主题，由 AnubisNekhet 维护，支持多种颜色方案和布局，并且获得了 2022 年度最佳主题奖。&lt;/p>
+&lt;!-- more -->
+&lt;h2 id="外观设置v167">外观设置(v1.6.7)
+&lt;/h2>&lt;h3 id="基础参数">基础参数
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Base color scheme(Dark/Light)，确定基础颜色；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Accent color，设置主题色。&lt;/p>
+&lt;p>Favorite Color&lt;/p>
 &lt;ul>
-&lt;li>klein blue: &lt;code>#002fa7&lt;/code>&lt;/li>
+&lt;li>sky blue &lt;code>#245e73&lt;/code>&lt;/li>
 &lt;li>mars green &lt;code>#008c8c&lt;/code>&lt;/li>
 &lt;li>tiffany blue &lt;code>#81d8cf&lt;/code>&lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Themes&lt;/p>
+&lt;p>安装主题：AnuPpuccin`(1.5.0)&lt;/p>
+&lt;p>安装伴侣插件： &lt;code>Style Settings&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="css-snippets">CSS snippets
+&lt;/h3>&lt;p>:LiFolder: Open snippets folder / :LiRefreshCcw: Reload snippets&lt;/p>
+&lt;h3 id="其余参数">其余参数
+&lt;/h3>&lt;p>对整体外观影响较小，使用默认参数即可。&lt;/p>
+&lt;h2 id="style-settings">Style Settings
+&lt;/h2>&lt;p>![[/photos/obsidian/style-settings.jpg]]&lt;/p>
+&lt;h3 id="integration">Integration
+&lt;/h3>&lt;h4 id="minimal-cards">Minimal Cards
+&lt;/h4>&lt;p>.scss -&amp;gt; css&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> npm install -g sass
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sass minimal-cards.scss minimal-cards.css
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a class="link" href="https://github.com/kepano/obsidian-minimal/blob/master/README.md#cards" target="_blank" rel="noopener"
+>https://github.com/kepano/obsidian-minimal/blob/master/README.md#cards&lt;/a>&lt;/p>
+&lt;p>&lt;code>cssClasses: cards&lt;/code>&lt;/p>
+&lt;h3 id="workspace">Workspace
+&lt;/h3>&lt;h4 id="workspace-layout">Workspace Layout
+&lt;/h4>&lt;p>Workspace Layout variant: &lt;code>Cards&lt;/code>&lt;/p>
 &lt;h2 id="参考视频">参考视频
-&lt;/h2>&lt;p>&lt;a class="link" href="https://youtu.be/7-SOwxpZQNI" target="_blank" rel="noopener"
+&lt;/h2>&lt;p>Nicole 分享了使用 AnuPpuccin 主题 + Style Settings 插件进行界面美化的方法。&lt;/p>
+&lt;p>&lt;a class="link" href="https://youtu.be/7-SOwxpZQNI" target="_blank" rel="noopener"
 >My new favorite Obsidian theme&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>00:00 Intro&lt;/li>
@@ -941,17 +974,209 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;li>10:40 Extended color schemes&lt;/li>
 &lt;li>13:16 Minimal Cards in Anup&lt;/li>
 &lt;/ul>
-&lt;h2 id="integration">Integration
-&lt;/h2>&lt;h3 id="minimal-cards">Minimal Cards
-&lt;/h3>&lt;p>.scss -&amp;gt; css&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> npm install -g sass
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sass minimal-cards.scss minimal-cards.css
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a class="link" href="https://github.com/kepano/obsidian-minimal/blob/master/README.md#cards" target="_blank" rel="noopener"
->https://github.com/kepano/obsidian-minimal/blob/master/README.md#cards&lt;/a>&lt;/p>
-&lt;p>&lt;code>cssClasses: cards&lt;/code>&lt;/p>
+&lt;p>AnuPpuccin(/&amp;lsquo;ænjuːputʃin/) 是一个为 Obsidian 设计的个人主题，由 &lt;a class="link" href="https://github.com/AnubisNekhet" target="_blank" rel="noopener"
+>AnubisNekhet&lt;/a> 开发并在 GitHub 上开源。该主题支持多种颜色方案，包括 Catppuccin、Dracula 等，并提供了两种布局选项。用户可以通过 Git 命令行安装和更新主题。&lt;/p>
+&lt;h3 id="features">Features
+&lt;/h3>&lt;ul>
+&lt;li>自定义调色板 Custom palette&lt;/li>
+&lt;li>两种布局变体 2 layout variants&lt;/li>
+&lt;li>彩虹文件夹&lt;/li>
+&lt;li>自定义边框 Frames&lt;/li>
+&lt;li>自定义 Decorations，斜体和粗体的文本&lt;/li>
+&lt;li>自定义 Callout&lt;/li>
+&lt;li>彩色 Checkbox&lt;/li>
+&lt;li>标记样式 CSS&lt;/li>
+&lt;li>推荐字体：界面 &lt;code>Overpass&lt;/code>，文本 &lt;code>Rubik&lt;/code>，标题 &lt;code>Noto Serif&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>主题的默认主题是 Latte 和 Mocha，分别用于浅色模式和深色模式。&lt;/p>
+&lt;p>主题支持 &lt;code>Excalidraw&lt;/code>、&lt;code>Kanban&lt;/code> 和 &lt;code>Style Settings&lt;/code> 插件的集成。&lt;/p>
+&lt;h3 id="项目状态">项目状态
+&lt;/h3>&lt;p>因开发者的学业和项目任务，项目处于休眠状态，暂时可能无法及时修复 bug 和问题。&lt;/p>
+&lt;p>目前版本 v1.5.0, 2024/5/11&lt;/p>
+&lt;h3 id="file-over-app-的设计">File over App 的设计
+&lt;/h3>&lt;p>用户：笔记和资源文件
+应用：应用、配置、资源&lt;/p>
+&lt;p>应用视图
+笔记视图&lt;/p></description></item><item><title>推荐主题：Minimal</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-minimal/</link><pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-minimal/</guid><description>
+&lt;p>Minimal 是一个为 Obsidian 知识库设计的主题，由 Steph Ango 维护，旨在提供无干扰的写作和阅读体验。主题遵循 MIT 许可证，并且在 GitHub 上有超过 3.6k 的星标。&lt;/p>
+&lt;!-- more -->
+&lt;h2 id="外观设置v167">外观设置(v1.6.7)
+&lt;/h2>&lt;h3 id="基础参数">基础参数
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Base color scheme(Dark/Light)，确定基础颜色；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Accent color，设置主题色。&lt;/p>
+&lt;p>Favorite Color&lt;/p>
+&lt;ul>
+&lt;li>sky blue &lt;code>#245e73&lt;/code>&lt;/li>
+&lt;li>mars green &lt;code>#008c8c&lt;/code>&lt;/li>
+&lt;li>tiffany blue &lt;code>#81d8cf&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Themes&lt;/p>
+&lt;p>安装主题：&lt;code>Minimal&lt;/code>(7.7.14)&lt;/p>
+&lt;p>安装伴侣插件： &lt;code>Minimal Theme Settings&lt;/code> / &lt;code>Style Settings&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="css-snippets">CSS snippets
+&lt;/h3>&lt;p>:LiFolder: Open snippets folder / :LiRefreshCcw: Reload snippets&lt;/p>
+&lt;h3 id="其余参数">其余参数
+&lt;/h3>&lt;p>对整体外观影响较小，使用默认参数即可。&lt;/p>
+&lt;h2 id="minimal-theme-settings">Minimal Theme Settings
+&lt;/h2>&lt;p>可调整的内容分成了 4 类&lt;/p>
+&lt;ol>
+&lt;li>Color scheme&lt;/li>
+&lt;li>Features(比较繁杂，后面挑重要的介绍)&lt;/li>
+&lt;li>Layout&lt;/li>
+&lt;li>Typography&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/minimal-theme-settings.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="style-settings">Style Settings
+&lt;/h2>&lt;p>可调整的内容分成了 3 块&lt;/p>
+&lt;ul>
+&lt;li>Minimal&lt;/li>
+&lt;li>Minimal Cards&lt;/li>
+&lt;li>Minimal Advanced Settings&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings-minimal.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings-minimal-ad.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="minimal-document">Minimal Document
+&lt;/h2>&lt;p>&lt;a class="link" href="https://minimal.guide/" target="_blank" rel="noopener"
+>https://minimal.guide/&lt;/a>&lt;/p>
+&lt;p>Minimal 主题支持多种背景风格，包括低对比度、高对比度以及适合 OLED 显示屏的真黑模式。用户可以通过 &lt;code>Minimal Theme Settings&lt;/code> 和 &lt;code>Hider&lt;/code> 插件来自定义颜色、字体和其他界面元素。此外，Minimal 支持多种流行插件，如 &lt;code>Calendar&lt;/code>、&lt;code>Kanban&lt;/code>、&lt;code>Dataview&lt;/code> 等，并提供了多种辅助类和图片滤镜来增强文档的布局和样式。用户还可以通过 &lt;code>Style Settings&lt;/code> 插件创建自定义颜色方案，并且可以使用快捷键来控制布局和样式。&lt;/p>
+&lt;h3 id="app-level-features">App-level features
+&lt;/h3>&lt;ul>
+&lt;li>活动行高亮：提高编辑时的可视性 &lt;code>Style Settings&lt;/code> -&amp;gt; &lt;code>Line Numbers&lt;/code>&lt;/li>
+&lt;li>背景对比度：多种背景对比度的选项 &lt;code>Minimal Theme Settings&lt;/code>&lt;/li>
+&lt;li>颜色方案：选择和定制颜色方案 &lt;code>Minimal Theme Settings&lt;/code>&lt;/li>
+&lt;li>彩色边框(0.16+ 支持新的 Tabs 功能)：&lt;code>Minimal Theme Settings&lt;/code>&lt;/li>
+&lt;li>电子墨水显示模式：对单色显示的支持 &lt;code>Minimal Theme Settings&lt;/code>&lt;/li>
+&lt;li>专注模式：&lt;code>Minimal Theme Settings&lt;/code>&lt;/li>
+&lt;li>快捷键：&lt;code>Cmd + P&lt;/code> -&amp;gt; &lt;code>Toggle focus mode&lt;/code>&lt;/li>
+&lt;li>图片缩放：&lt;code>Style Settings&lt;/code>, Minimal › Images › Disable image zoom&lt;/li>
+&lt;li>行宽：&lt;code>Minimal Theme Settings&lt;/code> 定义几种行宽和对应的块&lt;/li>
+&lt;li>发布支持&lt;/li>
+&lt;li>标签页样式：&lt;code>Style Settings&lt;/code> -&amp;gt; &lt;code>Sidebars&lt;/code> -&amp;gt; &lt;code>Sidebar tab style&lt;/code>&lt;/li>
+&lt;li>导航标签：将左上导航栏从默认的水平排列变为垂直排列 &lt;code>Minimal Theme Settings&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="block-level-features">Block-level features
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://minimal.guide/features/colorful-headings" target="_blank" rel="noopener"
+>Colorful Headings&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/cards" target="_blank" rel="noopener"
+>Cards&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/charts" target="_blank" rel="noopener"
+>Charts&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/checklists" target="_blank" rel="noopener"
+>Checklists&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/embeds" target="_blank" rel="noopener"
+>Embeds&lt;/a> and transclusions&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/iframes" target="_blank" rel="noopener"
+>Iframes&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/images" target="_blank" rel="noopener"
+>Images&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/image-grids" target="_blank" rel="noopener"
+>Image grids&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/maps" target="_blank" rel="noopener"
+>Maps&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/progress-bars" target="_blank" rel="noopener"
+>Progress bars&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://minimal.guide/tables" target="_blank" rel="noopener"
+>Tables&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="作者">作者
+&lt;/h3>&lt;p>&lt;a class="link" href="https://stephango.com/" target="_blank" rel="noopener"
+>Steph Ango&lt;/a>, Obsidian.md 现任 CEO&lt;/p>
+&lt;h3 id="file-over-app-的设计">File over App 的设计
+&lt;/h3>&lt;p>用户：笔记和资源文件
+应用：应用、配置、资源&lt;/p>
+&lt;p>应用视图
+笔记视图&lt;/p>
+&lt;h3 id="minimal-主题如何提供深度自定义功能">Minimal 主题如何提供深度自定义功能？
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Minimal Theme Settings 插件&lt;/strong>：允许用户自定义颜色方案、字体、热键，并访问主要的功能开关。用户可以选择不同的背景对比度，包括适合 OLED 屏幕的真黑模式，以及多种预设的颜色方案，如 Catppuccin、Dracula 等。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Style Settings 插件&lt;/strong>：用于进一步自定义颜色、字体大小、字体样式等细节。用户可以在新的 Pane 中打开 Style Settings，以便更容易地看到自己的更改。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>辅助类和图片滤镜&lt;/strong>：提供了多种 CSS 辅助类，用于控制图片、表格和 iframe 的宽度，以及将 Dataview 表格转换为卡片布局。此外，还有图片滤镜，如 invert、circle 和 outline，用于创建特定的图像效果。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>快捷键&lt;/strong>：通过 Minimal Theme Settings 插件提供了多种快捷键，用于切换背景模式、布局宽度，以及启用或禁用焦点模式等功能，提高了用户操作的效率。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>自定义颜色方案&lt;/strong>：用户可以使用 Style Settings 插件创建自己的颜色方案，并且可以为浅色模式和深色模式分别选择不同的方案。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="reference">Reference
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://minimal.guide/" target="_blank" rel="noopener"
+>https://minimal.guide/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://stephango.com/" target="_blank" rel="noopener"
+>Steph Ango&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Obsidian User Interface</title><link>https://all-in-obsidian.li3huo.com/obsidian/user-interface/</link><pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/user-interface/</guid><description>
+&lt;p>参见官网(Obsidian Help) User interface&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/doc-ui.jpg"
+loading="lazy"
+alt="Obsidian Help"
+>&lt;/p>
+&lt;h2 id="appearance">Appearance
+&lt;/h2>&lt;p>外观设置(v1.6.7)&lt;/p>
+&lt;h3 id="基础参数">基础参数
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Base color scheme(Dark/Light)，确定基础颜色；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Accent color，设置主题色。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Themes
+可以下载社区主题，在配置界面上定制外观。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="css-snippets">CSS snippets
+&lt;/h3>&lt;p>:LiFolder: Open snippets folder / :LiRefreshCcw: Reload snippets&lt;/p>
+&lt;h3 id="其余参数">其余参数
+&lt;/h3>&lt;p>对整体外观影响较小，使用默认参数即可。&lt;/p>
+&lt;h2 id="sidebar侧边栏">Sidebar（侧边栏）
+&lt;/h2>&lt;p>&lt;a class="link" href="https://help.obsidian.md/User&amp;#43;interface/Sidebar" target="_blank" rel="noopener"
+>https://help.obsidian.md/User+interface/Sidebar&lt;/a>&lt;/p>
+&lt;p>Obsidian 的侧边栏在桌面和大型平板电脑上有两个，分别位于左右两侧，其中左侧边栏包括了 “Ribbon”（带状菜单）。在移动设备和小型平板电脑上，侧边栏默认是收起的，可以通过屏幕边缘的左右滑动手势来打开它们。&lt;/p>
+&lt;h2 id="ribbon工具栏">Ribbon（工具栏）
+&lt;/h2>&lt;p>Ribbon 是 Obsidian 中的一个关键组件，它提供了一个用于存放常用命令的空间。在桌面端，Ribbon 位于左侧边栏中，即使边栏关闭也会保持可见。在移动端，可以通过点击屏幕底部右角的菜单按钮来访问 Ribbon。&lt;/p>
+&lt;h2 id="status-bar状态栏">Status bar（状态栏）
+&lt;/h2>&lt;p>Obsidian 的状态栏位于软件窗口的右下角，提供了关于当前文件、当前保险库或当前状态（如时间和日期）的有用信息。&lt;/p>
+&lt;h2 id="tabs-标签页">Tabs （标签页）
+&lt;/h2>&lt;p>&lt;a class="link" href="https://help.obsidian.md/User&amp;#43;interface/Tabs" target="_blank" rel="noopener"
+>https://help.obsidian.md/User+interface/Tabs&lt;/a>&lt;/p>
+&lt;p>Obsidian 的标签页功能支持打开新标签页、以不同方式打开链接、组织标签页和窗口、切换标签页、堆叠标签页组以及使用链接视图。&lt;/p>
+&lt;p>用户可以通过拖放的方式重新排列标签页、创建新的标签页组、分割标签页组、调整标签页组的大小、将标签页移动到新窗口或其他窗口，以及固定标签页。&lt;/p>
+&lt;p>此外，Obsidian 还支持使用快捷键切换标签页，以及使用 Workspaces 插件保存和恢复窗口布局。对于笔记标签页，可以使用 Graph view、Backlinks 和 Outline 等插件作为链接视图。&lt;/p>
 &lt;h2 id="workspace">Workspace
-&lt;/h2>&lt;h3 id="workspace-layout">Workspace Layout
-&lt;/h3>&lt;p>Workspace Layout variant: &lt;code>Cards&lt;/code>&lt;/p></description></item><item><title>Obsidian Hotkeys</title><link>https://all-in-obsidian.li3huo.com/obsidian/hotkeys/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/hotkeys/</guid><description>
+&lt;/h2>&lt;p>Obsidian 桌面应用的工作空间包括&lt;/p>
+&lt;ul>
+&lt;li>中心内容区域的&lt;strong>标签页组&lt;/strong>，可以垂直或水平分割；&lt;/li>
+&lt;li>左右侧可折叠的侧边栏，侧边栏中包含可以垂直分割的标签页组及其标签页；&lt;/li>
+&lt;li>位于左侧的垂直辅助栏（Ribbon）；&lt;/li>
+&lt;li>以及位于右下角的状态栏。&lt;/li>
+&lt;/ul>
+&lt;p>Obsidian 移动应用的工作空间则包括标签页、编辑时出现在键盘上方的编辑器工具栏、可以通过左右滑动手势打开的侧边栏、以及底部的导航栏，其中包含了自定义动作的辅助栏菜单。&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/workspace.jpg"
+loading="lazy"
+alt="Workspace"
+>&lt;/p></description></item><item><title>Obsidian Hotkeys</title><link>https://all-in-obsidian.li3huo.com/obsidian/hotkeys/</link><pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/hotkeys/</guid><description>
 &lt;p>Obsidian 笔记编辑默认支持了一些快捷键&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。用户也可以自定义快捷键，提升编辑效率。&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
 &lt;h2 id="内置快捷键">内置快捷键
 &lt;/h2>&lt;h3 id="操作类">操作类

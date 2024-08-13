@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Youtube on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/youtube/</link><description>Recent content in Youtube on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/youtube/index.xml" rel="self" type="application/rss+xml"/><item><title>用概念图🗺️表述想法💡</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Youtube on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/youtube/</link><description>Recent content in Youtube on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/youtube/index.xml" rel="self" type="application/rss+xml"/><item><title>推荐主题：AnuPpuccin</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</link><pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</guid><description>
+&lt;p>AnuPpuccin 是一个为 Obsidian 知识库设计的主题，由 AnubisNekhet 维护，支持多种颜色方案和布局，并且获得了 2022 年度最佳主题奖。&lt;/p>
+&lt;!-- more -->
+&lt;h2 id="外观设置v167">外观设置(v1.6.7)
+&lt;/h2>&lt;h3 id="基础参数">基础参数
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Base color scheme(Dark/Light)，确定基础颜色；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Accent color，设置主题色。&lt;/p>
+&lt;p>Favorite Color&lt;/p>
+&lt;ul>
+&lt;li>sky blue &lt;code>#245e73&lt;/code>&lt;/li>
+&lt;li>mars green &lt;code>#008c8c&lt;/code>&lt;/li>
+&lt;li>tiffany blue &lt;code>#81d8cf&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Themes&lt;/p>
+&lt;p>安装主题：AnuPpuccin`(1.5.0)&lt;/p>
+&lt;p>安装伴侣插件： &lt;code>Style Settings&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="css-snippets">CSS snippets
+&lt;/h3>&lt;p>:LiFolder: Open snippets folder / :LiRefreshCcw: Reload snippets&lt;/p>
+&lt;h3 id="其余参数">其余参数
+&lt;/h3>&lt;p>对整体外观影响较小，使用默认参数即可。&lt;/p>
+&lt;h2 id="style-settings">Style Settings
+&lt;/h2>&lt;p>![[/photos/obsidian/style-settings.jpg]]&lt;/p>
+&lt;h3 id="integration">Integration
+&lt;/h3>&lt;h4 id="minimal-cards">Minimal Cards
+&lt;/h4>&lt;p>.scss -&amp;gt; css&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> npm install -g sass
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sass minimal-cards.scss minimal-cards.css
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a class="link" href="https://github.com/kepano/obsidian-minimal/blob/master/README.md#cards" target="_blank" rel="noopener"
+>https://github.com/kepano/obsidian-minimal/blob/master/README.md#cards&lt;/a>&lt;/p>
+&lt;p>&lt;code>cssClasses: cards&lt;/code>&lt;/p>
+&lt;h3 id="workspace">Workspace
+&lt;/h3>&lt;h4 id="workspace-layout">Workspace Layout
+&lt;/h4>&lt;p>Workspace Layout variant: &lt;code>Cards&lt;/code>&lt;/p>
+&lt;h2 id="参考视频">参考视频
+&lt;/h2>&lt;p>Nicole 分享了使用 AnuPpuccin 主题 + Style Settings 插件进行界面美化的方法。&lt;/p>
+&lt;p>&lt;a class="link" href="https://youtu.be/7-SOwxpZQNI" target="_blank" rel="noopener"
+>My new favorite Obsidian theme&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>00:00 Intro&lt;/li>
+&lt;li>00:59 Installing AnuPpuccin&lt;/li>
+&lt;li>01:33 Installing Style Settings&lt;/li>
+&lt;li>04:22 Custom checkboxes and speech bubbles&lt;/li>
+&lt;li>05:25 Rainbow folders&lt;/li>
+&lt;li>07:17 Typography, headings, decorations&lt;/li>
+&lt;li>09:48 Cards layout&lt;/li>
+&lt;li>10:40 Extended color schemes&lt;/li>
+&lt;li>13:16 Minimal Cards in Anup&lt;/li>
+&lt;/ul>
+&lt;p>AnuPpuccin(/&amp;lsquo;ænjuːputʃin/) 是一个为 Obsidian 设计的个人主题，由 &lt;a class="link" href="https://github.com/AnubisNekhet" target="_blank" rel="noopener"
+>AnubisNekhet&lt;/a> 开发并在 GitHub 上开源。该主题支持多种颜色方案，包括 Catppuccin、Dracula 等，并提供了两种布局选项。用户可以通过 Git 命令行安装和更新主题。&lt;/p>
+&lt;h3 id="features">Features
+&lt;/h3>&lt;ul>
+&lt;li>自定义调色板 Custom palette&lt;/li>
+&lt;li>两种布局变体 2 layout variants&lt;/li>
+&lt;li>彩虹文件夹&lt;/li>
+&lt;li>自定义边框 Frames&lt;/li>
+&lt;li>自定义 Decorations，斜体和粗体的文本&lt;/li>
+&lt;li>自定义 Callout&lt;/li>
+&lt;li>彩色 Checkbox&lt;/li>
+&lt;li>标记样式 CSS&lt;/li>
+&lt;li>推荐字体：界面 &lt;code>Overpass&lt;/code>，文本 &lt;code>Rubik&lt;/code>，标题 &lt;code>Noto Serif&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>主题的默认主题是 Latte 和 Mocha，分别用于浅色模式和深色模式。&lt;/p>
+&lt;p>主题支持 &lt;code>Excalidraw&lt;/code>、&lt;code>Kanban&lt;/code> 和 &lt;code>Style Settings&lt;/code> 插件的集成。&lt;/p>
+&lt;h3 id="项目状态">项目状态
+&lt;/h3>&lt;p>因开发者的学业和项目任务，项目处于休眠状态，暂时可能无法及时修复 bug 和问题。&lt;/p>
+&lt;p>目前版本 v1.5.0, 2024/5/11&lt;/p>
+&lt;h3 id="file-over-app-的设计">File over App 的设计
+&lt;/h3>&lt;p>用户：笔记和资源文件
+应用：应用、配置、资源&lt;/p>
+&lt;p>应用视图
+笔记视图&lt;/p></description></item><item><title>用概念图🗺️表述想法💡</title><link>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/concept-modeling/</guid><description>
 &lt;p>概念图是一种用图形方式展示概念、思想或信息之间关系的视觉工具。概念图通常由多个概念元素和相互连接的线段组成，展示相互之间的联系和等级结构。概念图的制作过程可以帮助人们 整理信息、进行决策，并用易于理解的方式共享和协作信息，尤其适用于复杂话题的深入理解。&lt;/p>
 &lt;p>在动笔输出文字之前，先对概念进行建模，可以 精炼知识(Refining Knowledge)，增进理解。&lt;/p>
 &lt;h2 id="what-is-a-concept-map">What is a Concept Map?
