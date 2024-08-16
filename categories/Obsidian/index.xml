@@ -27,7 +27,16 @@
 &lt;h3 id="其余参数">其余参数
 &lt;/h3>&lt;p>对整体外观影响较小，使用默认参数即可。&lt;/p>
 &lt;h2 id="style-settings">Style Settings
-&lt;/h2>&lt;p>![[/photos/obsidian/style-settings.jpg]]&lt;/p>
+&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="color">Color
+&lt;/h3>&lt;p>主题颜色方案和主色选择、方案定制。&lt;/p>
+&lt;h3 id="file-editor--markdown-elements">File Editor &amp;amp; Markdown Elements
+&lt;/h3>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings-anup-editor.jpg"
+loading="lazy"
+alt="file editor"
+>&lt;/p>
 &lt;h3 id="integration">Integration
 &lt;/h3>&lt;h4 id="minimal-cards">Minimal Cards
 &lt;/h4>&lt;p>.scss -&amp;gt; css&lt;/p>
@@ -37,7 +46,12 @@
 >https://github.com/kepano/obsidian-minimal/blob/master/README.md#cards&lt;/a>&lt;/p>
 &lt;p>&lt;code>cssClasses: cards&lt;/code>&lt;/p>
 &lt;h3 id="workspace">Workspace
-&lt;/h3>&lt;h4 id="workspace-layout">Workspace Layout
+&lt;/h3>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings-anup-workspace.jpg"
+loading="lazy"
+alt="workspace"
+>&lt;/p>
+&lt;h4 id="rainbow-folders">Rainbow Folders
+&lt;/h4>&lt;h4 id="workspace-layout">Workspace Layout
 &lt;/h4>&lt;p>Workspace Layout variant: &lt;code>Cards&lt;/code>&lt;/p>
 &lt;h2 id="参考视频">参考视频
 &lt;/h2>&lt;p>Nicole 分享了使用 AnuPpuccin 主题 + Style Settings 插件进行界面美化的方法。&lt;/p>
@@ -322,6 +336,10 @@ alt="Workspace"
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
+&lt;tr>
+&lt;td>editor:set-heading-0&lt;/td>
+&lt;td>&lt;code>Ctrl+0&lt;/code>&lt;/td>
+&lt;/tr>
 &lt;tr>
 &lt;td>editor:set-heading-1&lt;/td>
 &lt;td>&lt;code>Ctrl+1&lt;/code>&lt;/td>

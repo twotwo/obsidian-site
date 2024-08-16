@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugoes on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/hugo/</link><description>Recent content in Hugoes on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 20 Jun 2024 10:18:58 +0800</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>如何指定 Hugo 网站主题</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</link><pubDate>Sat, 25 May 2024 10:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugoes on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/hugo/</link><description>Recent content in Hugoes on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>如何指定 Hugo 网站主题</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</link><pubDate>Sat, 25 May 2024 10:25:25 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-theme-switch/</guid><description>
 &lt;p>Hugo 提供了大量可选&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
 >主题&lt;/a> 供我们使用。虽然适配工作有一定成本，但这个付出是值得的。这次总结一下如何快速切换适配好的主题。&lt;/p>
 &lt;p>查看 &lt;a class="link" href="https://gohugo.io/commands/hugo_server/" target="_blank" rel="noopener"
@@ -58,8 +58,7 @@
 &lt;/h3>&lt;p>首页，或登陆页，是许多访问网站的人看到的第一页。它是网站根目录下的 index.html 文件。由于 Hugo 将文件写入 &lt;code>public/&lt;/code> 目录，所以我们的主页是 &lt;code>public/index.html&lt;/code>。&lt;/p>
 &lt;h3 id="site-configuration-file">Site Configuration File
 &lt;/h3>&lt;p>Hugo 运行时，将查找包含覆盖整个站点默认值的设置的配置文件。YAML、TOML 或 JSON。我更喜欢在配置文件中使用 YAML。如果您更喜欢使用 JSON 或 TOML，则需要翻译我的示例。你还需要更改文件的名称，因为 Hugo 使用扩展名来确定如何处理它。&lt;/p>
-&lt;p>Hugo translates Markdown files into HTML. By default, Hugo expects to find Markdown files in your &lt;code>content/&lt;/code> directory and template files in your &lt;code>themes/&lt;/code> directory. It will create HTML files in your &lt;code>public/&lt;/code> directory. You can change this by specifying alternate locations in the configuration file.
-Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
+&lt;p>Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;ul>
 &lt;li>在 &lt;code>content/&lt;/code> 目录中找到 Markdown 内容文件&lt;/li>
 &lt;li>在 &lt;code>themes/&lt;/code> 目录中找到模板文件&lt;/li>
@@ -74,14 +73,14 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/ul>
 &lt;h4 id="front-matter">Front Matter
 &lt;/h4>&lt;p>&lt;code>Front Matter&lt;/code> 是关于内容的信息。与配置文件一样，它可以用 YAML、TOML 或 JSON 编写。与配置文件不同，Hugo 不使用文件的扩展名来了解格式。它寻找标志类型的标记。YAML 被 “&lt;code>---&lt;/code>” 包围，TOML 被 “&lt;code>+++&lt;/code>” 包围，JSON 被大括号包围。&lt;/p>
-&lt;p>The information in the front matter is passed into the template before the content is rendered into HTML.&lt;/p>
+&lt;p>在 &lt;code>Front Matter&lt;/code> 中的信息首先被传递到模板，之后的内容再呈现为HTML。&lt;/p>
 &lt;h4 id="markdown">Markdown
-&lt;/h4>&lt;p>Content is written in Markdown which makes it easier to create the content. Hugo runs the content through a Markdown engine to create the HTML which will be written to the output file.&lt;/p>
+&lt;/h4>&lt;p>内容是用 Markdown 写的，这使得创建内容更容易。Hugo 通过运行 Markdown 引擎处理内容，创建 HTML 写入文件。&lt;/p>
 &lt;h3 id="template-files">Template Files
 &lt;/h3>&lt;p>Hugo 使用模板文件将内容呈现为 HTML。模板文件是内容和表示之间的桥梁。模板中的规则定义了发布什么内容、发布到哪里以及如何将其呈现给 HTML 文件。模板通过指定要使用的样式来指导表示。&lt;/p>
-&lt;p>有三种类型的模板：single 模板、list 模板和 partial 模板。每种类型都接受一些内容作为输入，并根据模板中的命令对其进行转换。&lt;/p>
+&lt;p>有三种类型的模板：&lt;strong>single&lt;/strong> 模板、&lt;strong>list&lt;/strong> 模板和 partial &lt;strong>模板&lt;/strong>。每种类型都接受一些内容作为输入，并根据模板中的命令对其进行转换。&lt;/p>
 &lt;p>Hugo 使用其内容知识来查找用于呈现内容的模板文件。如果它不能找到与内容完全匹配的模板，它将从那里转移到上一个级别和搜索。它将继续这样做，直到它找到一个匹配的模板或没有模板可以尝试。如果它找不到模板，它将使用该站点的默认模板(&lt;code>layouts/&lt;/code>)。&lt;/p>
-&lt;p>Please note that you can use the front matter to influence Hugo’s choice of templates.&lt;/p>
+&lt;p>请注意，用户可以使用 &lt;code>front matter&lt;/code> 来影响 Hugo 对模板的选择。&lt;/p>
 &lt;h4 id="single-template">Single Template
 &lt;/h4>&lt;p>A single template is used to render a single piece of content. For example, an article or post would be a single piece of content and use a single template.&lt;/p>
 &lt;h4 id="list-template">List Template
@@ -193,22 +192,23 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>That second warning is easier to explain. We haven’t created a template to be used to generate “page not found errors.” The 404 message is a topic for a separate tutorial.&lt;/p>
 &lt;p>第一个警告是生成类型为&lt;strong>首页&lt;/strong>的提示(kind &amp;ldquo;home&amp;rdquo;)。我们需要提供 &lt;code>layouts/home.html&lt;/code> 模版来生成首页。&lt;/p>
 &lt;p>第二个警告是生成类型为&lt;strong>分类&lt;/strong>的提示(kind &amp;ldquo;taxonomy&amp;rdquo;)。我们需要提供 &lt;code>layouts/terms.html&lt;/code> 模版来生成分类。&lt;/p>
-&lt;p>At this point, you&amp;rsquo;ve got a working installation and site that we can build upon. All that’s left is to add some content and a theme to display it.&lt;/p>
+&lt;p>现在已经有了一个能够运行的网站，我们可以在此基础上进行构建。剩下的就是添加一些内容和一个主题来显示它。&lt;/p>
 &lt;h2 id="create-a-new-theme">Create a New Theme
 &lt;/h2>&lt;p>Hugo 没有附带默认主题。官网上提供了大量可用的第三方&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
 >主题&lt;/a>，Hugo 附带一个创建新主题的命令：&lt;code>hugo new theme &amp;lt;theme name&amp;gt;&lt;/code>&lt;/p>
 &lt;p>我们要创建一个叫 &amp;ldquo;twotwo&amp;rdquo; 的新主题，由于本教程的目标是展示如何填充文件以注入内容，因此主题将不包含任何 CSS(新版本的 Hugo 在创建主题时，已经包含了 CSS 和 JS)。换句话说，丑陋但实用。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo env
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.126.3+extended darwin/amd64 BuildDate=2024-06-02T13:02:43Z VendorInfo=brew
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.132.1+extended darwin/amd64 BuildDate=2024-08-13T10:10:10Z VendorInfo=brew
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOOS=&amp;#34;darwin&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOARCH=&amp;#34;amd64&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOVERSION=&amp;#34;go1.22.3&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOVERSION=&amp;#34;go1.22.6&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/sass/libsass=&amp;#34;3.6.5&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/webmproject/libwebp=&amp;#34;v1.3.2&amp;#34;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>所有主题对内容和布局都有自己的看法。强烈建议使模板更简单，使用个性化的参数会使主题更难使用。当你构建一个主题时，请考虑使用其他主题所使用的术语。&lt;/p>
 &lt;h3 id="create-a-skeleton">Create a Skeleton
 &lt;/h3>&lt;p>Use the hugo &amp;ldquo;new&amp;rdquo; command to create the skeleton of a theme. This creates the directory structure and places empty files for you to fill out.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo new theme twotwo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Creating new theme in ./themes/twotwo
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ ls -l
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x - liyan 13 May 20:11 archetypes
@@ -221,34 +221,34 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.rw-r--r-- 1.4k liyan 23 May 21:32 README.md
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find themes/twotwo -type f | xargs ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 1069 Jun 12 11:57 themes/twotwo/LICENSE
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 61 Jun 12 11:57 themes/twotwo/README.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 102 Jun 12 11:57 themes/twotwo/archetypes/default.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 284 Jun 12 11:57 themes/twotwo/assets/css/main.css
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 49 Jun 12 11:57 themes/twotwo/assets/js/main.js
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 279 Jun 12 11:57 themes/twotwo/content/_index.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 367 Jun 12 11:57 themes/twotwo/content/posts/_index.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 812 Jun 12 11:57 themes/twotwo/content/posts/post-1.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 940 Jun 12 11:57 themes/twotwo/content/posts/post-2.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 19224 Jun 12 11:57 themes/twotwo/content/posts/post-3/bryce-canyon.jpg
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 996 Jun 12 11:57 themes/twotwo/content/posts/post-3/index.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 335 Jun 12 11:57 themes/twotwo/hugo.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 354 Jun 12 11:57 themes/twotwo/layouts/_default/baseof.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 174 Jun 12 11:57 themes/twotwo/layouts/_default/home.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 187 Jun 12 11:57 themes/twotwo/layouts/_default/list.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 325 Jun 12 11:57 themes/twotwo/layouts/_default/single.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 54 Jun 12 11:57 themes/twotwo/layouts/partials/footer.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 257 Jun 12 11:57 themes/twotwo/layouts/partials/head.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 351 Jun 12 11:57 themes/twotwo/layouts/partials/head/css.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 429 Jun 12 11:57 themes/twotwo/layouts/partials/head/js.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 84 Jun 12 11:57 themes/twotwo/layouts/partials/header.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 1343 Jun 12 11:57 themes/twotwo/layouts/partials/menu.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 554 Jun 12 11:57 themes/twotwo/layouts/partials/terms.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 15406 Jun 12 11:57 themes/twotwo/static/favicon.ico
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 830 Jun 12 11:57 themes/twotwo/theme.toml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1069 Aug 14 11:00 themes/twotwo/LICENSE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 61 Aug 14 11:00 themes/twotwo/README.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 102 Aug 14 11:00 themes/twotwo/archetypes/default.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 284 Aug 14 11:00 themes/twotwo/assets/css/main.css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 49 Aug 14 11:00 themes/twotwo/assets/js/main.js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 279 Aug 14 11:00 themes/twotwo/content/_index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 367 Aug 14 11:00 themes/twotwo/content/posts/_index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 812 Aug 14 11:00 themes/twotwo/content/posts/post-1.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 940 Aug 14 11:00 themes/twotwo/content/posts/post-2.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">19224 Aug 14 11:00 themes/twotwo/content/posts/post-3/bryce-canyon.jpg
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 996 Aug 14 11:00 themes/twotwo/content/posts/post-3/index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 335 Aug 14 11:00 themes/twotwo/hugo.toml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 354 Aug 14 11:00 themes/twotwo/layouts/_default/baseof.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 174 Aug 14 11:00 themes/twotwo/layouts/_default/home.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 187 Aug 14 11:00 themes/twotwo/layouts/_default/list.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 325 Aug 14 11:00 themes/twotwo/layouts/_default/single.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 54 Aug 14 11:00 themes/twotwo/layouts/partials/footer.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 257 Aug 14 11:00 themes/twotwo/layouts/partials/head.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 351 Aug 14 11:00 themes/twotwo/layouts/partials/head/css.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 429 Aug 14 11:00 themes/twotwo/layouts/partials/head/js.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 84 Aug 14 11:00 themes/twotwo/layouts/partials/header.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1343 Aug 14 11:00 themes/twotwo/layouts/partials/menu.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 554 Aug 14 11:00 themes/twotwo/layouts/partials/terms.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">15406 Aug 14 11:00 themes/twotwo/static/favicon.ico
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 830 Aug 14 11:00 themes/twotwo/theme.toml
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.&lt;/p>
-&lt;p>Please take a minute to fill out the theme.toml and LICENSE.md files. They&amp;rsquo;re optional, but if you&amp;rsquo;re going to be distributing your theme, it tells the world who to praise (or blame). It&amp;rsquo;s also nice to declare the license so that people will know how they can use the theme.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个框架包括模板(以 &lt;code>.html&lt;/code> 结尾的文件)、许可文件(&lt;code>LICENSE&lt;/code>)、主题的描述(&lt;code>theme.toml&lt;/code>)，以及一个空原型。&lt;/p>
+&lt;p>Please take a minute to fill out the &lt;code>theme.toml&lt;/code> and &lt;code>LICENSE&lt;/code> files. They&amp;rsquo;re optional, but if you&amp;rsquo;re going to be distributing your theme, it tells the world who to praise (or blame). It&amp;rsquo;s also nice to declare the license so that people will know how they can use the theme.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi themes/twotwo/theme.toml
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">name = &amp;#39;Theme name&amp;#39;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">license = &amp;#39;MIT&amp;#39;
@@ -262,19 +262,18 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## also edit themes/twotwo/LICENSE.md and change
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## the bit that says &amp;#34;YOUR_NAME_HERE&amp;#34;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that the the skeleton&amp;rsquo;s template files are empty. Don&amp;rsquo;t worry, we&amp;rsquo;ll be changing that shortly.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ find themes/twotwo -name &amp;#39;*.html&amp;#39; | xargs ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 354 Jun 12 11:57 themes/twotwo/layouts/_default/baseof.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 174 Jun 12 11:57 themes/twotwo/layouts/_default/home.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 187 Jun 12 11:57 themes/twotwo/layouts/_default/list.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 325 Jun 12 11:57 themes/twotwo/layouts/_default/single.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 54 Jun 12 11:57 themes/twotwo/layouts/partials/footer.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 257 Jun 12 11:57 themes/twotwo/layouts/partials/head.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 351 Jun 12 11:57 themes/twotwo/layouts/partials/head/css.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 429 Jun 12 11:57 themes/twotwo/layouts/partials/head/js.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 84 Jun 12 11:57 themes/twotwo/layouts/partials/header.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 1343 Jun 12 11:57 themes/twotwo/layouts/partials/menu.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 554 Jun 12 11:57 themes/twotwo/layouts/partials/terms.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ find themes/twotwo -name &lt;span class="s1">&amp;#39;*.html&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> xargs ls -l
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/_default/baseof.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/_default/home.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/_default/list.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/_default/single.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/footer.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/head.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/head/css.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/head/js.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/header.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/menu.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/terms.html
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="update-the-configuration-file-to-use-the-theme">Update the Configuration File to Use the Theme
 &lt;/h3>&lt;p>既然我们已经有了一个可以使用的主题，那么最好将主题名称添加到配置文件中。这是可选的，因为总是可以在所有命令中添加“-t twotwo”。我喜欢把它放在配置文件中，因为我喜欢更短的命令行。如果你没有将它放入配置文件或在命令行中指定它，那么你就使用不了你期望使用的模板。&lt;/p>
 &lt;p>Edit the file to add the theme, add a title for the site, and specify that all of our content will use the YAML format.&lt;/p>
@@ -413,48 +412,59 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 tags created
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 categories created
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">in 1 ms
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="update-the-home-page-template">Update the Home Page Template
-&lt;/h2>&lt;p>The home page is one of a few special pages that Hugo creates automatically. As mentioned earlier, it looks for one of three files in the theme&amp;rsquo;s layout/ directory:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="base-template">Base Template
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=QVOMCYitLEc" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=QVOMCYitLEc&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://gohugo.io/templates/base/" target="_blank" rel="noopener"
+>Base templates&lt;/a> 主要介绍了 Hugo 静态网站生成器中的基础模板（base templates）和块（block）构造的使用方法，以及如何通过它们定义和覆盖网站的主要模板结构。&lt;/p>
+&lt;p>在 &lt;code>_default/baseof.html&lt;/code> 文件中定义了一个简单的基础模板，它为所有页面提供了一个通用的 HTML 结构，包括头部、标题和页脚块。这些块可以包含默认内容，并且可以在特定的模板中被覆盖。&lt;/p>
+&lt;h2 id="home-page-template">Home Page Template
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=ut1xtRZ1QOA" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=ut1xtRZ1QOA&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://gohugo.io/templates/home/" target="_blank" rel="noopener"
+>Home templates&lt;/a> 介绍了 Hugo 网站首页模板的使用和配置方法。&lt;/p>
+&lt;p>Hugo 允许用户为网站的首页创建一个独特的模板。首页模板是构建网站时唯一必需的模板，对于引导新网站和模板或开发单页网站非常有用。&lt;/p>
+&lt;p>Hugo 在查找首页模板时按照以下&lt;a class="link" href="https://gohugo.io/templates/lookup-order/#home-templates" target="_blank" rel="noopener"
+>顺序&lt;/a>进行查找：&lt;/p>
 &lt;ol>
-&lt;li>index.html&lt;/li>
-&lt;li>_default/list.html&lt;/li>
-&lt;li>_default/single.html&lt;/li>
+&lt;li>&lt;code>layouts/index.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/home.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/list.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/_default/{index, home, list}.html&lt;/code>
+首页内容和 front matter 可以通过在 &lt;code>content&lt;/code> 文件夹根目录下的 &lt;code>_index.md&lt;/code> 文件添加。&lt;/li>
 &lt;/ol>
-&lt;p>We could update one of the default templates, but a good design decision is to update the most specific template available. That&amp;rsquo;s not a hard and fast rule (in fact, we&amp;rsquo;ll break it a few times in this tutorial), but it is a good generalization.&lt;/p>
+&lt;p>&lt;code>vi themes/twotwo/layouts/_default/home.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">{{ define &amp;#34;main&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Content }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ range first 7 site.RegularPages }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h2&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>{{ .LinkTitle }}&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">h2&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Summary }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>首页显示最新 7 篇(first 7) Post。&lt;/p>
 &lt;h3 id="make-a-static-home-page">Make a Static Home Page
-&lt;/h3>&lt;p>Right now, that page is empty because we don&amp;rsquo;t have any content and we don&amp;rsquo;t have any logic in the template. Let&amp;rsquo;s change that by adding some text to the template.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi themes/zafta/layouts/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!DOCTYPE html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;body&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/body&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
+&lt;/h3>&lt;p>Build the web site and then verify the results.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ hugo --logLevel info
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Start building sites …
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.132.1+extended darwin/amd64 &lt;span class="nv">BuildDate&lt;/span>&lt;span class="o">=&lt;/span>2024-08-13T10:10:10Z &lt;span class="nv">VendorInfo&lt;/span>&lt;span class="o">=&lt;/span>brew
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Build the web site and then verify the results.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo --verbose
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 draft content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 future content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 pages created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 tags created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 categories created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">in 2 ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">|&lt;/span> EN
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-------------------+------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Pages &lt;span class="p">|&lt;/span> &lt;span class="m">343&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Paginator pages &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Non-page files &lt;span class="p">|&lt;/span> &lt;span class="m">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Static files &lt;span class="p">|&lt;/span> &lt;span class="m">106&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Processed images &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Aliases &lt;span class="p">|&lt;/span> &lt;span class="m">11&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Cleaned &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find public -type f -name &amp;#39;*.html&amp;#39; | xargs ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 78 Sep 29 21:26 public/index.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total in &lt;span class="m">701&lt;/span> ms
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ cat public/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!DOCTYPE html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;body&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find public -type f -name &lt;span class="s1">&amp;#39;*.html&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> xargs ls -l
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ ll public/index.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.rw-r--r-- 2.5k liyan &lt;span class="m">15&lt;/span> Aug 10:10 public/index.html
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="live-reload-1">Live Reload
 &lt;/h4>&lt;p>Note: If you&amp;rsquo;re running the server with the &lt;code>--watch&lt;/code> option, you&amp;rsquo;ll see different content in the file:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">$&lt;/span> &lt;span class="n">cat&lt;/span> &lt;span class="n">public&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">html&lt;/span>
@@ -918,7 +928,384 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Hugo 进阶</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-advanced-guide/</link><pubDate>Thu, 20 Jun 2024 10:18:58 +0800</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-advanced-guide/</guid><description>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title> Hugo 模版应用指南</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-templates/</link><pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-templates/</guid><description>
+&lt;p>Hugo 模板系统位于项目、主题或模块的 &lt;code>layouts&lt;/code> 目录下，包含了一系列用于渲染内容、资源和数据的 HTML 文件。这些模板文件可以是不同的类型，包括基础模板、首页模板、单页模板、分类模板、分段模板、部分模板、内容视图模板、自定义短代码、网站地图模板、RSS 模板、404 错误页面模板、robots.txt 模板、菜单模板、分页模板、内嵌模板和自定义输出格式模板。&lt;/p>
+&lt;p>Hugo 有一套明确的规则来确定为给定页面选择哪个模板，这些规则从最具体的模板开始查找。模板的类型和用途多样，可以用来定制网站的外观和功能，如创建网站的皮肤、定义首页的独特布局、渲染单个页面、列出特定分类的页面、实现菜单和分页等。此外，Hugo 还提供了一些内嵌模板，以及支持多种输出格式，包括日历事件、电子书格式、Google AMP 和 JSON 搜索索引，或任何自定义文本格式。&lt;/p>
+&lt;h2 id="1-introduction">1. Introduction
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/introduction/" target="_blank" rel="noopener"
+>模板系统介绍&lt;/a>，包括模板的基础知识、上下文、操作、变量、函数、方法、注释、包含其他模板以及示例等。&lt;/p>
+&lt;p>Hugo 使用 Go 的 &lt;code>text/template&lt;/code> 和 &lt;code>html/template&lt;/code> 包来处理模板，其中&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>text/template&lt;/code> 用于生成文本输出&lt;/li>
+&lt;li>&lt;code>html/template&lt;/code> 用于生成安全的 HTML 输出，防止代码注入&lt;/li>
+&lt;/ul>
+&lt;p>模板文件位于项目的 &lt;code>layouts&lt;/code> 目录中，它们使用&lt;strong>变量&lt;/strong>、&lt;strong>函数&lt;/strong>和&lt;strong>方法&lt;/strong>来转换内容、资源和数据，生成最终的发布页面。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ $v1 := 6 }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $v2 := 7 }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;p&amp;gt;The product of {{ $v1 }} and {{ $v2 }} is {{ mul $v1 $v2 }}.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="context">Context
+&lt;/h3>&lt;p>模板中的上下文是指传递给模板的数据，可以是简单值，也可以是对象和相关方法。点（&lt;code>.&lt;/code>）表示当前的上下文。&lt;/p>
+&lt;p>模板操作通过大括号 &lt;code>{{}}}&lt;/code> 表示，可以包含文字值、变量、函数和方法。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;h2&amp;gt;{{ .Title }}&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ range slice &amp;#34;foo&amp;#34; &amp;#34;bar&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;p&amp;gt;{{ . }}&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ with &amp;#34;baz&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;p&amp;gt;{{ . }}&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="actions">Actions
+&lt;/h3>&lt;p>A template action may contain literal values (&lt;a class="link" href="https://gohugo.io/getting-started/glossary/#boolean" target="_blank" rel="noopener"
+>boolean&lt;/a>, &lt;a class="link" href="https://gohugo.io/getting-started/glossary/#string" target="_blank" rel="noopener"
+>string&lt;/a>, &lt;a class="link" href="https://gohugo.io/getting-started/glossary/#integer" target="_blank" rel="noopener"
+>integer&lt;/a>, and &lt;a class="link" href="https://gohugo.io/getting-started/glossary/#float" target="_blank" rel="noopener"
+>float&lt;/a>), variables, functions, and methods.&lt;/p>
+&lt;h4 id="whitespace">Whitespace
+&lt;/h4>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{- $convertToLower := true -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- if $convertToLower -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h2&amp;gt;{{ strings.ToLower .Title }}&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- end -}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>消除空行，包括 spaces, horizontal tabs, carriage returns, and newlines&lt;/p>
+&lt;h4 id="pipes">Pipes
+&lt;/h4>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ strings.TrimSuffix &amp;#34;o&amp;#34; (strings.ToLower &amp;#34;Hugo&amp;#34;) }} → hug
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ &amp;#34;Hugo&amp;#34; | strings.ToLower | strings.TrimSuffix &amp;#34;o&amp;#34; }} → hug
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ mul 6 (add 2 5) }} → 42
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ 5 | add 2 | mul 6 }} → 42
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="line-splitting">Line splitting
+&lt;/h4>&lt;p>You can split a template action over two or more lines.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ $v := or .Site.Language.LanguageName .Site.Language.Lang }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $v := or
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> .Site.Language.LanguageName
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> .Site.Language.Lang
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $msg := &amp;#34;This is line one.\nThis is line two.&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $msg := `This is line one.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">This is line two.`
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="variables">Variables
+&lt;/h3>&lt;p>Hugo 还支持变量的声明和赋值，以及对变量进行操作，如切片和 map。Hugo 提供了大量自定义函数，分为不同的命名空间，并且支持管道操作符来连续调用函数和方法。&lt;/p>
+&lt;p>With variables that represent a slice or map, use the &lt;a class="link" href="https://gohugo.io/functions/collections/indexfunction/" target="_blank" rel="noopener"
+>&lt;code>index&lt;/code>&lt;/a> function to return the desired value.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ $slice := slice &amp;#34;foo&amp;#34; &amp;#34;bar&amp;#34; &amp;#34;baz&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ index $slice 2 }} → baz
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $map := dict &amp;#34;a&amp;#34; &amp;#34;foo&amp;#34; &amp;#34;b&amp;#34; &amp;#34;bar&amp;#34; &amp;#34;c&amp;#34; &amp;#34;baz&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ index $map &amp;#34;c&amp;#34; }} → baz
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>With variables that represent a map or object, &lt;a class="link" href="https://gohugo.io/getting-started/glossary/#chain" target="_blank" rel="noopener"
+>chain&lt;/a> identifiers to return the desired value or to access the desired method.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ $map := dict &amp;#34;a&amp;#34; &amp;#34;foo&amp;#34; &amp;#34;b&amp;#34; &amp;#34;bar&amp;#34; &amp;#34;c&amp;#34; &amp;#34;baz&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $map.c }} → baz
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $homePage := .Site.Home }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $homePage.Title }} → My Homepage
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="functions">Functions
+&lt;/h3>&lt;p>Hugo provides hundreds of custom &lt;a class="link" href="https://gohugo.io/functions/" target="_blank" rel="noopener"
+>functions&lt;/a> categorized by namespace.&lt;/p>
+&lt;p>&lt;code>{{ $total := add 1 2 3 4 }}&lt;/code>&lt;/p>
+&lt;h3 id="methods">Methods
+&lt;/h3>&lt;p>The most commonly accessed objects are the &lt;a class="link" href="https://gohugo.io/methods/page/" target="_blank" rel="noopener"
+>&lt;code>Page&lt;/code>&lt;/a> and &lt;a class="link" href="https://gohugo.io/methods/site/" target="_blank" rel="noopener"
+>&lt;code>Site&lt;/code>&lt;/a> objects. This is a small sampling of the &lt;a class="link" href="https://gohugo.io/methods/" target="_blank" rel="noopener"
+>methods&lt;/a> available to each object.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ .Site.Title }} → My Site Title
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ .Title }} → My Page Title
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $page := .Page.GetPage &amp;#34;/books/les-miserables&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $page.Title }} → Les Misérables
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="comments">Comments
+&lt;/h3>&lt;p>模板中的注释需要使用特定的语法，而不是 HTML 注释，以避免在渲染过程中被错误处理。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{/* This is an inline comment. */}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{- /* This is an inline comment with adjacent whitespace removed. */ -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ &amp;#34;&amp;lt;!-- I am an HTML comment. --&amp;gt;&amp;#34; | safeHTML }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ printf &amp;#34;&amp;lt;!-- This is the %s site. --&amp;gt;&amp;#34; .Site.Title | safeHTML }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="include">Include
+&lt;/h3>&lt;p>Hugo 允许通过 template、partial 和 partialCached 函数包含其他模板文件。&lt;/p>
+&lt;h3 id="examples">Examples
+&lt;/h3>&lt;p>多个示例，展示了如何使用条件语句、循环、重新绑定上下文以及访问站点和页面参数等。&lt;/p>
+&lt;p>Please see the &lt;a class="link" href="https://gohugo.io/functions/" target="_blank" rel="noopener"
+>functions&lt;/a>, &lt;a class="link" href="https://gohugo.io/methods/" target="_blank" rel="noopener"
+>methods&lt;/a>, and &lt;a class="link" href="https://gohugo.io/templates/" target="_blank" rel="noopener"
+>templates&lt;/a> documentation for specific examples.&lt;/p>
+&lt;h2 id="2-template-types">2. Template types
+&lt;/h2>&lt;p>Hugo 静态网站生成器提供了多种&lt;a class="link" href="https://gohugo.io/templates/types/" target="_blank" rel="noopener"
+>模板类型&lt;/a>，用于渲染网站内容、资源和数据。&lt;/p>
+&lt;h3 id="structure">Structure
+&lt;/h3>&lt;p>Hugo 允许开发者通过在项目根目录下的 &lt;code>layouts&lt;/code> 目录中创建不同类型的模板来定制网站的渲染效果。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">layouts/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── _default/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── _markup/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │ ├── render-image.html &amp;lt;-- render hook
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │ └── render-link.html &amp;lt;-- render hook
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── baseof.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── home.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── section.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── single.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── taxonomy.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── term.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── articles/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── card.html &amp;lt;-- content view
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── partials/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ ├── footer.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └── header.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── shortcodes/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── audio.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── video.html
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>开发者需要熟悉 Hugo 的模板查找顺序，以便准确地选择和创建适用的模板类型。&lt;/p>
+&lt;h3 id="types">Types
+&lt;/h3>&lt;ul>
+&lt;li>基础模板（&lt;code>baseof.html&lt;/code>），用于定义网站的通用外壳结构；&lt;/li>
+&lt;li>首页模板（&lt;code>home.html&lt;/code>），用于渲染网站首页；&lt;/li>
+&lt;li>单页模板（&lt;code>single.html&lt;/code>），用于渲染单个页面；&lt;/li>
+&lt;li>分区模板（&lt;code>section.html&lt;/code>），用于渲染网站内容的分区列表；&lt;/li>
+&lt;li>分类模板（&lt;code>taxonomy.html&lt;/code>），用于渲染分类列表；&lt;/li>
+&lt;li>术语模板（&lt;code>term.html&lt;/code>），用于渲染与特定术语关联的页面列表；&lt;/li>
+&lt;li>部分模板（如 &lt;code>partials/footer.html&lt;/code>），用于渲染网站的组件部分；&lt;/li>
+&lt;li>内容视图模板，用于在特定内容类型或分区中渲染页面组件；&lt;/li>
+&lt;li>渲染钩子模板（&lt;code>_markup/*.html&lt;/code>），用于自定义 Markdown 转换为 HTML 的过程；&lt;/li>
+&lt;li>短代码模板（&lt;code>shortcodes/*.html&lt;/code>），用于在内容页面中嵌入可重用组件；&lt;/li>
+&lt;li>其他特殊模板，用于生成站点地图、RSS 订阅、404 错误页面和 robots.txt 文件&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-template-lookup-order">3. Template lookup order
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/lookup-order/" target="_blank" rel="noopener"
+>模板查找顺序&lt;/a>的规则和示例，详细说明了如何根据页面的类型、布局、输出格式、语言和分类等参数来选择合适的模板。&lt;/p>
+&lt;h3 id="lookup-rules">Lookup rules
+&lt;/h3>&lt;p>Hugo 使用一系列预定义的规则来选择用于渲染特定页面的模板。这些规则基于页面的种类（如单页、列表页）、布局设置、输出格式（如 HTML、AMP、JSON、RSS）、语言、类型（根据 front matter 中的 &lt;code>type&lt;/code> 或节的根名称）以及部分（对于 section、taxonomy 和 term 类型的页面）。&lt;/p>
+&lt;h3 id="target-a-template">Target a template
+&lt;/h3>&lt;p>模板查找顺序从最具体性到最不具体性排列，包括项目和主题的布局文件夹中的模板。网页提供了多个示例，包括首页、单页、部分、分类和 RSS 模板的查找顺序，以及如何通过在 front matter 中指定 &lt;code>type&lt;/code>、&lt;code>layout&lt;/code> 或两者来定位特定模板。此外，还介绍了如何为不同的输出格式和语言设置模板，以及如何为特定的页面类型创建基础模板。最后，网页还提供了一些基于示例配置的模板查找顺序表格，以帮助用户更好地理解和应用这些规则。&lt;/p>
+&lt;h2 id="4-base-templates">4. Base Templates
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=QVOMCYitLEc" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=QVOMCYitLEc&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://gohugo.io/templates/base/" target="_blank" rel="noopener"
+>Base templates&lt;/a> 主要介绍了 Hugo 静态网站生成器中的基础模板（base templates）和块（block）构造的使用方法，以及如何通过它们定义和覆盖网站的主要模板结构。&lt;/p>
+&lt;p>在 &lt;code>_default/baseof.html&lt;/code> 文件中定义了一个简单的基础模板，它为所有页面提供了一个通用的 HTML 结构，包括头部、标题和页脚块。这些块可以包含默认内容，并且可以在特定的模板中被覆盖。&lt;/p>
+&lt;h2 id="5-home-templates">5. Home Templates
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=ut1xtRZ1QOA" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=ut1xtRZ1QOA&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://gohugo.io/templates/home/" target="_blank" rel="noopener"
+>Home templates&lt;/a> 介绍了 Hugo 网站首页模板的使用和配置方法。&lt;/p>
+&lt;p>Hugo 允许用户为网站的首页创建一个独特的模板。首页模板是构建网站时唯一必需的模板，对于引导新网站和模板或开发单页网站非常有用。&lt;/p>
+&lt;p>Hugo 在查找首页模板时按照以下&lt;a class="link" href="https://gohugo.io/templates/lookup-order/#home-templates" target="_blank" rel="noopener"
+>顺序&lt;/a>进行查找：&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>layouts/index.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/home.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/list.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/_default/{index, home, list}.html&lt;/code>
+首页内容和 front matter 可以通过在 &lt;code>content&lt;/code> 文件夹根目录下的 &lt;code>_index.md&lt;/code> 文件添加。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>vi themes/twotwo/layouts/_default/home.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">{{ define &amp;#34;main&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Content }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ range first 7 site.RegularPages }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h2&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>{{ .LinkTitle }}&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">h2&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Summary }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>首页显示最新 7 篇(first 7) Post。&lt;/p>
+&lt;h2 id="6-single-templates">6. Single templates
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/single/" target="_blank" rel="noopener"
+>Single templates&lt;/a> 介绍了如何在 Hugo 静态网站生成器中创建和使用单页模板（single templates），以及如何通过继承基础模板来定制页面内容的展示。&lt;/p>
+&lt;p>单页模板的使用和创建过程。首先，介绍了如何创建一个基本的单页模板，该模板继承自网站的基础模板，并展示了如何在模板中使用 &lt;code>.Title&lt;/code> 和 &lt;code>.Content&lt;/code> 变量来显示页面标题和内容。接着，网页提供了一个更高级的单页模板示例，该示例展示了如何在页面中包含创建日期、内容以及与页面相关的 “标签” 分类列表。此外，还提到了模板查找顺序的重要性，强调在选择模板路径时应考虑到所需的具体程度。最后，网页还提供了关于如何改进该页面内容的信息，并注明了上次更新的日期和具体更新内容。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ define &amp;#34;main&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h1&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ $dateMachine := .Date | time.Format &amp;#34;2006-01-02T15:04:05-07:00&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ $dateHuman := .Date | time.Format &amp;#34;:date_long&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;time datetime=&amp;#34;{{ $dateMachine }}&amp;#34;&amp;gt;{{ $dateHuman }}&amp;lt;/time&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Content }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ partial &amp;#34;terms.html&amp;#34; (dict &amp;#34;taxonomy&amp;#34; &amp;#34;tags&amp;#34; &amp;#34;page&amp;#34; .) }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-section-templates">7. Section templates
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/section/" target="_blank" rel="noopener"
+>Section 模板&lt;/a> 的使用方法，包括如何向 Section 模板添加内容和前端数据，以及如何设置和查找 Section 模板，还给出了创建默认 Section 模板和使用 &lt;code>.Site.GetPage&lt;/code> 方法的示例。&lt;/p>
+&lt;p>Section 模板是 Hugo 中用于列出 section list 的模板，可以通过 &lt;code>_index.md&lt;/code> 文件添加内容和前端数据。&lt;/p>
+&lt;p>Section 模板的查找顺序遵循 Hugo 的模板查找机制。&lt;/p>
+&lt;p>创建默认 Section 模板时，可以使用 &lt;code>.Content&lt;/code> 来显示内容，使用 &lt;code>where&lt;/code> 和 &lt;code>.Paginate&lt;/code> 来过滤和分页列出页面。&lt;/p>
+&lt;p>&lt;code>.Site.GetPage&lt;/code> 方法可以用来获取 Section 的标题，但它需要对应 Section 目录下存在 &lt;code>_index.md&lt;/code> 文件。如果文件不存在，将返回 &lt;code>nil&lt;/code> 并输出 Section 的默认标题。&lt;/p>
+&lt;h3 id="example-creating-a-default-section-template">Example: creating a default section template
+&lt;/h3>&lt;p>&lt;code>layouts/_default/section.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ define &amp;#34;main&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;main&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Content }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ $pages := where site.RegularPages &amp;#34;Type&amp;#34; &amp;#34;posts&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ $paginator := .Paginate $pages }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ range $paginator.Pages }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h2&amp;gt;&amp;lt;a href=&amp;#34;{{ .RelPermalink }}&amp;#34;&amp;gt;{{ .LinkTitle }}&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ template &amp;#34;_internal/pagination.html&amp;#34; . }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/main&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="8-taxonomy-templates">8. Taxonomy templates
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/taxonomy/" target="_blank" rel="noopener"
+>Taxonomy&lt;/a> （分类）模板功能，允许开发者自定义分类页面的外观和内容。通过创建 &lt;code>layouts/_default/taxonomy.html&lt;/code> 文件，可以定义一个基本的分类模板，该模板可以继承网站的基础布局，并显示当前分类下的所有项。&lt;/p>
+&lt;p>在模板中，可以使用 &lt;code>.Data.Singular&lt;/code> 和 &lt;code>.Data.Plural&lt;/code> 来获取分类的单数和复数名称，使用 &lt;code>.Data.Terms&lt;/code> 来获取包含所有分类项和相关页面的 &lt;code>Taxonomy&lt;/code> 对象。分类项可以按字母顺序排列使用 &lt;code>.Data.Terms.Alphabetical&lt;/code>，或者按项关联页面数量排列使用 &lt;code>.Data.Terms.ByCount&lt;/code>。此外，可以创建特定分类的模板文件，例如 &lt;code>layouts/authors/taxonomy.html&lt;/code>，以提供更具体性的自定义。在分类模板中，还可以展示每个分类项的元数据，例如作者的机构和头像图片。这些功能使得 Hugo 用户能够灵活地管理和展示网站内容的分类结构。&lt;/p>
+&lt;h3 id="sort">Sort
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ define &amp;#34;main&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h1&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Content }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ range .Data.Terms.ByCount }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h2&amp;gt;&amp;lt;a href=&amp;#34;{{ .Page.RelPermalink }}&amp;#34;&amp;gt;{{ .Page.LinkTitle }}&amp;lt;/a&amp;gt; ({{ .Count }})&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>{{ range .Data.Terms.ByCount }}&lt;/code> Sort by term count&lt;/li>
+&lt;li>&lt;code>{{ range .Data.Terms.Alphabetical }}&lt;/code> Sort alphabetically&lt;/li>
+&lt;/ul>
+&lt;h3 id="display-metadata">Display metadata
+&lt;/h3>&lt;p>通过在内容目录中创建对应的分支捆绑包（branch bundle），可以为每个分类项添加元数据，并在分类模板中展示这些信息，如作者的机构和头像。&lt;/p>
+&lt;h2 id="9-term-templates">9. Term templates
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/term/" target="_blank" rel="noopener"
+>Term&lt;/a> （术语）模版，渲染与当前术语关联的页面列表，定制和展示术语的元数据。&lt;/p>
+&lt;p>ugo 允许用户通过创建术语模板来定制特定术语的页面展示。术语模板继承自基础模板，并在 &lt;code>layouts/_default/term.html&lt;/code> 中渲染与当前术语相关联的页面列表。&lt;/p>
+&lt;p>用户可以通过设置 &lt;code>capitalizeListTitles&lt;/code> 为 &lt;code>false&lt;/code> 来避免术语名称的自动大写。&lt;/p>
+&lt;p>&lt;code>layouts/_default/term.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ define &amp;#34;main&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h1&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Content }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ range .Pages }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h2&amp;gt;&amp;lt;a href=&amp;#34;{{ .RelPermalink }}&amp;#34;&amp;gt;{{ .LinkTitle }}&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="10-partial-templates">10. Partial templates
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=pjS4pOLyB7c" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=pjS4pOLyB7c&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://gohugo.io/templates/partial/" target="_blank" rel="noopener"
+>Partial templates&lt;/a> 介绍如何使用和组织局部模板，以及如何在模板中传递和返回值，以及如何缓存局部模板以提高性能。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">layouts/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── partials/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── footer/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │ ├── scripts.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │ └── site-footer.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── head/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │ ├── favicons.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │ ├── metadata.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │ ├── prerender.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> │ └── twitter.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── header/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ├── site-header.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> └── site-nav.html
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Partial Templates 是 Hugo 中用于创建更加模块化和可重用的组件的工具。它们位于 &lt;code>layouts/partials&lt;/code> 目录下，可以通过子目录进行组织。&lt;/p>
+&lt;p>在模板中调用局部模板时，需要使用 &lt;code>{{ partial &amp;quot;&amp;lt;PATH&amp;gt;/&amp;lt;PARTIAL&amp;gt;.html&amp;quot; . }}&lt;/code> 的格式，并确保传递了上下文（&lt;code>.&lt;/code>）。&lt;/p>
+&lt;h3 id="examples-1">Examples
+&lt;/h3>&lt;h4 id="headerhtml">header.html
+&lt;/h4>&lt;p>The following &lt;code>header.html&lt;/code> partial template is used for &lt;a class="link" href="https://spf13.com/" target="_blank" rel="noopener"
+>spf13.com&lt;/a>:&lt;/p>
+&lt;p>&lt;code>layouts/partials/header.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;!DOCTYPE html&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;html class=&amp;#34;no-js&amp;#34; lang=&amp;#34;en-US&amp;#34; prefix=&amp;#34;og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ partial &amp;#34;meta.html&amp;#34; . }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;base href=&amp;#34;{{ .Site.BaseURL }}&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;title&amp;gt; {{ .Title }} : spf13.com &amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;link rel=&amp;#34;canonical&amp;#34; href=&amp;#34;{{ .Permalink }}&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ if .RSSLink }}&amp;lt;link href=&amp;#34;{{ .RSSLink }}&amp;#34; rel=&amp;#34;alternate&amp;#34; type=&amp;#34;application/rss+xml&amp;#34; title=&amp;#34;{{ .Title }}&amp;#34; /&amp;gt;{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ partial &amp;#34;head_includes.html&amp;#34; . }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="footerhtml">footer.html
+&lt;/h4>&lt;p>The following &lt;code>footer.html&lt;/code> partial template is used for &lt;a class="link" href="https://spf13.com/" target="_blank" rel="noopener"
+>spf13.com&lt;/a>:&lt;/p>
+&lt;p>&lt;code>layouts/partials/footer.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;footer&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;div&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;p&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;amp;copy; 2013-14 Steve Francia.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;a href=&amp;#34;https://creativecommons.org/licenses/by/3.0/&amp;#34; title=&amp;#34;Creative Commons Attribution&amp;#34;&amp;gt;Some rights reserved&amp;lt;/a&amp;gt;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> please attribute properly and link back.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/footer&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="11-content-view-templates">11. Content view templates
+&lt;/h2>&lt;p>使用 &lt;a class="link" href="https://gohugo.io/templates/content-view/" target="_blank" rel="noopener"
+>Content view templates&lt;/a> 创建不同的内容展示方式，以便在列表和摘要视图中灵活呈现内容。&lt;/p>
+&lt;p>开发者可以通过在每个内容类型目录中创建具有特定视图名称的模板来实现这一点。例如，可以为 &lt;code>posts&lt;/code> 和 &lt;code>projects&lt;/code> 内容类型创建 &lt;code>li&lt;/code> 和 &lt;code>summary&lt;/code> 视图，这些视图位于 &lt;code>single.html&lt;/code> 旁边。&lt;/p>
+&lt;h2 id="12-create-your-own-shortcodes">12. Create your own &lt;code>shortcodes&lt;/code>
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/shortcode/" target="_blank" rel="noopener"
+>Create your own shortcodes&lt;/a> 主要介绍了如何在 Hugo 静态网站生成器中创建和使用自定义短代码（shortcodes），以及如何通过短代码模板文件扩展 Hugo 的功能，实现在内容文件中嵌入复杂布局和功能的方法。&lt;/p>
+&lt;p>自定义短代码的 HTML 模板文件需要放置在 &lt;code>layouts/shortcodes&lt;/code> 目录下，并且可以通过文件名来调用短代码。&lt;/p>
+&lt;h2 id="13-sitemap-templates">13. Sitemap templates
+&lt;/h2>&lt;p>Hugo 提供了内置的网站地图模板(&lt;a class="link" href="https://gohugo.io/templates/sitemap/" target="_blank" rel="noopener"
+>Sitemap templates&lt;/a>)，支持单语言和多语言项目，并允许用户配置和覆盖默认设置。&lt;/p>
+&lt;h2 id="14-rss-templates">14. RSS templates
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/rss/" target="_blank" rel="noopener"
+>RSS templates&lt;/a>&lt;/p>
+&lt;h2 id="15-custom-404-page">15. Custom 404 page
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/404/" target="_blank" rel="noopener"
+>Custom 404 page&lt;/a>&lt;/p>
+&lt;h2 id="16-robotstxt-template">16. robots.txt template
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/robots/" target="_blank" rel="noopener"
+>robots.txt template&lt;/a>&lt;/p>
+&lt;h2 id="17-menus">17. Menus
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/menu/" target="_blank" rel="noopener"
+>Menus&lt;/a> 主要介绍了在 Hugo 静态网站生成器中如何使用模板创建和渲染菜单。&lt;/p>
+&lt;h3 id="overview">Overview
+&lt;/h3>&lt;p>决定菜单渲染方式的三个因素：&lt;/p>
+&lt;ol>
+&lt;li>菜单项的定义方法（自动、前置元数据或站点配置）&lt;/li>
+&lt;li>菜单结构（扁平或嵌套）&lt;/li>
+&lt;li>菜单项的本地化方法（站点配置或翻译表）&lt;/li>
+&lt;/ol>
+&lt;h3 id="example">Example
+&lt;/h3>&lt;p>示例模板，展示了如何递归地 “遍历” 菜单结构，渲染出本地化且可访问性良好的嵌套列表。该模板还展示了如何在当前页面上标记菜单项的活动状态。&lt;/p>
+&lt;h2 id="18-pagination">18. Pagination
+&lt;/h2>&lt;p>&lt;a class="link" href="https://gohugo.io/templates/pagination/" target="_blank" rel="noopener"
+>Pagination&lt;/a> 介绍了 Hugo 静态网站生成器中的分页功能，包括分页的概念、配置、方法、示例、缓存、分组以及导航。&lt;/p>
+&lt;p>大型列表页面不仅不利于用户导航，还会导致加载时间延长和信息检索困难。为了改善这一点，Hugo 提供了对 &lt;code>home&lt;/code>、&lt;code>section&lt;/code>、&lt;code>taxonomy&lt;/code> 和 &lt;code>term&lt;/code> 页面进行分页的配置选项，包括是否禁用首页别名（disableAliases）、每个分页器中的页面数量（pagerSize）和分页 URL 路径（path）。在多语言站点中，可以为每种语言定义不同的分页行为。&lt;/p>
+&lt;h3 id="configuration">Configuration
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">pagination&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">disableAliases&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">pagerSize&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">10&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">page&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="examples-2">Examples
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ $pages := where site.RegularPages &amp;#34;Type&amp;#34; &amp;#34;posts&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $paginator := .Paginate $pages.ByTitle 7 }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ range $paginator.Pages }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h2&amp;gt;&amp;lt;a href=&amp;#34;{{ .RelPermalink }}&amp;#34;&amp;gt;{{ .LinkTitle }}&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ template &amp;#34;_internal/pagination.html&amp;#34; . }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="grouping">Grouping
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{ $pages := where site.RegularPages &amp;#34;Type&amp;#34; &amp;#34;posts&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ $paginator := .Paginate ($pages.GroupByDate &amp;#34;Jan 2006&amp;#34;) }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ range $paginator.PageGroups }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h2&amp;gt;{{ .Key }}&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ range .Pages }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;h3&amp;gt;&amp;lt;a href=&amp;#34;{{ .RelPermalink }}&amp;#34;&amp;gt;{{ .LinkTitle }}&amp;lt;/a&amp;gt;&amp;lt;/h3&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ template &amp;#34;_internal/pagination.html&amp;#34; . }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="19-embedded-templates">19. Embedded templates
+&lt;/h2>&lt;p>Hugo 提供了一系列内嵌模板(&lt;a class="link" href="https://gohugo.io/templates/embedded/" target="_blank" rel="noopener"
+>Embedded templates&lt;/a>)，用于实现常见的网站功能，如 Disqus 评论系统、Google Analytics 分析、Open Graph 协议、Schema 微数据以及 Twitter Cards 等。&lt;/p>
+&lt;h3 id="disqus">Disqus
+&lt;/h3>&lt;p>Hugo 内置了 Disqus 评论系统的模板，用户可以通过在 &lt;code>layouts/partials&lt;/code> 目录下创建同名文件来覆盖内嵌模板，并在模板中通过 &lt;code>{{ partial &amp;quot;disqus.html&amp;quot; . }}&lt;/code> 调用。配置 Disqus 需要在网站配置文件中设置 &lt;code>shortname&lt;/code>，并且可以在内容的前端元数据中设置 &lt;code>disqus_identifier&lt;/code>、&lt;code>disqus_title&lt;/code> 和 &lt;code>disqus_url&lt;/code>。&lt;/p>
+&lt;h3 id="google-analytics">Google Analytics
+&lt;/h3>&lt;p>Hugo 支持 Google Analytics 4，并提供了相应的内嵌模板。开发者可以通过将模板代码复制到 &lt;code>layouts/partials&lt;/code> 目录下的文件中来自定义模板，并通过 &lt;code>{{ partial &amp;quot;google_analytics.html&amp;quot; . }}&lt;/code> 调用。在配置文件中设置 &lt;code>googleAnalytics.ID&lt;/code> 来配置跟踪 ID。&lt;/p>
+&lt;h3 id="open-graph">Open Graph
+&lt;/h3>&lt;p>Hugo 提供了 Open Graph 协议的内嵌模板，用于定义网页在社交图谱中作为丰富对象的元数据。开发者可以通过 &lt;code>{{ partial &amp;quot;opengraph.html&amp;quot; . }}&lt;/code> 调用模板，并在网站配置文件和内容的前端元数据中设置相关参数，如 &lt;code>description&lt;/code>、&lt;code>images&lt;/code> 和 &lt;code>title&lt;/code>。&lt;/p>
+&lt;h3 id="schema">Schema
+&lt;/h3>&lt;p>Hugo 包含了用于渲染微数据 &lt;code>meta&lt;/code> 标签的内嵌模板，可以通过 &lt;code>{{ partial &amp;quot;schema.html&amp;quot; . }}&lt;/code> 调用。&lt;/p>
+&lt;h3 id="twitter-cards">Twitter Cards
+&lt;/h3>&lt;p>Hugo 提供了 Twitter Cards 的内嵌模板，用于在推文中链接到网站时展示丰富媒体内容。开发者可以通过 &lt;code>{{ partial &amp;quot;twitter_cards.html&amp;quot; . }}&lt;/code> 调用模板，并在配置文件和内容的前端元数据中设置 &lt;code>description&lt;/code>、&lt;code>images&lt;/code> 和 &lt;code>title&lt;/code>。如果没有在前端元数据中指定 &lt;code>images&lt;/code>，Hugo 将搜索带有 &lt;code>feature&lt;/code>、&lt;code>cover&lt;/code> 或 &lt;code>thumbnail&lt;/code> 的图片资源。&lt;/p>
+&lt;h2 id="20-custom-output-formats">20. Custom output formats
+&lt;/h2>&lt;p>Hugo 网站构建工具支持多种自定义输出格式(&lt;a class="link" href="https://gohugo.io/templates/output-formats/" target="_blank" rel="noopener"
+>Custom output formats&lt;/a>)，包括日历事件、电子书格式、Google AMP 和 JSON 搜索索引，以及任何自定义文本格式，并提供了如何配置媒体类型和输出格式以及创建相应模板的指南。&lt;/p></description></item><item><title>Hugo 进阶</title><link>https://all-in-obsidian.li3huo.com/hugo/hugo-advanced-guide/</link><pubDate>Thu, 20 Jun 2024 10:18:58 +0800</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/hugo/hugo-advanced-guide/</guid><description>
 &lt;p>参考 &lt;a class="link" href="./hugo-getting-started" >Hugo 快速上手指南&lt;/a> 可以快速把用户的内容部署成个人网站。&lt;/p>
 &lt;p>适配主题过程中遇到的问题，可以在&lt;a class="link" href="./creating-a-new-theme" >创建一个新 Hugo 主题&lt;/a> 获得部分解答。&lt;/p>
 &lt;p>剩下的问题，只能好好读官网文档，不断验证才能找到答案了。&lt;/p>

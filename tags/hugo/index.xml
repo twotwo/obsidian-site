@@ -58,8 +58,7 @@
 &lt;/h3>&lt;p>首页，或登陆页，是许多访问网站的人看到的第一页。它是网站根目录下的 index.html 文件。由于 Hugo 将文件写入 &lt;code>public/&lt;/code> 目录，所以我们的主页是 &lt;code>public/index.html&lt;/code>。&lt;/p>
 &lt;h3 id="site-configuration-file">Site Configuration File
 &lt;/h3>&lt;p>Hugo 运行时，将查找包含覆盖整个站点默认值的设置的配置文件。YAML、TOML 或 JSON。我更喜欢在配置文件中使用 YAML。如果您更喜欢使用 JSON 或 TOML，则需要翻译我的示例。你还需要更改文件的名称，因为 Hugo 使用扩展名来确定如何处理它。&lt;/p>
-&lt;p>Hugo translates Markdown files into HTML. By default, Hugo expects to find Markdown files in your &lt;code>content/&lt;/code> directory and template files in your &lt;code>themes/&lt;/code> directory. It will create HTML files in your &lt;code>public/&lt;/code> directory. You can change this by specifying alternate locations in the configuration file.
-Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
+&lt;p>Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;ul>
 &lt;li>在 &lt;code>content/&lt;/code> 目录中找到 Markdown 内容文件&lt;/li>
 &lt;li>在 &lt;code>themes/&lt;/code> 目录中找到模板文件&lt;/li>
@@ -74,14 +73,14 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/ul>
 &lt;h4 id="front-matter">Front Matter
 &lt;/h4>&lt;p>&lt;code>Front Matter&lt;/code> 是关于内容的信息。与配置文件一样，它可以用 YAML、TOML 或 JSON 编写。与配置文件不同，Hugo 不使用文件的扩展名来了解格式。它寻找标志类型的标记。YAML 被 “&lt;code>---&lt;/code>” 包围，TOML 被 “&lt;code>+++&lt;/code>” 包围，JSON 被大括号包围。&lt;/p>
-&lt;p>The information in the front matter is passed into the template before the content is rendered into HTML.&lt;/p>
+&lt;p>在 &lt;code>Front Matter&lt;/code> 中的信息首先被传递到模板，之后的内容再呈现为HTML。&lt;/p>
 &lt;h4 id="markdown">Markdown
-&lt;/h4>&lt;p>Content is written in Markdown which makes it easier to create the content. Hugo runs the content through a Markdown engine to create the HTML which will be written to the output file.&lt;/p>
+&lt;/h4>&lt;p>内容是用 Markdown 写的，这使得创建内容更容易。Hugo 通过运行 Markdown 引擎处理内容，创建 HTML 写入文件。&lt;/p>
 &lt;h3 id="template-files">Template Files
 &lt;/h3>&lt;p>Hugo 使用模板文件将内容呈现为 HTML。模板文件是内容和表示之间的桥梁。模板中的规则定义了发布什么内容、发布到哪里以及如何将其呈现给 HTML 文件。模板通过指定要使用的样式来指导表示。&lt;/p>
-&lt;p>有三种类型的模板：single 模板、list 模板和 partial 模板。每种类型都接受一些内容作为输入，并根据模板中的命令对其进行转换。&lt;/p>
+&lt;p>有三种类型的模板：&lt;strong>single&lt;/strong> 模板、&lt;strong>list&lt;/strong> 模板和 partial &lt;strong>模板&lt;/strong>。每种类型都接受一些内容作为输入，并根据模板中的命令对其进行转换。&lt;/p>
 &lt;p>Hugo 使用其内容知识来查找用于呈现内容的模板文件。如果它不能找到与内容完全匹配的模板，它将从那里转移到上一个级别和搜索。它将继续这样做，直到它找到一个匹配的模板或没有模板可以尝试。如果它找不到模板，它将使用该站点的默认模板(&lt;code>layouts/&lt;/code>)。&lt;/p>
-&lt;p>Please note that you can use the front matter to influence Hugo’s choice of templates.&lt;/p>
+&lt;p>请注意，用户可以使用 &lt;code>front matter&lt;/code> 来影响 Hugo 对模板的选择。&lt;/p>
 &lt;h4 id="single-template">Single Template
 &lt;/h4>&lt;p>A single template is used to render a single piece of content. For example, an article or post would be a single piece of content and use a single template.&lt;/p>
 &lt;h4 id="list-template">List Template
@@ -193,22 +192,23 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>That second warning is easier to explain. We haven’t created a template to be used to generate “page not found errors.” The 404 message is a topic for a separate tutorial.&lt;/p>
 &lt;p>第一个警告是生成类型为&lt;strong>首页&lt;/strong>的提示(kind &amp;ldquo;home&amp;rdquo;)。我们需要提供 &lt;code>layouts/home.html&lt;/code> 模版来生成首页。&lt;/p>
 &lt;p>第二个警告是生成类型为&lt;strong>分类&lt;/strong>的提示(kind &amp;ldquo;taxonomy&amp;rdquo;)。我们需要提供 &lt;code>layouts/terms.html&lt;/code> 模版来生成分类。&lt;/p>
-&lt;p>At this point, you&amp;rsquo;ve got a working installation and site that we can build upon. All that’s left is to add some content and a theme to display it.&lt;/p>
+&lt;p>现在已经有了一个能够运行的网站，我们可以在此基础上进行构建。剩下的就是添加一些内容和一个主题来显示它。&lt;/p>
 &lt;h2 id="create-a-new-theme">Create a New Theme
 &lt;/h2>&lt;p>Hugo 没有附带默认主题。官网上提供了大量可用的第三方&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
 >主题&lt;/a>，Hugo 附带一个创建新主题的命令：&lt;code>hugo new theme &amp;lt;theme name&amp;gt;&lt;/code>&lt;/p>
 &lt;p>我们要创建一个叫 &amp;ldquo;twotwo&amp;rdquo; 的新主题，由于本教程的目标是展示如何填充文件以注入内容，因此主题将不包含任何 CSS(新版本的 Hugo 在创建主题时，已经包含了 CSS 和 JS)。换句话说，丑陋但实用。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo env
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.126.3+extended darwin/amd64 BuildDate=2024-06-02T13:02:43Z VendorInfo=brew
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.132.1+extended darwin/amd64 BuildDate=2024-08-13T10:10:10Z VendorInfo=brew
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOOS=&amp;#34;darwin&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOARCH=&amp;#34;amd64&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOVERSION=&amp;#34;go1.22.3&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GOVERSION=&amp;#34;go1.22.6&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/sass/libsass=&amp;#34;3.6.5&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">github.com/webmproject/libwebp=&amp;#34;v1.3.2&amp;#34;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>所有主题对内容和布局都有自己的看法。强烈建议使模板更简单，使用个性化的参数会使主题更难使用。当你构建一个主题时，请考虑使用其他主题所使用的术语。&lt;/p>
 &lt;h3 id="create-a-skeleton">Create a Skeleton
 &lt;/h3>&lt;p>Use the hugo &amp;ldquo;new&amp;rdquo; command to create the skeleton of a theme. This creates the directory structure and places empty files for you to fill out.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo new theme twotwo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Creating new theme in ./themes/twotwo
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ ls -l
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">drwxr-xr-x - liyan 13 May 20:11 archetypes
@@ -221,34 +221,34 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.rw-r--r-- 1.4k liyan 23 May 21:32 README.md
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find themes/twotwo -type f | xargs ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 1069 Jun 12 11:57 themes/twotwo/LICENSE
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 61 Jun 12 11:57 themes/twotwo/README.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 102 Jun 12 11:57 themes/twotwo/archetypes/default.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 284 Jun 12 11:57 themes/twotwo/assets/css/main.css
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 49 Jun 12 11:57 themes/twotwo/assets/js/main.js
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 279 Jun 12 11:57 themes/twotwo/content/_index.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 367 Jun 12 11:57 themes/twotwo/content/posts/_index.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 812 Jun 12 11:57 themes/twotwo/content/posts/post-1.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 940 Jun 12 11:57 themes/twotwo/content/posts/post-2.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 19224 Jun 12 11:57 themes/twotwo/content/posts/post-3/bryce-canyon.jpg
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 996 Jun 12 11:57 themes/twotwo/content/posts/post-3/index.md
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 335 Jun 12 11:57 themes/twotwo/hugo.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 354 Jun 12 11:57 themes/twotwo/layouts/_default/baseof.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 174 Jun 12 11:57 themes/twotwo/layouts/_default/home.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 187 Jun 12 11:57 themes/twotwo/layouts/_default/list.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 325 Jun 12 11:57 themes/twotwo/layouts/_default/single.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 54 Jun 12 11:57 themes/twotwo/layouts/partials/footer.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 257 Jun 12 11:57 themes/twotwo/layouts/partials/head.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 351 Jun 12 11:57 themes/twotwo/layouts/partials/head/css.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 429 Jun 12 11:57 themes/twotwo/layouts/partials/head/js.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 84 Jun 12 11:57 themes/twotwo/layouts/partials/header.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 1343 Jun 12 11:57 themes/twotwo/layouts/partials/menu.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 554 Jun 12 11:57 themes/twotwo/layouts/partials/terms.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 15406 Jun 12 11:57 themes/twotwo/static/favicon.ico
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 830 Jun 12 11:57 themes/twotwo/theme.toml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1069 Aug 14 11:00 themes/twotwo/LICENSE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 61 Aug 14 11:00 themes/twotwo/README.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 102 Aug 14 11:00 themes/twotwo/archetypes/default.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 284 Aug 14 11:00 themes/twotwo/assets/css/main.css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 49 Aug 14 11:00 themes/twotwo/assets/js/main.js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 279 Aug 14 11:00 themes/twotwo/content/_index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 367 Aug 14 11:00 themes/twotwo/content/posts/_index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 812 Aug 14 11:00 themes/twotwo/content/posts/post-1.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 940 Aug 14 11:00 themes/twotwo/content/posts/post-2.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">19224 Aug 14 11:00 themes/twotwo/content/posts/post-3/bryce-canyon.jpg
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 996 Aug 14 11:00 themes/twotwo/content/posts/post-3/index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 335 Aug 14 11:00 themes/twotwo/hugo.toml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 354 Aug 14 11:00 themes/twotwo/layouts/_default/baseof.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 174 Aug 14 11:00 themes/twotwo/layouts/_default/home.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 187 Aug 14 11:00 themes/twotwo/layouts/_default/list.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 325 Aug 14 11:00 themes/twotwo/layouts/_default/single.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 54 Aug 14 11:00 themes/twotwo/layouts/partials/footer.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 257 Aug 14 11:00 themes/twotwo/layouts/partials/head.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 351 Aug 14 11:00 themes/twotwo/layouts/partials/head/css.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 429 Aug 14 11:00 themes/twotwo/layouts/partials/head/js.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 84 Aug 14 11:00 themes/twotwo/layouts/partials/header.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1343 Aug 14 11:00 themes/twotwo/layouts/partials/menu.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 554 Aug 14 11:00 themes/twotwo/layouts/partials/terms.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">15406 Aug 14 11:00 themes/twotwo/static/favicon.ico
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 830 Aug 14 11:00 themes/twotwo/theme.toml
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.&lt;/p>
-&lt;p>Please take a minute to fill out the theme.toml and LICENSE.md files. They&amp;rsquo;re optional, but if you&amp;rsquo;re going to be distributing your theme, it tells the world who to praise (or blame). It&amp;rsquo;s also nice to declare the license so that people will know how they can use the theme.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个框架包括模板(以 &lt;code>.html&lt;/code> 结尾的文件)、许可文件(&lt;code>LICENSE&lt;/code>)、主题的描述(&lt;code>theme.toml&lt;/code>)，以及一个空原型。&lt;/p>
+&lt;p>Please take a minute to fill out the &lt;code>theme.toml&lt;/code> and &lt;code>LICENSE&lt;/code> files. They&amp;rsquo;re optional, but if you&amp;rsquo;re going to be distributing your theme, it tells the world who to praise (or blame). It&amp;rsquo;s also nice to declare the license so that people will know how they can use the theme.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi themes/twotwo/theme.toml
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">name = &amp;#39;Theme name&amp;#39;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">license = &amp;#39;MIT&amp;#39;
@@ -262,19 +262,18 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## also edit themes/twotwo/LICENSE.md and change
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## the bit that says &amp;#34;YOUR_NAME_HERE&amp;#34;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that the the skeleton&amp;rsquo;s template files are empty. Don&amp;rsquo;t worry, we&amp;rsquo;ll be changing that shortly.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ find themes/twotwo -name &amp;#39;*.html&amp;#39; | xargs ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 354 Jun 12 11:57 themes/twotwo/layouts/_default/baseof.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 174 Jun 12 11:57 themes/twotwo/layouts/_default/home.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 187 Jun 12 11:57 themes/twotwo/layouts/_default/list.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 325 Jun 12 11:57 themes/twotwo/layouts/_default/single.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 54 Jun 12 11:57 themes/twotwo/layouts/partials/footer.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 257 Jun 12 11:57 themes/twotwo/layouts/partials/head.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 351 Jun 12 11:57 themes/twotwo/layouts/partials/head/css.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 429 Jun 12 11:57 themes/twotwo/layouts/partials/head/js.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 84 Jun 12 11:57 themes/twotwo/layouts/partials/header.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 1343 Jun 12 11:57 themes/twotwo/layouts/partials/menu.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 liyan staff 554 Jun 12 11:57 themes/twotwo/layouts/partials/terms.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ find themes/twotwo -name &lt;span class="s1">&amp;#39;*.html&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> xargs ls -l
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/_default/baseof.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/_default/home.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/_default/list.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/_default/single.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/footer.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/head.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/head/css.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/head/js.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/header.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/menu.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">themes/twotwo/layouts/partials/terms.html
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="update-the-configuration-file-to-use-the-theme">Update the Configuration File to Use the Theme
 &lt;/h3>&lt;p>既然我们已经有了一个可以使用的主题，那么最好将主题名称添加到配置文件中。这是可选的，因为总是可以在所有命令中添加“-t twotwo”。我喜欢把它放在配置文件中，因为我喜欢更短的命令行。如果你没有将它放入配置文件或在命令行中指定它，那么你就使用不了你期望使用的模板。&lt;/p>
 &lt;p>Edit the file to add the theme, add a title for the site, and specify that all of our content will use the YAML format.&lt;/p>
@@ -413,48 +412,59 @@ Hugo 将 Markdown 文件翻译成 HTML。默认情况下，Hugo 希望&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 tags created
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 categories created
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">in 1 ms
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="update-the-home-page-template">Update the Home Page Template
-&lt;/h2>&lt;p>The home page is one of a few special pages that Hugo creates automatically. As mentioned earlier, it looks for one of three files in the theme&amp;rsquo;s layout/ directory:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="base-template">Base Template
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=QVOMCYitLEc" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=QVOMCYitLEc&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://gohugo.io/templates/base/" target="_blank" rel="noopener"
+>Base templates&lt;/a> 主要介绍了 Hugo 静态网站生成器中的基础模板（base templates）和块（block）构造的使用方法，以及如何通过它们定义和覆盖网站的主要模板结构。&lt;/p>
+&lt;p>在 &lt;code>_default/baseof.html&lt;/code> 文件中定义了一个简单的基础模板，它为所有页面提供了一个通用的 HTML 结构，包括头部、标题和页脚块。这些块可以包含默认内容，并且可以在特定的模板中被覆盖。&lt;/p>
+&lt;h2 id="home-page-template">Home Page Template
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=ut1xtRZ1QOA" target="_blank" rel="noopener"
+>https://www.youtube.com/watch?v=ut1xtRZ1QOA&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://gohugo.io/templates/home/" target="_blank" rel="noopener"
+>Home templates&lt;/a> 介绍了 Hugo 网站首页模板的使用和配置方法。&lt;/p>
+&lt;p>Hugo 允许用户为网站的首页创建一个独特的模板。首页模板是构建网站时唯一必需的模板，对于引导新网站和模板或开发单页网站非常有用。&lt;/p>
+&lt;p>Hugo 在查找首页模板时按照以下&lt;a class="link" href="https://gohugo.io/templates/lookup-order/#home-templates" target="_blank" rel="noopener"
+>顺序&lt;/a>进行查找：&lt;/p>
 &lt;ol>
-&lt;li>index.html&lt;/li>
-&lt;li>_default/list.html&lt;/li>
-&lt;li>_default/single.html&lt;/li>
+&lt;li>&lt;code>layouts/index.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/home.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/list.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>layouts/_default/{index, home, list}.html&lt;/code>
+首页内容和 front matter 可以通过在 &lt;code>content&lt;/code> 文件夹根目录下的 &lt;code>_index.md&lt;/code> 文件添加。&lt;/li>
 &lt;/ol>
-&lt;p>We could update one of the default templates, but a good design decision is to update the most specific template available. That&amp;rsquo;s not a hard and fast rule (in fact, we&amp;rsquo;ll break it a few times in this tutorial), but it is a good generalization.&lt;/p>
+&lt;p>&lt;code>vi themes/twotwo/layouts/_default/home.html&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">{{ define &amp;#34;main&amp;#34; }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Content }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ range first 7 site.RegularPages }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h2&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;&lt;/span>&lt;span class="nt">a&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>{{ .LinkTitle }}&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">a&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">h2&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ .Summary }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{ end }}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>首页显示最新 7 篇(first 7) Post。&lt;/p>
 &lt;h3 id="make-a-static-home-page">Make a Static Home Page
-&lt;/h3>&lt;p>Right now, that page is empty because we don&amp;rsquo;t have any content and we don&amp;rsquo;t have any logic in the template. Let&amp;rsquo;s change that by adding some text to the template.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ vi themes/zafta/layouts/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!DOCTYPE html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;body&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/body&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
+&lt;/h3>&lt;p>Build the web site and then verify the results.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">$ hugo --logLevel info
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Start building sites …
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hugo v0.132.1+extended darwin/amd64 &lt;span class="nv">BuildDate&lt;/span>&lt;span class="o">=&lt;/span>2024-08-13T10:10:10Z &lt;span class="nv">VendorInfo&lt;/span>&lt;span class="o">=&lt;/span>brew
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Build the web site and then verify the results.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ hugo --verbose
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 draft content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 future content
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 pages created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 tags created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0 categories created
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">in 2 ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">|&lt;/span> EN
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-------------------+------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Pages &lt;span class="p">|&lt;/span> &lt;span class="m">343&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Paginator pages &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Non-page files &lt;span class="p">|&lt;/span> &lt;span class="m">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Static files &lt;span class="p">|&lt;/span> &lt;span class="m">106&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Processed images &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Aliases &lt;span class="p">|&lt;/span> &lt;span class="m">11&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Cleaned &lt;span class="p">|&lt;/span> &lt;span class="m">0&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find public -type f -name &amp;#39;*.html&amp;#39; | xargs ls -l
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-rw-r--r-- 1 quoha staff 78 Sep 29 21:26 public/index.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total in &lt;span class="m">701&lt;/span> ms
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ cat public/index.html
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!DOCTYPE html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;html&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;body&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ find public -type f -name &lt;span class="s1">&amp;#39;*.html&amp;#39;&lt;/span> &lt;span class="p">|&lt;/span> xargs ls -l
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ ll public/index.html
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.rw-r--r-- 2.5k liyan &lt;span class="m">15&lt;/span> Aug 10:10 public/index.html
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="live-reload-1">Live Reload
 &lt;/h4>&lt;p>Note: If you&amp;rsquo;re running the server with the &lt;code>--watch&lt;/code> option, you&amp;rsquo;ll see different content in the file:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">$&lt;/span> &lt;span class="n">cat&lt;/span> &lt;span class="n">public&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">html&lt;/span>
