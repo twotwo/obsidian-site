@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicolevdh on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/nicolevdh/</link><description>Recent content in Nicolevdh on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/nicolevdh/index.xml" rel="self" type="application/rss+xml"/><item><title>推荐主题：AnuPpuccin</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</link><pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nicolevdh on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/nicolevdh/</link><description>Recent content in Nicolevdh on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/nicolevdh/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian Theme: AnuPpuccin</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</link><pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</guid><description>
 &lt;p>AnuPpuccin 是一个为 Obsidian 知识库设计的主题，由 AnubisNekhet 维护，支持多种颜色方案和布局，并且获得了 2022 年度最佳主题奖。&lt;/p>
 &lt;!-- more -->
 &lt;h2 id="外观设置v167">外观设置(v1.6.7)
@@ -18,7 +18,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>Appearance -&amp;gt; Themes&lt;/p>
-&lt;p>安装主题：AnuPpuccin`(1.5.0)&lt;/p>
+&lt;p>安装主题：AnuPpuccin&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> v1.5.0&lt;/p>
 &lt;p>安装伴侣插件： &lt;code>Style Settings&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -27,7 +27,7 @@
 &lt;h3 id="其余参数">其余参数
 &lt;/h3>&lt;p>对整体外观影响较小，使用默认参数即可。&lt;/p>
 &lt;h2 id="style-settings">Style Settings
-&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings.jpg"
+&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings-anup.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;h3 id="color">Color
@@ -38,7 +38,12 @@ loading="lazy"
 alt="file editor"
 >&lt;/p>
 &lt;h3 id="integration">Integration
-&lt;/h3>&lt;h4 id="minimal-cards">Minimal Cards
+&lt;/h3>&lt;ul>
+&lt;li>Kanban&lt;/li>
+&lt;li>MAKE.md&lt;/li>
+&lt;li>Minimal Cards&lt;/li>
+&lt;/ul>
+&lt;h4 id="minimal-cards">Minimal Cards
 &lt;/h4>&lt;p>.scss -&amp;gt; css&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> npm install -g sass
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sass minimal-cards.scss minimal-cards.css
@@ -53,6 +58,29 @@ alt="workspace"
 &lt;h4 id="rainbow-folders">Rainbow Folders
 &lt;/h4>&lt;h4 id="workspace-layout">Workspace Layout
 &lt;/h4>&lt;p>Workspace Layout variant: &lt;code>Cards&lt;/code>&lt;/p>
+&lt;h3 id="import--export">Import &amp;amp; Export
+&lt;/h3>&lt;p>直接导入 / 导出配置&lt;/p>
+&lt;blockquote>
+&lt;p>[!done]- Light Theme: Latte&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-CSS" data-lang="CSS">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;p>{
+&amp;ldquo;obsidian-prism-theme@@color-schemes-lt&amp;rdquo;: &amp;ldquo;pt-color-scheme-latte-lt&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@color-scheme-style-lt&amp;rdquo;: &amp;ldquo;pt-color-scheme-style-two-tone-and-border-lt&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@light-accent-color-preset&amp;rdquo;: &amp;ldquo;pt-accent-color-blue-lt&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@inline-title-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;interactive-accent-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h1-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-red-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h2-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-orange-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h3-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-yellow-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h4-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-green-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h5-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-mint-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h6-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-cyan-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@text-italic-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-green-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@text-bold-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-red-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@pt-status-bar-style&amp;rdquo;: &amp;ldquo;pt-status-bar-position-fixed&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@pt-fixed-status-bar-align&amp;rdquo;: &amp;ldquo;pt-fixed-status-bar-align-right&amp;rdquo;
+}&lt;/p>
+&lt;blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
 &lt;h2 id="参考视频">参考视频
 &lt;/h2>&lt;p>Nicole 分享了使用 AnuPpuccin 主题 + Style Settings 插件进行界面美化的方法。&lt;/p>
 &lt;p>&lt;a class="link" href="https://youtu.be/7-SOwxpZQNI" target="_blank" rel="noopener"
@@ -87,11 +115,15 @@ alt="workspace"
 &lt;h3 id="项目状态">项目状态
 &lt;/h3>&lt;p>因开发者的学业和项目任务，项目处于休眠状态，暂时可能无法及时修复 bug 和问题。&lt;/p>
 &lt;p>目前版本 v1.5.0, 2024/5/11&lt;/p>
-&lt;h3 id="file-over-app-的设计">File over App 的设计
-&lt;/h3>&lt;p>用户：笔记和资源文件
-应用：应用、配置、资源&lt;/p>
-&lt;p>应用视图
-笔记视图&lt;/p></description></item><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://github.com/AnubisNekhet/AnuPpuccin" target="_blank" rel="noopener"
+>https://github.com/AnubisNekhet/AnuPpuccin&lt;/a> 2k stars&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Getting started with ExcaliBrain</title><link>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/excalibrain-getting-started/</guid><description>
 &lt;p>Getting started with ExcaliBrain, zsolt 发了三个视频做为新手入门引导。&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
@@ -158,7 +190,7 @@ title="YouTube Video"
 >
 &lt;/iframe>
 &lt;/div></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
-&lt;p>从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
+&lt;p>从几个 YouTuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
 &lt;h2 id="visualpkm">@VisualPKM
 &lt;/h2>&lt;p>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
 >Zsolt&lt;/a> Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p>

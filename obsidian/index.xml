@@ -1,4 +1,194 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidians on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/</link><description>Recent content in Obsidians on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>推荐主题：AnuPpuccin</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</link><pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidians on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/</link><description>Recent content in Obsidians on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian Gems of the year</title><link>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</link><pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</guid><description>
+&lt;p>Obsidian 首行代码诞生于 2020 年 1 月 31 日。自 2021 年初开始，社区已经举行了四届 Gems of the year（年度宝石奖）评奖。&lt;/p>
+&lt;h2 id="themes">Themes
+&lt;/h2>&lt;p>🏆 冠军, 🥈亚军&lt;/p>
+&lt;ul>
+&lt;li>🏆 &lt;a class="link" href="https://forum.obsidian.md/t/minimal-theme/3659" target="_blank" rel="noopener"
+>Minimal&lt;/a> by @kepano &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>🏆 &lt;a class="link" href="https://github.com/colineckert/obsidian-things" target="_blank" rel="noopener"
+>Things&lt;/a> by Colin Eckert &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>🏆 &lt;a class="link" href="https://github.com/AnubisNekhet/AnuPpuccin" target="_blank" rel="noopener"
+>AnuPpuccin&lt;/a> by Anubis &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>🏆 &lt;a class="link" href="https://github.com/Akifyss/obsidian-border" target="_blank" rel="noopener"
+>Border&lt;/a> by Akifyss &lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/li>
+&lt;/ul>
+&lt;h3 id="runners-up">Runners up
+&lt;/h3>&lt;p>Runner-up: &lt;a class="link" href="https://forum.obsidian.md/t/theme-blue-topaz-v1-7-updated-20201209-for-v0-9-22/6425" target="_blank" rel="noopener"
+>Blue Topaz&lt;/a> by @WhyI&lt;/p>
+&lt;blockquote>
+&lt;p>2020&lt;/p>
+&lt;/blockquote>
+&lt;p>Lucky winner: &lt;a class="link" href="https://forum.obsidian.md/t/obsidianite-theme-version-1-1-1-nov-17-2020/7876" target="_blank" rel="noopener"
+>Obsidianite&lt;/a> by @TriDiamond&lt;/p>
+&lt;blockquote>
+&lt;p>2020 幸运奖，随机抽取&lt;/p>
+&lt;/blockquote>
+&lt;p>2nd place &lt;a class="link" href="https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme" target="_blank" rel="noopener"
+>Yin and Yang&lt;/a> by Chetachi E.&lt;/p>
+&lt;blockquote>
+&lt;p>2021&lt;/p>
+&lt;/blockquote>
+&lt;p>3rd place &lt;a class="link" href="https://github.com/jdanielmourao/obsidian-sanctum" target="_blank" rel="noopener"
+>Sanctum&lt;/a> by José Daniel Mourão&lt;/p>
+&lt;blockquote>
+&lt;p>2021&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a class="link" href="https://github.com/catppuccin/obsidian" target="_blank" rel="noopener"
+>Catppuccin&lt;/a> by Marshall Beckrich&lt;/p>
+&lt;blockquote>
+&lt;p>2022&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a class="link" href="https://github.com/7368697661/Origami" target="_blank" rel="noopener"
+>Origami&lt;/a> by kneecaps&lt;/p>
+&lt;blockquote>
+&lt;p>2022&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a class="link" href="https://github.com/kepano/flexoki-obsidian" target="_blank" rel="noopener"
+>Flexoki&lt;/a> by Steph Ango (@kepano)&lt;/p>
+&lt;blockquote>
+&lt;p>Flexoki, an inky color scheme for Obsidian.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a class="link" href="https://github.com/tcmmichaelb139/obsidian-tokyonight" target="_blank" rel="noopener"
+>Tokyo Night&lt;/a> by Michael Bao&lt;/p>
+&lt;blockquote>
+&lt;p>A Tokyo Night theme for Obsidian. Colors from tokyonight.nvim and VSCode Tokyonight.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="stories">Stories
+&lt;/h2>&lt;p>2020 还评选了年读最佳故事&lt;/p>
+&lt;ul>
+&lt;li>Best story: &lt;a class="link" href="https://forum.obsidian.md/t/obsidian-story-of-the-year-2020-nomination-thread/9366/5" target="_blank" rel="noopener"
+>“I never chose to write, Obsidian made me write”&lt;/a> by @base&lt;/li>
+&lt;li>Runner-up: &lt;a class="link" href="https://forum.obsidian.md/t/obsidian-story-of-the-year-2020-nomination-thread/9366/7" target="_blank" rel="noopener"
+>“From Paper Zettelkasten To Obsidian”&lt;/a> by @Santi&lt;/li>
+&lt;li>Lucky winner*: &lt;a class="link" href="https://forum.obsidian.md/t/obsidian-story-of-the-year-2020-nomination-thread/9366/2" target="_blank" rel="noopener"
+>“Obsidian-made publication at the top journal of my field”&lt;/a> by thanks4player&lt;/li>
+&lt;/ul>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://obsidian.md/blog/2020-goty-winners/" target="_blank" rel="noopener"
+>https://obsidian.md/blog/2020-goty-winners/&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://obsidian.md/goty2021" target="_blank" rel="noopener"
+>https://obsidian.md/goty2021&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a class="link" href="https://obsidian.md/blog/2022-goty-winners/" target="_blank" rel="noopener"
+>https://obsidian.md/blog/2022-goty-winners/&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4">
+&lt;p>&lt;a class="link" href="https://obsidian.md/blog/2023-goty-winners/" target="_blank" rel="noopener"
+>https://obsidian.md/blog/2023-goty-winners/&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Obsidian Theme: Border</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-border/</link><pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-border/</guid><description>
+&lt;p>Border 是一个为知识管理工具 Obsidian.md 定制的主题插件，由 Akifyss 维护。该主题旨在提供一个干净、高度定制化的用户界面，并且强烈推荐与 &lt;code>Style Settings&lt;/code> 插件一起使用。&lt;/p>
+&lt;!-- more -->
+&lt;h2 id="外观设置v167">外观设置(v1.6.7)
+&lt;/h2>&lt;h3 id="基础参数">基础参数
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Base color scheme(Dark/Light)，确定基础颜色；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Accent color，设置主题色。&lt;/p>
+&lt;p>Favorite Color&lt;/p>
+&lt;ul>
+&lt;li>sky blue &lt;code>#245e73&lt;/code>&lt;/li>
+&lt;li>mars green &lt;code>#008c8c&lt;/code>&lt;/li>
+&lt;li>tiffany blue &lt;code>#81d8cf&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Appearance -&amp;gt; Themes&lt;/p>
+&lt;p>安装主题：Border&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> v1.9.9&lt;/p>
+&lt;p>安装伴侣插件： &lt;code>Style Settings&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="css-snippets">CSS snippets
+&lt;/h3>&lt;p>:LiFolder: Open snippets folder / :LiRefreshCcw: Reload snippets&lt;/p>
+&lt;h3 id="其余参数">其余参数
+&lt;/h3>&lt;p>对整体外观影响较小，使用默认参数即可。&lt;/p>
+&lt;h2 id="style-settings">Style Settings
+&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings-border.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="import--export">Import &amp;amp; Export
+&lt;/h3>&lt;p>直接导入 / 导出配置&lt;/p>
+&lt;blockquote>
+&lt;p>[!done]- Light Theme: Card&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;p>{
+&amp;ldquo;Appearance-light@@card-layout-open-light&amp;rdquo;: true,
+&amp;ldquo;Appearance-light@@background-underlying-select-light&amp;rdquo;: &amp;ldquo;background-underlying-CSS-light&amp;rdquo;,
+&amp;ldquo;Appearance-light@@card-border-radius-light&amp;rdquo;: &amp;ldquo;4px&amp;rdquo;,
+&amp;ldquo;Appearance-light@@card-shadow-light&amp;rdquo;: &amp;ldquo;0px 0px 0px 1px black&amp;rdquo;,
+&amp;ldquo;Appearance-light@@color-to-tab-icon-light&amp;rdquo;: true,
+&amp;ldquo;Appearance-light@@color-orange-rgb@@light&amp;rdquo;: &amp;ldquo;#ec7500&amp;rdquo;,
+&amp;ldquo;Appearance-light@@color-yellow-rgb@@light&amp;rdquo;: &amp;ldquo;#e0ac00&amp;rdquo;,
+&amp;ldquo;Appearance-light@@color-green-rgb@@light&amp;rdquo;: &amp;ldquo;#08B94E&amp;rdquo;,
+&amp;ldquo;Appearance-light@@color-cyan-rgb@@light&amp;rdquo;: &amp;ldquo;#00bfbc&amp;rdquo;,
+&amp;ldquo;Appearance-light@@color-blue-rgb@@light&amp;rdquo;: &amp;ldquo;#086DDD&amp;rdquo;,
+&amp;ldquo;Appearance-light@@color-purple-rgb@@light&amp;rdquo;: &amp;ldquo;#7852EE&amp;rdquo;,
+&amp;ldquo;Appearance-light@@color-pink-rgb@@light&amp;rdquo;: &amp;ldquo;#D53984&amp;rdquo;,
+&amp;ldquo;Appearance-light@@background-underlying-CSS-blend-mode-light&amp;rdquo;: &amp;ldquo;none&amp;rdquo;,
+&amp;ldquo;Appearance-light@@background-modifier-hover@@light&amp;rdquo;: &amp;ldquo;#00000013&amp;rdquo;,
+&amp;ldquo;Appearance-light@@background-modifier-border-hover@@light&amp;rdquo;: &amp;ldquo;#1A7DA4&amp;rdquo;,
+&amp;ldquo;Appearance-light@@background-underlying-CSS-light&amp;rdquo;: &amp;ldquo;linear-gradient(to top, #4CA1AF, #2C3E50)&amp;rdquo;,
+&amp;ldquo;Appearance-light@@background-activated-tab-header-light&amp;rdquo;: &amp;ldquo;#1A7DA4&amp;rdquo;,
+&amp;ldquo;Appearance-light@@text-normal@@light&amp;rdquo;: &amp;ldquo;#222222&amp;rdquo;,
+&amp;ldquo;Appearance-light@@text-muted@@light&amp;rdquo;: &amp;ldquo;#5a5a5a&amp;rdquo;,
+&amp;ldquo;Appearance-light@@text-faint@@light&amp;rdquo;: &amp;ldquo;#ababab&amp;rdquo;,
+&amp;ldquo;Appearance-light@@border-radius-activated-tab-header-light&amp;rdquo;: &amp;ldquo;4px&amp;rdquo;,
+&amp;ldquo;Appearance-light@@shadow-activated-tab-header-light&amp;rdquo;: &amp;ldquo;none&amp;rdquo;,
+&amp;ldquo;Appearance-light@@Active-states-file-explorer-select-light&amp;rdquo;: &amp;ldquo;activated-file-tab-style-light&amp;rdquo;,
+&amp;ldquo;Appearance-light@@toggle-track-shadow-light&amp;rdquo;: &amp;ldquo;0px 0px 0px 1px #1A7DA4&amp;rdquo;,
+&amp;ldquo;Appearance-light@@toggle-track-hovered-shadow-light&amp;rdquo;: &amp;ldquo;0px 0px 0px 1px #1A7DA4&amp;rdquo;,
+&amp;ldquo;Appearance-light@@toggle-thumb-color-light&amp;rdquo;: &amp;ldquo;white&amp;rdquo;,
+&amp;ldquo;Appearance-light@@toggle-track-color-light&amp;rdquo;: &amp;ldquo;white&amp;rdquo;,
+&amp;ldquo;Appearance-light@@card-highlight-light&amp;rdquo;: true,
+&amp;ldquo;Appearance-light@@input-shadow-light&amp;rdquo;: &amp;ldquo;inset 0 0 0 1px #1A7DA4&amp;rdquo;,
+&amp;ldquo;Appearance-light@@input-shadow-hover-light&amp;rdquo;: &amp;ldquo;inset 0 0 0 1px #1A7DA4&amp;rdquo;
+}&lt;/p>
+&lt;blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;h2 id="features">Features
+&lt;/h2>&lt;p>该主题支持自动隐藏功能、卡片布局、悬停指示线以及高度定制化的界面风格。&lt;/p>
+&lt;p>用户可以通过复制 &lt;a class="link" href="https://github.com/Akifyss/obsidian-border/tree/main/presets" target="_blank" rel="noopener"
+>预设代码&lt;/a> 并将其粘贴到样式设置中来应用不同的界面风格，例如&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/Akifyss/obsidian-border/blob/main/presets/Obsidian-default-light-alt.json" title="Obsidian-default-light-alt.json"
+target="_blank" rel="noopener"
+>Obsidian-default-light-alt&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/Akifyss/obsidian-border/blob/main/presets/Boundary.json" title="Boundary.json"
+target="_blank" rel="noopener"
+>Boundary&lt;/a>（浅色模式）&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/Akifyss/obsidian-border/blob/main/presets/Neumorphism.json" title="Neumorphism.json"
+target="_blank" rel="noopener"
+>Neumorphism&lt;/a>（浅色模式）&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/Akifyss/obsidian-border/blob/main/presets/Translucent.json" title="Translucent.json"
+target="_blank" rel="noopener"
+>Translucent&lt;/a>（深色模式，需要在设置 - 外观中启用 “半透明窗口”，Windows 和 Linux 不支持）&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/Akifyss/obsidian-border/blob/main/presets/Sunset.json" title="Sunset.json"
+target="_blank" rel="noopener"
+>Sunset&lt;/a>（深色模式）&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/Akifyss/obsidian-border/blob/main/presets/Borderless.json" title="Borderless.json"
+target="_blank" rel="noopener"
+>Borderless&lt;/a>（深色模式）
+此外，该主题还提供了替代的复选框样式、呼出样式和代码块主题，以及可定制的新标签页。&lt;/li>
+&lt;/ul>
+&lt;p>该项目遵循 MIT 许可证，并且在 GitHub 上有 1.3k 个星标、8 个关注者和 45 个 fork。主要贡献者包括 Akifyss、GC Chen、Chase McCoy 和 Artamis。。&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://github.com/Akifyss/obsidian-border" target="_blank" rel="noopener"
+>https://github.com/Akifyss/obsidian-border&lt;/a> 1.3k stars&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Obsidian Theme: AnuPpuccin</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</link><pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/</guid><description>
 &lt;p>AnuPpuccin 是一个为 Obsidian 知识库设计的主题，由 AnubisNekhet 维护，支持多种颜色方案和布局，并且获得了 2022 年度最佳主题奖。&lt;/p>
 &lt;!-- more -->
 &lt;h2 id="外观设置v167">外观设置(v1.6.7)
@@ -18,7 +208,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>Appearance -&amp;gt; Themes&lt;/p>
-&lt;p>安装主题：AnuPpuccin`(1.5.0)&lt;/p>
+&lt;p>安装主题：AnuPpuccin&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> v1.5.0&lt;/p>
 &lt;p>安装伴侣插件： &lt;code>Style Settings&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -27,7 +217,7 @@
 &lt;h3 id="其余参数">其余参数
 &lt;/h3>&lt;p>对整体外观影响较小，使用默认参数即可。&lt;/p>
 &lt;h2 id="style-settings">Style Settings
-&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings.jpg"
+&lt;/h2>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/style-settings-anup.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;h3 id="color">Color
@@ -38,7 +228,12 @@ loading="lazy"
 alt="file editor"
 >&lt;/p>
 &lt;h3 id="integration">Integration
-&lt;/h3>&lt;h4 id="minimal-cards">Minimal Cards
+&lt;/h3>&lt;ul>
+&lt;li>Kanban&lt;/li>
+&lt;li>MAKE.md&lt;/li>
+&lt;li>Minimal Cards&lt;/li>
+&lt;/ul>
+&lt;h4 id="minimal-cards">Minimal Cards
 &lt;/h4>&lt;p>.scss -&amp;gt; css&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> npm install -g sass
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sass minimal-cards.scss minimal-cards.css
@@ -53,6 +248,29 @@ alt="workspace"
 &lt;h4 id="rainbow-folders">Rainbow Folders
 &lt;/h4>&lt;h4 id="workspace-layout">Workspace Layout
 &lt;/h4>&lt;p>Workspace Layout variant: &lt;code>Cards&lt;/code>&lt;/p>
+&lt;h3 id="import--export">Import &amp;amp; Export
+&lt;/h3>&lt;p>直接导入 / 导出配置&lt;/p>
+&lt;blockquote>
+&lt;p>[!done]- Light Theme: Latte&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-CSS" data-lang="CSS">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;p>{
+&amp;ldquo;obsidian-prism-theme@@color-schemes-lt&amp;rdquo;: &amp;ldquo;pt-color-scheme-latte-lt&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@color-scheme-style-lt&amp;rdquo;: &amp;ldquo;pt-color-scheme-style-two-tone-and-border-lt&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@light-accent-color-preset&amp;rdquo;: &amp;ldquo;pt-accent-color-blue-lt&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@inline-title-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;interactive-accent-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h1-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-red-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h2-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-orange-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h3-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-yellow-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h4-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-green-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h5-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-mint-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@h6-text-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-cyan-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@text-italic-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-green-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@text-bold-color-lt&amp;rdquo;: &amp;ldquo;var(&amp;ndash;color-red-text)&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@pt-status-bar-style&amp;rdquo;: &amp;ldquo;pt-status-bar-position-fixed&amp;rdquo;,
+&amp;ldquo;obsidian-prism-theme@@pt-fixed-status-bar-align&amp;rdquo;: &amp;ldquo;pt-fixed-status-bar-align-right&amp;rdquo;
+}&lt;/p>
+&lt;blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
 &lt;h2 id="参考视频">参考视频
 &lt;/h2>&lt;p>Nicole 分享了使用 AnuPpuccin 主题 + Style Settings 插件进行界面美化的方法。&lt;/p>
 &lt;p>&lt;a class="link" href="https://youtu.be/7-SOwxpZQNI" target="_blank" rel="noopener"
@@ -87,11 +305,15 @@ alt="workspace"
 &lt;h3 id="项目状态">项目状态
 &lt;/h3>&lt;p>因开发者的学业和项目任务，项目处于休眠状态，暂时可能无法及时修复 bug 和问题。&lt;/p>
 &lt;p>目前版本 v1.5.0, 2024/5/11&lt;/p>
-&lt;h3 id="file-over-app-的设计">File over App 的设计
-&lt;/h3>&lt;p>用户：笔记和资源文件
-应用：应用、配置、资源&lt;/p>
-&lt;p>应用视图
-笔记视图&lt;/p></description></item><item><title>推荐主题：Minimal</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-minimal/</link><pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-minimal/</guid><description>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://github.com/AnubisNekhet/AnuPpuccin" target="_blank" rel="noopener"
+>https://github.com/AnubisNekhet/AnuPpuccin&lt;/a> 2k stars&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Obsidian Theme: Minimal</title><link>https://all-in-obsidian.li3huo.com/obsidian/themes-minimal/</link><pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/themes-minimal/</guid><description>
 &lt;p>Minimal 是一个为 Obsidian 知识库设计的主题，由 Steph Ango 维护，旨在提供无干扰的写作和阅读体验。主题遵循 MIT 许可证，并且在 GitHub 上有超过 3.6k 的星标。&lt;/p>
 &lt;!-- more -->
 &lt;h2 id="外观设置v167">外观设置(v1.6.7)
@@ -111,7 +333,7 @@ alt="workspace"
 &lt;/li>
 &lt;li>
 &lt;p>Appearance -&amp;gt; Themes&lt;/p>
-&lt;p>安装主题：&lt;code>Minimal&lt;/code>(7.7.14)&lt;/p>
+&lt;p>安装主题：&lt;code>Minimal&lt;/code>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> v7.7.14&lt;/p>
 &lt;p>安装伴侣插件： &lt;code>Minimal Theme Settings&lt;/code> / &lt;code>Style Settings&lt;/code>&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -219,7 +441,16 @@ loading="lazy"
 >https://minimal.guide/&lt;/a>&lt;/li>
 &lt;li>&lt;a class="link" href="https://stephango.com/" target="_blank" rel="noopener"
 >Steph Ango&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Obsidian User Interface</title><link>https://all-in-obsidian.li3huo.com/obsidian/user-interface/</link><pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/user-interface/</guid><description>
+&lt;/ul>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://github.com/kepano/obsidian-minimal" target="_blank" rel="noopener"
+>https://github.com/kepano/obsidian-minimal&lt;/a> 3.6k stars&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Obsidian User Interface</title><link>https://all-in-obsidian.li3huo.com/obsidian/user-interface/</link><pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/user-interface/</guid><description>
 &lt;p>参见官网(Obsidian Help) User interface&lt;/p>
 &lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/doc-ui.jpg"
 loading="lazy"
@@ -712,7 +943,7 @@ title="YouTube Video"
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>Youtube 上的 Obsidian 学习频道</title><link>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</link><pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/youtube-channels/</guid><description>
-&lt;p>从几个 Youtuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
+&lt;p>从几个 YouTuber 身上学到了很多 Obsidian 的理念和技巧，分享一下他们的频道。&lt;/p>
 &lt;h2 id="visualpkm">@VisualPKM
 &lt;/h2>&lt;p>&lt;a class="link" href="https://zsolt.blog" target="_blank" rel="noopener"
 >Zsolt&lt;/a> Viczian，一个来自匈牙利的大叔，Excalidraw 插件作者，可视化知识管理的倡导者。要想掌握 Excalidraw，好好看 zsolt 大叔的视频。&lt;/p>
@@ -905,7 +1136,9 @@ alt="800x950"
 >Property format&lt;/a>.&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>5 分钟向你推荐 Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</guid><description>
+&lt;/div></description></item><item><title>All in Obsidian: blog, newsletter, shop, and more</title><link>https://all-in-obsidian.li3huo.com/obsidian/_index.md/</link><pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/_index.md/</guid><description>
+&lt;figure class="pull-left">&lt;img src="https://all-in-obsidian.li3huo.com/img/whale-0.webp" width="250" height="250">
+&lt;/figure></description></item><item><title>5 分钟向你推荐 Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-101/</guid><description>
 &lt;p>Obsidian 是一款基于 markdown 格式的笔记软件，它的所有文件都保存在本地，确保了数据的安全性和隐私性。用户可以通过文件夹式管理来组织笔记，并且可以同时打开多个库（文件夹）来管理不同类型的内容。Obsidian 支持双向链接，可以生成关系图谱，帮助用户构建知识体系。此外，Obsidian 提供了丰富的插件，如日记插件、PPT 插件、思维导图插件等，用户可以根据自己的需求进行个性化配置。&lt;/p>
 &lt;p>如何向小伙伴们安利 Obsidian 呢，这里列出了以下几个问题。&lt;/p>
 &lt;h2 id="418-用-chatgpt-整理的问题">4.18 用 ChatGPT 整理的问题
