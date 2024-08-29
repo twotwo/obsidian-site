@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian Gems of the year</title><link>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</link><pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox vault</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-sandbox/</link><pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-sandbox/</guid><description>
+&lt;p>Obsidian 的沙盒仓库（Sandbox vault）是一个为用户精心准备的新手入门仓库，在这个仓库下进行的操作不会进行保存。&lt;/p>
+&lt;h2 id="特点">特点
+&lt;/h2>&lt;ol>
+&lt;li>&lt;strong>仓库内容&lt;/strong>：Sandbox 中有为用户精心准备的笔记内容，用户可以仿照其中的格式，快速上手编写 Markdown 笔记；&lt;/li>
+&lt;li>&lt;strong>安全隔离&lt;/strong>：Vault 之间相互独立，在 Sandbox 中进行的任何更改都不会影响其它 vault；&lt;/li>
+&lt;li>&lt;strong>自由试验&lt;/strong>：Sandbox 提供了一个安全的环境，可以自由地试验新的功能、主题、插件和设置；&lt;/li>
+&lt;li>&lt;strong>快速回退&lt;/strong>：如果在 Sandbox 中进行的更改出现问题，可以快速地回退到之前的状态。&lt;/li>
+&lt;/ol>
+&lt;h2 id="使用方法">使用方法
+&lt;/h2>&lt;ol>
+&lt;li>&lt;strong>进入 Sandbox vault&lt;/strong>：打开 Obsidian Help(F1)，点击 Sandbox vault 行的“Open”按钮，进入 &lt;code>Obsidian Sandbox&lt;/code> 仓库；&lt;/li>
+&lt;li>&lt;strong>在 Sandbox 中试验&lt;/strong>：在 Sandbox vault 中，可以试验新的设置，例如，切换语言、调整外观、试验新的笔记格式等；&lt;/li>
+&lt;li>&lt;strong>回退到之前的状态&lt;/strong>：如果在 Sandbox 中进行的更改出现问题，可以快速地回退到之前的状态，只需要关闭后重新打开，一切已经恢复成最开始的样子；&lt;/li>
+&lt;/ol>
+&lt;h3 id="进入仓库">进入仓库
+&lt;/h3>&lt;blockquote>
+&lt;p>[!tip] Open Help(F1)
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/sandbox-vault-1.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;/blockquote>
+&lt;p>点击 &lt;code>Sandbox vault&lt;/code> 旁边的打开(&lt;code>Open&lt;/code>)按钮，进入 &lt;code>Obsidian Sandbox&lt;/code> 仓库。&lt;/p>
+&lt;h3 id="探索应用及扩展">探索应用及扩展
+&lt;/h3>&lt;p>进入设置(&lt;code>CMD + ,&lt;/code>)&lt;/p>
+&lt;ul>
+&lt;li>General -&amp;gt; Language&lt;/li>
+&lt;li>Appearance: Accent Color / Font
+还可以随意安装主题和插件，相关操作不会被保存。&lt;/li>
+&lt;/ul>
+&lt;h4 id="修改应用设置">修改应用设置
+&lt;/h4>&lt;blockquote>
+&lt;p>[!tip] 在配置中修改语言和外观后
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/sandbox-vault-2.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="学习笔记语法">学习笔记语法
+&lt;/h3>&lt;h4 id="设置分屏显示源码模式">设置分屏显示/源码模式
+&lt;/h4>&lt;blockquote>
+&lt;p>[!tip] 在笔记 tab 上按鼠标右键，选&lt;code>左右分屏&lt;/code>
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/sandbox-vault-3.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>[!tip] 鼠标左键点笔记第一行最右边的 &lt;code>...&lt;/code>，选&lt;code>源码模式&lt;/code>
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/sandbox-vault-4.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="所见即所得">所见即所得
+&lt;/h4>&lt;blockquote>
+&lt;p>[!tip] 笔记：Start Here
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/sandbox-vault-5.jpg"
+loading="lazy"
+>
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/sandbox-vault-6.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>[!tip] 笔记：Blockquote
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/sandbox-vault-7.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>[!tip] 笔记：Callout
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/sandbox-vault-8.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="注意">注意
+&lt;/h2>&lt;ol>
+&lt;li>&lt;strong>Sandbox vault 不是永久的&lt;/strong>：Sandbox vault 是临时的，关闭实例后重新打开，会丢失之前全部的修改。&lt;/li>
+&lt;li>&lt;strong>Sandbox vault 不支持同步&lt;/strong>：Sandbox vault 不支持同步，需要手动地将数据从沙盒仓库中复制到目标仓库的笔记中。&lt;/li>
+&lt;/ol>
+&lt;h2 id="总结">总结
+&lt;/h2>&lt;p>总的来说，Obsidian 的 Sandbox vault 是为用户精心准备的一个入门仓库，可以帮助用户快速上手日常使用，随便操作，不用担心对应用和正式仓库有任何影响。&lt;/p></description></item><item><title>Obsidian Gems of the year</title><link>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</link><pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</guid><description>
 &lt;p>Obsidian 首行代码诞生于 2020 年 1 月 31 日。自 2021 年初开始，社区已经举行了四届 Gems of the year（年度宝石奖）评奖。&lt;/p>
 &lt;h2 id="themes">Themes
 &lt;/h2>&lt;p>🏆 冠军, 🥈亚军&lt;/p>
