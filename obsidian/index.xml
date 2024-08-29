@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidians on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/</link><description>Recent content in Obsidians on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox vault</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-sandbox/</link><pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-sandbox/</guid><description>
-&lt;p>Obsidian 的沙盒仓库（Sandbox vault）是一个为用户精心准备的新手入门仓库，在这个仓库下进行的操作不会进行保存。&lt;/p>
+&lt;p>Obsidian 的沙盒仓库（Sandbox vault &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>）是一个为用户精心准备的&lt;strong>功能探索特性&lt;/strong>，既可以作为学习工具也可以用于调试问题，在这个仓库下进行的操作不会进行保存。&lt;/p>
 &lt;h2 id="特点">特点
 &lt;/h2>&lt;ol>
 &lt;li>&lt;strong>仓库内容&lt;/strong>：Sandbox 中有为用户精心准备的笔记内容，用户可以仿照其中的格式，快速上手编写 Markdown 笔记；&lt;/li>
@@ -21,12 +21,12 @@ loading="lazy"
 >&lt;/p>
 &lt;/blockquote>
 &lt;p>点击 &lt;code>Sandbox vault&lt;/code> 旁边的打开(&lt;code>Open&lt;/code>)按钮，进入 &lt;code>Obsidian Sandbox&lt;/code> 仓库。&lt;/p>
+&lt;p>沙盒仓库不支持在移动设备上直接打开，但用户可以从 Obsidian Help 的资源库&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> 下载副本进行使用。&lt;/p>
 &lt;h3 id="探索应用及扩展">探索应用及扩展
 &lt;/h3>&lt;p>进入设置(&lt;code>CMD + ,&lt;/code>)&lt;/p>
 &lt;ul>
 &lt;li>General -&amp;gt; Language&lt;/li>
-&lt;li>Appearance: Accent Color / Font
-还可以随意安装主题和插件，相关操作不会被保存。&lt;/li>
+&lt;li>Appearance: Accent Color / Font&lt;/li>
 &lt;/ul>
 &lt;h4 id="修改应用设置">修改应用设置
 &lt;/h4>&lt;blockquote>
@@ -35,6 +35,8 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;/blockquote>
+&lt;h4 id="探索主题和插件">探索主题和插件
+&lt;/h4>&lt;p>还可以随意安装主题和插件，相关操作不会被保存。&lt;/p>
 &lt;h3 id="学习笔记语法">学习笔记语法
 &lt;/h3>&lt;h4 id="设置分屏显示源码模式">设置分屏显示/源码模式
 &lt;/h4>&lt;blockquote>
@@ -77,7 +79,20 @@ loading="lazy"
 &lt;li>&lt;strong>Sandbox vault 不支持同步&lt;/strong>：Sandbox vault 不支持同步，需要手动地将数据从沙盒仓库中复制到目标仓库的笔记中。&lt;/li>
 &lt;/ol>
 &lt;h2 id="总结">总结
-&lt;/h2>&lt;p>总的来说，Obsidian 的 Sandbox vault 是为用户精心准备的一个入门仓库，可以帮助用户快速上手日常使用，随便操作，不用担心对应用和正式仓库有任何影响。&lt;/p></description></item><item><title>Obsidian Gems of the year</title><link>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</link><pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</guid><description>
+&lt;/h2>&lt;p>总的来说，Obsidian 的 Sandbox vault 是为用户精心准备的一个入门仓库，可以帮助用户快速上手日常使用，随便操作，不用担心对应用和正式仓库有任何影响。&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://help.obsidian.md/Getting&amp;#43;started/Sandbox&amp;#43;vault" target="_blank" rel="noopener"
+>https://help.obsidian.md/Getting+started/Sandbox+vault&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://github.com/obsidianmd/obsidian-help" target="_blank" rel="noopener"
+>https://github.com/obsidianmd/obsidian-help&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Obsidian Gems of the year</title><link>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</link><pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/gems-of-the-year-winners/</guid><description>
 &lt;p>Obsidian 首行代码诞生于 2020 年 1 月 31 日。自 2021 年初开始，社区已经举行了四届 Gems of the year（年度宝石奖）评奖。&lt;/p>
 &lt;h2 id="themes">Themes
 &lt;/h2>&lt;p>🏆 冠军, 🥈亚军&lt;/p>
