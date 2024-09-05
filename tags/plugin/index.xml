@@ -15,17 +15,22 @@ loading="lazy"
 alt="|600"
 >&lt;/p>
 &lt;/blockquote>
-&lt;h3 id="配置对比">配置对比
+&lt;h3 id="配置对比-slides-extended-vs-advanced-slides">配置对比 Slides Extended vs Advanced Slides
 &lt;/h3>&lt;ul>
 &lt;li>新增了 Theme Directory，指定本地主题和样式文件的目录&lt;/li>
-&lt;li>插件，按字母排序&lt;/li>
+&lt;li>幻灯片部分，增加了是否局中的 Toggle&lt;/li>
+&lt;li>插件部分，按字母排序&lt;/li>
 &lt;/ul>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/slides-extended-vs-as.jpg"
+loading="lazy"
+alt="|"
+>&lt;/p>
 &lt;h2 id="入门">入门
-&lt;/h2>&lt;p>安装和使用中容易遇到问题的地方，增加了配置和提示&lt;/p>
+&lt;/h2>&lt;p>在容易遇到问题的地方，增加了配置和提示&lt;/p>
 &lt;h3 id="安装和第一次使用">安装和第一次使用
 &lt;/h3>&lt;ul>
-&lt;li>插件安装失败会有提示，我没遇到安装导致的使用一场&lt;/li>
-&lt;li>幻灯片服务使用 3000 端口，如果被占用会有提示&lt;/li>
+&lt;li>插件安装失败会有提示，我没遇到安装导致的使用异常&lt;/li>
+&lt;li>幻灯片服务端口(默认 3000)如果被占用会有提示&lt;/li>
 &lt;/ul>
 &lt;h3 id="显示的问题">显示的问题
 &lt;/h3>&lt;ul>
@@ -131,11 +136,30 @@ Vault 目录下 &lt;code>.obsidian/plugins/obsidian-advanced-slides/css/&lt;/co
 &lt;/h2>&lt;p>扩展语法：&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
 >Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/" target="_blank" rel="noopener"
 >Extended Syntax&lt;/a>&lt;/p>
-&lt;h3 id="元素注解">元素注解
+&lt;h3 id="片段">片段
+&lt;/h3>&lt;p>&lt;strong>片段&lt;/strong> 是用来强调或逐步展示幻灯片上个别元素的功能，通过为元素添加 &lt;code>fragment&lt;/code> 类来实现在继续到下一张幻灯片之前逐步展示每个元素的效果。默认的片段样式是从不可见淡入，但可以通过添加不同的类来更改这种样式。&lt;/p>
+&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/fragments/" target="_blank" rel="noopener"
+>Fragments&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">Fade in &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Fade out &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment fade-out&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Highlight red &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment highlight-red&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Fade in, then out &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment fade-in-then-out&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Slide up while fading in &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment fade-up&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Permanent item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Appear Fourth &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; data-fragment-index=&amp;#34;4&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Appear Third &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; data-fragment-index=&amp;#34;3&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Appear Second &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; data-fragment-index=&amp;#34;2&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Appear First &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; data-fragment-index=&amp;#34;1&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="元素注解">元素注解
 &lt;/h3>&lt;p>精细化操作页内元素&lt;/p>
-&lt;p>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
->Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/" target="_blank" rel="noopener"
->Extended Syntax&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/classes/" target="_blank" rel="noopener"
+&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/classes/" target="_blank" rel="noopener"
 >Element Annotations&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">text&lt;/span> &lt;span class="kd">with&lt;/span> &lt;span class="nx">border&lt;/span> &lt;span class="c">&amp;lt;!--&lt;/span> &lt;span class="nx">element&lt;/span> &lt;span class="kr">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;with-border&amp;#34;&lt;/span> &lt;span class="o">--&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
@@ -144,9 +168,7 @@ Vault 目录下 &lt;code>.obsidian/plugins/obsidian-advanced-slides/css/&lt;/co
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">文字&lt;/span> &lt;span class="c">&amp;lt;!--&lt;/span> &lt;span class="nx">element&lt;/span> &lt;span class="nx">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;color:black; background:blue&amp;#34;&lt;/span> &lt;span class="o">--&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="内嵌-css-样式">内嵌 CSS 样式
-&lt;/h3>&lt;p>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
->Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/" target="_blank" rel="noopener"
->Extended Syntax&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/inlinestyling/" target="_blank" rel="noopener"
+&lt;/h3>&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/inlinestyling/" target="_blank" rel="noopener"
 >Inline Styling&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nc">with-border&lt;/span>&lt;span class="p">{&lt;/span>
@@ -155,11 +177,25 @@ Vault 目录下 &lt;code>.obsidian/plugins/obsidian-advanced-slides/css/&lt;/co
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">styled text &lt;span class="c">&amp;lt;!-- element class=&amp;#34;with-border&amp;#34; --&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="幻灯片背景">幻灯片背景
-&lt;/h3>&lt;p>更新页面背景&lt;/p>
-&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/slidebackground/" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="幻灯片样式">幻灯片样式
+&lt;/h3>&lt;p>更换页面样式和背景图片&lt;/p>
+&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/slideannotations/" target="_blank" rel="noopener"
+>Slide Annotations&lt;/a> &amp;amp; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/slidebackground/" target="_blank" rel="noopener"
 >Slide Backgrounds&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">---
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- .slide: style=&amp;#34;background-color: coral;&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh"># Header with coral background color
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Paragraph has coral background color, too!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- .slide: style=&amp;#34;background-color: green;&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> All Bullet points
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> have green
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> background color
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!-- slide bg=&amp;#34;https://picsum.photos/seed/picsum/800/600&amp;#34; data-background-opacity=&amp;#34;0.5&amp;#34; --&amp;gt;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## with opacity
@@ -187,16 +223,78 @@ Vault 目录下 &lt;code>.obsidian/plugins/obsidian-advanced-slides/css/&lt;/co
 &lt;h3 id="前端技术文档">前端技术文档
 &lt;/h3>&lt;p>css &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> / html / javascript&lt;/p>
 &lt;h2 id="附件">附件
-&lt;/h2>&lt;h3 id="插件配置对比">插件配置对比
-&lt;/h3>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/slides-extended-vs-as.jpg"
-loading="lazy"
-alt="|"
->&lt;/p>
+&lt;/h2>&lt;h3 id="theme-directory-下的-css">Theme Directory 下的 CSS
+&lt;/h3>&lt;p>引用方式&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">css:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - _local/font.css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - _local/navigation.css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - _local/MoreHighlightStyle.css
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">grid&lt;/span> &lt;span class="na">drag&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;100 10&amp;#34;&lt;/span> &lt;span class="na">drop&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;topleft&amp;#34;&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;navigator chapter-1&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> 插件介绍
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> 功能概览
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> 入门
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> 进阶
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">-&lt;/span> 高级
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">grid&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh"># 插件介绍
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>[!info]- _local/font.css&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;p>p {}&lt;/p>
+&lt;blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>[!info]- _local/navigation.css&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;p>.navigator {
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
+background-color: honeydew;
+}
+.navigator ul {
+list-style-type: none;
+list-style: none;
+padding: 0;
+margin: 0;
+white-space: nowrap;
+display: flex;
+background-color: honeydew;
+}
+.navigator li:not(:last-child)::after {
+display: inline-block;
+margin: 0 0.5rem;
+content: &amp;ldquo;→&amp;rdquo;;
+margin-right: 3 rem;
+opacity: 0.75;
+}
+.chapter-1 ul li:nth-child(1),
+.chapter-2 ul li:nth-child(2),
+.chapter-3 ul li:nth-child(3),
+.chapter-4 ul li:nth-child(4),
+.chapter-5 ul li:nth-child(5),
+.chapter-6 ul li:nth-child(6) {
+color: dodgerblue;
+}&lt;/p>
+&lt;blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>[!info]- _local/MoreHighlightStyle.css&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
+&lt;p>p {}&lt;/p>
+&lt;blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;/code>&lt;/pre>&lt;/div>&lt;/blockquote>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1">
-&lt;p>http://localhost:1313/obsidian/advanced-slides/&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/obsidian/advanced-slides/" target="_blank" rel="noopener"
+>https://all-in-obsidian.li3huo.com/obsidian/advanced-slides/&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:2">
 &lt;p>&lt;a class="link" href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout" target="_blank" rel="noopener"
@@ -350,11 +448,30 @@ alt="|600"
 &lt;/h2>&lt;p>扩展语法：&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
 >Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/" target="_blank" rel="noopener"
 >Extended Syntax&lt;/a>&lt;/p>
-&lt;h3 id="元素注解">元素注解
+&lt;h3 id="片段">片段
+&lt;/h3>&lt;p>&lt;strong>片段&lt;/strong> 是用来强调或逐步展示幻灯片上个别元素的功能，通过为元素添加 &lt;code>fragment&lt;/code> 类来实现在继续到下一张幻灯片之前逐步展示每个元素的效果。默认的片段样式是从不可见淡入，但可以通过添加不同的类来更改这种样式。&lt;/p>
+&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/fragments/" target="_blank" rel="noopener"
+>Fragments&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">Fade in &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Fade out &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment fade-out&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Highlight red &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment highlight-red&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Fade in, then out &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment fade-in-then-out&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Slide up while fading in &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment fade-up&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Permanent item
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Appear Fourth &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; data-fragment-index=&amp;#34;4&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Appear Third &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; data-fragment-index=&amp;#34;3&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Appear Second &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; data-fragment-index=&amp;#34;2&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Appear First &lt;span class="c">&amp;lt;!-- element class=&amp;#34;fragment&amp;#34; data-fragment-index=&amp;#34;1&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="元素注解">元素注解
 &lt;/h3>&lt;p>精细化操作页内元素&lt;/p>
-&lt;p>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
->Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/" target="_blank" rel="noopener"
->Extended Syntax&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/classes/" target="_blank" rel="noopener"
+&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/classes/" target="_blank" rel="noopener"
 >Element Annotations&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">text&lt;/span> &lt;span class="kd">with&lt;/span> &lt;span class="nx">border&lt;/span> &lt;span class="c">&amp;lt;!--&lt;/span> &lt;span class="nx">element&lt;/span> &lt;span class="kr">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;with-border&amp;#34;&lt;/span> &lt;span class="o">--&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
@@ -363,9 +480,7 @@ alt="|600"
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">文字&lt;/span> &lt;span class="c">&amp;lt;!--&lt;/span> &lt;span class="nx">element&lt;/span> &lt;span class="nx">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;color:black; background:blue&amp;#34;&lt;/span> &lt;span class="o">--&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="内嵌-css-样式">内嵌 CSS 样式
-&lt;/h3>&lt;p>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
->Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/" target="_blank" rel="noopener"
->Extended Syntax&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/inlinestyling/" target="_blank" rel="noopener"
+&lt;/h3>&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/inlinestyling/" target="_blank" rel="noopener"
 >Inline Styling&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nc">with-border&lt;/span>&lt;span class="p">{&lt;/span>
@@ -374,11 +489,25 @@ alt="|600"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">styled text &lt;span class="c">&amp;lt;!-- element class=&amp;#34;with-border&amp;#34; --&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="幻灯片背景">幻灯片背景
-&lt;/h3>&lt;p>更新页面背景&lt;/p>
-&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/slidebackground/" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="幻灯片样式">幻灯片样式
+&lt;/h3>&lt;p>更换页面样式和背景图片&lt;/p>
+&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/slideannotations/" target="_blank" rel="noopener"
+>Slide Annotations&lt;/a> &amp;amp; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/slidebackground/" target="_blank" rel="noopener"
 >Slide Backgrounds&lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">---
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- .slide: style=&amp;#34;background-color: coral;&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh"># Header with coral background color
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gh">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Paragraph has coral background color, too!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c">&amp;lt;!-- .slide: style=&amp;#34;background-color: green;&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> All Bullet points
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> have green
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> background color
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">---
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!-- slide bg=&amp;#34;https://picsum.photos/seed/picsum/800/600&amp;#34; data-background-opacity=&amp;#34;0.5&amp;#34; --&amp;gt;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## with opacity
