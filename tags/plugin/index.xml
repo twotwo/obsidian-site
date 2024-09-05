@@ -1,4 +1,209 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plugin on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/plugin/</link><description>Recent content in Plugin on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sat, 23 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/plugin/index.xml" rel="self" type="application/rss+xml"/><item><title>Slides vs Advanced Slides</title><link>https://all-in-obsidian.li3huo.com/obsidian/advanced-slides/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/advanced-slides/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plugin on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/plugin/</link><description>Recent content in Plugin on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 05 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/plugin/index.xml" rel="self" type="application/rss+xml"/><item><title>Slides Extended (for Obsidian)</title><link>https://all-in-obsidian.li3huo.com/obsidian/slides-extended-for-obsidian/</link><pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/slides-extended-for-obsidian/</guid><description>
+&lt;p>Advanced Slides&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 插件已经好久不更新了(1.20.0 on Feb 16, 2023)&lt;/p>
+&lt;h2 id="slides-extended-for-obsidian">Slides Extended (for Obsidian)
+&lt;/h2>&lt;h3 id="fork-of-advanced-slides">Fork of Advanced Slides
+&lt;/h3>&lt;p>接过 Advanced Slides 的大旗，继续前进。&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/plugins-search-slide.jpg"
+loading="lazy"
+alt="|500"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>[!info] &lt;a class="link" href="https://github.com/ebullient/obsidian-slides-extended" target="_blank" rel="noopener"
+>obsidian-slides-extended&lt;/a>
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/slides-extended-2.1.1.jpg"
+loading="lazy"
+alt="|600"
+>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="配置对比">配置对比
+&lt;/h3>&lt;ul>
+&lt;li>新增了 Theme Directory，指定本地主题和样式文件的目录&lt;/li>
+&lt;li>插件，按字母排序&lt;/li>
+&lt;/ul>
+&lt;h2 id="入门">入门
+&lt;/h2>&lt;p>安装和使用中容易遇到问题的地方，增加了配置和提示&lt;/p>
+&lt;h3 id="安装和第一次使用">安装和第一次使用
+&lt;/h3>&lt;ul>
+&lt;li>插件安装失败会有提示，我没遇到安装导致的使用一场&lt;/li>
+&lt;li>幻灯片服务使用 3000 端口，如果被占用会有提示&lt;/li>
+&lt;/ul>
+&lt;h3 id="显示的问题">显示的问题
+&lt;/h3>&lt;ul>
+&lt;li>在 Slides 配置中增加了&lt;strong>是否居中显示&lt;/strong>的 toggle&lt;/li>
+&lt;/ul>
+&lt;h3 id="导出的问题">导出的问题
+&lt;/h3>&lt;ul>
+&lt;li>导出 HTML 有错误提示&lt;/li>
+&lt;/ul>
+&lt;h2 id="进阶">进阶
+&lt;/h2>&lt;p>带大家快速阅读 Advanced Slides 的官方文档，掌握基本概念和常用配置&lt;br>
+&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/getting-start/" target="_blank" rel="noopener"
+>https://mszturc.github.io/obsidian-advanced-slides/getting-start/&lt;/a>&lt;/p>
+&lt;h3 id="主题">主题
+&lt;/h3>&lt;p>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
+>Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/themes/" target="_blank" rel="noopener"
+>Themes&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>beige / solarized/ moon / &amp;hellip;&lt;/li>
+&lt;li>自定义 &lt;code>theme&lt;/code>：配置 &lt;code>Theme Directory&lt;/code> 指定 Vault 目录进行存放&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>[!info] Advanced Slides 存放位置
+Vault 目录下 &lt;code>.obsidian/plugins/obsidian-advanced-slides/css/&lt;/code> 中&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="配置语法没变">配置语法(没变)
+&lt;/h3>&lt;h4 id="frontmatter-options">Frontmatter Options
+&lt;/h4>&lt;p>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/yaml/" target="_blank" rel="noopener"
+>https://mszturc.github.io/obsidian-advanced-slides/yaml/&lt;/a>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>属性&lt;/th>
+&lt;th>说明&lt;/th>
+&lt;th>可选值&lt;/th>
+&lt;th>默认值&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>width&lt;/td>
+&lt;td>ppt 显示宽度&lt;/td>
+&lt;td>1680&lt;/td>
+&lt;td>960&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>height&lt;/td>
+&lt;td>ppt 显示高度&lt;/td>
+&lt;td>1050&lt;/td>
+&lt;td>700&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>theme&lt;/td>
+&lt;td>ppt 主题&lt;/td>
+&lt;td>参见 Themes&lt;/td>
+&lt;td>black&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>highlightTheme&lt;/td>
+&lt;td>代码块主题&lt;/td>
+&lt;td>monokai&lt;/td>
+&lt;td>zenburn&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>css&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>[css/1.css,css/2.css]&lt;/td>
+&lt;td>[]&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>slideNumber&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>true / false&lt;/td>
+&lt;td>false&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>center&lt;/td>
+&lt;td>默认居中&lt;/td>
+&lt;td>true / false&lt;/td>
+&lt;td>true&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>enableLinks&lt;/td>
+&lt;td>ppt 上显示链接&lt;/td>
+&lt;td>true / false&lt;/td>
+&lt;td>false&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>enableChalkboard&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>true / false&lt;/td>
+&lt;td>false&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>defaultTemplate&lt;/td>
+&lt;td>ppt 模版&lt;/td>
+&lt;td>参见 Templates&lt;/td>
+&lt;td>null&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="高级没变">高级(没变)
+&lt;/h2>&lt;p>扩展语法：&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
+>Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/" target="_blank" rel="noopener"
+>Extended Syntax&lt;/a>&lt;/p>
+&lt;h3 id="元素注解">元素注解
+&lt;/h3>&lt;p>精细化操作页内元素&lt;/p>
+&lt;p>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
+>Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/" target="_blank" rel="noopener"
+>Extended Syntax&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/classes/" target="_blank" rel="noopener"
+>Element Annotations&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">text&lt;/span> &lt;span class="kd">with&lt;/span> &lt;span class="nx">border&lt;/span> &lt;span class="c">&amp;lt;!--&lt;/span> &lt;span class="nx">element&lt;/span> &lt;span class="kr">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;with-border&amp;#34;&lt;/span> &lt;span class="o">--&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;a class="link" href="https://revealjs.com/markdown/" target="_blank" rel="noopener"
+>revealjs markdown&lt;/a> # &lt;code>.element&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">文字&lt;/span> &lt;span class="c">&amp;lt;!--&lt;/span> &lt;span class="nx">element&lt;/span> &lt;span class="nx">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;color:black; background:blue&amp;#34;&lt;/span> &lt;span class="o">--&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="内嵌-css-样式">内嵌 CSS 样式
+&lt;/h3>&lt;p>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
+>Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/" target="_blank" rel="noopener"
+>Extended Syntax&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/inlinestyling/" target="_blank" rel="noopener"
+>Inline Styling&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nc">with-border&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">border&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="kt">px&lt;/span> &lt;span class="kc">solid&lt;/span> &lt;span class="kc">red&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">styled text &lt;span class="c">&amp;lt;!-- element class=&amp;#34;with-border&amp;#34; --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="幻灯片背景">幻灯片背景
+&lt;/h3>&lt;p>更新页面背景&lt;/p>
+&lt;p>Advanced Slides Documentation &amp;gt; Extended Syntax &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/extend-syntax/slidebackground/" target="_blank" rel="noopener"
+>Slide Backgrounds&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">---
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;!-- slide bg=&amp;#34;https://picsum.photos/seed/picsum/800/600&amp;#34; data-background-opacity=&amp;#34;0.5&amp;#34; --&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## with opacity
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0.5 ≙ 50% opacity
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="模版">模版
+&lt;/h3>&lt;p>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
+>Advanced Slides Documentation&lt;/a> &amp;gt; &lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/templates/" target="_blank" rel="noopener"
+>Templates&lt;/a>&lt;/p>
+&lt;p>为 ppt 增加统一的页眉页脚&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;% content %&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;grid drag=&amp;#34;100 6&amp;#34; drop=&amp;#34;bottom&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">###### © 2023 Powered by twotwo&amp;lt;!-- element style=&amp;#34;font-weight:300&amp;#34; --&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/grid&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="玩转-slides-extended">玩转 Slides Extended
+&lt;/h2>&lt;p>制作个性化主题和模版需要的知识&lt;/p>
+&lt;h3 id="框架文档">框架文档
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://mszturc.github.io/obsidian-advanced-slides/" target="_blank" rel="noopener"
+>Advanced Slides Documentation&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://revealjs.com/" target="_blank" rel="noopener"
+>reveal.js&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="前端技术文档">前端技术文档
+&lt;/h3>&lt;p>css &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> / html / javascript&lt;/p>
+&lt;h2 id="附件">附件
+&lt;/h2>&lt;h3 id="插件配置对比">插件配置对比
+&lt;/h3>&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/slides-extended-vs-as.jpg"
+loading="lazy"
+alt="|"
+>&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>http://localhost:1313/obsidian/advanced-slides/&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout" target="_blank" rel="noopener"
+>https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Slides vs Advanced Slides</title><link>https://all-in-obsidian.li3huo.com/obsidian/advanced-slides/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/advanced-slides/</guid><description>
 &lt;p>Advanced Slides 插件的安装、配置和深度定制&lt;/p>
 &lt;p>&lt;em>让 Obsidian 获得开箱即用的文档转 ppt 体验。&lt;/em>&lt;/p>
 &lt;h2 id="slides-vs-advanced-slides">Slides vs Advanced Slides
@@ -22,10 +227,14 @@ note: 编写的要点，用粉笔比划一下&lt;/li>
 loading="lazy"
 alt="|500"
 >&lt;/p>
-&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/advanced-slides-1.20.0.png"
+&lt;blockquote>
+&lt;p>[!info] &lt;a class="link" href="https://github.com/mszturc/obsidian-advanced-slides/" target="_blank" rel="noopener"
+>obsidian-advanced-slides&lt;/a>
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/advanced-slides-1.20.0.png"
 loading="lazy"
 alt="|600"
 >&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="as-功能概览">AS 功能概览
 &lt;/h2>&lt;ul>
 &lt;li>实时预览&lt;/li>
