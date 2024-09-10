@@ -3472,12 +3472,12 @@ title="YouTube Video"
 &lt;/h3>&lt;p>A1: Obsidian 的独特之处在于它的双向链接功能，这使您可以创建一个交叉连接的笔记网络。另外，Obsidian 还具有高度的自定义性和灵活性，允许您根据特定的需求和工作流程来调整应用程序。&lt;/p>
 &lt;h3 id="q2-我如何在-obsidian-中组织我的笔记是像传统的文件夹结构一样吗">Q2: 我如何在 Obsidian 中组织我的笔记？是像传统的文件夹结构一样吗？
 &lt;/h3>&lt;p>A2: Obsidian 使用非层次结构的图形结构，这意味着您不需要担心创建文件夹或以一种僵固的方式分类您的笔记。相反，您可以创建笔记并将它们链接起来，创建一个交叉连接的想法网络。您也可以使用标签、关键词和其他元数据来帮助您找到和过滤笔记。&lt;/p>
-&lt;h3 id="q3-obsidian-是否可以在移动设备上使用还是只能在桌面电脑上使用">Q3: Obsidian 是否可以在移动设备上使用，还是只能在桌面电脑上使用？
-&lt;/h3>&lt;p>A3: 目前，Obsidian 可以作为桌面应用程序在 Windows、macOS 和 Linux 上使用。然而，Obsidian 团队正在开发移动应用程序以便在 Android 和 iOS 设备上使用。在那之前，可以通过 Obsidian 的 web 界面在移动设备上访问和编辑笔记。&lt;/p>
+&lt;h3 id="q3-obsidian-可以在哪些设备上使用">Q3: Obsidian 可以在哪些设备上使用？
+&lt;/h3>&lt;p>A3: Obsidian 可以作为桌面应用程序在 Windows、macOS 和 Linux 上使用。也可以作为开发移动应用程序在 Android 和 iOS 设备上使用&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
 &lt;h3 id="q4-我可以使用-obsidian-进行协作工作或与他人共享笔记吗">Q4: 我可以使用 Obsidian 进行协作工作或与他人共享笔记吗？
 &lt;/h3>&lt;p>A4: 是的，Obsidian 支持协作工作和笔记共享。您可以创建一个“Vault”，这是一个共享的笔记仓库，并邀请他人编辑或查看您的笔记。也可以使用 Obsidian 的“发布”功能将单个笔记或笔记集合作为网页共享。&lt;/p>
-&lt;h3 id="q5-个人用户使用是否需要付费官网总结">Q5: 个人用户使用是否需要付费？官网总结
-&lt;/h3>&lt;p>Obsidian 提供了五种可供用户购买的服务&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。这些服务包括：&lt;/p>
+&lt;h3 id="q5-个人用户使用是否需要付费">Q5: 个人用户使用是否需要付费？
+&lt;/h3>&lt;p>Obsidian 提供了五种可供用户购买的服务&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。这些服务包括：&lt;/p>
 &lt;ol>
 &lt;li>Obsidian Sync 跨设备同步笔记服务&lt;/li>
 &lt;li>Obsidian Publish 笔记发布服务&lt;/li>
@@ -3485,17 +3485,21 @@ title="YouTube Video"
 &lt;li>Obsidian Credit 用于购买和赠送 Obsidian 服务&lt;/li>
 &lt;li>Catalyst license 用于支持开发并获得早期版本的访问权限的服务&lt;/li>
 &lt;/ol>
-&lt;p>笔记同步和发布都有开源免费方案可用，非营利组织、教育机构、独立自由职业者或单人公司不需要商业许可证&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。因此，个人用户无需付费。&lt;/p>
+&lt;p>笔记同步和发布都有开源免费方案可用，非营利组织、教育机构、独立自由职业者或单人公司不需要商业许可证&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。因此，个人用户无需付费。&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1">
-&lt;p>&lt;a class="link" href="https://help.obsidian.md/Licenses&amp;#43;and&amp;#43;payment/Introduction&amp;#43;to&amp;#43;licenses&amp;#43;and&amp;#43;payment" target="_blank" rel="noopener"
->https://help.obsidian.md/Licenses+and+payment/Introduction+to+licenses+and+payment&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://help.obsidian.md/Getting&amp;#43;started/Download&amp;#43;and&amp;#43;install&amp;#43;Obsidian" target="_blank" rel="noopener"
+>https://help.obsidian.md/Getting+started/Download+and+install+Obsidian&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://help.obsidian.md/Licenses&amp;#43;and&amp;#43;payment/Introduction&amp;#43;to&amp;#43;licenses&amp;#43;and&amp;#43;payment" target="_blank" rel="noopener"
+>https://help.obsidian.md/Licenses+and+payment/Introduction+to+licenses+and+payment&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
 &lt;p>&lt;a class="link" href="https://help.obsidian.md/Teams/Commercial&amp;#43;license" target="_blank" rel="noopener"
->https://help.obsidian.md/Teams/Commercial+license&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+>https://help.obsidian.md/Teams/Commercial+license&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>Obsidian 笔记综述</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-review/</link><pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-review/</guid><description>
