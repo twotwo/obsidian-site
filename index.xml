@@ -928,7 +928,156 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Slides Extended (for Obsidian)</title><link>https://all-in-obsidian.li3huo.com/obsidian/slides-extended-for-obsidian/</link><pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/slides-extended-for-obsidian/</guid><description>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>信息设计领域中常用的模型</title><link>https://all-in-obsidian.li3huo.com/obsidian/models-of-information-design/</link><pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/models-of-information-design/</guid><description>
+&lt;h2 id="information-design">Information design
+&lt;/h2>&lt;p>信息设计&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 是一种旨在有效传达信息以促进理解的实践，本质是信息的高层次转化。它是图形设计领域的一个特定分支，与数据可视化和信息架构密切相关。&lt;/p>
+&lt;h3 id="摘要">摘要
+&lt;/h3>&lt;p>信息设计（Information Design）是一种专注于以清晰、高效的方式呈现信息的设计实践，它超越了仅仅美观或艺术表达的目的。这一领域在 1970 年代作为一个跨学科的研究领域浮现出来，并在 1979 年《信息设计杂志》的出版后得到了巩固。随后，国际信息设计协会（IIID）和信息设计协会（IDA）在 1987 年和 1991 年成立，进一步推动了该领域的发展。信息设计的早期例子包括威廉・普莱费尔（William Playfair）的商业图表、约翰・斯诺（John Snow）的 kolera 地图、查尔斯・约瑟夫・米纳德（Charles Joseph Minard）的拿破仑俄罗斯战役图表，以及韦伯・E・B・杜博依斯（W.E.B. Du Bois）在 1900 年世界博览会上展示的数据可视化作品等。&lt;/p>
+&lt;p>简洁性是信息设计中的一个主要关注点，目标是清晰和易于理解。简化信息可能意味着减少信息量，但也可能涉及到增加信息以提高清晰度。简化信息设计的五个步骤包括：&lt;/p>
+&lt;ol>
+&lt;li>告诉真相&lt;/li>
+&lt;li>直接说明要点&lt;/li>
+&lt;li>选择合适的工具&lt;/li>
+&lt;li>强调重要内容&lt;/li>
+&lt;li>保持简洁&lt;/li>
+&lt;/ol>
+&lt;p>这些步骤有助于信息设计师筛选结果，并保持受众的参与度。&lt;/p>
+&lt;h3 id="信息模型">信息模型
+&lt;/h3>&lt;p>在信息设计领域，信息模型是用于组织、结构化和呈现信息的框架，帮助设计者将复杂的内容转化为可理解和易于使用的形式。&lt;/p>
+&lt;h4 id="1-hierarchical-model">1. Hierarchical Model
+&lt;/h4>&lt;p>源自20世纪60年代的信息科学和数据库管理。它通过树状结构组织信息，从更高层次的抽象信息逐渐到细化的具体内容。通过顶层（如总概念或类别）和多个子层级（如具体概念、属性或元素）来组织信息。&lt;/p>
+&lt;h4 id="2-international-system-of-typographic-picture-education">2. International System of Typographic Picture Education
+&lt;/h4>&lt;p>国际排版图表教育系统&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> （ISOTYPE）由 &lt;strong>Otto Neurath&lt;/strong> 在1920年代提出，是一种基于视觉符传递信息的系统，旨在通过简化的图像来展示复杂的社会、经济和统计数据。使用标准化图标和简化的视觉符号来传递信息，减少语言和文化障碍。&lt;/p>
+&lt;p>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Basic_by_Isotype.jpg/2560px-Basic_by_Isotype.jpg"
+loading="lazy"
+alt="Pages from Neurath&amp;rsquo;s International picture language"
+>&lt;/p>
+&lt;h4 id="3-semantic-network-model">3. Semantic Network Model
+&lt;/h4>&lt;p>语义网络模型源自人工智能和认知科学领域，由 &lt;strong>Allen Newell&lt;/strong> 和 &lt;strong>Herbert A. Simon&lt;/strong> 在20世纪50年代提出，后来由 &lt;strong>Tim Berners-Lee&lt;/strong> 扩展为语义网的基础。&lt;/p>
+&lt;p>语义网络通过 &lt;em>节点&lt;/em> 和 &lt;em>连接&lt;/em> 描述概念之间的关系。节点表示概念，连接表示概念之间的关联或属性。它是一种非线性的信息组织方式。&lt;/p>
+&lt;h4 id="4-information-architecture">4. Information Architecture
+&lt;/h4>&lt;p>信息架构模型最早由 Richard Saul Wurman 在1970年代提出，目的是帮助组织和管理大量信息，特别是在复杂的系统或网站中。&lt;/p>
+&lt;p>信息架构通过 &lt;em>层级结构&lt;/em>、&lt;em>分类&lt;/em>、&lt;em>标签&lt;/em> 和 &lt;em>元数据&lt;/em> 等方式组织信息，以确保信息的可查找性和逻辑性。它通常结合了用户研究、内容分析和用户体验设计。&lt;/p>
+&lt;h4 id="5--flowchart-model">5. Flowchart Model
+&lt;/h4>&lt;p>流程图最早由 &lt;strong>Frank Gilbreth&lt;/strong> 在1921年提出，用于描述工业工程中的工作流程。后来，流程图模型被广泛应用于信息系统设计中，以直观地展示过程、步骤和决策点。&lt;/p>
+&lt;h4 id="其它信息模型">其它信息模型
+&lt;/h4>&lt;ul>
+&lt;li>&lt;strong>香农-韦弗通信模型&lt;/strong> 该模型由 &lt;strong>Claude Shannon&lt;/strong> 和 &lt;strong>Warren Weaver&lt;/strong> 在1948年提出，是最早的通信理论模型之一。它源于信息论，旨在研究信息从发件人到接收者的传递过程。&lt;/li>
+&lt;li>&lt;strong>Cognitive Work Analysis&lt;/strong> 认知工作分析模型由 &lt;strong>Jens Rasmussen&lt;/strong> 和 &lt;strong>Kim Vicente&lt;/strong> 在20世纪90年代提出，旨在分析复杂环境中的信息流动和用户行为。CWA 尤其关注用户在动态、复杂系统中的认知需求。&lt;/li>
+&lt;li>&lt;strong>Mental Models&lt;/strong> 心智模型理论由心理学家 &lt;strong>Kenneth Craik&lt;/strong> 于1943年提出，后来由 &lt;strong>Don Norman&lt;/strong> 等人进一步发展，应用于人机交互和信息设计领域。心智模型描述了人们如何通过自己的经验和理解，构建对世界的内部模型，从而预测事件和操作系统。&lt;/li>
+&lt;li>&lt;strong>Card Sorting&lt;/strong> 卡片分类法 &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> 起源于人机交互和信息架构领域，由 &lt;strong>Joseph Novak&lt;/strong> 在1970年代发展，用于探讨知识结构与用户认知之间的关系。&lt;/li>
+&lt;/ul>
+&lt;h3 id="常见的层次结构模型">常见的层次结构模型
+&lt;/h3>&lt;p>层次结构模型在不同的领域和场景下都扮演了重要角色，从教育、心理学到信息系统设计和用户体验。每一个模型都提供了一种层次化的框架，用于有效地组织和管理信息，帮助设计者根据需求选择合适的模型，从而提升信息传递的效果。&lt;/p>
+&lt;h4 id="1-blooms-taxonomy">1. Bloom’s Taxonomy
+&lt;/h4>&lt;p>布鲁姆分类法由教育心理学家&lt;strong>Benjamin Bloom&lt;/strong>于1956年提出，旨在划分教育目标的层次，帮助教师设计教学策略和评估学生的学习。&lt;/p>
+&lt;p>模型结构&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>记忆 (Remembering)&lt;/strong>：回忆事实和基础信息。&lt;/li>
+&lt;li>&lt;strong>理解 (Understanding)&lt;/strong>：解释信息的意义。&lt;/li>
+&lt;li>&lt;strong>应用 (Applying)&lt;/strong>：在新情境中使用知识。&lt;/li>
+&lt;li>&lt;strong>分析 (Analyzing)&lt;/strong>：分解信息并理解其结构。&lt;/li>
+&lt;li>&lt;strong>评价 (Evaluating)&lt;/strong>：根据标准判断信息的价值。&lt;/li>
+&lt;li>&lt;strong>创造 (Creating)&lt;/strong>：整合信息以生成新的想法或产品。&lt;/li>
+&lt;/ol>
+&lt;h4 id="2-dikw-pyramid">2. DIKW Pyramid
+&lt;/h4>&lt;p>&lt;strong>DIKW 金字塔&lt;/strong> 是信息设计领域中一个常见的模型，它代表了&lt;strong>数据 (Data)&lt;/strong>、&lt;strong>信息 (Information)&lt;/strong>、&lt;strong>知识 (Knowledge)&lt;/strong> 和&lt;strong>智慧 (Wisdom)&lt;/strong> 的层级关系。&lt;/p>
+&lt;p>&lt;strong>Russell Ackoff&lt;/strong> 在其1989年的文章《From Data to Wisdom》中阐述了这个概念，随后这个模型被广泛应用于信息管理、决策支持系统、知识管理等多个领域。&lt;/p>
+&lt;h4 id="3-ackoff-系统层次模型">3. Ackoff 系统层次模型
+&lt;/h4>&lt;p>&lt;strong>Russell Ackoff&lt;/strong> 是 DIKW 金字塔背后的关键人物之一，他的系统层次理论强调从简单的结构到复杂的系统进行组织和理解。&lt;/p>
+&lt;p>模型结构&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>数据 (Data)&lt;/strong>：原始的、无组织的信息。&lt;/li>
+&lt;li>&lt;strong>信息 (Information)&lt;/strong>：经过处理和分析的数据。&lt;/li>
+&lt;li>&lt;strong>知识 (Knowledge)&lt;/strong>：经过解释和应用的信息。&lt;/li>
+&lt;li>&lt;strong>理解 (Understanding)&lt;/strong>：对知识之间关系的深入掌握。&lt;/li>
+&lt;li>&lt;strong>智慧 (Wisdom)&lt;/strong>：基于理解的决策和行动。&lt;/li>
+&lt;/ol>
+&lt;p>Ackoff 的系统模型类似于 DIKW 金字塔，但它在“理解”层次上有所延伸，强调知识的深度理解。这一模型在信息系统设计、知识管理和战略规划中被广泛应用。&lt;/p>
+&lt;h4 id="4-nielsens-usability-hierarchy">4. Nielsen&amp;rsquo;s Usability Hierarchy
+&lt;/h4>&lt;p>由 &lt;strong>Jakob Nielsen&lt;/strong> 提出，用于评估系统或设计的可用性。它是用户体验设计中重要的理论框架。&lt;/p>
+&lt;p>模型结构&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>有用性 (Utility)&lt;/strong>：设计是否满足用户需求。&lt;/li>
+&lt;li>&lt;strong>可用性 (Usability)&lt;/strong>：设计是否易于使用。&lt;/li>
+&lt;li>&lt;strong>有效性 (Effectiveness)&lt;/strong>：用户是否能高效地完成任务。&lt;/li>
+&lt;li>&lt;strong>易学性 (Learnability)&lt;/strong>：用户是否容易掌握系统的使用。&lt;/li>
+&lt;li>&lt;strong>可记忆性 (Memorability)&lt;/strong>：用户是否能在一段时间后轻松记住如何使用系统。&lt;/li>
+&lt;/ol>
+&lt;p>这个模型帮助信息设计者确保系统和界面在设计中具备良好的可用性特性，广泛应用于网站、应用程序和软件界面的设计中。&lt;/p>
+&lt;h4 id="5-seci-model">5. SECI Model
+&lt;/h4>&lt;p>由 &lt;strong>Nonaka 和 Takeuchi&lt;/strong> 在1990年代提出，主要用于描述组织内部知识转化的过程，强调隐性知识和显性知识的交互。&lt;/p>
+&lt;p>模型结构&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>社会化 (Socialization)&lt;/strong>：隐性知识之间的共享。&lt;/li>
+&lt;li>&lt;strong>外部化 (Externalization)&lt;/strong>：将隐性知识转化为显性知识。&lt;/li>
+&lt;li>&lt;strong>组合 (Combination)&lt;/strong>：显性知识之间的组合和重组。&lt;/li>
+&lt;li>&lt;strong>内化 (Internalization)&lt;/strong>：将显性知识转化为隐性知识，形成个人经验。
+该模型常用于知识管理和组织学习中，帮助企业设计知识共享和创新流程。例如，在企业信息系统或培训计划中，SECI 模型帮助设计者组织和促进知识的有效传递。&lt;/li>
+&lt;/ol>
+&lt;h2 id="dikw-pyramid">DIKW pyramid
+&lt;/h2>&lt;p>DIKW 金字塔&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup> 是一种描述数据、信息、知识和智慧之间关系的模型，认为这些元素通过四个质量阶段深入理解一个主题：数据、信息、知识和智慧。&lt;/p>
+&lt;p>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/DIKW_Pyramid.svg/1920px-DIKW_Pyramid.svg.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>DIKW 金字塔，也称为 DIKW 层次、智慧层次、知识层次、信息层次、信息金字塔和数据金字塔，是一种模型，用于表达数据、信息、知识和智慧之间的结构或功能关系。该模型最初由 T. S. Eliot 的诗句启发，后来被多位学者如 Clarence W. Barron、Kenneth Boulding、Nicholas L. Henry、Yi-Fu Tuan、Daniel Bell、Mike Cooley、Milan Zeleny 和 Russell Ackoff 等进一步发展。模型的每一层都基于下一层，从数据开始，通过信息、知识最终达到智慧。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>数据&lt;/strong> 被视为没有用途的符号或信号&lt;/li>
+&lt;li>&lt;strong>信息&lt;/strong> 是有用的、组织化的数据&lt;/li>
+&lt;li>&lt;strong>知识&lt;/strong> 是应用信息的能力&lt;/li>
+&lt;li>&lt;strong>智慧&lt;/strong> 则是对知识的评估和使用，以做出明智的决策&lt;/li>
+&lt;/ul>
+&lt;p>不过，对于智慧的定义和位置在学术界存在争议，有些模型没有包括智慧这一层次。还有一些其他的变体，会增加一些层次，比如理解。&lt;/p>
+&lt;p>该模型也受到了一些批评，如&lt;/p>
+&lt;ul>
+&lt;li>哲学家 Rafael Capurro 认为，数据是一种抽象，信息是“传递意义的行为”，知识则是系统通过交流从“世界”中选择意义的事件，因此，这些概念之间的层次关系是一种误解&lt;/li>
+&lt;li>Zins 质疑 DIKW 模型，认为很难明确区分信息与知识&lt;/li>
+&lt;li>批评者如 David Weinberger 认为，DIKW金字塔过于简化了数据、信息、知识和智慧之间的相互作用&lt;/li>
+&lt;li>美国哲学家 John Dewey 和 Arthur Bentley 提出了比 DIKW 模型更复杂的替代方案，包含19个“术语指引”&lt;/li>
+&lt;/ul>
+&lt;h3 id="呈现">呈现
+&lt;/h3>&lt;p>&lt;strong>图像呈现&lt;/strong>。DIKW 还也被表示为二维图表或一个或多个流程图。在这种情况下，元素之间的关系可能被呈现为更少的等级制度，包含反馈循环和控制关系。
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/3/33/DIKW_%281%29.png"
+loading="lazy"
+alt="A flow diagram of the DIKW hierarchy"
+>&lt;/p>
+&lt;p>&lt;strong>计算呈现&lt;/strong>。智能决策支持系统正在尝试通过引入一般模拟领域的新技术和方法，特别是在基于代理的建模的上下文中，从智能软件代理领域引入新技术和方法，以改进决策过程。
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/US_DoD_KM_Pyramid.jpg"
+loading="lazy"
+alt="DoD DIKW evolving adaptation"
+>&lt;/p>
+&lt;h2 id="信息呈现">信息呈现
+&lt;/h2>&lt;h3 id="inverted-pyramid">Inverted pyramid
+&lt;/h3>&lt;p>&lt;strong>倒金字塔&lt;/strong> &lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup> 是新闻写作中的一种信息组织和优先级划分的方法，它要求重要信息放在文章开头，逐步细化到次要信息，这种形式适用于新闻报道、博客、专栏和市场宣传等多种文本类型。&lt;/p>
+&lt;p>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Inverted_pyramid_2.svg/1920px-Inverted_pyramid_2.svg.png"
+loading="lazy"
+alt="inverted pyramid method visualised"
+>&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Information_design" target="_blank" rel="noopener"
+>https://en.wikipedia.org/wiki/Information_design&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Isotype_%28picture_language%29" target="_blank" rel="noopener"
+>https://en.wikipedia.org/wiki/Isotype_(picture_language)&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Card_sorting" target="_blank" rel="noopener"
+>https://en.wikipedia.org/wiki/Card_sorting&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4">
+&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/DIKW_pyramid" target="_blank" rel="noopener"
+>https://en.wikipedia.org/wiki/DIKW_pyramid&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:5">
+&lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Inverted_pyramid_%28journalism%29" target="_blank" rel="noopener"
+>https://en.wikipedia.org/wiki/Inverted_pyramid_(journalism)&lt;/a>&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Slides Extended (for Obsidian)</title><link>https://all-in-obsidian.li3huo.com/obsidian/slides-extended-for-obsidian/</link><pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/slides-extended-for-obsidian/</guid><description>
 &lt;p>Advanced Slides&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 插件已经好久不更新了(1.20.0 on Feb 16, 2023)&lt;/p>
 &lt;h2 id="slides-extended-for-obsidian">Slides Extended (for Obsidian)
 &lt;/h2>&lt;h3 id="fork-of-advanced-slides">Fork of Advanced Slides
@@ -993,72 +1142,72 @@ Vault 目录下 &lt;code>.obsidian/plugins/obsidian-advanced-slides/css/&lt;/co
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>属性&lt;/th>
-&lt;th>说明&lt;/th>
-&lt;th>可选值&lt;/th>
-&lt;th>默认值&lt;/th>
+&lt;th style="text-align: left">属性&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;th style="text-align: left">可选值&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>width&lt;/td>
-&lt;td>ppt 显示宽度&lt;/td>
-&lt;td>1680&lt;/td>
-&lt;td>960&lt;/td>
+&lt;td style="text-align: left">width&lt;/td>
+&lt;td style="text-align: left">ppt 显示宽度&lt;/td>
+&lt;td style="text-align: left">1680&lt;/td>
+&lt;td style="text-align: left">960&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>height&lt;/td>
-&lt;td>ppt 显示高度&lt;/td>
-&lt;td>1050&lt;/td>
-&lt;td>700&lt;/td>
+&lt;td style="text-align: left">height&lt;/td>
+&lt;td style="text-align: left">ppt 显示高度&lt;/td>
+&lt;td style="text-align: left">1050&lt;/td>
+&lt;td style="text-align: left">700&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>theme&lt;/td>
-&lt;td>ppt 主题&lt;/td>
-&lt;td>参见 Themes&lt;/td>
-&lt;td>black&lt;/td>
+&lt;td style="text-align: left">theme&lt;/td>
+&lt;td style="text-align: left">ppt 主题&lt;/td>
+&lt;td style="text-align: left">参见 Themes&lt;/td>
+&lt;td style="text-align: left">black&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>highlightTheme&lt;/td>
-&lt;td>代码块主题&lt;/td>
-&lt;td>monokai&lt;/td>
-&lt;td>zenburn&lt;/td>
+&lt;td style="text-align: left">highlightTheme&lt;/td>
+&lt;td style="text-align: left">代码块主题&lt;/td>
+&lt;td style="text-align: left">monokai&lt;/td>
+&lt;td style="text-align: left">zenburn&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>css&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>[css/1.css,css/2.css]&lt;/td>
-&lt;td>[]&lt;/td>
+&lt;td style="text-align: left">css&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">[css/1.css,css/2.css]&lt;/td>
+&lt;td style="text-align: left">[]&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>slideNumber&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">slideNumber&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>center&lt;/td>
-&lt;td>默认居中&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>true&lt;/td>
+&lt;td style="text-align: left">center&lt;/td>
+&lt;td style="text-align: left">默认居中&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">true&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>enableLinks&lt;/td>
-&lt;td>ppt 上显示链接&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">enableLinks&lt;/td>
+&lt;td style="text-align: left">ppt 上显示链接&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>enableChalkboard&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">enableChalkboard&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>defaultTemplate&lt;/td>
-&lt;td>ppt 模版&lt;/td>
-&lt;td>参见 Templates&lt;/td>
-&lt;td>null&lt;/td>
+&lt;td style="text-align: left">defaultTemplate&lt;/td>
+&lt;td style="text-align: left">ppt 模版&lt;/td>
+&lt;td style="text-align: left">参见 Templates&lt;/td>
+&lt;td style="text-align: left">null&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -2224,30 +2373,30 @@ alt="Workspace"
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Action&lt;/th>
-&lt;th>Shortcut&lt;/th>
+&lt;th style="text-align: left">Action&lt;/th>
+&lt;th style="text-align: left">Shortcut&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Open help&lt;/td>
-&lt;td>&lt;code>F1&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Open help&lt;/td>
+&lt;td style="text-align: left">&lt;code>F1&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Open settings&lt;/td>
-&lt;td>&lt;code>Cmd + ,&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Open settings&lt;/td>
+&lt;td style="text-align: left">&lt;code>Cmd + ,&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Open command palette&lt;/td>
-&lt;td>&lt;code>Cmd + P&lt;/code> &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/td>
+&lt;td style="text-align: left">Open command palette&lt;/td>
+&lt;td style="text-align: left">&lt;code>Cmd + P&lt;/code> &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Open quick switcher&lt;/td>
-&lt;td>&lt;code>Cmd + O&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Open quick switcher&lt;/td>
+&lt;td style="text-align: left">&lt;code>Cmd + O&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Open graph view&lt;/td>
-&lt;td>&lt;code>Cmd + G&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Open graph view&lt;/td>
+&lt;td style="text-align: left">&lt;code>Cmd + G&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -2275,54 +2424,54 @@ alt="Workspace"
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Action&lt;/th>
-&lt;th>Shortcut&lt;/th>
+&lt;th style="text-align: left">Action&lt;/th>
+&lt;th style="text-align: left">Shortcut&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>editor:set-heading-0&lt;/td>
-&lt;td>&lt;code>Ctrl+0&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:set-heading-0&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+0&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>editor:set-heading-1&lt;/td>
-&lt;td>&lt;code>Ctrl+1&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:set-heading-1&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+1&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&amp;hellip;&lt;/td>
-&lt;td>&lt;code>Ctrl+...&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&amp;hellip;&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+...&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>editor:set-heading-6&lt;/td>
-&lt;td>&lt;code>Ctrl+6&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:set-heading-6&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+6&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>editor:toggle-bullet-list&lt;/td>
-&lt;td>&lt;code>Ctrl+b&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:toggle-bullet-list&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+b&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>editor:toggle-numbered-list&lt;/td>
-&lt;td>&lt;code>Ctrl+n&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:toggle-numbered-list&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+n&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>editor:toggle-highlight&lt;/td>
-&lt;td>&lt;code>Ctrl+h&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:toggle-highlight&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+h&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>editor:fold-all&lt;/td>
-&lt;td>&lt;code>Ctrl+f&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:fold-all&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+f&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>editor:unfold-all&lt;/td>
-&lt;td>&lt;code>Ctrl+u&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:unfold-all&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+u&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>editor:swap-line-up&lt;/td>
-&lt;td>&lt;code>Ctrl+Cmd+↑&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:swap-line-up&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+Cmd+↑&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>editor:swap-line-down&lt;/td>
-&lt;td>&lt;code>Ctrl+Cmd+↓&lt;/code>&lt;/td>
+&lt;td style="text-align: left">editor:swap-line-down&lt;/td>
+&lt;td style="text-align: left">&lt;code>Ctrl+Cmd+↓&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -3717,72 +3866,72 @@ alt="|600"
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>属性&lt;/th>
-&lt;th>说明&lt;/th>
-&lt;th>可选值&lt;/th>
-&lt;th>默认值&lt;/th>
+&lt;th style="text-align: left">属性&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;th style="text-align: left">可选值&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>width&lt;/td>
-&lt;td>ppt 显示宽度&lt;/td>
-&lt;td>1680&lt;/td>
-&lt;td>960&lt;/td>
+&lt;td style="text-align: left">width&lt;/td>
+&lt;td style="text-align: left">ppt 显示宽度&lt;/td>
+&lt;td style="text-align: left">1680&lt;/td>
+&lt;td style="text-align: left">960&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>height&lt;/td>
-&lt;td>ppt 显示高度&lt;/td>
-&lt;td>1050&lt;/td>
-&lt;td>700&lt;/td>
+&lt;td style="text-align: left">height&lt;/td>
+&lt;td style="text-align: left">ppt 显示高度&lt;/td>
+&lt;td style="text-align: left">1050&lt;/td>
+&lt;td style="text-align: left">700&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>theme&lt;/td>
-&lt;td>ppt 主题&lt;/td>
-&lt;td>参见 Themes&lt;/td>
-&lt;td>black&lt;/td>
+&lt;td style="text-align: left">theme&lt;/td>
+&lt;td style="text-align: left">ppt 主题&lt;/td>
+&lt;td style="text-align: left">参见 Themes&lt;/td>
+&lt;td style="text-align: left">black&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>highlightTheme&lt;/td>
-&lt;td>代码块主题&lt;/td>
-&lt;td>monokai&lt;/td>
-&lt;td>zenburn&lt;/td>
+&lt;td style="text-align: left">highlightTheme&lt;/td>
+&lt;td style="text-align: left">代码块主题&lt;/td>
+&lt;td style="text-align: left">monokai&lt;/td>
+&lt;td style="text-align: left">zenburn&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>css&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>[css/1.css,css/2.css]&lt;/td>
-&lt;td>[]&lt;/td>
+&lt;td style="text-align: left">css&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">[css/1.css,css/2.css]&lt;/td>
+&lt;td style="text-align: left">[]&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>slideNumber&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">slideNumber&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>center&lt;/td>
-&lt;td>默认居中&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>true&lt;/td>
+&lt;td style="text-align: left">center&lt;/td>
+&lt;td style="text-align: left">默认居中&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">true&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>enableLinks&lt;/td>
-&lt;td>ppt 上显示链接&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">enableLinks&lt;/td>
+&lt;td style="text-align: left">ppt 上显示链接&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>enableChalkboard&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">enableChalkboard&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>defaultTemplate&lt;/td>
-&lt;td>ppt 模版&lt;/td>
-&lt;td>参见 Templates&lt;/td>
-&lt;td>null&lt;/td>
+&lt;td style="text-align: left">defaultTemplate&lt;/td>
+&lt;td style="text-align: left">ppt 模版&lt;/td>
+&lt;td style="text-align: left">参见 Templates&lt;/td>
+&lt;td style="text-align: left">null&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>

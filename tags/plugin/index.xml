@@ -63,72 +63,72 @@ Vault 目录下 &lt;code>.obsidian/plugins/obsidian-advanced-slides/css/&lt;/co
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>属性&lt;/th>
-&lt;th>说明&lt;/th>
-&lt;th>可选值&lt;/th>
-&lt;th>默认值&lt;/th>
+&lt;th style="text-align: left">属性&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;th style="text-align: left">可选值&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>width&lt;/td>
-&lt;td>ppt 显示宽度&lt;/td>
-&lt;td>1680&lt;/td>
-&lt;td>960&lt;/td>
+&lt;td style="text-align: left">width&lt;/td>
+&lt;td style="text-align: left">ppt 显示宽度&lt;/td>
+&lt;td style="text-align: left">1680&lt;/td>
+&lt;td style="text-align: left">960&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>height&lt;/td>
-&lt;td>ppt 显示高度&lt;/td>
-&lt;td>1050&lt;/td>
-&lt;td>700&lt;/td>
+&lt;td style="text-align: left">height&lt;/td>
+&lt;td style="text-align: left">ppt 显示高度&lt;/td>
+&lt;td style="text-align: left">1050&lt;/td>
+&lt;td style="text-align: left">700&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>theme&lt;/td>
-&lt;td>ppt 主题&lt;/td>
-&lt;td>参见 Themes&lt;/td>
-&lt;td>black&lt;/td>
+&lt;td style="text-align: left">theme&lt;/td>
+&lt;td style="text-align: left">ppt 主题&lt;/td>
+&lt;td style="text-align: left">参见 Themes&lt;/td>
+&lt;td style="text-align: left">black&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>highlightTheme&lt;/td>
-&lt;td>代码块主题&lt;/td>
-&lt;td>monokai&lt;/td>
-&lt;td>zenburn&lt;/td>
+&lt;td style="text-align: left">highlightTheme&lt;/td>
+&lt;td style="text-align: left">代码块主题&lt;/td>
+&lt;td style="text-align: left">monokai&lt;/td>
+&lt;td style="text-align: left">zenburn&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>css&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>[css/1.css,css/2.css]&lt;/td>
-&lt;td>[]&lt;/td>
+&lt;td style="text-align: left">css&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">[css/1.css,css/2.css]&lt;/td>
+&lt;td style="text-align: left">[]&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>slideNumber&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">slideNumber&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>center&lt;/td>
-&lt;td>默认居中&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>true&lt;/td>
+&lt;td style="text-align: left">center&lt;/td>
+&lt;td style="text-align: left">默认居中&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">true&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>enableLinks&lt;/td>
-&lt;td>ppt 上显示链接&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">enableLinks&lt;/td>
+&lt;td style="text-align: left">ppt 上显示链接&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>enableChalkboard&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">enableChalkboard&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>defaultTemplate&lt;/td>
-&lt;td>ppt 模版&lt;/td>
-&lt;td>参见 Templates&lt;/td>
-&lt;td>null&lt;/td>
+&lt;td style="text-align: left">defaultTemplate&lt;/td>
+&lt;td style="text-align: left">ppt 模版&lt;/td>
+&lt;td style="text-align: left">参见 Templates&lt;/td>
+&lt;td style="text-align: left">null&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -375,72 +375,72 @@ alt="|600"
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>属性&lt;/th>
-&lt;th>说明&lt;/th>
-&lt;th>可选值&lt;/th>
-&lt;th>默认值&lt;/th>
+&lt;th style="text-align: left">属性&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;th style="text-align: left">可选值&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>width&lt;/td>
-&lt;td>ppt 显示宽度&lt;/td>
-&lt;td>1680&lt;/td>
-&lt;td>960&lt;/td>
+&lt;td style="text-align: left">width&lt;/td>
+&lt;td style="text-align: left">ppt 显示宽度&lt;/td>
+&lt;td style="text-align: left">1680&lt;/td>
+&lt;td style="text-align: left">960&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>height&lt;/td>
-&lt;td>ppt 显示高度&lt;/td>
-&lt;td>1050&lt;/td>
-&lt;td>700&lt;/td>
+&lt;td style="text-align: left">height&lt;/td>
+&lt;td style="text-align: left">ppt 显示高度&lt;/td>
+&lt;td style="text-align: left">1050&lt;/td>
+&lt;td style="text-align: left">700&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>theme&lt;/td>
-&lt;td>ppt 主题&lt;/td>
-&lt;td>参见 Themes&lt;/td>
-&lt;td>black&lt;/td>
+&lt;td style="text-align: left">theme&lt;/td>
+&lt;td style="text-align: left">ppt 主题&lt;/td>
+&lt;td style="text-align: left">参见 Themes&lt;/td>
+&lt;td style="text-align: left">black&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>highlightTheme&lt;/td>
-&lt;td>代码块主题&lt;/td>
-&lt;td>monokai&lt;/td>
-&lt;td>zenburn&lt;/td>
+&lt;td style="text-align: left">highlightTheme&lt;/td>
+&lt;td style="text-align: left">代码块主题&lt;/td>
+&lt;td style="text-align: left">monokai&lt;/td>
+&lt;td style="text-align: left">zenburn&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>css&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>[css/1.css,css/2.css]&lt;/td>
-&lt;td>[]&lt;/td>
+&lt;td style="text-align: left">css&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">[css/1.css,css/2.css]&lt;/td>
+&lt;td style="text-align: left">[]&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>slideNumber&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">slideNumber&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>center&lt;/td>
-&lt;td>默认居中&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>true&lt;/td>
+&lt;td style="text-align: left">center&lt;/td>
+&lt;td style="text-align: left">默认居中&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">true&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>enableLinks&lt;/td>
-&lt;td>ppt 上显示链接&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">enableLinks&lt;/td>
+&lt;td style="text-align: left">ppt 上显示链接&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>enableChalkboard&lt;/td>
-&lt;td>&lt;/td>
-&lt;td>true / false&lt;/td>
-&lt;td>false&lt;/td>
+&lt;td style="text-align: left">enableChalkboard&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
+&lt;td style="text-align: left">true / false&lt;/td>
+&lt;td style="text-align: left">false&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>defaultTemplate&lt;/td>
-&lt;td>ppt 模版&lt;/td>
-&lt;td>参见 Templates&lt;/td>
-&lt;td>null&lt;/td>
+&lt;td style="text-align: left">defaultTemplate&lt;/td>
+&lt;td style="text-align: left">ppt 模版&lt;/td>
+&lt;td style="text-align: left">参见 Templates&lt;/td>
+&lt;td style="text-align: left">null&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
