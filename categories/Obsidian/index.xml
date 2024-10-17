@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sun, 29 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>信息设计领域中常用的模型</title><link>https://all-in-obsidian.li3huo.com/obsidian/models-of-information-design/</link><pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/models-of-information-design/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 17 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian 1.7 正式对外发布了(1.7.4)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.7/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.7/</guid><description>
+&lt;h2 id="移动版">移动版
+&lt;/h2>&lt;p>包含了直到桌面版 v1.7.4 的所有新功能和错误修复。&lt;/p>
+&lt;h3 id="新增功能">新增功能
+&lt;/h3>&lt;ul>
+&lt;li>添加了一个新的标签页切换器&lt;/li>
+&lt;/ul>
+&lt;h3 id="性能">性能
+&lt;/h3>&lt;p>提高了iOS、iPadOS和Android上应用的加载时间。&lt;/p>
+&lt;ul>
+&lt;li>iOS：跳过 iCloud 加载的选项现在会在启动过程中更早出现&lt;/li>
+&lt;li>应用在加载 iCloud 库时现在响应更快&lt;/li>
+&lt;li>侧边栏动画现在稍微快一些&lt;/li>
+&lt;/ul>
+&lt;h2 id="桌面版">桌面版
+&lt;/h2>&lt;h3 id="新增功能-1">新增功能
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Obsidian Sync&lt;/strong>：新增了同步历史视图，可以查看整个库的编辑记录，这对于共享库的协作非常有用。你可以通过“同步：显示同步历史”命令来激活它&lt;/li>
+&lt;li>&lt;strong>页面预览编辑&lt;/strong>：现在可以在不打开笔记的情况下，直接在页面预览中点击进行编辑&lt;/li>
+&lt;/ul>
+&lt;h3 id="改进">改进
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>性能&lt;/strong>：视图现在只在可见时加载，这提高了启动性能和内存使用效率。这可能会影响一些插件，官方发布了一个指南来帮助开发者更新他们的插件&lt;/li>
+&lt;li>&lt;strong>重命名文件&lt;/strong>：在大型库中重命名文件现在更快了&lt;/li>
+&lt;li>&lt;strong>画布（Canvas）&lt;/strong>：提高了平移时的性能。卡片进入和退出视口时不再闪烁。如果仍有相关问题，请尝试切换到默认主题&lt;/li>
+&lt;li>&lt;strong>设置中新增屏幕&lt;/strong>：在设置（常规 → 高级）中新增了一个屏幕，显示总的应用加载时间。你还可以启用一个切换，以便在启动时间过长时收到通知，包括调试详情&lt;/li>
+&lt;li>&lt;strong>修复了在链接的 Markdown 视图之间滚动时的卡顿问题&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="obsidian-uri-的改进">Obsidian URI 的改进
+&lt;/h3>&lt;ul>
+&lt;li>允许使用剪贴板而不是内容来插入剪贴板的内容。&lt;/li>
+&lt;li>允许使用prepend代替append在文件顶部添加内容。&lt;/li>
+&lt;li>prepend和append都会尝试合并属性。&lt;/li>
+&lt;li>每日笔记：新的每日 Obsidian URI 动作可以自动打开或创建你的每日笔记。&lt;/li>
+&lt;/ul>
+&lt;h2 id="reference">Reference
+&lt;/h2></description></item><item><title>信息设计领域中常用的模型</title><link>https://all-in-obsidian.li3huo.com/obsidian/models-of-information-design/</link><pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/models-of-information-design/</guid><description>
 &lt;h2 id="information-design">Information design
 &lt;/h2>&lt;p>信息设计&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 是一种旨在有效传达信息以促进理解的实践，本质是信息的高层次转化。它是图形设计领域的一个特定分支，与数据可视化和信息架构密切相关。&lt;/p>
 &lt;h3 id="摘要">摘要
