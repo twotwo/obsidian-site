@@ -1,4 +1,86 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 17 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian 1.7 正式对外发布了(1.7.4)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.7/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.7/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>CSS Snippets: Typography</title><link>https://all-in-obsidian.li3huo.com/obsidian/css-snippets-typography/</link><pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/css-snippets-typography/</guid><description>
+&lt;h2 id="变量定义">变量定义
+&lt;/h2>&lt;h3 id="colors">Colors
+&lt;/h3>&lt;p>Obsidian 应用程序中使用的颜色变量，包括基础色彩、辅助色彩、扩展色彩、黑白色彩以及语义色彩&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>基础色彩&lt;/strong> 是一组中性色调，从浅到深，主要由主题定义。&lt;/li>
+&lt;li>&lt;strong>辅助色彩&lt;/strong> 用于突出交互元素，如链接和主要按钮，用户可以在 Obsidian 应用的设置中自定义。&lt;/li>
+&lt;li>&lt;strong>扩展色彩&lt;/strong> 包括状态信息（错误、警告、成功）、提醒框、语法高亮、图谱节点和画布元素的颜色，每种颜色都有一个额外的 RGB 变量，以便创建带有不同不透明度的颜色。&lt;/li>
+&lt;li>&lt;strong>黑白色彩&lt;/strong> 用于创建带有不透明度的遮罩层，应避免更改这些变量的值。&lt;/li>
+&lt;li>&lt;strong>语义色彩&lt;/strong> 基于预期用途从基础色彩派生，包括表面颜色、交互式颜色和文本颜色。&lt;/li>
+&lt;/ul>
+&lt;h3 id="typography">Typography
+&lt;/h3>&lt;p>Obsidian 文档编辑器中与排版相关的 CSS 变量，包括字体、字号、字重、文本格式、行高和段落间距等&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>字体选择&lt;/strong>：Obsidian 使用不同的 CSS 变量来定义 UI 元素、编辑器文本和代码块的字体。&lt;/li>
+&lt;li>&lt;strong>字号设置&lt;/strong>：Obsidian 采用相对单位（em）和固定单位（px）来设置不同上下文环境下的字号。&lt;/li>
+&lt;li>&lt;strong>字重定义&lt;/strong>：Obsidian 为不同的文本重要性定义了一系列字重选项，并推荐使用&lt;code>--bold-modifier&lt;/code>来调整加粗文本的字重。&lt;/li>
+&lt;li>&lt;strong>文本格式&lt;/strong>：Obsidian 提供了相关的 CSS 变量来控制加粗和斜体文本的样式。&lt;/li>
+&lt;li>&lt;strong>行高设置&lt;/strong>：Obsidian 定义了标准行高和紧凑行高，以适应不同的布局需求。&lt;/li>
+&lt;li>&lt;strong>段落间距&lt;/strong>：Obsidian 通过 CSS 变量控制标题和段落之间的间距。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>粗体/斜体/高亮&lt;/strong> 的定义&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-CSS" data-lang="CSS">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">strong&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">font-weight&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">calc&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">font&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">weight&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">bold&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">modifier&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">bold&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">em&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">font-style&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">normal&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">italic&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nt">mark&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">background-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">text&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">highlight&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bg&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">text&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">normal&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="headings">Headings
+&lt;/h3>&lt;p>标题样式的 CSS 变量列表及其描述&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。&lt;/p>
+&lt;p>Obsidian 编辑器的标题样式相关的 CSS 变量列表包括了&lt;strong>文本颜色&lt;/strong>、&lt;strong>字体系列&lt;/strong>、&lt;strong>行高&lt;/strong>、&lt;strong>字号&lt;/strong>、&lt;strong>字体风格&lt;/strong>、&lt;strong>字体变体&lt;/strong>、&lt;strong>字体粗细&lt;/strong>等多个方面。这些变量可以用来自定义 Markdown 标题深度语法的文本颜色，以及 H1 至 H6 标题的文本颜色、字体系列、行高、字号、字体风格、字体变体和字体粗细。此外，还有一个用于设置标题上方间距的变量，其详细信息可以在Typography 页面中找到。&lt;/p>
+&lt;h2 id="typographycss">Typography.css
+&lt;/h2>&lt;p>采样自 &lt;strong>AnupPuccin&lt;/strong> &lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup> 主题 &lt;code>.rosepine-light&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-CSS" data-lang="CSS">&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nd">root&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-red&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">180&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">99&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">122&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-maroon&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">180&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">99&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">122&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-mauve&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">144&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">122&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">169&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-peach&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">214&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">129&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">125&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-yellow&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">234&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">157&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">52&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-green&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">86&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">148&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">159&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-teal&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">86&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">148&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">159&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-lavender&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">114&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">135&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">253&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--bold-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">red&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--italic-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">green&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--text-highlight-bg&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">yellow&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--h1-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">red&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--h2-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">peach&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--h3-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">green&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--h4-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">teal&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--h5-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">lavender&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--h6-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">mauve&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/Foundations/Colors" target="_blank" rel="noopener"
+>https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/Foundations/Typography" target="_blank" rel="noopener"
+>https://docs.obsidian.md/Reference/CSS+variables/Foundations/Typography&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/Editor/Headings" target="_blank" rel="noopener"
+>https://docs.obsidian.md/Reference/CSS+variables/Editor/Headings&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4">
+&lt;p>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/" target="_blank" rel="noopener"
+>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Obsidian 1.7 正式对外发布了(1.7.4)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.7/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.7/</guid><description>
 &lt;h2 id="移动版">移动版
 &lt;/h2>&lt;p>包含了直到桌面版 v1.7.4 的所有新功能和错误修复。&lt;/p>
 &lt;h3 id="新增功能">新增功能
