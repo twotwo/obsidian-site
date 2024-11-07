@@ -1,7 +1,73 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>CSS Snippets: Typography</title><link>https://all-in-obsidian.li3huo.com/obsidian/css-snippets-typography/</link><pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/css-snippets-typography/</guid><description>
-&lt;h2 id="变量定义">变量定义
-&lt;/h2>&lt;h3 id="colors">Colors
-&lt;/h3>&lt;p>Obsidian 应用程序中使用的颜色变量，包括基础色彩、辅助色彩、扩展色彩、黑白色彩以及语义色彩&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 07 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian Web Clipper</title><link>https://all-in-obsidian.li3huo.com/obsidian/clipper/</link><pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/clipper/</guid><description>
+&lt;p>Obsidian Web Clipper&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 是一个可以在不同浏览器上安装的插件，用于提取网页内容并将其保存到 Obsidian 笔记库。&lt;/p>
+&lt;p>Obsidian Web Clipper 支持剪辑网页的文本、图片和链接，并以 Markdown 文件的形式存储在 Obsidian 笔记库中。用户可以选择性地去除广告并仅保存特定内容，从而获得更清晰的剪辑效果。保存后，内容可以在 Obsidian 中编辑、组织和链接，实现高效的研究流程。&lt;/p>
+&lt;h2 id="1-安装">1. 安装
+&lt;/h2>&lt;p>Obsidian Web Clipper 支持 Chrome、Firefox、Safari 等浏览器，需要安装 Obsidian 1.7.2 或更高版本&lt;sup id="fnref1:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/clipper-add-to-chrome.png"
+loading="lazy"
+alt="桌面"
+>
+iOS/ iPadOS 可以从应用商店直接下载：
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/clipper-ios.jpeg"
+loading="lazy"
+alt="iOS"
+>&lt;/p>
+&lt;h2 id="2-保存页面">2. 保存页面
+&lt;/h2>&lt;p>使用时，可以通过浏览器工具栏图标、热键或上下文菜单激活插件，然后选择 “Add to Obsidian” 按钮来保存网页。&lt;/p>
+&lt;p>插件界面分为四个部分：&lt;/p>
+&lt;ol>
+&lt;li>标题（可以切换模板、启用高亮模式和访问设置）&lt;/li>
+&lt;li>属性（显示从网页中提取的元数据）&lt;/li>
+&lt;li>笔记内容（将被保存到 Obsidian）&lt;/li>
+&lt;li>页脚（可以选择保存到哪个库和文件夹，并提供保存到 Obsidian 的功能）&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/clipper-clip-page.png"
+loading="lazy"
+alt="桌面"
+>&lt;/p>
+&lt;h2 id="3-高亮网页文本">3. 高亮网页文本
+&lt;/h2>&lt;p>Web Clipper 还支持高亮网页文本的功能，允许用户选择要保存到 Obsidian 的文本、图片和元素。用户可以通过插件面板中的高亮图标、热键或上下文菜单激活高亮模式。此外，用户可以在设置中更改高亮行为，并将高亮内容导出为 &lt;code>.json&lt;/code> 文件。&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/clipper-highlight1.png"
+loading="lazy"
+>
+&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/clipper-highlight2.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="4-模版">4. 模版
+&lt;/h2>&lt;p>用户还可以创建和编辑模板，以自动捕获和组织来自网页的元数据。模板可以通过新建、编辑、导入和导出进行管理。模板触发器允许根据当前页面的 URL 或 schema.org 数据自动选择模板。模板变量可以用于自动填充笔记名称、位置、属性和内容，支持预设变量、元数据变量、选择器变量和 schema.org 变量。&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/clipper-template.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="5-排障">5. 排障
+&lt;/h2>&lt;p>如果用户在使用 Web Clipper 时遇到问题，可以通过官方 Discord 频道寻求帮助，或者在 &lt;a class="link" href="https://github.com/obsidianmd/obsidian-clipper" target="_blank" rel="noopener"
+>GitHub 仓库&lt;/a> 中报告错误。&lt;/p>
+&lt;p>对于在 Linux 系统上可能遇到的问题，提供了一些故障排除步骤。&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://obsidian.md/clipper" target="_blank" rel="noopener"
+>https://obsidian.md/clipper&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://help.obsidian.md/Extending&amp;#43;Obsidian/Obsidian&amp;#43;Web&amp;#43;Clipper" target="_blank" rel="noopener"
+>https://help.obsidian.md/Extending+Obsidian/Obsidian+Web+Clipper&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>CSS Snippets: Typography</title><link>https://all-in-obsidian.li3huo.com/obsidian/css-snippets-typography/</link><pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/css-snippets-typography/</guid><description>
+&lt;h2 id="obsidian-css-变量">Obsidian CSS 变量
+&lt;/h2>&lt;p>CSS 变量的使用&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，包括基础样式、组件、编辑器、插件、窗口以及 Obsidian Publish 相关的 CSS 变量。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Foundations&lt;/strong>：提供了抽象的变量，用于设置颜色、间距、排版和更多基础样式。这包括了&lt;em>边框&lt;/em>、&lt;em>颜色&lt;/em>、&lt;em>光标&lt;/em>、&lt;em>图标&lt;/em>、&lt;em>层级&lt;/em>、圆角、间距和&lt;em>排版&lt;/em>等方面的变量&lt;/li>
+&lt;li>&lt;strong>Components&lt;/strong>：介绍了应用中使用的交互式组件，包括&lt;em>按钮&lt;/em>、&lt;em>复选框&lt;/em>、颜色输入、对话框、拖拽功能、缩进指引、模态框、多选、导航、弹出窗口、滑块、标签页、文本输入和开关等&lt;/li>
+&lt;li>&lt;strong>Editor&lt;/strong>：列出了用于编辑和阅读文本文件的内容类型和变量，如区块、块引用、旁白、&lt;em>代码块&lt;/em>、嵌入、文件、脚注、&lt;em>标题&lt;/em>、水平分割线、行内标题、链接、列表、属性、表格和标签&lt;/li>
+&lt;li>&lt;strong>Plugins&lt;/strong>：提供了与核心插件界面元素相关的变量，例如画布、文件资源管理器、图表、搜索等&lt;/li>
+&lt;li>&lt;strong>Window&lt;/strong>：包含了与 Obsidian 应用窗口外观相关的变量，如分隔条、ribbon 栏、滚动条、状态栏、窗口框架和工作区&lt;/li>
+&lt;li>&lt;strong>Obsidian Publish&lt;/strong>：为 Obsidian Publish 网站提供了一系列变量，用于定制网站字体、头部、导航、组件、侧边栏和页面样式&lt;/li>
+&lt;/ul>
+&lt;h2 id="本片段用到的定义">本片段用到的定义
+&lt;/h2>&lt;h3 id="基础颜色">基础·颜色
+&lt;/h3>&lt;p>Obsidian 应用程序中使用的颜色变量，包括基础色彩、辅助色彩、扩展色彩、黑白色彩以及语义色彩&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>基础色彩&lt;/strong> 是一组中性色调，从浅到深，主要由主题定义。&lt;/li>
 &lt;li>&lt;strong>辅助色彩&lt;/strong> 用于突出交互元素，如链接和主要按钮，用户可以在 Obsidian 应用的设置中自定义。&lt;/li>
@@ -9,8 +75,8 @@
 &lt;li>&lt;strong>黑白色彩&lt;/strong> 用于创建带有不透明度的遮罩层，应避免更改这些变量的值。&lt;/li>
 &lt;li>&lt;strong>语义色彩&lt;/strong> 基于预期用途从基础色彩派生，包括表面颜色、交互式颜色和文本颜色。&lt;/li>
 &lt;/ul>
-&lt;h3 id="typography">Typography
-&lt;/h3>&lt;p>Obsidian 文档编辑器中与排版相关的 CSS 变量，包括字体、字号、字重、文本格式、行高和段落间距等&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
+&lt;h3 id="基础排版">基础·排版
+&lt;/h3>&lt;p>Obsidian 文档编辑器中与排版相关的 CSS 变量，包括字体、字号、字重、文本格式、行高和段落间距等&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>字体选择&lt;/strong>：Obsidian 使用不同的 CSS 变量来定义 UI 元素、编辑器文本和代码块的字体。&lt;/li>
 &lt;li>&lt;strong>字号设置&lt;/strong>：Obsidian 采用相对单位（em）和固定单位（px）来设置不同上下文环境下的字号。&lt;/li>
@@ -34,11 +100,11 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">background-color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">text&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">highlight&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bg&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nf">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="kc">text&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="kc">normal&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="headings">Headings
-&lt;/h3>&lt;p>标题样式的 CSS 变量列表及其描述&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="编辑器标题">编辑器·标题
+&lt;/h3>&lt;p>标题样式的 CSS 变量列表及其描述&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>。&lt;/p>
 &lt;p>Obsidian 编辑器的标题样式相关的 CSS 变量列表包括了&lt;strong>文本颜色&lt;/strong>、&lt;strong>字体系列&lt;/strong>、&lt;strong>行高&lt;/strong>、&lt;strong>字号&lt;/strong>、&lt;strong>字体风格&lt;/strong>、&lt;strong>字体变体&lt;/strong>、&lt;strong>字体粗细&lt;/strong>等多个方面。这些变量可以用来自定义 Markdown 标题深度语法的文本颜色，以及 H1 至 H6 标题的文本颜色、字体系列、行高、字号、字体风格、字体变体和字体粗细。此外，还有一个用于设置标题上方间距的变量，其详细信息可以在Typography 页面中找到。&lt;/p>
 &lt;h2 id="typographycss">Typography.css
-&lt;/h2>&lt;p>采样自 &lt;strong>AnupPuccin&lt;/strong> &lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup> 主题 &lt;code>.rosepine-light&lt;/code>&lt;/p>
+&lt;/h2>&lt;p>采样自 &lt;strong>AnupPuccin&lt;/strong> &lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup> 主题 &lt;code>.rosepine-light&lt;/code>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-CSS" data-lang="CSS">&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span>&lt;span class="nd">root&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-red&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">180&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">99&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">122&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">--color-maroon&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">rgb&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">180&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">99&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">122&lt;/span>&lt;span class="p">);&lt;/span>
@@ -64,20 +130,24 @@
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1">
-&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/Foundations/Colors" target="_blank" rel="noopener"
->https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/CSS&amp;#43;variables" target="_blank" rel="noopener"
+>https://docs.obsidian.md/Reference/CSS+variables/CSS+variables&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:2">
-&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/Foundations/Typography" target="_blank" rel="noopener"
->https://docs.obsidian.md/Reference/CSS+variables/Foundations/Typography&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/Foundations/Colors" target="_blank" rel="noopener"
+>https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:3">
-&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/Editor/Headings" target="_blank" rel="noopener"
->https://docs.obsidian.md/Reference/CSS+variables/Editor/Headings&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/Foundations/Typography" target="_blank" rel="noopener"
+>https://docs.obsidian.md/Reference/CSS+variables/Foundations/Typography&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:4">
+&lt;p>&lt;a class="link" href="https://docs.obsidian.md/Reference/CSS&amp;#43;variables/Editor/Headings" target="_blank" rel="noopener"
+>https://docs.obsidian.md/Reference/CSS+variables/Editor/Headings&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:5">
 &lt;p>&lt;a class="link" href="https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/" target="_blank" rel="noopener"
->https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+>https://all-in-obsidian.li3huo.com/obsidian/themes-anuppuccin/&lt;/a>&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>Obsidian 1.7 正式对外发布了(1.7.4)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.7/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.7/</guid><description>
