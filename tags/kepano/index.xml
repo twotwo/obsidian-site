@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kepano on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/tags/kepano/</link><description>Recent content in Kepano on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Tue, 07 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/tags/kepano/index.xml" rel="self" type="application/rss+xml"/><item><title>The Future of Obsidian</title><link>https://all-in-obsidian.li3huo.com/obsidian/talks-with-kepano/</link><pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/talks-with-kepano/</guid><description>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=TkNTuFF2t-c" target="_blank" rel="noopener"
+>The Future of Obsidian with CEO Stephan Ango&lt;/a> Mar 2023&lt;/p>
+&lt;p>&lt;img src="https://all-in-obsidian.li3huo.com/photos/obsidian/future-of-obsidian.jpg"
+loading="lazy"
+alt="youtube"
+>&lt;/p>
+&lt;p>Obsidian 的新 CEO Stephan Ango&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>(@kepano) 在与 Nicole van der Hoeven&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> 和 Andy Polaine 的对话中分享了他对 Obsidian 未来的看法。Obsidian 的核心理念包括&lt;strong>可扩展性&lt;/strong>、&lt;strong>隐私保护&lt;/strong>和&lt;strong>长期可持续性&lt;/strong>。。尽管这些理念带来了一些权衡，比如功能上的局限性、分享困难和只支持 Markdown 格式等问题，但这些都是为了保持应用的核心价值。Stephan Ango 强调他希望保持团队的小规模，并且 Obsidian 不打算接受风险投资。他还提到了即将推出的一些新功能，如更好的元数据格式、更强大的查询任务能力，以及对于更好的文件共享方式的思考。此外，他讨论了人工智能在 Obsidian 中的应用可能性，以及如何平衡 AI 的使用与隐私和本地化的原则。最后，Stephan Ango 对 Obsidian 社区表示感谢，并鼓励大家继续在这个领域做出贡献。&lt;/p>
+&lt;h2 id="obsidian-的未来发展方向">Obsidian 的未来发展方向
+&lt;/h2>&lt;ol>
+&lt;li>&lt;strong>可扩展性&lt;/strong>：继续支持插件生态系统，允许用户和开发者定制和扩展 Obsidian 的功能。&lt;/li>
+&lt;li>&lt;strong>隐私保护&lt;/strong>：坚持用户数据的本地化存储，确保用户对自己的笔记具有完全的控制权和隐私保护。&lt;/li>
+&lt;li>&lt;strong>长期可持续性&lt;/strong>：确保 Obsidian 及其生态系统能够长期发展和维护，包括软件的设计和公司的运营模式。&lt;/li>
+&lt;li>&lt;strong>新功能开发&lt;/strong>：正在开发更好的元数据格式和查询任务的功能，以提升用户的组织和管理能力。&lt;/li>
+&lt;li>&lt;strong>小规模团队&lt;/strong>：保持团队的小规模，以保持灵活性和对产品方向的精确控制。&lt;/li>
+&lt;li>&lt;strong>拒绝风险投资&lt;/strong>：Obsidian 不打算接受风险投资，以避免与其核心价值观的冲突。&lt;/li>
+&lt;li>&lt;strong>改善文件共享&lt;/strong>：考虑和开发更好的文件共享方式，以满足用户的协作和分享需求。&lt;/li>
+&lt;li>&lt;strong>人工智能的探索&lt;/strong>：在保持本地化和隐私保护的前提下，探索人工智能在 Obsidian 中的应用，如通过插件集成 AI 功能。&lt;/li>
+&lt;li>&lt;strong>社区参与&lt;/strong>：继续鼓励和支持社区的参与和贡献，以促进 Obsidian 的持续发展和改进。&lt;/li>
+&lt;/ol>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://stephango.com/" target="_blank" rel="noopener"
+>https://stephango.com/&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://nicolevanderhoeven.com/" target="_blank" rel="noopener"
+>https://nicolevanderhoeven.com/&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>
