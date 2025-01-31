@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Thu, 07 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian Web Clipper</title><link>https://all-in-obsidian.li3huo.com/obsidian/clipper/</link><pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/clipper/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian 1.8 正式对外发布了(1.8.3)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.8/</link><pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.8/</guid><description>
+&lt;h2 id="移动版">移动版
+&lt;/h2>&lt;p>包含了直到桌面版 v1.8.3 的所有新功能和错误修复。&lt;/p>
+&lt;h3 id="新增功能">新增功能
+&lt;/h3>&lt;p>添加了用于打开选项卡切换器(switcher)的命令。这可以绑定到下拉操作。&lt;/p>
+&lt;h3 id="性能">性能
+&lt;/h3>&lt;p>不再等待 iCloud 完成配置文件的同步。&lt;/p>
+&lt;h2 id="桌面版">桌面版
+&lt;/h2>&lt;h3 id="新增功能-1">新增功能
+&lt;/h3>&lt;ul>
+&lt;li>Web 查看器 是一个新的核心插件，可让在 Obsidian 中打开外部链接。这使得在不离开应用程序的情况下更容易阅读链接的内容，并改进了 Web 研究的多任务处理。默认情况下，该插件处于禁用状态，必须在设置中手动启用。&lt;/li>
+&lt;li>文件资源管理器现在包含一个自动显示活动文件的选项。&lt;/li>
+&lt;li>添加了“下载当前文件的附件”命令，该命令可下载所有外部嵌入的图像，并将外部链接替换为内部嵌入。&lt;/li>
+&lt;li>添加了“Insert footnote”命令。脚注自动完成现在提供了一个回退功能，以便在找不到匹配项时创建新的脚注。&lt;/li>
+&lt;li>标签视图现在包括搜索过滤器。&lt;/li>
+&lt;li>Outline 现在具有“自动滚动到当前部分”选项。&lt;/li>
+&lt;/ul>
+&lt;h3 id="改进">改进
+&lt;/h3>&lt;ul>
+&lt;li>修改编号列表时，编号现在会自动更新。&lt;/li>
+&lt;/ul>
+&lt;h2 id="third-party-libraries">Third-party libraries
+&lt;/h2>&lt;ul>
+&lt;li>Upgraded Prism.js to 1.29.0.&lt;/li>
+&lt;li>Upgraded Turndown to 7.2.0.&lt;/li>
+&lt;li>Upgraded Mermaid to 11.3.0.&lt;/li>
+&lt;li>Upgraded CodeMirror to the latest version.&lt;/li>
+&lt;/ul>
+&lt;h2 id="reference">Reference
+&lt;/h2></description></item><item><title>Obsidian Web Clipper</title><link>https://all-in-obsidian.li3huo.com/obsidian/clipper/</link><pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/clipper/</guid><description>
 &lt;p>Obsidian Web Clipper&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 是一个可以在不同浏览器上安装的插件，用于提取网页内容并将其保存到 Obsidian 笔记库。&lt;/p>
 &lt;p>Obsidian Web Clipper 支持剪辑网页的文本、图片和链接，并以 Markdown 文件的形式存储在 Obsidian 笔记库中。用户可以选择性地去除广告并仅保存特定内容，从而获得更清晰的剪辑效果。保存后，内容可以在 Obsidian 中编辑、组织和链接，实现高效的研究流程。&lt;/p>
 &lt;h2 id="1-安装">1. 安装
