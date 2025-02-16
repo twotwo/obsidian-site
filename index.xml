@@ -928,7 +928,43 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Obsidian 1.8 正式对外发布了(1.8.3)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.8/</link><pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.8/</guid><description>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>DeepSeek AI 目前发表的 Papers</title><link>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</guid><description>
+&lt;p>DeepSeek Al, a Chinese company founded in 2023, is dedicated to making artificial general intelligence (AGI) a reality. Since its founding, DeepSeek Al has released several papers.&lt;/p>
+&lt;h2 id="papers">Papers
+&lt;/h2>&lt;p>以下是 DeepSeek 公开的论文，可以从 arxiv &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 或 Github 上直接下载。&lt;/p>
+&lt;ol>
+&lt;li>2401.02954 &lt;a class="link" href="https://arxiv.org/abs/2401.02954" target="_blank" rel="noopener"
+>DeepSeek LLM&lt;/a> Scaling Open-Source Language Models with Longtermism&lt;/li>
+&lt;li>2401.06066 &lt;a class="link" href="https://arxiv.org/abs/2401.06066" target="_blank" rel="noopener"
+>DeepSeekMoE&lt;/a> Towards Ultimate Expert Specialization in Mixture-of-Experts&lt;/li>
+&lt;li>2405.04434 &lt;a class="link" href="https://arxiv.org/abs/2405.04434" target="_blank" rel="noopener"
+>DeepSeek-V2&lt;/a> A Strong, Economical, and Efficient Mixture-of-Experts Language Model&lt;/li>
+&lt;li>2412.19437 &lt;a class="link" href="https://arxiv.org/abs/2412.19437" target="_blank" rel="noopener"
+>DeepSeek-V3&lt;/a>&lt;/li>
+&lt;li>2401.14196 &lt;a class="link" href="https://arxiv.org/abs/2401.14196" target="_blank" rel="noopener"
+>DeepSeek-Coder&lt;/a> When the Large Language Model Meets Programming &amp;ndash; The Rise of Code Intelligence&lt;/li>
+&lt;li>2406.11931 &lt;a class="link" href="https://arxiv.org/abs/2406.11931" target="_blank" rel="noopener"
+>DeepSeek-Coder-V2&lt;/a> Breaking the Barrier of Closed-Source Models in Code&lt;/li>
+&lt;li>2402.03300 &lt;a class="link" href="https://arxiv.org/abs/2402.03300" target="_blank" rel="noopener"
+>DeepSeekMath&lt;/a> Pushing the Limits of Mathematical Reasoning in Open Language Models&lt;/li>
+&lt;li>2405.14333 &lt;a class="link" href="https://arxiv.org/abs/2405.14333" target="_blank" rel="noopener"
+>DeepSeek-Prover&lt;/a> Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data&lt;/li>
+&lt;li>2408.08152 &lt;a class="link" href="https://arxiv.org/abs/2408.08152" target="_blank" rel="noopener"
+>DeepSeek-Prover-V1.5&lt;/a> Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search&lt;/li>
+&lt;li>2501.12948 &lt;a class="link" href="https://arxiv.org/abs/2501.12948" target="_blank" rel="noopener"
+>DeepSeek-R1&lt;/a> Incentivizing Reasoning Capability in LLMs via Reinforcement Learning&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf" target="_blank" rel="noopener"
+>https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://arxiv.org/search/cs?searchtype=author&amp;amp;query=DeepSeek-AI" target="_blank" rel="noopener"
+>https://arxiv.org/search/cs?searchtype=author&amp;query=DeepSeek-AI&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Obsidian 1.8 正式对外发布了(1.8.3)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.8/</link><pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.8/</guid><description>
 &lt;h2 id="移动版">移动版
 &lt;/h2>&lt;p>包含了直到桌面版 v1.8.3 的所有新功能和错误修复。&lt;/p>
 &lt;h3 id="新增功能">新增功能
