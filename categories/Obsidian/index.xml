@@ -1,31 +1,111 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>DeepSeek AI 目前发表的 Papers</title><link>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>干货：DeepSeek 12 篇公开论文解析中文大模型核心技术</title><link>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</guid><description>
 &lt;p>DeepSeek Al, a Chinese company founded in 2023, is dedicated to making artificial general intelligence (AGI) a reality. Since its founding, DeepSeek Al has released several papers.&lt;/p>
 &lt;h2 id="papers">Papers
 &lt;/h2>&lt;p>以下是 DeepSeek 公开的论文，可以从 arxiv &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 或 Github 上直接下载。&lt;/p>
 &lt;ol>
 &lt;li>2401.02954 &lt;a class="link" href="https://arxiv.org/abs/2401.02954" target="_blank" rel="noopener"
->DeepSeek LLM&lt;/a> Scaling Open-Source Language Models with Longtermism&lt;/li>
+>DeepSeek LLM&lt;/a> Scaling Open-Source Language Models with Longtermism 复现 Llama 2 的中英文大语言模型&lt;/li>
 &lt;li>2401.06066 &lt;a class="link" href="https://arxiv.org/abs/2401.06066" target="_blank" rel="noopener"
->DeepSeekMoE&lt;/a> Towards Ultimate Expert Specialization in Mixture-of-Experts&lt;/li>
-&lt;li>2405.04434 &lt;a class="link" href="https://arxiv.org/abs/2405.04434" target="_blank" rel="noopener"
->DeepSeek-V2&lt;/a> A Strong, Economical, and Efficient Mixture-of-Experts Language Model&lt;/li>
-&lt;li>2412.19437 &lt;a class="link" href="https://arxiv.org/abs/2412.19437" target="_blank" rel="noopener"
->DeepSeek-V3&lt;/a>&lt;/li>
+>DeepSeekMoE&lt;/a> Towards Ultimate Expert Specialization in Mixture-of-Experts 提出了细粒度专家分割（Fine-Grained Expert Segmentation）和共享专家隔离（Shared Expert Isolation）策略，通过更灵活的专家组合提升模型性能，同时保持计算成本不变，激活参数 40%&lt;/li>
 &lt;li>2401.14196 &lt;a class="link" href="https://arxiv.org/abs/2401.14196" target="_blank" rel="noopener"
 >DeepSeek-Coder&lt;/a> When the Large Language Model Meets Programming &amp;ndash; The Rise of Code Intelligence&lt;/li>
-&lt;li>2406.11931 &lt;a class="link" href="https://arxiv.org/abs/2406.11931" target="_blank" rel="noopener"
->DeepSeek-Coder-V2&lt;/a> Breaking the Barrier of Closed-Source Models in Code&lt;/li>
 &lt;li>2402.03300 &lt;a class="link" href="https://arxiv.org/abs/2402.03300" target="_blank" rel="noopener"
 >DeepSeekMath&lt;/a> Pushing the Limits of Mathematical Reasoning in Open Language Models&lt;/li>
+&lt;li>2403.05525 &lt;a class="link" href="https://arxiv.org/abs/2403.05525" target="_blank" rel="noopener"
+>DeepSeek-VL&lt;/a> 面向真实世界的视觉语言理解&lt;/li>
+&lt;li>2405.04434 &lt;a class="link" href="https://arxiv.org/abs/2405.04434" target="_blank" rel="noopener"
+>DeepSeek-V2&lt;/a> A Strong, Economical, and Efficient Mixture-of-Experts Language Model 在 MoE 基础上，进一步降低激活参数的比例&lt;/li>
 &lt;li>2405.14333 &lt;a class="link" href="https://arxiv.org/abs/2405.14333" target="_blank" rel="noopener"
 >DeepSeek-Prover&lt;/a> Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data&lt;/li>
+&lt;li>2406.11931 &lt;a class="link" href="https://arxiv.org/abs/2406.11931" target="_blank" rel="noopener"
+>DeepSeek-Coder-V2&lt;/a> Breaking the Barrier of Closed-Source Models in Code&lt;/li>
 &lt;li>2408.08152 &lt;a class="link" href="https://arxiv.org/abs/2408.08152" target="_blank" rel="noopener"
 >DeepSeek-Prover-V1.5&lt;/a> Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search&lt;/li>
+&lt;li>2412.19437 &lt;a class="link" href="https://arxiv.org/abs/2412.19437" target="_blank" rel="noopener"
+>DeepSeek-V3&lt;/a> Technical Report&lt;/li>
 &lt;li>2501.12948 &lt;a class="link" href="https://arxiv.org/abs/2501.12948" target="_blank" rel="noopener"
 >DeepSeek-R1&lt;/a> Incentivizing Reasoning Capability in LLMs via Reinforcement Learning&lt;/li>
 &lt;li>&lt;a class="link" href="https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf" target="_blank" rel="noopener"
->https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf&lt;/a>&lt;/li>
+>Distilling Reasoning Capabilities from DeepSeek-R1 to Smaller Models&lt;/a>&lt;/li>
 &lt;/ol>
+&lt;p>作为国内领先的人工智能公司，DeepSeek 在开源大语言模型领域再次斩获佳绩！从模型架构到推理能力，每一步创新都让人惊艳！所有的秘密其实都以论文形式公开发表出来了，有心人可以自行阅读，体会探索的快乐 🎉&lt;/p>
+&lt;hr>
+&lt;h2 id="-基础模型全面升级">🚀 基础模型全面升级
+&lt;/h2>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>从稠密模型到 MoE 架构&lt;/strong>
+DeepSeek 从最初的稠密模型演进到混合专家模型（MoE），并不断优化训练算法，实现更大的规模和更低的推理成本！💪&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>首次成功规模化应用FP8训练&lt;/strong>
+DeepSeek 是早期大规模成功采用 &lt;strong>FP8 低精度训练&lt;/strong> 的团队之一，极大提升了训练效率并降低了成本！📉✨&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>专家负载均衡技术突破&lt;/strong>
+探索了 &lt;code>loss-free balancing&lt;/code> 等方法，确保不同专家和 GPU 之间的使用更加均衡，最大化效率！🔄💻&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>多头隐式注意力（MLA）领先技术&lt;/strong>
+通过低维向量压缩 KV 缓存，在保持模型性能的同时，显著降低了推理成本！🧠💡&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>多词元预测（MTP）&lt;/strong>
+同时预测多个 token，增强训练信号，并降低推理延迟！⏳️✨&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="-推理能力再攀新高">💡 推理能力再攀新高
+&lt;/h2>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>DeepSeek-Coder 系列：代码生成能力又升级！&lt;/strong>
+📜 从论文 &lt;a class="link" href="https://arxiv.org/abs/2401.14196" target="_blank" rel="noopener"
+>2401.14196&lt;/a> 和 &lt;a class="link" href="https://arxiv.org/abs/2406.11931" target="_blank" rel="noopener"
+>2406.11931&lt;/a> 可见，DeepSeek-Coder 为开发者提供了更高效的编码工具！💻🔧&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>DeepSeek-Prover：定理证明推理全面进化&lt;/strong>
+📜 在论文 &lt;a class="link" href="https://arxiv.org/abs/2405.14333" target="_blank" rel="noopener"
+>2405.14333&lt;/a> 和 &lt;a class="link" href="https://arxiv.org/abs/2408.08152" target="_blank" rel="noopener"
+>2408.08152&lt;/a> 中，DeepSeek 探索了定理证明的推理能力，并尝试了强化学习方法和规则反馈机制！📐💡&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>R1 版本：强化学习与规则引导的完美结合&lt;/strong>
+📜 根据论文 &lt;a class="link" href="https://arxiv.org/abs/2501.12948" target="_blank" rel="noopener"
+>2501.12948&lt;/a>，DeepSeek-R1 使用更简单的规则和生成长思维链的方式，通过强化学习让模型自我优化，实现了卓越的推理能力！💪🚀&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="-研究亮点解读">🎯 研究亮点解读
+&lt;/h2>&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>勇于创新，探索前沿技术&lt;/strong>
+DeepSeek 在模型架构和训练算法方面进行了大胆创新，例如 MLA 和 MTP 技术！💡🔥&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>严谨治学，分享可复现研究成果&lt;/strong>
+DeepSeek 在论文中公开了大量内部研究细节，并提供技术报告，为社区提供宝贵参考！📚🎯&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>开源精神，推动社区共同进步&lt;/strong>
+DeepSeek 的研究成果对 AI 领域具有重要意义，推动了代码智能和数学推理的发展！💖🌱&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="-意义非凡">✨ 意义非凡
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>重塑代码智能与数学推理领域：&lt;/strong>
+DeepSeek 的研究为代码生成、定理证明等领域提供了全新思路！💻✨&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>为强化学习提供新方向：&lt;/strong>
+DeepSeek 的创新性方法为强化学习领域注入新活力！🔄💪&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>模型设计更简单更高效：&lt;/strong>
+证明 AI 模型可以更加简洁高效，并取得更好的效果！🎯🔥&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
