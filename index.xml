@@ -928,7 +928,107 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">:wq
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Note that we removed the date logic from the default template and put it in the post template. Generate the web site and verify the results. Posts have dates and the about page doesn&amp;rsquo;t.&lt;/p>
 &lt;h3 id="dont-repeat-yourself">Don&amp;rsquo;t Repeat Yourself
-&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>干货：DeepSeek 12 篇公开论文解析中文大模型核心技术</title><link>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</guid><description>
+&lt;/h3>&lt;p>DRY 是一个很好的设计目标，Hugo在这方面做得很好。好的模板的艺术之一是&lt;strong>知道何时添加新模板，何时更新现有模板&lt;/strong>。当你在思考这个问题的时候，接受你要做一些重构工作的事实。Hugo让这变得简单而快速，所以有时延迟拆分模板是个好主意💡。&lt;/p></description></item><item><title>Obsidian 1.9 正式对外发布了(1.9.10)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.9/</link><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.9/</guid><description>
+&lt;p>v1.9 版本引入了全新的核心插件 &lt;strong>Bases&lt;/strong>，可将任何笔记集合转化为强大的数据库。您可以组织从项目到旅行计划、阅读列表等所有内容。此外，该版本还对标签页管理进行了全面优化，并带来了多项性能改进。&lt;/p>
+&lt;h2 id="桌面版">桌面版
+&lt;/h2>&lt;h3 id="新增功能">新增功能
+&lt;/h3>&lt;h4 id="bases">Bases
+&lt;/h4>&lt;p>这是一个新的核心插件，可让您将任何笔记集合转化为强大的数据库。通过 Bases，您可以组织从项目到旅行计划、阅读列表等所有内容。它支持多种视图，如表格、看板、画廊和日历，并允许您根据笔记的属性（字段）进行筛选、排序和分组。这使得在不改变原有文 件和文件夹结构的情况下，以灵活和强大的方式管理和可视化您的笔记成为可能。
+&lt;img src="https://obsidian.md/images/changelog/1.9-bases-table-dark.png"
+loading="lazy"
+>
+Bases 允许你创建自定义视图，以可视化和交互你的库中的数据。你可以通过属性筛选笔记，并创建公式来推导你自己的动态属性。
+&lt;img src="https://obsidian.md/images/changelog/1.9-bases-cards-dark.png"
+loading="lazy"
+>
+Base 中的所有数据都由你本地的 Markdown 文件和存储在 YAML 中的属性支持。为了支持 Bases，我们引入了 &lt;code>.base&lt;/code> 文件格式和&lt;a class="link" href="https://help.obsidian.md/bases/syntax" target="_blank" rel="noopener"
+>语法&lt;/a>。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">filters&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">or&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">file.hasTag(&amp;#34;tag&amp;#34;)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">and&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">file.hasTag(&amp;#34;book&amp;#34;)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">file.hasLink(&amp;#34;Textbook&amp;#34;)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">not&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">file.hasTag(&amp;#34;book&amp;#34;)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">file.inFolder(&amp;#34;Required Reading&amp;#34;)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">formulas&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">formatted_price&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;if(price, price.toFixed(2) + &amp;#34; dollars&amp;#34;)&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">ppu&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;(price / age).toFixed(2)&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">properties&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">status&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">displayName&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Status&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">formula.formatted_price&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">displayName&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;Price&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">file.ext&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">displayName&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Extension&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">views&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">type&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">table&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;My table&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">limit&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">10&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">filters&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">and&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="s1">&amp;#39;status != &amp;#34;done&amp;#34;&amp;#39;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">or&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="s2">&amp;#34;formula.ppu &amp;gt; 5&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="s2">&amp;#34;price &amp;gt; 2.1&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">order&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">file.name&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">file.ext&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">note.age&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">formula.ppu&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">formula.formatted_price&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="脚注视图-footnotes-view">脚注视图 (Footnotes view)
+&lt;/h4>&lt;p>全新的脚注视图核心插件，它增加了一个新的侧边栏标签页，可以帮助您在不离开当前笔记位置的情况下管理当前文件的所有脚注。&lt;/p>
+&lt;h3 id="改进">改进
+&lt;/h3>&lt;ul>
+&lt;li>属性编辑器现在可在页面预览和画布中使用。&lt;/li>
+&lt;li>&lt;strong>同步&lt;/strong>：添加了新的“冲突解决方法”设置。可选择 Obsidian 在同步时如何处理文件冲突：合并（默认）或创建冲突文件。&lt;/li>
+&lt;li>添加了在标签页中打开当前页面预览的按钮。&lt;/li>
+&lt;li>在“导出为 PDF”流程中，导出按钮现在会获得初始键盘焦点。&lt;/li>
+&lt;li>显示文件或文件夹建议的设置现在使用模糊搜索以获得更好的匹配效果。&lt;/li>
+&lt;li>空白字符现在可以在同步历史和文件恢复的差异对比中正确显示。&lt;/li>
+&lt;li>在深色模式下增加了文本选择的对比度。&lt;/li>
+&lt;li>同步历史视图现在包含一个按钮，用于在文件恢复中打开受影响的文件。&lt;/li>
+&lt;li>同步历史视图现在会显示文件重命名之前和之后的名称。&lt;/li>
+&lt;li>文件恢复现在会在非 Markdown 文件的标题和建议中显示文件扩展名。&lt;/li>
+&lt;li>如果当前标签页已固定，则“关闭当前标签页”命令将取消固定该标签页而不是关闭它。再次执行该命令可关闭标签页。&lt;/li>
+&lt;li>即使文件插件被禁用，“移动文件到&amp;hellip;”选项仍然可用。&lt;/li>
+&lt;li>“保存文件”命令现在仅在有活动文件时才会出现在命令面板中。&lt;/li>
+&lt;li>改进了“未知”标签页的显示。添加了关闭所有未知标签页的选项。&lt;/li>
+&lt;li>唯一笔记前缀插件现在包含一个“添加唯一内部链接”的命令，用于链接所选文本。&lt;/li>
+&lt;li>当标题栏空间不足以显示完整路径时，文件夹名称将在文件名之前被截断。&lt;/li>
+&lt;li>改进了 Markdown 解析器处理大型表格和大型标注框的方式。这些笔记的加载时间会稍长一些，但表格和标注框将立即渲染。&lt;/li>
+&lt;li>全局搜索在找到 100,000 个结果后会停止扫描您的库。&lt;/li>
+&lt;li>&lt;strong>文件资源管理器&lt;/strong>：当视图处于活动状态时，按住 Command/Ctrl 键并使用箭头键在文件中导航，现在将打开光标下的文件。&lt;/li>
+&lt;li>&lt;strong>文件资源管理器&lt;/strong>：在文件资源管理器的空白区域右键单击，现在将包含创建新 base 或新画布的选项。&lt;/li>
+&lt;li>在链接上下文菜单中添加了“复制路径”和“复制相对路径”。&lt;/li>
+&lt;li>添加了“切换可读行长”命令。&lt;/li>
+&lt;li>&lt;strong>macOS&lt;/strong>：Apple 写作工具现在会出现在编辑器上下文菜单中。这需要安装最新的安装程序并在设置中启用“原生菜单”。&lt;/li>
+&lt;/ul>
+&lt;h2 id="移动版">移动版
+&lt;/h2>&lt;p>包含了直到桌面版 v1.9.10 的所有新功能和错误修复。&lt;/p>
+&lt;h3 id="新增功能-1">新增功能
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>标签页切换器&lt;/strong>：引入了全新的标签页切换器用户界面。&lt;/li>
+&lt;/ul>
+&lt;h3 id="改进-1">改进
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>标签栏&lt;/strong>：与桌面版一样，移动版的标签栏现在也支持滚动。&lt;/li>
+&lt;/ul>
+&lt;h2 id="developers">Developers
+&lt;/h2>&lt;ul>
+&lt;li>安装程序已更新至 Electron 37.3.0。&lt;/li>
+&lt;li>idb 已更新至 8.0.2 版本。&lt;/li>
+&lt;li>yaml 已更新至 2.7.0 版本。&lt;/li>
+&lt;li>添加到 document.body 的 CSS 属性现在会同步到所有弹出窗口。&lt;/li>
+&lt;li>如果 onClick 事件是异步的，ButtonComponent 现在会自动显示加载动画。&lt;/li>
+&lt;li>现在可以使用 &lt;code>window.open(url, '_external')&lt;/code> 来绕过 Web 查看器，在用户的默认浏览器中打开 URL。&lt;/li>
+&lt;li>已禁用 YAML 别名，以防止在将同一对象分配给多个键时出现意外引用。&lt;/li>
+&lt;li>通过 &lt;code>processFrontmatter&lt;/code> 将同一对象分配给多个键时，将不再创建 YAML 别名。&lt;/li>
+&lt;/ul>
+&lt;h2 id="reference">Reference
+&lt;/h2></description></item><item><title>干货：DeepSeek 12 篇公开论文解析中文大模型核心技术</title><link>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</guid><description>
 &lt;p>DeepSeek Al, a Chinese company founded in 2023, is dedicated to making artificial general intelligence (AGI) a reality. Since its founding, DeepSeek Al has released several papers.&lt;/p>
 &lt;h2 id="papers">Papers
 &lt;/h2>&lt;p>以下是 DeepSeek 公开的论文，可以从 arxiv &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 或 Github 上直接下载。&lt;/p>
