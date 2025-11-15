@@ -1,5 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Mon, 18 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian 1.9 正式对外发布了(1.9.10)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.9/</link><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.9/</guid><description>
-&lt;p>v1.9 版本引入了全新的核心插件 &lt;strong>Bases&lt;/strong>，可将任何笔记集合转化为强大的数据库。您可以组织从项目到旅行计划、阅读列表等所有内容。此外，该版本还对标签页管理进行了全面优化，并带来了多项性能改进。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Obsidian on All in Obsidian</title><link>https://all-in-obsidian.li3huo.com/categories/Obsidian/</link><description>Recent content in Obsidian on All in Obsidian</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>li3huo (li3huo)</managingEditor><webMaster>li3huo (li3huo)</webMaster><lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://all-in-obsidian.li3huo.com/categories/Obsidian/index.xml" rel="self" type="application/rss+xml"/><item><title>Obsidian 1.10 正式对外发布了(1.10.3)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.10/</link><pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.10/</guid><description>
+&lt;p>v1.10.3 公开版于2025年11月11日正式发布了&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
+&lt;h2 id="移动版">移动版
+&lt;/h2>&lt;p>包含了直到桌面版 v1.10.3 的所有新功能和错误修复&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>。&lt;/p>
+&lt;h3 id="改进">改进
+&lt;/h3>&lt;ul>
+&lt;li>移动应用程序现在启动速度显著加快，它会在后台加载应用程序的其余部分时，先打开最后打开的文件的编辑器。&lt;/li>
+&lt;li>iOS：支持新的液态玻璃键盘。&lt;/li>
+&lt;/ul>
+&lt;h3 id="修复">修复
+&lt;/h3>&lt;ul>
+&lt;li>iOS：修复了部分 UI 未能适应系统主题的问题。&lt;/li>
+&lt;li>Android：修复了在阅读模式下选择文本会导致上下文菜单弹出的问题。&lt;/li>
+&lt;li>Android：修复了当应用程序文档文件夹不可用时崩溃的问题。&lt;/li>
+&lt;/ul>
+&lt;h2 id="桌面版">桌面版
+&lt;/h2>&lt;h3 id="新增功能">新增功能
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>Bases 新功能&lt;/strong>:
+&lt;ul>
+&lt;li>“分组”功能、表格摘要、新的列表视图、初始 Bases API。&lt;/li>
+&lt;li>&lt;strong>新的地图插件&lt;/strong>: 允许用户将其笔记显示为交互式地图视图。它支持基于筛选器的标记动态显示、由属性定义的自定义标记图标和颜色、自定义背景图块以及可配置的默认缩放选项&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="改进-1">改进
+&lt;/h3>&lt;ul>
+&lt;li>&lt;strong>重大变更&lt;/strong>: “使用浅色模式”和“使用深色模式”命令已被移除，替换为“切换浅色/深色模式”命令。&lt;/li>
+&lt;li>新的列表函数 (reduce(), mean(), stddev(), median())、新的 html() 和 random() 函数、支持 ISO 8601 日期时间解析中的时区偏移、改进的属性值推断。&lt;/li>
+&lt;li>&lt;strong>表格热键&lt;/strong>: 用于表格导航、选择、复制、粘贴和编辑的新热键的完整列表。&lt;/li>
+&lt;li>&lt;strong>其他修复和改进&lt;/strong>: 重新加载主题、标签激活行为、“全部折叠”和“全部展开”命令的修复、文件资源管理器改进、图形视图增强、属性更新（包括在所有笔记中删除属性）、桌面版上的“缩进”和“取消缩进”命令、复制完整笔记源代码以及与嵌入、链接和编辑相关的各种错误修复。&lt;/li>
+&lt;/ul>
+&lt;h2 id="第三方库">第三方库
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>开发者&lt;/strong>: 安装程序更新至 Electron 37.9.0，&lt;code>FileManager#generateMarkdownLink&lt;/code> 的变更，新的 &lt;code>open-link&lt;/code> 事件，以及 Codemirror 工具提示定位的修复。&lt;/li>
+&lt;/ul>
+&lt;h2 id="reference">Reference
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://obsidian.md/changelog/2025-11-11-desktop-v1.10.3/" target="_blank" rel="noopener"
+>Changelog&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>&lt;a class="link" href="https://obsidian.md/changelog/2025-11-11-mobile-v1.10.3/" target="_blank" rel="noopener"
+>Mobile Changelog&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a class="link" href="https://github.com/obsidianmd/obsidian-maps" target="_blank" rel="noopener"
+>Obsidian Maps Plugin&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Obsidian 1.9 正式对外发布了(1.9.10)</title><link>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.9/</link><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/obsidian-v1.9/</guid><description>
+&lt;p>v1.9 版本引入了全新的核心插件 &lt;strong>Bases&lt;/strong>，可将任何笔记集合转化为强大的数据库。您可以组织从项目到旅行计划、阅读列表等所有内容。此外，该版本还对标签页管理进行了全面优化，并带来了多项性能改进&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
 &lt;h2 id="桌面版">桌面版
 &lt;/h2>&lt;h3 id="新增功能">新增功能
 &lt;/h3>&lt;h4 id="bases">Bases
@@ -86,19 +139,27 @@ Base 中的所有数据都由你本地的 Markdown 文件和存储在 YAML 中�
 &lt;/h3>&lt;ul>
 &lt;li>&lt;strong>标签栏&lt;/strong>：与桌面版一样，移动版的标签栏现在也支持滚动。&lt;/li>
 &lt;/ul>
-&lt;h2 id="developers">Developers
+&lt;h2 id="第三方库">第三方库
 &lt;/h2>&lt;ul>
 &lt;li>安装程序已更新至 Electron 37.3.0。&lt;/li>
-&lt;li>idb 已更新至 8.0.2 版本。&lt;/li>
-&lt;li>yaml 已更新至 2.7.0 版本。&lt;/li>
-&lt;li>添加到 document.body 的 CSS 属性现在会同步到所有弹出窗口。&lt;/li>
-&lt;li>如果 onClick 事件是异步的，ButtonComponent 现在会自动显示加载动画。&lt;/li>
+&lt;li>&lt;code>idb&lt;/code> 已更新至 8.0.2 版本。&lt;/li>
+&lt;li>&lt;code>yaml&lt;/code> 已更新至 2.7.0 版本。&lt;/li>
+&lt;li>添加到 &lt;code>document.body&lt;/code> 的 CSS 属性现在会同步到所有弹出窗口。&lt;/li>
+&lt;li>&lt;code>ButtonComponent&lt;/code> 现在会自动显示加载动画，当 &lt;code>onClick&lt;/code> 事件是异步时&lt;/li>
 &lt;li>现在可以使用 &lt;code>window.open(url, '_external')&lt;/code> 来绕过 Web 查看器，在用户的默认浏览器中打开 URL。&lt;/li>
 &lt;li>已禁用 YAML 别名，以防止在将同一对象分配给多个键时出现意外引用。&lt;/li>
 &lt;li>通过 &lt;code>processFrontmatter&lt;/code> 将同一对象分配给多个键时，将不再创建 YAML 别名。&lt;/li>
 &lt;/ul>
 &lt;h2 id="reference">Reference
-&lt;/h2></description></item><item><title>干货：DeepSeek 12 篇公开论文解析中文大模型核心技术</title><link>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</guid><description>
+&lt;/h2>&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a class="link" href="https://obsidian.md/changelog/2025-08-18-desktop-v1.9.10/" target="_blank" rel="noopener"
+>Changelog&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>干货：DeepSeek 12 篇公开论文解析中文大模型核心技术</title><link>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><author>li3huo (li3huo)</author><guid>https://all-in-obsidian.li3huo.com/obsidian/deepseek-papers/</guid><description>
 &lt;p>DeepSeek Al, a Chinese company founded in 2023, is dedicated to making artificial general intelligence (AGI) a reality. Since its founding, DeepSeek Al has released several papers.&lt;/p>
 &lt;h2 id="papers">Papers
 &lt;/h2>&lt;p>以下是 DeepSeek 公开的论文，可以从 arxiv &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 或 Github 上直接下载。&lt;/p>
